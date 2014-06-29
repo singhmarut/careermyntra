@@ -1,0 +1,7 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div ng-repeat="passkey in passKeys" ng-init="editable=false">
+    <h2>Welcome to Awesome PupilsBoard Testing Platform<span ng-show="currentUser"> {{ currentUser.name }}</span>!</h2>
+</div>
+
+<div ng-include="'partials/footer'"></div>

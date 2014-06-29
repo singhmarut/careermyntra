@@ -1,0 +1,61 @@
+<!--
+<div class="header" ng-controller="NavbarCtrl">
+  <ul class="nav nav-pills pull-right">
+    <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+        <a ng-href="{{item.link}}">{{item.title}}</a>
+    </li>
+    <li ng-hide="currentUser" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+    <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
+    <li ng-show="currentUser" ng-class="{active: isActive('/dashboard')}"><a href="/dashboard">Dashboard</a></li>
+    <li ng-show="currentUser" ng-class="{active: isActive('/skills')}"><a href="/skills">Skills Chart</a></li>
+    <li ng-class="{active: isActive('/takeTest')}"><a href="/takeTest">Take a Test</a></li>
+    <li ng-show="currentUser" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+  </ul>
+  <h3 class="text-muted">pupilsboard</h3>
+</div>-->
+<div class="row sidebar" ng-controller="NavbarCtrl" style="height: 70px; background-color: #0088cc;">
+    <div class="col-lg-12 noPadding">
+        <div class="col-lg-12 ">
+
+            <nav class="navbar navbar-iverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Link</a></li>
+                            <li><a ng-hide="currentUser" ng-href="/login" class="mainMenu" style="color: white;">Login</a>
+                            <li><a ng-hide="currentUser" ng-href="/signup" ng-class="{active: isActive('/signup')}" class="mainMenu" style="color: white;">Sign up</a></li>
+                            <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard" ng-class="{active: isActive('/dashboard')}" class="mainMenu" style="color: white;">Dashboard</a></li>
+                            <li><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard" ng-class="{active: isActive('/myDashboard')}" class="mainMenu" style="color: white;">My Dashboard</a></li>
+                            <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}" class="mainMenu" style="color: white;">Skills Chart</a></li>
+                            <li><a ng-show="currentUser" ng-href="/takeTest" ng-class="{active: isActive('/takeTest')}" class="mainMenu" style="color: white;">Take a Test</a></li>
+                            <li><a ng-show="currentUser" ng-href="" ng-click="logout()" class="mainMenu" style="color: white;">Logout</a>
+                         </ul>
+                    </div>
+                 </div>
+             </nav>
+            <div class="upperContainer clearfix">
+                <div class='clearfix'>
+                    <!--<div id="logo">-->
+                        <!--<a href="javascript:void(0)"><img src="images/logo.png"/></a>-->
+                    <!--</div>-->
+                    <!--<div style="float:left;" ng-controller="NavbarCtrl">-->
+                        <!--<a ng-hide="currentUser" ng-href="/login" class="mainMenu" style="color: white;margin: 20px;">Login</a>-->
+                        <!--<a ng-hide="currentUser" ng-href="/signup" ng-class="{active: isActive('/signup')}" class="mainMenu" style="color: white;">Sign up</a>-->
+                        <!--<a ng-show="currentUser" ng-href="/dashboard" ng-class="{active: isActive('/dashboard')}" class="mainMenu" style="color: white;">Dashboard</a>-->
+                        <!--<a ng-show="currentUser" ng-href="/skills" ng-class="{active: isActive('/skills')}" class="mainMenu" style="color: white;">Skills Chart</a>-->
+                        <!--<a ng-hide="currentUser" ng-href="/takeTest" ng-class="{active: isActive('/takeTest')}" class="mainMenu" style="color: white;">Take a Test</a>-->
+                        <!--<a ng-show="currentUser" ng-href="" ng-click="logout()" class="mainMenu" style="color: white;">Logout</a>-->
+                    <!--</div>-->
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+</div>

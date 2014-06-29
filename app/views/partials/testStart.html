@@ -1,0 +1,21 @@
+<div ng-include="'partials/navbar.html'"></div>
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Take a test</h1>
+    </div>
+    <div class="col-sm-6">
+        <form class="form" name="form" ng-controller="QuestionpaperCtrl" ng-submit="startTest()" novalidate>
+            <div class="form-group">
+                <label>Authenticaion Key</label>
+                <input type="text" placeholder="Authenticaion Key" class="form-control" ng-model="authKey" required>
+            </div>
+
+            <!--<div class="form-group has-error">
+                <p class="help-block" ng-show="form.authKey.$error.required && form.password.$error.required && submitted">
+                    Please enter correct Authentication Key.
+                </p>
+            </div>-->
+            <button type="submit" class="btn btn-lg btn-primary"> Start Test </button>
+        </form>
+    </div>
+</div>

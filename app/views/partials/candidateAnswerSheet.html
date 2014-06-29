@@ -1,0 +1,17 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="container-fluid" ng-controller="CandidateDashboardCtrl" ng-init="loadAnswerSheet()">
+    <div class="col-lg-12" style="margin-left: 20px;">
+        <div class="col-lg-3">
+        <h1>Answer Sheet for {{answerSheet.name}} </h1>
+        </div>
+        <div class="col-lg-9">
+           <div ng-bind-html="candidateReport.finalReport">
+
+           </div>
+        </div>
+    </div>
+
+    <div ng-include="'partials/footer'"></div>
+
+</div>
