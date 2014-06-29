@@ -109,15 +109,7 @@ angular.module('pupilsboardApp')
             return i;
         };
 
-        $scope.saveQuestion = function (question){
-            $http.post('/api/question',JSON.stringify(question)).error(function(err){
-                console.log('error while saving paper...');
-            })
-            .success(function(data){
-                console.log('Paper finished successfully');
-                $location.path('/paperCompleted');
-            });
-        };
+
 
         $scope.emitEvent = function(form){
             $http.post('/api/emitEvent').error(function(err){
