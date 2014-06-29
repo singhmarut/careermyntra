@@ -6,15 +6,16 @@
   <p class="lead">
   </p>
 </div>
-<form class="form-horizontal" role="form">
-<div class="form-group" ng-controller="ContactCtrl">
-    <label class="col-sm-2 control-label">Sign up for newsletter</label>
-    <div class="col-sm-6">
-        <input type="email" class="form-control" placeholder="Enter email">
-    </div>
-    <button type="submit" class="btn btn-success btn-small btn-default" ng-click="register">Sign in</button>
-</div>
-</form>
+<div>
+    <form class="form-horizontal" role="form" name="newsletterForm">
+        <div class="form-group" ng-controller="ContactCtrl">
+            <label class="col-sm-2 control-label">Sign up for newsletter</label>
+            <div class="col-sm-6">
+                <input type="email" name="email" class="form-control"  ng-model="email" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-success btn-small btn-default" ng-click="register(newsletterForm)">Sign in</button>
+        </div>
+    </form>
 
 </div>
 <div ng-include="'partials/footer'"></div>

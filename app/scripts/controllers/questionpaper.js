@@ -119,7 +119,7 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.emtiEvent = function(form){
+        $scope.emitEvent = function(form){
             $http.post('/api/emitEvent').error(function(err){
                 console.log('error while saving paper...');
             })
