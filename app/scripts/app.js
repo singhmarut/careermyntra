@@ -36,6 +36,11 @@ angular.module('pupilsboardApp', [
             controller: 'NavbarCtrl',
             authenticate: true
         })
+        .when('/question/edit/:id', {
+            templateUrl: 'partials/editQuestion',
+            controller: 'QuestionpaperCtrl',
+            authenticate: true
+        })
       .when('/questionPaper/:id', {
             templateUrl: 'partials/questionPaper',
             controller: 'QuestionpaperCtrl',

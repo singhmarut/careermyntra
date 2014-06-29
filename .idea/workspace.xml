@@ -68,28 +68,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <file leaf-file-name="questionPaper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="27" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1245">
+            <state line="152" column="34" selection-start="6021" selection-end="6021" vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="3270">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/middleware.js">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="555">
+            <state line="23" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="-13.75" vertical-offset="15" max-vertical-offset="1290">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/models/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="18" selection-start="4654" selection-end="4667" vertical-scroll-proportion="136.3077" vertical-offset="6469" max-vertical-offset="7800">
+            <state line="33" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="26" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1575">
+            <state line="39" column="47" selection-start="1070" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -116,25 +116,25 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="56" selection-start="1279" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1665">
+            <state line="86" column="2" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="1665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.23755656" vertical-offset="0" max-vertical-offset="442">
+            <state line="7" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="7" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-51.25" vertical-offset="210" max-vertical-offset="1530">
+            <state line="67" column="27" selection-start="3203" selection-end="3285" vertical-scroll-proportion="0.6666667" vertical-offset="735" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -152,7 +152,7 @@
       <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="371" selection-end="371" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="420">
+            <state line="13" column="4" selection-start="336" selection-end="336" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -171,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/models/orientdbservice.js" />
-        <option value="$PROJECT_DIR$/SkillsMap/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/SkillsMap/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/SkillsMap/src/main/webapp/WEB-INF/spring/root-context.xml" />
         <option value="$PROJECT_DIR$/SkillsMap/pom.xml" />
@@ -204,11 +202,9 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/account.js" />
         <option value="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
         <option value="$PROJECT_DIR$/app/views/partials/paperSuccess.html" />
-        <option value="$PROJECT_DIR$/lib/models/question.js" />
         <option value="$PROJECT_DIR$/app/views/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/app/views/partials/evaluationKeys.html" />
         <option value="$PROJECT_DIR$/lib/routes.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/questionPaper.js" />
         <option value="$PROJECT_DIR$/lib/controllers/questionController.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/ckeditor.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
@@ -216,12 +212,16 @@
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper.html" />
         <option value="$PROJECT_DIR$/lib/controllers/session.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/karma.conf.js" />
         <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/views/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/lib/models/question.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/questionPaper.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/app/views/index.html" />
       </list>
     </option>
   </component>
@@ -292,6 +292,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -765,12 +779,12 @@
       <workItem from="1403006016121" duration="57529000" />
       <workItem from="1403457527284" duration="379000" />
       <workItem from="1403969976979" duration="9959000" />
-      <workItem from="1404011334349" duration="3888000" />
+      <workItem from="1404011334349" duration="4986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148837000" />
+    <option name="totallyTimeSpent" value="149935000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -965,7 +979,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="121" selection-start="1972" selection-end="1990" vertical-scroll-proportion="-13.125" vertical-offset="30" max-vertical-offset="1590" />
+        <state line="23" column="121" selection-start="1972" selection-end="1990" vertical-scroll-proportion="-13.125" vertical-offset="30" max-vertical-offset="1590">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/login.html">
@@ -983,11 +999,6 @@
         <state line="37" column="59" selection-start="3054" selection-end="3054" vertical-scroll-proportion="-10.791667" vertical-offset="296" max-vertical-offset="990" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-11.692307" vertical-offset="356" max-vertical-offset="1950" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="20" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
@@ -1003,13 +1014,6 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/mongooseError.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="30" selection-start="31" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="3255">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper.html">
@@ -1132,20 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="371" selection-end="371" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="7" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-51.25" vertical-offset="210" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/demo1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
@@ -1160,23 +1150,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="26" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1575">
+        <state line="39" column="47" selection-start="1070" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="34" selection-start="6021" selection-end="6021" vertical-scroll-proportion="0.0" vertical-offset="2130" max-vertical-offset="3270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="-13.75" vertical-offset="15" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="56" selection-start="1279" selection-end="1291" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="1665">
+        <state line="86" column="2" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="1665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="69" selection-end="69" vertical-scroll-proportion="0.23755656" vertical-offset="0" max-vertical-offset="442">
+        <state line="13" column="4" selection-start="336" selection-end="336" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="27" selection-start="3203" selection-end="3285" vertical-scroll-proportion="0.6666667" vertical-offset="735" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
