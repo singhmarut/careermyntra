@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="skillsmap:war">
+    <output-path>$PROJECT_DIR$/../SkillsMap/target</output-path>
+    <root id="archive" name="skillsmap-1.0.0-BUILD-SNAPSHOT.war">
+      <element id="artifact" artifact-name="skillsmap:war exploded" />
+    </root>
+  </artifact>
+</component>
