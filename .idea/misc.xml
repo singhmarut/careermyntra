@@ -3,7 +3,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="IdProvider" IDEtalkID="E58E46C6C1E0CBF7EDDBC55FD994E8C0" />
+  <component name="IdProvider" IDEtalkID="C062FCC1E727E4C015F9659C2ED44E6E" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -118,8 +118,8 @@
   <component name="SbtLocalSettings">
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/../../pupilsboardgrader/grader" value="1393578912000" />
-        <entry key="$PROJECT_DIR$/../../wizni/akka-standalone" value="1389634154000" />
+        <entry key="$PROJECT_DIR$/../pupilsboardgrader/grader" value="1393578912000" />
+        <entry key="$PROJECT_DIR$/../wizni/akka-standalone" value="1389634154000" />
       </map>
     </option>
   </component>

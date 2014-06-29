@@ -19,7 +19,8 @@ angular.module('pupilsboardApp', [
       })
         .when('/dashboard', {
             templateUrl: 'partials/dashboard',
-            controller: 'AccountCtrl'
+            controller: 'AccountCtrl',
+            authenticate: true
         })
       .when('/signup', {
         templateUrl: 'partials/signup',
@@ -27,32 +28,40 @@ angular.module('pupilsboardApp', [
       })
       .when('/takeTest', {
         templateUrl: 'partials/testStart',
-        controller: 'QuestionpaperCtrl'
+        controller: 'QuestionpaperCtrl',
+        authenticate: true
       })
         .when('/createDummyPaper', {
             templateUrl: 'partials/dummyPaper',
-            controller: 'NavbarCtrl'
+            controller: 'NavbarCtrl',
+            authenticate: true
         })
       .when('/questionPaper/:id', {
-        templateUrl: 'partials/questionPaper',
-        controller: 'QuestionpaperCtrl'
+            templateUrl: 'partials/questionPaper',
+            controller: 'QuestionpaperCtrl',
+            authenticate: true
        })
         .when('/paperCompleted', {
-            templateUrl: 'partials/paperSuccess'
+            templateUrl: 'partials/paperSuccess',
+            authenticate: true
         })
         .when('/myDashboard', {
-            templateUrl: 'partials/candidateDashboard'
+            templateUrl: 'partials/candidateDashboard',
+            authenticate: true
         })
         .when('/answerSheet/:passKey', {
-            templateUrl: 'partials/candidateAnswerSheet'
+            templateUrl: 'partials/candidateAnswerSheet',
+            authenticate: true
         })
        .when('/skills', {
-        templateUrl: 'partials/skillHierarchy',
-        controller: 'SkillsCtrl'
+            templateUrl: 'partials/skillHierarchy',
+            controller: 'SkillsCtrl',
+            authenticate: true
        })
         .when('/tree', {
             templateUrl: 'partials/hierarchyTreed3js',
-            controller: 'SkillsCtrl'
+            controller: 'SkillsCtrl',
+            authenticate: true
         })
         .when('/api/emitEvent', {
             templateUrl: 'partials/testStart',
