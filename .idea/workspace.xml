@@ -80,7 +80,7 @@
       <file leaf-file-name="searchQuestions.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/searchQuestions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="167" selection-start="2087" selection-end="2099" vertical-scroll-proportion="-5.4" vertical-offset="240" max-vertical-offset="735">
+            <state line="33" column="65" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-5.1" vertical-offset="240" max-vertical-offset="735">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -91,16 +91,16 @@
       <file leaf-file-name="questionpaper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="0" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="1995">
+            <state line="120" column="0" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.0" vertical-offset="1435" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="8" selection-start="1049" selection-end="1188" vertical-scroll-proportion="0.8192771" vertical-offset="102" max-vertical-offset="675">
+            <state line="41" column="23" selection-start="1008" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="810">
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -126,19 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="350" selection-end="372" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="25" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1365">
+            <state line="47" column="45" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
@@ -153,10 +144,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questionController.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="questionController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="840">
+            <state line="28" column="0" selection-start="885" selection-end="885" vertical-scroll-proportion="0.3325893" vertical-offset="271" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/models/question.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="10" selection-start="711" selection-end="717" vertical-scroll-proportion="-5.6538463" vertical-offset="363" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -203,7 +203,6 @@
         <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/karma.conf.js" />
         <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/Gruntfile.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/models/question.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/lib/controllers/session.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -223,9 +222,10 @@
         <option value="$PROJECT_DIR$/app/scripts/controllers/contact.js" />
         <option value="$PROJECT_DIR$/lib/controllers/email.js" />
         <option value="$PROJECT_DIR$/lib/controllers/questionController.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/searchQuestions.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/searchQuestions.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/question.js" />
+        <option value="$PROJECT_DIR$/lib/models/question.js" />
       </list>
     </option>
   </component>
@@ -313,6 +313,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -350,90 +386,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -909,12 +861,12 @@
       <workItem from="1403457527284" duration="379000" />
       <workItem from="1403969976979" duration="9959000" />
       <workItem from="1404011334349" duration="10260000" />
-      <workItem from="1404033327082" duration="15325000" />
+      <workItem from="1404033327082" duration="16590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170534000" />
+    <option name="totallyTimeSpent" value="171799000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -938,20 +890,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="806" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.108938545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23324022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23324022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30307263" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30307263" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1021,11 +973,16 @@
           <line>25</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/questionController.js</url>
+          <line>27</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="106" />
+      <option name="time" value="107" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1244,13 +1201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="4319" selection-end="4397" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="1935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="8" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="1546" max-vertical-offset="3270">
@@ -1335,13 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/session.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="510">
@@ -1356,35 +1299,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="840">
+        <state line="120" column="0" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.0" vertical-offset="1435" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/searchQuestions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="167" selection-start="2087" selection-end="2099" vertical-scroll-proportion="-5.4" vertical-offset="240" max-vertical-offset="735">
+        <state line="33" column="65" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-5.1" vertical-offset="240" max-vertical-offset="735">
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="4246" selection-end="4246" vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="1995">
+        <state line="41" column="23" selection-start="1008" selection-end="1020" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="810">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="45" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0" vertical-offset="529" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
+    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="8" selection-start="1049" selection-end="1188" vertical-scroll-proportion="0.8192771" vertical-offset="102" max-vertical-offset="675">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
+        <state line="34" column="10" selection-start="711" selection-end="717" vertical-scroll-proportion="-5.6538463" vertical-offset="363" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="885" selection-end="885" vertical-scroll-proportion="0.3325893" vertical-offset="271" max-vertical-offset="840">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -119,9 +119,4 @@ angular.module('pupilsboardApp')
             });
         };
 
-        // setup editor options
-        $scope.editorOptions = {
-            language: 'en',
-            uiColor: '#000000'
-        };
   });

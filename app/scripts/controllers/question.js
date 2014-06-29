@@ -30,6 +30,15 @@ angular.module('pupilsboardApp')
         }
     };
 
+
+    // setup editor options
+    $scope.editorOptions = {
+        language: 'en',
+        uiColor: '#000000',
+        rows: 4,
+        cols: 10
+    };
+
     $scope.saveQuestion = function (question){
         $http.post('/api/question',JSON.stringify(question)).error(function(err){
             console.log('error while saving paper...');
