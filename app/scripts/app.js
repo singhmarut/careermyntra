@@ -31,14 +31,15 @@ angular.module('pupilsboardApp', [
         controller: 'QuestionpaperCtrl',
         authenticate: true
       })
+
         .when('/createDummyPaper', {
             templateUrl: 'partials/dummyPaper',
             controller: 'NavbarCtrl',
             authenticate: true
         })
-        .when('/question/edit/:id', {
-            templateUrl: 'partials/editQuestion',
-            controller: 'QuestionpaperCtrl',
+        .when('/questions/view', {
+            templateUrl: 'partials/searchQuestions',
+            controller: 'QuestionCtrl',
             authenticate: true
         })
       .when('/questionPaper/:id', {
@@ -71,6 +72,18 @@ angular.module('pupilsboardApp', [
         .when('/api/emitEvent', {
             templateUrl: 'partials/testStart',
             controller: 'QuestionpaperCtrl|function()='
+        })
+        .when('/feedback', {
+            templateUrl: 'partials/feedback/feedback',
+            controller: 'ContactCtrl'
+        })
+        .when('/aboutUs', {
+            templateUrl: 'partials/feedback/feedback',
+            controller: 'ContactCtrl'
+        })
+        .when('/registerNewsLetter', {
+            templateUrl: 'partials/feedback/feedback',
+            controller: 'ContactCtrl'
         })
       .otherwise({
         redirectTo: '/'

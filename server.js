@@ -84,15 +84,13 @@ app.get('/', function(req, res){
     res.sendfile('index.html');
 });
 
-//var io = require('socket.io')(server);
-
 server.listen(config.port,function(){
     console.log('listening on1 *:'+config.port);
 });
-
-exports.emitEvent = function(topic,data){
-   // io.emit(topic,data);
-};
+//
+//exports.emitEvent = function(topic,data){
+//   // io.emit(topic,data);
+//};
 
 // Expose app
 //exports = module.exports = app;

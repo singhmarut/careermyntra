@@ -1,22 +1,20 @@
 <div ng-include="'partials/navbar'"></div>
 
 <div class="jumbotron">
-  <h2>Welcome to Awesome PupilsBoard Testing Platform<span ng-show="currentUser"> {{ currentUser.name }}</span>!</h2>
+  <p>We are currently buidling a site for helping you in UPSC prepartion which will be launched soon!. In the meanwhile if you have any suggestion/expectations
+  Please go to ContactUs page or simply sign up for newsletter</p>
   <p class="lead">
-<!--
-    <img src="images/yeoman.png"><br>
--->
-   <!-- Always a pleasure scaffolding your apps.-->
   </p>
-<!--
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
--->
 </div>
+<form class="form-horizontal" role="form">
+<div class="form-group" ng-controller="ContactCtrl">
+    <label class="col-sm-2 control-label">Sign up for newsletter</label>
+    <div class="col-sm-6">
+        <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+    <button type="submit" class="btn btn-success btn-small btn-default" ng-click="register">Sign in</button>
+</div>
+</form>
 
-<!--<div class="row marketing">
-  <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
-  </div>
-</div>-->
+</div>
 <div ng-include="'partials/footer'"></div>
