@@ -6,7 +6,9 @@ angular.module('pupilsboardApp', [
   'ngSanitize',
   'ngRoute',
   'ngCkeditor',
-  'ngGrid'
+  'ngGrid',
+  'mgcrea.ngStrap',
+   'ngAnimate'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider

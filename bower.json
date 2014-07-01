@@ -11,11 +11,16 @@
     "angular-cookies": ">=1.2.*",
     "angular-sanitize": ">=1.2.*",
     "angular-route": ">=1.2.*",
-    "ng-ckeditor" : "0.2.1"
+    "ng-ckeditor": "0.2.1",
+    "angular-strap": "~2.0.3",
+    "angular-motion": "~0.3.3"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
     "angular-scenario": ">=1.2.*"
   },
-  "testPath": "test/client/spec"  
+  "testPath": "test/client/spec",
+  "resolutions": {
+    "angular": "1.2.18"
+  }
 }
