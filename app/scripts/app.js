@@ -5,7 +5,8 @@ angular.module('pupilsboardApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ngCkeditor'
+  'ngCkeditor',
+  'ngGrid'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
@@ -22,6 +23,11 @@ angular.module('pupilsboardApp', [
             controller: 'AccountCtrl',
             authenticate: true
         })
+        .when('/createPaper', {
+            templateUrl: 'partials/questionPaper/createPaper',
+            controller: 'QuestionpaperCtrl',
+            authenticate: true
+        })
       .when('/signup', {
         templateUrl: 'partials/signup',
         controller: 'SignupCtrl'
@@ -31,13 +37,17 @@ angular.module('pupilsboardApp', [
         controller: 'QuestionpaperCtrl',
         authenticate: true
       })
-
         .when('/createDummyPaper', {
             templateUrl: 'partials/dummyPaper',
             controller: 'NavbarCtrl',
             authenticate: true
         })
         .when('/questions/view', {
+            templateUrl: 'partials/searchQuestions',
+            controller: 'QuestionCtrl',
+            authenticate: true
+        })
+        .when('/questions/view/:tag', {
             templateUrl: 'partials/searchQuestions',
             controller: 'QuestionCtrl',
             authenticate: true
@@ -77,8 +87,12 @@ angular.module('pupilsboardApp', [
             templateUrl: 'partials/feedback/feedback',
             controller: 'ContactCtrl'
         })
+        .when('/contacUs', {
+            templateUrl: 'partials/feedback/contactUs',
+            controller: 'ContactCtrl'
+        })
         .when('/aboutUs', {
-            templateUrl: 'partials/feedback/feedback',
+            templateUrl: 'partials/feedback/aboutUs',
             controller: 'ContactCtrl'
         })
         .when('/registerNewsLetter', {

@@ -119,4 +119,18 @@ angular.module('pupilsboardApp')
             });
         };
 
+        $scope.myData = [{tag: "GS",age:30},
+            {tag: "GEO",age:30},
+            {tag: "PHYSICS",age:30},
+            {tag: "CHEMISTRY",age:30}];
+        //editableCellTemplate:self.editableCellTempate ,enableCellEdit:true
+        $scope.gridOptions = { data: 'myData',
+            columnDefs: [{ field: 'tag', displayName: 'Tag Name', width: 90 },
+                { field: 'age', cellClass: 'ageCell', headerClass: 'ageHeader',
+                    cellTemplate: '<a ng-input="COL_FIELD" ng-href="/questions/view/{{row.entity.tag}}" ng-model="COL_FIELD">Select Questions</a>' } ]};
+
+        $scope.selectQuestions = function(row){
+            console.log("Here I need to know which button was selected " + row.entity.tag)
+        }
+
   });

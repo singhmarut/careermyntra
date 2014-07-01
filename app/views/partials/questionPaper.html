@@ -32,9 +32,6 @@
                                         <p class="text-info">Select correct option</p>
                                         <div ng-repeat="choice in question.choices" class="active">
                                              <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice)"> {{choice.choice}}<br/><br/>
-                                            <!--<span class="input-group-addon col-lg-10">-->
-                                                <!--{{choice.choice}}-->
-                                            <!--</span>-->
                                         </div>
                                 </div>
                             <div ng-switch-when="MCA">

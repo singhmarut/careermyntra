@@ -1,0 +1,67 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div ng-controller="QuestionpaperCtrl">
+    <div class="col-lg-5">
+    <h2 class="text-primary">Create a new Question Paper </h2>
+    <div style="height: 300px;" ng-grid="gridOptions"></div>
+    </div>
+    <!--<div class="col-lg-12">-->
+        <!--<div class="col-lg-3">-->
+            <!--<h1>Create a new Question Paper </h1>-->
+        <!--</div>-->
+        <!--<div class="col-lg-9">-->
+            <!--<div class="gridStyle" ng-grid="gridOptions"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+
+<div class="modal fade" tabindex="-1" id="selectTagQuestions" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 aria-labelledBy="myModalTitle">Add a new Schedule</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row marginT10">
+                    <div class="col-lg-12">
+                        Name
+                        <input type="text" class="form-control resizeNone" ng-model="schedule.name" placeholder="Name" required/>
+                    </div>
+                </div>
+                <div class="row marginT10">
+                    <div class="col-lg-12">
+                        Description
+                        <input type="text" rows="5" class="form-control resizeNone" ng-model="schedule.description" placeholder="Description"></textarea>
+                    </div>
+                </div>
+                <div class="row marginT10">
+                    <div class="col-lg-12">
+                        Start Date
+                        <input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.startDate" placeholder="Start Date"></textarea>
+                    </div>
+                </div>
+                <div class="row marginT10">
+                    <div class="col-lg-12">
+                        Start Date
+                        <input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.endDate" placeholder="End Date"></textarea>
+                    </div>
+                </div>
+                <div class="row marginT10">
+                    <div class="col-lg-12">
+                        Timezone
+                        <input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.endDate" placeholder="Timezone"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal">Cancel</button>
+                <button class="btn" data-dismiss="modal" ng-click="addSchedule()">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div ng-include="'partials/footer'"></div>-->
