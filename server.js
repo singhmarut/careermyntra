@@ -4,6 +4,7 @@ var express = require('express'),
     path = require('path'),
     fs = require('fs'),
     eventEmitter = require('events'),
+    busboy = require('connect-busboy'),
     mongoose = require('mongoose');
 
 /**
@@ -47,21 +48,32 @@ var app = express();
 //}).init();
 
 //CORS middleware
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Credentials', true);
-    var allowedOrigins = ['localhost:8000','careermyntra.com'];
-    if (process.env.NODE_ENV == 'production' && (allowedOrigins.indexOf('req.headers.origin') != -1)){
-        res.header('Access-Control-Allow-Origin', req.headers.origin)
-        //res.header('Access-Control-Allow-Origin', '*');
-        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-        res.header('Access-Control-Allow-Headers', 'Content-Type');
-    }
-    //res.header('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+//var allowCrossDomain = function(req, res, next) {
+//    res.header('Access-Control-Allow-Credentials', true);
+//    var allowedOrigins = ['localhost:8000','careermyntra.com'];
+//    if (process.env.NODE_ENV == 'production' && (allowedOrigins.indexOf('req.headers.origin') != -1)){
+//        res.header('Access-Control-Allow-Origin', req.headers.origin)
+//        //res.header('Access-Control-Allow-Origin', '*');
+//        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+//        res.header('Access-Control-Allow-Headers', 'Content-Type');
+//    }
+//    //res.header('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+//
+//    next();
+//}
 
-    next();
-}
+//app.use(busboy);
 
-//app.use(allowCrossDomain);
+//app.use(function(req, res) {
+//    req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+//        var myFile = file;
+//
+//    });
+//    req.busboy.on('field', function(key, value, keyTruncated, valueTruncated) {
+//        // ...
+//    });
+//    // etc ...
+//});
 
 require('./lib/config/express')(app);
 require('./lib/routes')(app);

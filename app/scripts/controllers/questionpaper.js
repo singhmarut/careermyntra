@@ -109,8 +109,6 @@ angular.module('pupilsboardApp')
             return i;
         };
 
-
-
         $scope.emitEvent = function(form){
             $http.post('/api/emitEvent').error(function(err){
                 console.log('error while saving paper...');
@@ -118,51 +116,4 @@ angular.module('pupilsboardApp')
             .success(function(data){
             });
         };
-
-        $scope.myData = [{tag: "GS",age:30},
-            {tag: "GEO",age:30},
-            {tag: "PHYSICS",age:30},
-            {tag: "CHEMISTRY",age:30}];
-        //editableCellTemplate:self.editableCellTempate ,enableCellEdit:true
-        $scope.gridOptions = { data: 'myData',
-            columnDefs: [{ field: 'tag', displayName: 'Tag Name', width: 90 },
-                { field: 'age', cellClass: 'ageCell', headerClass: 'ageHeader',
-                    cellTemplate: '<a ng-input="COL_FIELD" ng-click="selectQuestions(row)" data-animation="am-fade-and-slide-top" ng-model="COL_FIELD">Select Questions</a>' } ]};
-
-        $scope.selectQuestions = function(row){
-            //var myModal = $modal({title: 'My Title', content: 'My Content', show: true});
-            //var myModal = $modal({title: 'My Title', content: 'My Content', show: true});
-            // Pre-fetch an external template populated with a custom scope
-            $scope.selectQuestionGridOptions = { questions: 'myData',
-                columnDefs: [{ field: 'id', displayName: 'Id', width: 90 },
-                    { field: 'content', displayName: 'Text', width: 90 }]};
-
-            var myOtherModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/selectQuestions.html', show: true});
-            //Show when some event occurs (use $promise property to ensure the template has been loaded)
-
-            //myOtherModal.$promise.then(myOtherModal.show);
-//            $modal.open({
-//                templateUrl: 'partials/searchQuestions',
-//                backdrop: true,
-//                windowClass: 'modal',
-//                controller: function ($scope, $modalInstance, $log, user) {
-//                    $scope.user = user;
-//                    $scope.submit = function () {
-//                        $log.log('Submiting user info.');
-//                        $log.log(user);
-//                        $modalInstance.dismiss('cancel');
-//                    }
-//                    $scope.cancel = function () {
-//                        $modalInstance.dismiss('cancel');
-//                    };
-//                },
-//                resolve: {
-//                    user: function () {
-//                        return $scope.user;
-//                    }
-//                }
-//            });
-            console.log("Here I need to know which button was selected " + row.entity.tag)
-        }
-
   });
