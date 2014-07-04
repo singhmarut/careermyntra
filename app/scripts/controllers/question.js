@@ -4,10 +4,10 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('QuestionCtrl', function ($scope,$http,$upload) {
+    .controller('QuestionCtrl', function ($scope,$http,$upload,$alert) {
         $scope.questions = [];
         $scope.searchTag = '';
-        $scope.editable=0;
+        //$scope.editable=0;
         $scope.curQuestionIndex = 0;
         //$scope.editable = false;
         $scope.viewTagQuestions = function(tag){
@@ -18,6 +18,7 @@ angular.module('pupilsboardApp')
             .success(function(data){
                 console.log('Questions loaded successfully');
                 $scope.questions = data;
+                    $scope.editable=0;
             });
         };
 
@@ -40,19 +41,22 @@ angular.module('pupilsboardApp')
 
         $scope.saveQuestion = function (question){
             $http.post('/api/question',JSON.stringify(question)).error(function(err){
-                $scope.alert = {
+               var alert = $alert({
                     "title": "Question Change!",
                     "content": "error while saving question",
                     "type": "error"
-                };
+                });
             })
             .success(function(data){
-                console.log('Paper finished successfully');
-                    $scope.alert = {
+                 $scope.editable=0;
+                    var alert = $alert({
                         "title": "Question Change!",
                         "content": "Question was saved successfully",
-                        "type": "info"
-                    };
+                        "type": "info",
+                        placement: 'top-left',
+                        duration: 2,
+                        show: true
+                    });
             });
         };
 

@@ -8,6 +8,8 @@ angular.module('pupilsboardApp', [
         'ngCkeditor',
         'ngGrid',
         'mgcrea.ngStrap',
+        'mgcrea.ngStrap.modal',
+        'mgcrea.ngStrap.aside',
         'ngAnimate',
         'angularFileUpload'
     ])

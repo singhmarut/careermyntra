@@ -8,7 +8,7 @@
         <div>
             <div style="margin: 30px;">
                 <div class="row">
-                    <div class="col-lg-2" ng-repeat="questionPaper in questionPaperList">
+                    <div class="col-lg-4" ng-repeat="questionPaper in questionPaperList">
                         <a ng-href="/{{questionPaper._id}}">
                             <div class="thumbnail">
                                 <a href="" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
@@ -21,13 +21,14 @@
                                     <li role="presentation"><a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#addNewScheduleModal">Add Schedule</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="generatePassKeys(questionPaper._id)">Generate Pass Keys</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="startEvaluate(questionPaper._id)">Start Scoring</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Start Scoring</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Show Pass Keys</a></li>
                                 </ul>
                                 <div class="caption" style="text-align: center; margin-top: -10px;">
                                     <h4>{{questionPaper.name}}</h4>
                                     <!--<span style="color: lightgreen;">1 Pass</span>,-->
-                                    <label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">1 Pass</span>,<span style="color: red;">1 Fail</span></label>
-                                    <label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Last scoring run on:</p></label>
+                                    <label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">Created On</span>:<span style="color: red;">{{questionPaper.creationDate|date:'yyyy-MM-dd HH:mm:ss'}}</span></label>
+                                    <br/><label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">1 Pass</span>,<span style="color: red;">1 Fail</span></label>
+                                    <br/><label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Last scoring run on:</p></label>
                                 </div>
                             </div>
                         </a>

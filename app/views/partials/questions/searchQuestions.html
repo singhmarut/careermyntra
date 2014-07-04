@@ -18,12 +18,13 @@
             <ul class="pagination">
                 <li ng-repeat="question in questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
             </ul>
-            <div id="questionEdit" class="clearfix btn-group-sm pull-right" >
-                <button type="button" class="btn btn-sm btn-danger" ng-show="currentUser && currentUser.role == 'admin'" ng-click="editable = 1">Edit</button>
-                <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
-                <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="saveQuestion(questions[curQuestionIndex])">Save</button>
-            </div>
-            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index">
+
+            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index" ng-init="editable=0">
+                <div id="questionEdit" class="clearfix btn-group-sm pull-right" >
+                    <button type="button" class="btn btn-sm btn-danger" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
+                    <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion(questions[curQuestionIndex])">Save</button>
+                </div>
                 <div ng-switch="question.type">
                     <!--<h3>Question #{{$index + 1}} </h3>-->
                     <p ng-bind-html="question.content"></p>
@@ -34,7 +35,7 @@
                                 <p style="vertical-align: middle">
                                 <label>Choice {{$index+1}}</label>
                                 <textarea rows="4" cols="50" ng-model="choice.choice" ng-disabled="editable == 0"></textarea>
-                                <!--<input type="checkbox" ng-model="choice.isCorrectAnswer" ng-disabled="editable == 0">-->
+                                <input type="checkbox" ng-model="choice.isCorrectAnswer" ng-disabled="editable == 0">
                                 </p>
                             </div>
                             <p>Answer: </p>

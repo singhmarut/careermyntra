@@ -28,6 +28,15 @@
                                 </ul>
                             </li>
                             </div>
+                            <div class="nav navbar-nav">
+                                <li class="dropdown navbar-inner">
+                                    <a ng-show="currentUser && currentUser.role == 'admin'" ng-href="" class="mainMenu dropdown-toggle" data-toggle="dropdown" style="color: white;">Manage Users</a>
+                                    <ul class="dropdown-menu navbar-inverse" role="menu">
+                                        <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/viewQuestions" class="mainMenu" style="color: white;">Pull Users from Google</a></li>
+                                        <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/uploadQuestions" class="mainMenu" style="color: white;">Upload Users</a></li>
+                                    </ul>
+                                </li>
+                            </div>
                             <li><a ng-show="currentUser" ng-href="/takeTest" ng-class="{active: isActive('/takeTest')}" class="mainMenu" style="color: white;">Take a Test</a></li>
                             <li><a ng-show="currentUser" ng-href="" ng-click="logout()" class="mainMenu" style="color: white;">Logout</a>
                          </ul>

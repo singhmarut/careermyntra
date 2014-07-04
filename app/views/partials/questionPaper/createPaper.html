@@ -6,6 +6,8 @@
     <div class="col-lg-8">
         <h2 class="text-primary">Create a new Question Paper </h2>
         <div>
+            <label>Paper Name</label>
+            <input type="text" ng-model="paperName"/>
             <label>Section Name</label>
             <input type="text" ng-model="sectionName"/>
             <label>Time Duration (in Mins)</label>
@@ -16,7 +18,7 @@
     </div>
 
     <div style="margin-top: 20px;">
-        <button class="btn btn-lg btn-success" type="submit">Create Paper</button>
+        <button class="btn btn-lg btn-success" type="button" ng-click="createPaper()">Create Paper</button>
     </div>
     <!--<div class="col-lg-12">-->
         <!--<div class="col-lg-3">-->

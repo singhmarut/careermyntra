@@ -6,7 +6,7 @@ angular.module('pupilsboardApp')
         $scope.questionPaperList = [];
 
         $scope.getQuestionPapers = function(){
-            $http.get('/api/questionPaper/list').success(function(data){
+            $http.get('/api/questionPaper').success(function(data){
                  $scope.questionPaperList = data;
                 //$location.path('/dashboard'); //use $location.path(url).replace() if you want to replace the location instead
             })
