@@ -15,7 +15,7 @@ angular.module('pupilsboardApp')
         //editableCellTemplate:self.editableCellTempate ,enableCellEdit:true
         $scope.gridOptions = { data: 'myData',
             columnDefs: [{ field: 'tag', displayName: 'Tag Name', width: 90 },
-                { field: 'age', cellClass: 'ageCell', headerClass: 'ageHeader',
+                { field: 'age', displayName: 'Select',cellClass: 'ageCell', headerClass: 'ageHeader',
                     cellTemplate: '<a ng-input="COL_FIELD" ng-click="selectQuestions(row)" data-animation="am-fade-and-slide-top" ng-model="COL_FIELD">Select Questions</a>' } ]};
 
         $scope.selectQuestions = function(row){
@@ -68,7 +68,7 @@ angular.module('pupilsboardApp')
                     console.log('error while fetching questions...');
                 })
                 .success(function(data){
-                        var myAlert = $alert({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true,duration: 2});
+                        var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true,duration: 2});
                 });
             };
         }

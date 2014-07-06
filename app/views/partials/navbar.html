@@ -1,53 +1,65 @@
 
-<div class="row" ng-controller="NavbarCtrl" style="height: 70px;margin-top: 0px;">
-    <div class="col-lg-12 noPadding">
-        <div class="col-lg-12 ">
-
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <ul class="nav navbar-nav">
-                            <li><a ng-hide="currentUser" ng-href="/login" class="mainMenu" style="color: white;">Login</a>
-                            <li><a ng-hide="currentUser" ng-href="/signup" ng-class="{active: isActive('/signup')}" class="mainMenu" style="color: white;">Sign up</a></li>
-                            <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard" ng-class="{active: isActive('/dashboard')}" class="mainMenu" style="color: white;">Dashboard</a></li>
-                            <li><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard" ng-class="{active: isActive('/myDashboard')}" class="mainMenu" style="color: white;">My Dashboard</a></li>
-                            <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}" class="mainMenu" style="color: white;">Skills Chart</a></li>
-                            <div class="nav navbar-nav">
-                            <li class="dropdown navbar-inner">
-                                <a ng-show="currentUser && currentUser.role == 'admin'" ng-href="" class="mainMenu dropdown-toggle" data-toggle="dropdown" style="color: white;">Manage Questions</a>
-                                <ul class="dropdown-menu navbar-inverse" role="menu">
-                                    <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/viewQuestions" class="mainMenu" style="color: white;">Search Questions</a></li>
-                                    <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/uploadQuestions" class="mainMenu" style="color: white;">Upload Questions</a></li>
-                                </ul>
-                            </li>
-                            </div>
-                            <div class="nav navbar-nav">
-                                <li class="dropdown navbar-inner">
-                                    <a ng-show="currentUser && currentUser.role == 'admin'" ng-href="" class="mainMenu dropdown-toggle" data-toggle="dropdown" style="color: white;">Manage Users</a>
-                                    <ul class="dropdown-menu navbar-inverse" role="menu">
-                                        <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/viewQuestions" class="mainMenu" style="color: white;">Pull Users from Google</a></li>
-                                        <li><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/uploadQuestions" class="mainMenu" style="color: white;">Upload Users</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <li><a ng-show="currentUser" ng-href="/takeTest" ng-class="{active: isActive('/takeTest')}" class="mainMenu" style="color: white;">Take a Test</a></li>
-                            <li><a ng-show="currentUser" ng-href="" ng-click="logout()" class="mainMenu" style="color: white;">Logout</a>
-                         </ul>
+<div ng-controller="NavbarCtrl">
+    <header id="nav-bar" class="container-fluid">
+        <div class="row-fluid">
+            <div class="span8">
+                <div id="header-container">
+                    <a id="backbutton" class="win-backbutton" href="/"></a>
+                    <h5>PupilsBoard</h5>
+                    <div class="dropdown">
+                        <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="" >
+                            Career Myntra
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./index.html">Home</a></li>
+                        </ul>
                     </div>
-                 </div>
-             </nav>
-            <div class="upperContainer clearfix">
-                <div class='clearfix'>
                 </div>
-                <div style="clear:both;"></div>
+            </div>
+            <div id="top-info" class="pull-right">
+                <a href="#" class="pull-left">
+                    <div class="top-info-block">
+                        <h3>{{email}}</h3>
+                    </div>
+                    <div class="top-info-block">
+                        <b class="icon-user"></b>
+                    </div>
+                </a>
+                <hr class="separator pull-left"/>
+                <a id="settings" class="pull-left" href="#">
+                    <b class="icon-settings"></b>
+                </a>
             </div>
         </div>
+    </header>
+
+    <div class="container-fluid">
+        <div>
+        <div class="subnav">
+            <ul class="nav nav-pills">
+                <li><a ng-hide="currentUser" ng-href="/login">Login</a>
+                <li  ng-class="{active: isActive('/signup')}"><a ng-hide="currentUser" ng-href="/signup">Sign up</a></li>
+                <li ng-class="{active: isActive('/dashboard')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard" ng-class="{active: isActive('/dashboard')}">Dashboard</a></li>
+                <li ng-class="{active: isActive('/myDashboard')}"><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard" ng-class="{active: isActive('/myDashboard')}">My Dashboard</a></li>
+                <li ng-class="{active: isActive('/skills')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}">Skills Chart</a></li>
+                <li class="dropdown" ng-class="{active: isActive('/viewQuestions') || isActive('/uploadQuestions')}">
+                    <a ng-show="currentUser && currentUser.role == 'admin'"  data-toggle="dropdown" ng-href="" class="dropdown-toggle">Manage Questions</a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-href="/viewQuestions">Search Questions</a></li>
+                        <li><a ng-href="/uploadQuestions">Upload Questions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" ng-show="currentUser && currentUser.role == 'admin'">Manage Users</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#navs">Manage Users</a></li>
+                    </ul>
+                </li>
+                <li ng-class="{active: isActive('/takeTest')}"><a ng-show="currentUser" ng-href="/takeTest">Take a Test</a></li>
+                <li><a ng-show="currentUser" ng-href="" ng-click="logout()">Logout</a>
+            </ul>
+        </div>
     </div>
+   </div>
 </div>

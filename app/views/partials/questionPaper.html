@@ -1,13 +1,13 @@
+
 <div class="container-fluid" ng-controller="QuestionpaperCtrl" ng-init="loadTest()">
-    <div class="col-lg-12">
+
+    <div class="row">
     <div class="col-lg-3 sidebar" style="margin-left: -15px;">
         <h3>Time remaining</h3> <span id="timer"></span>
-<!--
-        <p>Hello</p>
--->
     </div>
     <div class="col-lg-9">
-        <h2>Career Myntra UPSC Test: {{questionPaper.name}}</h2>
+        <h2>{{questionPaper.name}}</h2>
+
         <form class="form" name="form" ng-submit="finish(form)">
 
         <div ng-init="curSectionName = 'abc' " class="centerDiv">
@@ -29,15 +29,15 @@
                             <br/><br/>
                             <div class="row">
                                 <div ng-switch-when="MCQ">
-                                        <p class="text-info">Select correct option</p>
-                                        <div ng-repeat="choice in question.choices" class="active">
-                                             <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice)"> {{choice.choice}}<br/><br/>
+                                        <p class="text-left">Select correct option</p>
+                                        <div ng-repeat="choice in question.choices">
+                                             <input type="checkbox" value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice)"> <span>{{choice.choice}}</span><br/><br/>
                                         </div>
                                 </div>
                             <div ng-switch-when="MCA">
                                 <p class="text-info">Select correct option</p>
                                 <ul>
-                                    <li ng-repeat="choice in question.choices" class="row">
+                                    <li ng-repeat="choice in question.choices">
                                         <input name="answerOption" type="checkbox" ng-model="choice.isUserAnswer" ng-value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice.id)">{{choice.choice}} <br/><br/>
                                     </li>
                                 </ul>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <br/><br/><br/>
-        <button type="submit" class="btn btn-lg btn-success pull-right"> Finish Test </button>
+        <button type="submit" class="btn btn-success pull-right"> Finish Test </button>
     </form>
     </div>
     </div>

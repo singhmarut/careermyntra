@@ -1,21 +1,23 @@
 <div ng-include="'partials/navbar'"></div>
 
 <div class="jumbotron">
-  <p>We are currently buidling a site for helping you in UPSC prepartion which will be launched soon!. In the meanwhile if you have any suggestion/expectations
-  please <a href="/feedback">Contact Us</a> or simply sign up and we will contact you when site is up</p>
-  <p class="lead">
-  </p>
+    <p class="text-center text-big">We are currently buidling a site for helping you in UPSC prepartion which will be launched soon!. In the meanwhile if you have any suggestion/expectations
+        please <a href="/feedback">Contact Us</a> or simply sign up and we will contact you when site is up</p>
+    <p class="lead">
+    </p>
 </div>
-<div>
+<div class="container-fluid">
+
     <form class="form-horizontal" role="form" name="newsletterForm">
         <div class="form-group" ng-controller="ContactCtrl">
             <label class="col-sm-2 control-label">Sign up for newsletter</label>
             <div class="col-sm-6">
                 <input type="email" name="email" class="form-control"  ng-model="email" placeholder="Enter email">
             </div>
-            <button type="submit" class="btn btn-success btn-small btn-default" ng-click="register(newsletterForm)">Sign in</button>
+            <button type="submit" class="btn btn-success btn-small btn-default" ng-click="register(newsletterForm)">Submit</button>
         </div>
     </form>
+    <hr>
+    <div ng-include="'partials/footer'"></div>
 
 </div>
-<div ng-include="'partials/footer'"></div>

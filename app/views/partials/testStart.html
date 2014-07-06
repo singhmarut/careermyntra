@@ -1,15 +1,13 @@
 <div ng-include="'partials/navbar.html'"></div>
-<div class="row">
-    <div class="col-sm-12">
-        <h1>Take a test</h1>
+<div class="container-fluid">
+    <div class="page-header"> <h1>Take a test</h1>
     </div>
-    <div class="col-sm-6">
+    <div class="col-lg-4">
         <form class="form" name="form" ng-controller="QuestionpaperCtrl" ng-submit="startTest()" novalidate>
             <div class="form-group">
-                <label>Authenticaion Key</label>
                 <input type="text" placeholder="Authenticaion Key" class="form-control" ng-model="authKey" required>
             </div>
-            <button type="submit" class="btn btn-lg btn-primary"> Start Test </button>
+            <button type="submit" class="btn btn-primary"> Start Test </button>
         </form>
     </div>
 </div>

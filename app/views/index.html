@@ -20,18 +20,28 @@
     <link rel="stylesheet" href="bower_components/ng-ckeditor/ng-ckeditor.css" />
     <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css"/>
     <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.css"/>
+    <!--<link rel="stylesheet" href="styles/bootstrap-additions.css"/>-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css"/>
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles/bootstrap-additions.css"/>
+        <!--<link rel="stylesheet" href="styles/main.css"/>-->
+  <!--<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>-->
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/bootmetro.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/bootmetro-tiles.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/bootmetro-charms.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/metro-ui-semilight.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootmetro/icomoon.css">
+  <!--<link rel="stylesheet" type="text/css" href="styles/bootmetro/demo.css">-->
+
 
       <base href="/">
       <!-- endbuild -->
   </head>
-  <body ng-app="pupilsboardApp">
+  <body ng-app="pupilsboardApp" data-accent="blue">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -57,7 +67,9 @@
 
     <!-- build:js(app) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!--<script src="scripts/metro-ui/jquery/jquery.min.js"></script>-->
+
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -71,7 +83,6 @@
     <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
     <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.min.js"></script>
-
     <script src="bower_components/ng-ckeditor/ng-ckeditor.js"></script>
     <script src="bower_components/ng-file-upload-shim/angular-file-upload-shim.min.js"></script>
     <script src="bower_components/ng-file-upload/angular-file-upload.min.js"></script>
@@ -105,7 +116,14 @@
         <script src="scripts/services/session.js"></script>
         <script src="scripts/services/user.js"></script>
         <script src="scripts/directives/mongooseError.js"></script>
-        <!--<script src="scripts/directives/timer.js"></script>-->
+
+        <script type="text/javascript" src="scripts/bootmetro/bootmetro.min.js"></script>
+        <script type="text/javascript" src="scripts/bootmetro/bootmetro-charms.min.js"></script>
+        <!--<script src="scripts/metro-ui/load-metro.js"></script>-->
+
+
+
+    <!--<script src="scripts/directives/timer.js"></script>-->
     <!-- endbuild -->
 </body>
 </html>
