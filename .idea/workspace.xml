@@ -68,10 +68,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="questionPaper.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="questionPaper.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="44" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.0" vertical-offset="1713" max-vertical-offset="3630">
+            <state line="130" column="0" selection-start="5367" selection-end="5367" vertical-scroll-proportion="0.33174226" vertical-offset="1811" max-vertical-offset="3630">
               <folding />
             </state>
           </provider>
@@ -128,7 +128,7 @@
       <file leaf-file-name="questionController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="870">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -152,10 +152,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/models/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="10" selection-start="3403" selection-end="3403" vertical-scroll-proportion="1.1551312" vertical-offset="836" max-vertical-offset="1935">
+            <state line="64" column="12" selection-start="2161" selection-end="2161" vertical-scroll-proportion="15.423077" vertical-offset="1361" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -885,12 +885,12 @@
       <workItem from="1404033327082" duration="47326000" />
       <workItem from="1404320993978" duration="21331000" />
       <workItem from="1404448527498" duration="11320000" />
-      <workItem from="1404580635403" duration="24208000" />
+      <workItem from="1404580635403" duration="24543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259394000" />
+    <option name="totallyTimeSpent" value="259729000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -992,11 +992,16 @@
           <line>30</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/questionPaper.js</url>
+          <line>130</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="174" />
+      <option name="time" value="175" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1353,13 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/questionLoader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="21" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="1155">
@@ -1367,16 +1365,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="44" selection-start="5481" selection-end="5481" vertical-scroll-proportion="0.0" vertical-offset="1713" max-vertical-offset="3630">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/models/question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="10" selection-start="3403" selection-end="3403" vertical-scroll-proportion="1.1551312" vertical-offset="836" max-vertical-offset="1935">
+        <state line="64" column="12" selection-start="2161" selection-end="2161" vertical-scroll-proportion="15.423077" vertical-offset="1361" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="5367" selection-end="5367" vertical-scroll-proportion="0.33174226" vertical-offset="1811" max-vertical-offset="3630">
           <folding />
         </state>
       </provider>
