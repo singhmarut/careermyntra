@@ -99,6 +99,10 @@ app.get('/', function(req, res){
 server.listen(config.port,function(){
     console.log('listening on1 *:'+config.port);
 });
+
+process.on('uncaughtException', function(err) {
+    console.log('Caught exception: ' + err);
+});
 //
 //exports.emitEvent = function(topic,data){
 //   // io.emit(topic,data);
