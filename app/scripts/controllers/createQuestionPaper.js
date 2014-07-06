@@ -64,6 +64,8 @@ angular.module('pupilsboardApp')
 
             $scope.createPaper = function() {
                 $scope.questionPaper.name = $scope.paperName;
+                $scope.questionPaper.invitation = $scope.invitationType.value;
+                JSON.stringify($scope.questionPaper);
                 $http.post('/api/questionPaper',JSON.stringify($scope.questionPaper)).error(function(err){
                     var myAlert = $modal({title: 'Question Paper', content: 'Error while creating paper '+ err, placement: 'top', type: 'error', show: true,duration: 2});
                 })

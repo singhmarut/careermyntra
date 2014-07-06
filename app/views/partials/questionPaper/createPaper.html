@@ -12,6 +12,8 @@
             <input type="text" ng-model="sectionName"/>
             <label>Time Duration (in Mins)</label>
             <input type="number" ng-model="duration" ng-init="duration=30" min="1" required/>
+            <label>Invitation Type</label>
+            <select name="invitationType" ng-model="duration" ng-options="invitation.key for invitation in invitations" required></select>
         </div>
         <div style="height: 200px;" ng-grid="gridOptions"></div>
     </div>
