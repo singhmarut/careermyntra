@@ -65,7 +65,7 @@ angular.module('pupilsboardApp')
             $scope.createPaper = function() {
                 $scope.questionPaper.name = $scope.paperName;
                 $http.post('/api/questionPaper',JSON.stringify($scope.questionPaper)).error(function(err){
-                    console.log('error while fetching questions...');
+                    var myAlert = $modal({title: 'Question Paper', content: 'Error while creating paper '+ err, placement: 'top', type: 'error', show: true,duration: 2});
                 })
                 .success(function(data){
                         var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true,duration: 2});

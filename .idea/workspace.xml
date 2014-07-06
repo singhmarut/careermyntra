@@ -68,10 +68,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="questionPaper.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="questionPaper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="50" selection-start="5606" selection-end="5606" vertical-scroll-proportion="0.7522936" vertical-offset="1533" max-vertical-offset="3630">
+            <state line="135" column="50" selection-start="5606" selection-end="5606" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="3630">
               <folding />
             </state>
           </provider>
@@ -86,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
+      <file leaf-file-name="createQuestionPaper.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="109" selection-start="461" selection-end="461" vertical-scroll-proportion="11.875" vertical-offset="420" max-vertical-offset="1050">
+            <state line="67" column="104" selection-start="3471" selection-end="3471" vertical-scroll-proportion="0.6559633" vertical-offset="576" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -217,7 +217,6 @@
         <option value="$PROJECT_DIR$/app/views/partials/main.html" />
         <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" />
         <option value="$PROJECT_DIR$/app/views/index.html" />
         <option value="$PROJECT_DIR$/app/views/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/lib/controllers/passKey.js" />
@@ -225,6 +224,7 @@
         <option value="$PROJECT_DIR$/lib/controllers/questionLoader.js" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/lib/controllers/questionPaper.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" />
       </list>
     </option>
   </component>
@@ -345,6 +345,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,12 +867,12 @@
       <workItem from="1404033327082" duration="47326000" />
       <workItem from="1404320993978" duration="21331000" />
       <workItem from="1404448527498" duration="11320000" />
-      <workItem from="1404580635403" duration="20378000" />
+      <workItem from="1404580635403" duration="20516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255564000" />
+    <option name="totallyTimeSpent" value="255702000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -879,7 +919,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23032904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11802575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1159,13 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="29" selection-start="646" selection-end="646" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="615">
@@ -1309,6 +1342,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="50" selection-start="5606" selection-end="5606" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="3630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="4" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0" vertical-offset="1221" max-vertical-offset="1875">
@@ -1316,9 +1356,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="50" selection-start="5606" selection-end="5606" vertical-scroll-proportion="0.7522936" vertical-offset="1533" max-vertical-offset="3630">
+        <state line="67" column="104" selection-start="3471" selection-end="3471" vertical-scroll-proportion="0.6559633" vertical-offset="576" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
