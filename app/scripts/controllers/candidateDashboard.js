@@ -8,7 +8,7 @@ angular.module('pupilsboardApp')
     .controller('CandidateDashboardCtrl', function ($scope, $http,$location,$routeParams) {
 
         $scope.getAnswerSheets = function(){
-            $http.get('/api/candidate/answerSheets').success(function(data) {
+            $http.get('/api/candidate/candidatePapers').success(function(data) {
                 $scope.answerSheets = data;
             }).error(function(err) {
                  console.log("Unable to fetch candidate data " + err);

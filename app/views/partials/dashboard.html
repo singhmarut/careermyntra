@@ -12,16 +12,17 @@
                         <a ng-href="/{{questionPaper._id}}">
                             <div class="thumbnail">
                                 <a href="" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class=" icon-settings icon_size pull-right"></i>
+                                    <i class="icon-settings icon_size pull-right"></i>
                                 </a>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                                <ul class="dropdown-menu" aria-labelledby="drop3" style="position: relative; left:60px; min-width: 100px;">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/{{questionPaper._id}}">Edit</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="deletePaper(questionPaper._id)">Delete</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="publishPaper(questionPaper._id)">Publish</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="loadPaper(questionPaper._id)">View</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#addNewScheduleModal">Add Schedule</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="generatePassKeys(questionPaper._id)">Generate Pass Keys</a></li>
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="generatePassKeys(questionPaper._id)">Generate Pass Keys</a></li>-->
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="startEvaluate(questionPaper._id)">Start Scoring</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Show Pass Keys</a></li>
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Show Pass Keys</a></li>-->
                                 </ul>
                                 <div class="caption" style="text-align: center; margin-top: -10px;">
                                     <h4>{{questionPaper.name}}</h4>

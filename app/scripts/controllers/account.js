@@ -21,6 +21,14 @@ angular.module('pupilsboardApp')
             $location.path('/questionPaper/' + id);
         };
 
+        $scope.publishPaper = function(id){
+            $http.put('/api/questionPaper/publish/' + id).success(function(data){
+            })
+            .error(function(err){
+                console.log('inside error');
+            });
+        };
+
         $scope.startEvaluate = function(id){
             console.log('starting scoring for paper' + id);
             $http.get('/api/questionPaper/' + id + '/score').success(function(data){

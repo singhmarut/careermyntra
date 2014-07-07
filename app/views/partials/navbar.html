@@ -38,11 +38,11 @@
         <div>
         <div class="subnav">
             <ul class="nav nav-pills">
-                <li><a ng-hide="currentUser" ng-href="/login">Login</a>
+                <li  ng-class="{active: isActive('/login')}"><a ng-hide="currentUser" ng-href="/login">Login</a>
                 <li  ng-class="{active: isActive('/signup')}"><a ng-hide="currentUser" ng-href="/signup">Sign up</a></li>
-                <li ng-class="{active: isActive('/dashboard')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard" ng-class="{active: isActive('/dashboard')}">Dashboard</a></li>
-                <li ng-class="{active: isActive('/myDashboard')}"><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard" ng-class="{active: isActive('/myDashboard')}">My Dashboard</a></li>
-                <li ng-class="{active: isActive('/skills')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}">Skills Chart</a></li>
+                <li ng-class="{active: isActive('/dashboard')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard">Dashboard</a></li>
+                <li ng-class="{active: isActive('/myDashboard')}"><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard">My Dashboard</a></li>
+                <!--<li ng-class="{active: isActive('/skills')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}">Skills Chart</a></li>-->
                 <li class="dropdown" ng-class="{active: isActive('/viewQuestions') || isActive('/uploadQuestions')}">
                     <a ng-show="currentUser && currentUser.role == 'admin'"  data-toggle="dropdown" ng-href="" class="dropdown-toggle">Manage Questions</a>
                     <ul class="dropdown-menu">
@@ -57,7 +57,7 @@
                     </ul>
                 </li>
                 <li ng-class="{active: isActive('/takeTest')}"><a ng-show="currentUser" ng-href="/takeTest">Take a Test</a></li>
-                <li><a ng-show="currentUser" ng-href="" ng-click="logout()">Logout</a>
+                <li><a ng-show="currentUser" ng-href="#" ng-click="logout()">Logout</a></li>
             </ul>
         </div>
     </div>

@@ -3,6 +3,11 @@
 angular.module('pupilsboardApp')
     .controller('CreatequestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert) {
 
+        $scope.invitations = [
+            {key:'Open For All', value:'OPEN_FOR_ALL'},
+            {key:'By Invitation', shade:'BY_INVITATION'}
+        ];
+
         $scope.questionPaper = new Object();
         $scope.questionPaper.sections = [];
         var newSection = new Object();

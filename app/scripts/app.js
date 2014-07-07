@@ -72,17 +72,22 @@ angular.module('pupilsboardApp', [
                 authenticate: true
             })
             .when('/myDashboard', {
-                templateUrl: 'partials/candidateDashboard',
+                templateUrl: 'partials/candidate/candidateDashboard',
                 authenticate: true
             })
             .when('/answerSheet/:passKey', {
-                templateUrl: 'partials/candidateAnswerSheet',
+                templateUrl: 'partials/candidate/candidateAnswerSheet',
                 authenticate: true
             })
             .when('/skills', {
                 templateUrl: 'partials/skillHierarchy',
                 controller: 'SkillsCtrl',
                 authenticate: true
+            })
+            .when('/tilesDemo', {
+                templateUrl: 'partials/demo/tilesdemo'
+                //controller: 'SkillsCtrl',
+                //authenticate: true
             })
             .when('/tree', {
                 templateUrl: 'partials/hierarchyTreed3js',

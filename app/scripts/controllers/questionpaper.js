@@ -9,10 +9,7 @@ angular.module('pupilsboardApp')
             $scope.curIndex = 0;
             $scope.curSection = {};
             $scope.totalTime = 100;
-            $scope.invitations = [
-                {key:'Open For All', value:'OPEN_FOR_ALL'},
-                {key:'By Invitation', shade:'BY_INVITATION'}
-            ];
+
 
             $scope.changeSection = function($event,section){
                 console.log('changing from ' + $scope.curSection.name + 'to: ' + $scope.section.name);
