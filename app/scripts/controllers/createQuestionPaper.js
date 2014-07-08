@@ -57,7 +57,7 @@ angular.module('pupilsboardApp')
                 console.log('selecting questions..' + $scope.tag);
                 var data = $scope.selectQuestionGridOptions.ngGrid.data;
                 $scope.questionPaper.sections[0].name = $scope.sectionName;
-                $scope.questionPaper.sections[0].duration = $scope.duration;
+                $scope.questionPaper.sections[0].totalTime = $scope.duration;
                 for (var i = 0, len = data.length; i < len; i++) {
                     if (data[i].selected){
                         $scope.questionPaper.sections[0].questionIds.push(data[i]._id);

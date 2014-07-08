@@ -63,7 +63,7 @@ angular.module('pupilsboardApp', [
 //            authenticate: true
 //        })
             .when('/questionPaper/:id', {
-                templateUrl: 'partials/questionPaper',
+                templateUrl: 'partials/questionPaper/questionPaper-modified',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true
             })
@@ -86,6 +86,11 @@ angular.module('pupilsboardApp', [
             })
             .when('/tilesDemo', {
                 templateUrl: 'partials/demo/tilesdemo'
+                //controller: 'SkillsCtrl',
+                //authenticate: true
+            })
+            .when('/dummyPaper', {
+                templateUrl: 'partials/questionPaper/dummyPaper'
                 //controller: 'SkillsCtrl',
                 //authenticate: true
             })

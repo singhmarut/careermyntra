@@ -9,8 +9,12 @@ angular.module('pupilsboardApp')
             $scope.curIndex = 0;
             $scope.curSection = {};
             $scope.totalTime = 100;
-
-
+            var countMap = new Object();
+            countMap['nonvisited'] = [];
+            countMap['answered'] = [];
+            countMap['marked'] = [];
+            countMap['unanswered'] = [];
+            $scope.countMap = countMap;
             $scope.changeSection = function($event,section){
                 console.log('changing from ' + $scope.curSection.name + 'to: ' + $scope.section.name);
                 if ($scope.curSection && !$scope.section.isOver){
@@ -39,14 +43,19 @@ angular.module('pupilsboardApp')
                 console.log('inside error');
             })
             .success(function(data){
-                console.log('Paper loaded successfully');
                 $scope.questionPaper = data;
+                console.log('Paper loaded successfully..' + JSON.stringify(data));
+
                 var totalTime = 0;
                 angular.forEach(data.sections,function(section){
                     totalTime += section.totalTime;
-                    console.log(totalTime);
+                    angular.forEach(section.questions,function(question){
+                        countMap['unanswered'].push(question._id);
+                        countMap['nonvisited'].push(question._id);
+                    });
                 });
                 $scope.totalTime = totalTime;
+
             });
         };
 
@@ -59,9 +68,9 @@ angular.module('pupilsboardApp')
             console.log(JSON.stringify(selectedQuestion));
         };
 
-        $scope.finish = function(form){
+        $scope.finish = function(){
             console.log("Finishing paper" + JSON.stringify($scope.questionPaper));
-            var selectedSection = $scope.selectedSection;
+            //var selectedSection = $scope.selectedSection;
             $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
                 console.log('error while saving paper...');
             })
@@ -116,5 +125,53 @@ angular.module('pupilsboardApp')
             })
             .success(function(data){
             });
+        };
+
+        $scope.filterAnswered = function(section){
+            var count = 0;
+            for (var i = 0; i < section.questions.length; i++){
+                var question = section.questions[i];
+                var index = countMap['answered'].indexOf(question._id);
+                if (index == -1){
+                    count++;
+                }
+            }
+            return count;
+        };
+
+        $scope.movePrev = function(){
+            console.log('moving next');
+            $scope.curQuestionIndex--;
+        };
+
+        $scope.moveNext = function(){
+            console.log('moving next');
+            $scope.curQuestionIndex++;
+        };
+
+        $scope.markAnswered = function(question){
+            var index = countMap['unanswered'].indexOf(question._id);
+            $scope.markVisited(question);
+            if (index != -1){
+                countMap['unanswered'].splice(index,1);
+            }
+            index = countMap['answered'].indexOf(question._id);
+            if (index == -1){
+                countMap['answered'].push(question._id);
+            }
+        };
+
+        $scope.markVisited = function(question){
+            var index = countMap['nonvisited'].indexOf(question._id);
+            if (index != -1){
+                countMap['nonvisited'].splice(index,1);
+            }
+        };
+
+        $scope.markForReview = function(question){
+            var index = countMap['nonvisited'].indexOf(question._id);
+            if (index != -1){
+                countMap['nonvisited'].splice(index,1);
+            }
         };
   });
