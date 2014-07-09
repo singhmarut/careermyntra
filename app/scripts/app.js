@@ -23,6 +23,10 @@ angular.module('pupilsboardApp', [
                 templateUrl: 'partials/login',
                 controller: 'LoginCtrl'
             })
+            .when('/logout', {
+                templateUrl: 'partials/login',
+                controller: 'logout()'
+            })
             .when('/dashboard', {
                 templateUrl: 'partials/dashboard',
                 controller: 'AccountCtrl',

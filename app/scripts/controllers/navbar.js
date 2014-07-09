@@ -21,15 +21,15 @@ angular.module('pupilsboardApp')
       return route === $location.path();
     };
 
-    $scope.createDummyPaper = function() {
-        console.log('creating dummy paper...');
-        $http.post('/api/createDummyPaper').error(function(err,data){
-            console.log('inside error');
-            $location.path('/questionPaper'); //use $location.path(url).replace() if you want to replace the location instead
-        })
-        .success(function(err,data){
-                console.log('inside error');
-                $location.path('/questionPaper'); //use $location.path(url).replace() if you want to replace the location instead
-        });
-    };
+//    $scope.createDummyPaper = function() {
+//        console.log('creating dummy paper...');
+//        $http.post('/api/createDummyPaper').error(function(err,data){
+//            console.log('inside error');
+//            $location.path('/questionPaper'); //use $location.path(url).replace() if you want to replace the location instead
+//        })
+//        .success(function(err,data){
+//                console.log('inside error');
+//                $location.path('/questionPaper'); //use $location.path(url).replace() if you want to replace the location instead
+//        });
+//    };
   });

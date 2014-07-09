@@ -60,7 +60,8 @@ angular.module('pupilsboardApp')
 
         return User.save(user,
           function(user) {
-            $rootScope.currentUser = user;
+           console.log('user' + JSON.stringify(user));
+            //$rootScope.currentUser = user;
             return cb(user);
           },
           function(err) {

@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal) {
+  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert) {
             $scope.questionPaper = null;
             $scope.curQuestionIndex = 0;
 
             $scope.sectionDetails = {};
             $scope.curIndex = 0;
             $scope.curSection = {};
-            $scope.totalTime = 100;
+            $scope.totalTime = 0;
             var countMap = new Object();
             countMap['nonvisited'] = [];
             countMap['answered'] = [];
@@ -20,7 +20,7 @@ angular.module('pupilsboardApp')
                 if ($scope.curSection && !$scope.section.isOver){
                     $scope.curSection.isOver = true;//Section over can't do anything with this now
                     $scope.curSection = $scope.section;
-                    $scope.startTime($scope.curSection,true,0,0);
+                    $scope.startTime(true,0,0);
                 }else{
                     console.log($event);
                     console.log('Section is already over');
@@ -55,6 +55,8 @@ angular.module('pupilsboardApp')
                     });
                 });
                 $scope.totalTime = totalTime;
+                $scope.startTime(true,0,0,0);
+                console.log('Total time of test is:' + totalTime);
 
             });
         };
@@ -87,28 +89,37 @@ angular.module('pupilsboardApp')
             console.log($scope.curQuestionIndex);
         };
 
-        $scope.startTime = function(section,firstTime,h,m) {
+        $scope.startTime = function(firstTime,h,m,s) {
             //var h,m;
             if (firstTime){
                 h = $scope.totalTime/60;//(section.totalTime/60);
-                h = h.toFixed(0);
-                m = $scope.totalTime - h*60;//section.totalTime - h*60;
+                h = parseInt(h);
+                m = parseInt($scope.totalTime - h*60);//section.totalTime - h*60;
+                m = Math.max(m - 1,0);
+                s = 59; //Initially start with
             } else{
-                if (m >= 1){
+                if (s >= 1){
+                    s = s - 1;
+                }
+                else if (m >= 1){
                     m = m - 1;
-                }else{
+                    s = 59; //Start seconds with 60 again
+                }else if (h >= 1){
                     h = h -1;
                     m = 59;
+                    s = 59;
                 }
             }
-            if (h == 0 && m === 0){
-                section.isOver = true;
-                $scope.finish($scope.form);
+            if (h == 0 && m === 0 && s == 0){
+                //section.isOver = true;
+                var myAlert = $alert({title: 'Time UP', content: 'Time is UP..Paper will be submitted', placement: 'top', type: 'warning', show: true,duration: 3});
+                $scope.finish();
             }else{
                 // add a zero in front of numbers<10
                 m = $scope.checkTime(m);
-                document.getElementById("timer").innerHTML = h+ ":" + m;
-                var t = setTimeout(function(){$scope.startTime(section,false,h,m)}, 1000);
+                s = $scope.checkTime(s);
+                document.getElementById("timer").innerHTML = h+ ":" + m + ":" + s;
+                var t = setTimeout(function(){$scope.startTime(false,h,m,s)}, 1000);
             }
         };
 

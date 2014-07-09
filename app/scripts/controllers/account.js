@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('AccountCtrl', function ($scope, Auth, $location,$http) {
+    .controller('AccountCtrl', function ($scope, Auth, $location,$http,$modal) {
         $scope.user = {};
         $scope.questionPaperList = [];
 
@@ -23,9 +23,10 @@ angular.module('pupilsboardApp')
 
         $scope.publishPaper = function(id){
             $http.put('/api/questionPaper/publish/' + id).success(function(data){
+                var myAlert = $modal({title: 'Question Paper', content: 'Paper published successfully', placement: 'top', type: 'info', show: true});
             })
             .error(function(err){
-                console.log('inside error');
+                    $modal({title: 'Question Paper', content: 'Unable to publish Paper', placement: 'top', type: 'error', show: true});
             });
         };
 
