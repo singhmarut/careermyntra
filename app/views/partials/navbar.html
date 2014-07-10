@@ -5,31 +5,44 @@
             <div class="span8">
                 <div id="header-container">
                     <a id="backbutton" class="win-backbutton" href="/"></a>
-                    <h5>UPSC</h5>
+                    <h5>Civil Services</h5>
                     <div class="dropdown">
                         <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="" >
                             Career Myntra
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="./index.html">Home</a></li>
+                            <li><a ng-href="/">Home</a></li>
+                            <li><a ng-href="./news">News</a></li>
+                            <li><a ng-href="/blog">Blog</a></li>
+                            <li><a ng-href="/myDashboard" ng-show="currentUser">Dashboard</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div id="top-info" class="pull-right" ng-show="currentUser">
-                <a href="#" class="pull-left" >
+                <a href="" class="pull-left dropdown-toggle" data-toggle="dropdown">
                     <div class="top-info-block">
                         <h3>{{currentUser.name}}</h3>
                     </div>
                     <div class="top-info-block">
-                        <b class="icon-user"></b>
+                        <b class="icon-user dropdown-toggle" data-toggle="dropdown1"></b>
                     </div>
+                    <b class="caret"></b>
                 </a>
+                <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>
+                <li class="divider"></li>
+                <li><a ng-href="" ng-click="logout()"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>
+                </ul>
                 <hr class="separator pull-left"/>
-                <a id="settings" class="pull-left" href="#">
-                    <b class="icon-settings"></b>
-                </a>
+                <!--<a id="settings" class="pull-left" href="#">-->
+                    <!--<b class="icon-settings"></b>-->
+                <!--</a>-->
+            </div>
+            <div class="pull-right" ng-hide="currentUser">
+                <a href="" ng-click="login()" role="button" class="btn btn-primary btn-lg">Login</a>
             </div>
         </div>
     </header>
@@ -38,7 +51,7 @@
         <div>
         <div class="subnav">
             <ul class="nav nav-pills">
-                <li  ng-class="{active: isActive('/login')}"><a ng-hide="currentUser" ng-href="/login">Login</a>
+                <!--<li  ng-class="{active: isActive('/login')}"><a ng-hide="currentUser" ng-href="/login">Login</a>-->
                 <li  ng-class="{active: isActive('/signup')}"><a ng-hide="currentUser" ng-href="/signup">Sign up</a></li>
                 <li ng-class="{active: isActive('/dashboard')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard">Dashboard</a></li>
                 <li ng-class="{active: isActive('/myDashboard')}"><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard">My Dashboard</a></li>

@@ -2,101 +2,89 @@
 
 <div  class="container-fluid" ng-controller="AccountCtrl" ng-init="getQuestionPapers()">
     <div class="col-lg-12" style="margin-left: 20px;">
-        <h1>Question Papers</h1>
+        <h1 class="page-header"></h1>
     </div>
-    <div class="row">
-        <div class="thumbnails">
-            <div style="margin: 30px;">
-                <div class="thumbnails">
-                    <div class="col-lg-3" ng-repeat="questionPaper in questionPaperList">
-                        <a ng-href="/{{questionPaper._id}}">
-                            <div class="thumbnail">
+    <!--<div class="row">-->
+        <!--<div class="thumbnails">-->
+            <!--<div style="margin: 30px;">-->
+                <!--<div class="thumbnails">-->
+                    <!--<div class="col-lg-3" ng-repeat="questionPaper in questionPaperList">-->
+                        <!--<a ng-href="/{{questionPaper._id}}">-->
+                            <!--<div class="thumbnail">-->
+                                <!--<a href="" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">-->
+                                    <!--<i class="icon-settings icon_size pull-right"></i>-->
+                                <!--</a>-->
+                                <!--<ul class="dropdown-menu" aria-labelledby="drop3" style="position: relative; left:60px; min-width: 100px;">-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/{{questionPaper._id}}">Edit</a></li>-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="deletePaper(questionPaper._id)">Delete</a></li>-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="publishPaper(questionPaper._id)">Publish</a></li>-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="loadPaper(questionPaper._id)">View</a></li>-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#addNewScheduleModal">Add Schedule</a></li>-->
+                                    <!--&lt;!&ndash;<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="generatePassKeys(questionPaper._id)">Generate Pass Keys</a></li>&ndash;&gt;-->
+                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="startEvaluate(questionPaper._id)">Start Scoring</a></li>-->
+                                    <!--&lt;!&ndash;<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Show Pass Keys</a></li>&ndash;&gt;-->
+                                <!--</ul>-->
+                                <!--<div class="caption" style="text-align: center; margin-top: -10px;">-->
+                                    <!--<h4>{{questionPaper.name}}</h4>-->
+                                    <!--&lt;!&ndash;<span style="color: lightgreen;">1 Pass</span>,&ndash;&gt;-->
+                                    <!--<label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">Created On</span>:<span style="color: red;">{{questionPaper.creationDate|date:'yyyy-MM-dd HH:mm:ss'}}</span></label>-->
+                                    <!--<br/><label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">1 Pass</span>,<span style="color: red;">1 Fail</span></label>-->
+                                    <!--<br/><label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Last scoring run on:</p></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-2">-->
+                        <!--<a href="createPaper" title="Create New Test">-->
+                            <!--<div class="thumbnail" >-->
+                                <!--<div class="caption" style="text-align: center; margin-top: -2px;">-->
+                                    <!--<img src="images/plus.png"/>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div style="clear:both;"></div>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <div class="row-fluid">
+        <!--<button class="btn btn-primary center" type="button" ng-click="$hide()">Create New Paper</button>-->
+        <a href="createPaper" role="button" class="btn btn-primary btn-large center">Create Paper</a>
+
+        <div class="metro col-lg-12">
+            <div class="metro-sections">
+                <div>
+                    <div class="metro-section" id="section1" ng-init="backColorClass=''" ng-repeat="questionPaper in questionPaperList">
+                        <!--<div ng-repeat="questionPaper in questionPaperList">-->
+                            <a class="tile wide text" id="drop4" ng-class="{CREATION:'bg-color-orange'}[questionPaper.state]" >
+                                <div class="text-header">{{questionPaper.name}}</div>
+                                <div class="text-inner">
+                                    {{questionPaper.creationDate|date:'yyyy-MM-dd HH:mm:ss'}}
+                                    <br/><label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">1 Pass</span>,<span style="color: red;">1 Fail</span></label>
+                                </div>
+
                                 <a href="" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="icon-settings icon_size pull-right"></i>
+                                    <i class="icon-settings icon_size"></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="drop3" style="position: relative; left:60px; min-width: 100px;">
+                                <ul class="dropdown-menu" aria-labelledby="drop3" style="position: relative; left:0px; min-width: 100px;">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/{{questionPaper._id}}">Edit</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="deletePaper(questionPaper._id)">Delete</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="publishPaper(questionPaper._id)">Publish</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="loadPaper(questionPaper._id)">View</a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" data-toggle="modal" data-target="#addNewScheduleModal">Add Schedule</a></li>
-                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="generatePassKeys(questionPaper._id)">Generate Pass Keys</a></li>-->
                                     <li role="presentation"><a role="menuitem" tabindex="-1" ng-click="startEvaluate(questionPaper._id)">Start Scoring</a></li>
-                                    <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-click="showEvaluationKeys(questionPaper._id)">Show Pass Keys</a></li>-->
                                 </ul>
-                                <div class="caption" style="text-align: center; margin-top: -10px;">
-                                    <h4>{{questionPaper.name}}</h4>
-                                    <!--<span style="color: lightgreen;">1 Pass</span>,-->
-                                    <label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">Created On</span>:<span style="color: red;">{{questionPaper.creationDate|date:'yyyy-MM-dd HH:mm:ss'}}</span></label>
-                                    <br/><label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">1 Pass</span>,<span style="color: red;">1 Fail</span></label>
-                                    <br/><label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Last scoring run on:</p></label>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <a href="createPaper" title="Create New Test">
-                            <div class="thumbnail" >
-                                <div class="caption" style="text-align: center; margin-top: -2px;">
-                                    <img src="images/plus.png"/>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
-            <div style="clear:both;"></div>
-
         </div>
-
     </div>
-
-    <!--<div class="modal fade" tabindex="-1" id="addNewScheduleModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
-        <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-                <!--<div class="modal-header">-->
-                    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-                    <!--<h4 aria-labelledBy="myModalTitle">Add a new Schedule</h4>-->
-                <!--</div>-->
-                <!--<div class="modal-body">-->
-                    <!--<div class="row marginT10">-->
-                        <!--<div class="col-lg-12">-->
-                            <!--Name-->
-                            <!--<input type="text" class="form-control resizeNone" ng-model="schedule.name" placeholder="Name" required/>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row marginT10">-->
-                        <!--<div class="col-lg-12">-->
-                            <!--Description-->
-                            <!--<input type="text" rows="5" class="form-control resizeNone" ng-model="schedule.description" placeholder="Description"></textarea>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row marginT10">-->
-                        <!--<div class="col-lg-12">-->
-                            <!--Start Date-->
-                            <!--<input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.startDate" placeholder="Start Date"></textarea>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row marginT10">-->
-                        <!--<div class="col-lg-12">-->
-                            <!--Start Date-->
-                            <!--<input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.endDate" placeholder="End Date"></textarea>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row marginT10">-->
-                        <!--<div class="col-lg-12">-->
-                            <!--Timezone-->
-                            <!--<input type="datetime-local" rows="5" class="form-control resizeNone" ng-model="schedule.endDate" placeholder="Timezone"></textarea>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="modal-footer">-->
-                    <!--<button class="btn" data-dismiss="modal">Cancel</button>-->
-                    <!--<button class="btn" data-dismiss="modal" ng-click="addSchedule()">Ok</button>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 
     <div ng-include="'partials/footer'"></div>
 

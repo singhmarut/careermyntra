@@ -72,7 +72,7 @@ angular.module('pupilsboardApp', [
                 authenticate: true
             })
             .when('/paperCompleted', {
-                templateUrl: 'partials/paperSuccess',
+                templateUrl: 'partials/questionPaper/paperSuccess',
                 authenticate: true
             })
             .when('/myDashboard', {
