@@ -109,19 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createPaper.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="createPaper.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.38387096" vertical-offset="2" max-vertical-offset="645">
+            <state line="17" column="35" selection-start="840" selection-end="840" vertical-scroll-proportion="-10.541667" vertical-offset="2" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginmodal.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="loginmodal.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="55" selection-start="1354" selection-end="1354" vertical-scroll-proportion="-12.041667" vertical-offset="176" max-vertical-offset="630">
+            <state line="31" column="56" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.6365639" vertical-offset="176" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -224,9 +224,9 @@
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper/paperSuccess.html" />
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper/addNewSchedule.html" />
         <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/loginmodal.html" />
         <option value="$PROJECT_DIR$/app/views/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/loginmodal.html" />
       </list>
     </option>
   </component>
@@ -895,12 +895,12 @@
       <workItem from="1404580635403" duration="41479000" />
       <workItem from="1404736815246" duration="11964000" />
       <workItem from="1404802099459" duration="299000" />
-      <workItem from="1404814468520" duration="37216000" />
+      <workItem from="1404814468520" duration="37512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326144000" />
+    <option name="totallyTimeSpent" value="326440000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -935,7 +935,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25282487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25282487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1368,13 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="55" selection-start="1354" selection-end="1354" vertical-scroll-proportion="-12.041667" vertical-offset="176" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/models/question.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="49" selection-start="3125" selection-end="3133" vertical-scroll-proportion="-15.576923" vertical-offset="720" max-vertical-offset="1980">
@@ -1396,7 +1389,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.38387096" vertical-offset="2" max-vertical-offset="645">
+        <state line="17" column="35" selection-start="840" selection-end="840" vertical-scroll-proportion="-10.541667" vertical-offset="2" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="56" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.6365639" vertical-offset="176" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
