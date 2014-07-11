@@ -4,55 +4,31 @@
     <div class="page-header">
         <h1>Question Papers</h1>
     </div>
-
     <div class="row-fluid">
         <div class="metro col-lg-12">
             <div class="metro-sections">
                 <div>
-                    <div class="metro-section" id="section1" ng-init="backColorClass=''">
-                        <a class="tile wide text" ng-href="/questionPaper/{{answerSheet._id}}" ng-class="{'bg-color-orange':  answerSheet.status != 'NS'}" ng-repeat="answerSheet in answerSheets">
+                    <div class="metro-section" id="section1" ng-init="backColorClass=''" ng-repeat="answerSheet in answerSheets">
+                        <a class="tile wide text" ng-href="" ng-class="{'bg-color-orange':  answerSheet.status != 'NS'}" >
                             <div class="text-header">{{answerSheet.name}}</div>
                             <div class="text">{{answerSheet.description}}</div>
                             <div>
                                 <label><p style="color:white">{{answerSheet.creationDate | date : 'medium'}}</p></label>
                             </div>
+
+                            <a href="" id="dropCandidatePaperActions" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-settings icon_size"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropCandidatePaperActions" style="position: relative; left:0px; min-width: 100px;">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/{{answerSheet._id}}" ng-show="answerSheet.status == 'CO'">View Report</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/questionPaper/{{answerSheet._id}}" ng-show="answerSheet.status != 'CO'">Start Test</a></li>
+                            </ul>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--<div class="row">-->
-        <!--<div>-->
-            <!--<div style="margin: 30px;">-->
-                <!--<div class="thumbnails">-->
-                    <!--<div class="col-lg-2" ng-repeat="answerSheet in answerSheets">-->
-                        <!--<div class="thumbnail">-->
-                            <!--<a href="" id="drop4" role="button" class="dropdown-toggle" data-toggle="dropdown">-->
-                                <!--<i class="icon-settings pull-right"></i>-->
-                            <!--</a>-->
-                            <!--<ul class="dropdown-menu" role="menu" aria-labelledby="drop4" style="position: relative; left:60px; min-width: 100px;">-->
-                                <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/answerSheet/{{answerSheet.passKey}}">View Details</a></li>-->
-                            <!--</ul>-->
-                            <!--<div class="caption" style="text-align: center; margin-top: -10px;">-->
-                                <!--<h4>{{answerSheet.name}}</h4>-->
-                                <!--<span>{{answerSheet.description}}</span>-->
-                                <!--<div ng-if="answerSheet.status != 'NS'">-->
-                                    <!--<label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Submitted on: {{answerSheet.createDate | date : 'medium'}}</p></label>-->
-                                <!--</div>-->
-                                <!--<div ng-if="answerSheet.status == 'NS'">-->
-                                    <!--<label class="MarginTop TxtColorGreen"><p style="color:#31b0d5">Created on: {{answerSheet.creationDate | date : 'medium'}}</p></label>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div style="clear:both;"></div>-->
-        <!--</div>-->
-    <!--</div>-->
-
     <hr>
     <div ng-include="'partials/footer'"></div>
 

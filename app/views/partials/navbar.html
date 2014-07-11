@@ -16,6 +16,7 @@
                             <li><a ng-href="./news">News</a></li>
                             <li><a ng-href="/blog">Blog</a></li>
                             <li><a ng-href="/myDashboard" ng-show="currentUser">Dashboard</a></li>
+                            <li><a ng-href="/takeTest" ng-show="currentUser">Take a Test</a></li>
                         </ul>
                     </div>
                 </div>
@@ -31,7 +32,7 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                <li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+                <li><a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</a></li>
                 <li><a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>
                 <li class="divider"></li>
                 <li><a ng-href="" ng-click="logout()"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>
@@ -70,7 +71,6 @@
                     </ul>
                 </li>
                 <li ng-class="{active: isActive('/takeTest')}"><a ng-show="currentUser" ng-href="/takeTest">Take a Test</a></li>
-                <li><a ng-show="currentUser" ng-href="#" ng-click="logout()">Logout</a></li>
             </ul>
         </div>
     </div>
