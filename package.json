@@ -20,6 +20,7 @@
     "multer": "^0.1.0",
     "nodemailer": "0.7.0",
     "passport": "~0.2.0",
+    "passport-google": "^0.3.0",
     "passport-local": "~0.1.6",
     "static-favicon": "~1.0.1",
     "underscore": "~1.6.0"

@@ -16,7 +16,8 @@
     "angular-motion": "~0.3.3",
     "ng-grid": "2.0.11",
     "ng-file-upload": "~1.4.0",
-    "ng-file-upload-shim": "~1.4.0"
+    "ng-file-upload-shim": "~1.4.0",
+    "angular-directive.g-signin": "*"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",

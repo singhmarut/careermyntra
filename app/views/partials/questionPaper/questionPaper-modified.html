@@ -89,7 +89,7 @@
                         <form role="form" class="form-horizontal font-size13">
                             <div class="">
                                 <div ng-repeat="choice in question.choices">
-                                    <input type="checkbox" value="true" ng-checked="choice.isUserAnswer" ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
+                                    <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
                                 </div>
                             </div>
                         </form>

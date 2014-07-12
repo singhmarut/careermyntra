@@ -8,22 +8,22 @@
         <div class="metro col-lg-12">
             <div class="metro-sections">
                 <div>
-                    <div class="metro-section" id="section1" ng-init="backColorClass=''" ng-repeat="answerSheet in answerSheets">
-                        <a class="tile wide text" ng-href="" ng-class="{'bg-color-orange':  answerSheet.status != 'NS'}" >
-                            <div class="text-header">{{answerSheet.name}}</div>
-                            <div class="text">{{answerSheet.description}}</div>
-                            <div>
-                                <label><p style="color:white">{{answerSheet.creationDate | date : 'medium'}}</p></label>
-                            </div>
+                    <div class="metro-section" id="section1" ng-init="backColorClass=''">
+                        <div class="tile wide text" ng-href="" ng-class="{'bg-color-pink':  answerSheet.status != 'NS'}" ng-repeat="answerSheet in answerSheets">
 
-                            <a href="" id="dropCandidatePaperActions" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="icon-settings icon_size"></i>
+                            <a href="" id="dropCandidatePaperActions" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="icon-settings icon_size pull-right"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropCandidatePaperActions" style="position: relative; left:0px; min-width: 100px;">
+                            <ul class="dropdown-menu" aria-labelledby="dropCandidatePaperActions" style="position: relative;float: right; min-width: 100px;">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/{{answerSheet._id}}" ng-show="answerSheet.status == 'CO'">View Report</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/questionPaper/{{answerSheet._id}}" ng-show="answerSheet.status != 'CO'">Start Test</a></li>
                             </ul>
-                        </a>
+                            <div class="text-header">{{answerSheet.name}}</div>
+                                <div class="text">{{answerSheet.description}}</div>
+                                <div>
+                                <label><p style="color:white">{{answerSheet.creationDate | date : 'medium'}}</p></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
