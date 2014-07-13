@@ -1,9 +1,6 @@
-<div ng-include="'partials/navbar.html'"></div>
+<!--<div ng-include="'partials/navbar.html'"></div>-->
 
 <div class="container-fluid">
-  <div class="page-header">
-    <h1>Sign up</h1>
-  </div>
   <div class="col-sm-6">
     <form class="form" name="form" ng-submit="register(form)" novalidate>
 
@@ -52,17 +49,9 @@
           {{ errors.password }}
         </p>
       </div>
-
+        Already have an account? <a href="" ng-click="$hide();login()" class="text-center new-account">Log in.</a>
       <button class="btn btn-primary" type="submit">Sign up</button>
     </form>
   </div>
-    <hr>
-    <div class="row-fluid">
-        <div class="col-sm-6">
-            <!--<hr>-->
-            Have an account? <a href="/login" class="text-center new-account">Log in.</a>
-        </div>
-    </div>
-    <div ng-include="'partials/footer'"></div>
 </div>
 

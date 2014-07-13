@@ -22,9 +22,12 @@ angular.module('pupilsboardApp')
     };
 
     $scope.login = function() {
-        var myAlert = $modal({scope: $scope,title: 'Login<br />This is a multiline message!',html:true, contentTemplate: 'partials/loginmodal', placement: 'top', type: 'warning', show: true});
+        var myAlert = $modal({scope: $scope,title: 'Login',html:true, contentTemplate: 'partials/loginmodal', placement: 'top', type: 'warning', show: true});
     };
 
+    $scope.signup = function() {
+        var myAlert = $modal({scope: $scope,title: 'Sign Up',html:true, contentTemplate: 'partials/signup', placement: 'top', type: 'warning', show: true});
+    };
 
     $scope.loginToPortal = function(form) {
         console.log('inside login');

@@ -17,7 +17,7 @@ angular.module('pupilsboardApp', [
         $routeProvider
             .when('/', {
                 templateUrl: 'partials/main',
-                controller: 'MainCtrl'
+                controller: 'NavbarCtrl'
             })
             .when('/login', {
                 templateUrl: 'partials/login',
@@ -42,10 +42,10 @@ angular.module('pupilsboardApp', [
                 controller: 'QuestionCtrl',
                 authenticate: true
             })
-            .when('/signup', {
-                templateUrl: 'partials/signup',
-                controller: 'SignupCtrl'
-            })
+//            .when('/signup', {
+//                templateUrl: 'partials/signup',
+//                controller: 'SignupCtrl'
+//            })
 //            .when('/takeTest', {
 //                templateUrl: 'partials/testStart',
 //                controller: 'QuestionpaperCtrl',
