@@ -5,12 +5,12 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    font-family: 'Ubuntu', sans-serif;
-    background-color:#f8f8f8;
-    min-width:300px;
-    margin-bottom:120px;
-}
+/*body {*/
+    /*font-family: 'Ubuntu', sans-serif;*/
+    /*background-color:#f8f8f8;*/
+    /*min-width:300px;*/
+    /*margin-bottom:120px;*/
+/*}*/
 /***Font Styles***/
 .font-color-red{
     color:#df1f1f;

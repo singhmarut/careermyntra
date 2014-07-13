@@ -225,7 +225,7 @@ textarea { height: auto;}
 Text input controls.
 */
 textarea, .win-textarea {
-   width: 260px;
+   /*width: 260px;*/
    /*height: 39px;*/
    padding: 4px 8px;
    overflow-y: scroll;
@@ -2087,33 +2087,35 @@ header h1 {display: inline;}
 
 .modal .close,
 .alert .close {
-	font-family: 'IcoMoon';
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 18px;
-   text-indent: 0;
-   text-shadow: none;
+    float:right;
+	/*font-family: 'IcoMoon';*/
+   /*font-weight: normal;*/
+   /*font-size: 14px;*/
+   /*line-height: 18px;*/
+   /*text-indent: 0;*/
+   /*text-shadow: none;*/
+   /*padding: 0;*/
 
-   background-clip: border-box;
-   box-sizing: border-box;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   border-radius: 50%;
-   border-width: 2px;
-   border-style: solid;
-   text-align: center;
-   display: inline-block;
-   min-width: 0;
-   min-height: 0;
-   width: 20px;
-   height: 20px;
-   vertical-align: baseline;
+   /*background-clip: border-box;*/
+   /*box-sizing: border-box;*/
+   /*-webkit-border-radius: 50%;*/
+   /*-moz-border-radius: 50%;*/
+   /*border-radius: 50%;*/
+   /*border-width: 2px;*/
+   /*border-style: solid;*/
+   /*text-align: center;*/
+   /*display: inline-block;*/
+   /*min-width: 0;*/
+   /*min-height: 0;*/
+   /*width: 20px;*/
+   /*height: 20px;*/
+   /*vertical-align: baseline;*/
 }
-.modal .close:after,
-.alert .close:after {
-   content: "\e131";
-   font-size: 16px;
-}
+/*.modal .close:after,*/
+/*.alert .close:after {*/
+   /*content: "\e131";*/
+   /*font-size: 16px;*/
+/*}*/
 
 .alert-success {
    color: #FFFFFF;

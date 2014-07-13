@@ -34,12 +34,17 @@
                             <div ng-repeat="choice in question.choices" class="active">
                                 <p style="vertical-align: middle">
                                 <label>Choice {{$index+1}}</label>
-                                <textarea rows="4" cols="50" ng-model="choice.choice" ng-disabled="editable == 0"></textarea>
-                                <input type="checkbox" ng-model="choice.isCorrectAnswer" ng-disabled="editable == 0">
+                                <div class="row-fluid">
+                                <div class="col-lg-6"></div>
+                                    <textarea rows="2" cols=170" ng-model="choice.choice" ng-disabled="editable == 0"></textarea>
+                                </div>
+                                <div class="col-sm-1"></div>
+                                    <input type="checkbox" ng-model="choice.isCorrectAnswer" ng-disabled="editable == 0">
+                                </div>
                                 </p>
                             </div>
                             <p>Answer: </p>
-                            <textarea cols="30" rows="10" ckeditor="editorOptions" ng-model="question.answer"></textarea>
+                            <textarea cols="30" rows="5" style="height: 100px;width: 100px;" ckeditor="editorOptions" ng-model="question.answer"></textarea>
                         </div>
                     </div>
                 </div>

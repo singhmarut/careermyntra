@@ -46,11 +46,11 @@ angular.module('pupilsboardApp', [
                 templateUrl: 'partials/signup',
                 controller: 'SignupCtrl'
             })
-            .when('/takeTest', {
-                templateUrl: 'partials/testStart',
-                controller: 'QuestionpaperCtrl',
-                authenticate: true
-            })
+//            .when('/takeTest', {
+//                templateUrl: 'partials/testStart',
+//                controller: 'QuestionpaperCtrl',
+//                authenticate: true
+//            })
             .when('/createDummyPaper', {
                 templateUrl: 'partials/dummyPaper',
                 controller: 'NavbarCtrl',
@@ -68,6 +68,11 @@ angular.module('pupilsboardApp', [
 //        })
             .when('/questionPaper/:id', {
                 templateUrl: 'partials/questionPaper/questionPaper-modified',
+                controller: 'QuestionpaperCtrl',
+                authenticate: true
+            })
+            .when('/paper/report/:id', {
+                templateUrl: 'partials/candidate/',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true
             })

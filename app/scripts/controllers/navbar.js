@@ -22,7 +22,7 @@ angular.module('pupilsboardApp')
     };
 
     $scope.login = function() {
-        var myAlert = $modal({scope: $scope,title: 'Login', contentTemplate: 'partials/loginmodal', placement: 'top', type: 'warning', show: true});
+        var myAlert = $modal({scope: $scope,title: 'Login<br />This is a multiline message!',html:true, contentTemplate: 'partials/loginmodal', placement: 'top', type: 'warning', show: true});
     };
 
 
