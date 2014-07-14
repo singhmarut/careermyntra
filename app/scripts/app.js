@@ -42,10 +42,18 @@ angular.module('pupilsboardApp', [
                 controller: 'QuestionCtrl',
                 authenticate: true
             })
-//            .when('/signup', {
-//                templateUrl: 'partials/signup',
-//                controller: 'SignupCtrl'
-//            })
+            .when('/blog', {
+                templateUrl: 'partials/blog/blog',
+                controller: 'BlogCtrl'
+            })
+            .when('/posts', {
+                templateUrl: 'partials/blog/posts',
+                controller: 'BlogCtrl'
+            })
+            .when('/newPost', {
+                templateUrl: 'partials/blog/newPost',
+                controller: 'BlogCtrl'
+            })
 //            .when('/takeTest', {
 //                templateUrl: 'partials/testStart',
 //                controller: 'QuestionpaperCtrl',
