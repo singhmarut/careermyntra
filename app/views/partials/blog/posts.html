@@ -1,0 +1,17 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="container page-header">
+    <h2>the Career Myntra Blog</h2>
+</div>
+<div class="container" ng-init="getAllPosts()">
+    <div class="row">
+        <div ng-repeat="article in articles">
+            <h2>{{article.title}}</h2>
+            <hr>
+            <span>{{article.createdAt | date:'medium'}}</span>
+            <br/><br/>
+            <p ng-bind-html="article.content"></p>
+            <hr>
+        </div>
+    </div>
+</div>
