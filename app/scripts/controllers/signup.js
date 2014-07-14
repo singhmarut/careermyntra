@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('SignupCtrl', function ($scope, Auth, $location) {
+  .controller('SignupCtrl', function ($scope, Auth, $location,$alert) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -15,6 +15,7 @@ angular.module('pupilsboardApp')
           password: $scope.user.password
         })
         .then( function() {
+         var myAlert = $alert({title: 'Holy guacamole!', content: 'Best check yo self, you\'re not looking too good.', placement: 'top', type: 'info', show: true});
           // Account created, redirect to home
           $location.path('/');
         })
