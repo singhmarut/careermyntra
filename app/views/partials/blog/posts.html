@@ -11,6 +11,14 @@
             <span>{{article.createdAt | date:'medium'}}</span>
             <br/><br/>
             <p ng-bind-html="article.content"></p>
+            <div>
+                <ul ng-social-buttons>
+                    <li>Share:</li>
+                    <li class="ng-social-facebook">Facebook</li>
+                    <li class="ng-social-google-plus">Google+</li>
+                    <li class="ng-social-twitter">Twitter</li>
+                </ul>
+            </div>
             <hr>
         </div>
     </div>

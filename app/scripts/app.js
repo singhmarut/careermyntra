@@ -11,7 +11,8 @@ angular.module('pupilsboardApp', [
         'mgcrea.ngStrap.modal',
         'mgcrea.ngStrap.aside',
         'ngAnimate',
-        'angularFileUpload'
+        'angularFileUpload',
+        'ngSocial'
     ])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
         $routeProvider
