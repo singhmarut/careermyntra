@@ -17,14 +17,22 @@
                 <hr>
                 <textarea rows="30" cols=170" class="form-control" ckeditor="editorOptions" ng-model="post.content"></textarea>
             </div>
+
+            <div class="col-lg-3">
+                <hr>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Tags</div>
+                    <div class="panel-body">
+                        <label></label>
+                        <input type="text" ng-model="post.tags">
+                        <br/>
+                        <!--<button class="btn-small btn-success btn-default" type="submit" ng-click="addTag()">Add</button>-->
+                        <label>{{post.tags}}</label>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
-
-    <!--<div class="row">-->
-        <!--<div class="col-lg-9">-->
-            <!--<textarea rows="30" cols=170" class="form-control" ckeditor="editorOptions" ng-model="post.content"></textarea>-->
-        <!--</div>-->
-    <!--</div>-->
 </div>
 
 <div class="container-fluid">

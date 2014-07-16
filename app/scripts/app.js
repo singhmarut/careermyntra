@@ -12,7 +12,7 @@ angular.module('pupilsboardApp', [
         'mgcrea.ngStrap.aside',
         'ngAnimate',
         'angularFileUpload',
-        'ngSocial'
+        'angular-socialshare'
     ])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
         $routeProvider
@@ -48,7 +48,11 @@ angular.module('pupilsboardApp', [
                 controller: 'BlogCtrl'
             })
             .when('/posts', {
-                templateUrl: 'partials/blog/posts',
+                templateUrl: 'partials/blog/allPosts',
+                controller: 'BlogCtrl'
+            })
+            .when('/posts/:id', {
+                templateUrl: 'partials/blog/singlePost',
                 controller: 'BlogCtrl'
             })
             .when('/newPost', {
