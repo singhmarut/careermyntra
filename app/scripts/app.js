@@ -57,7 +57,8 @@ angular.module('pupilsboardApp', [
             })
             .when('/newPost', {
                 templateUrl: 'partials/blog/newPost',
-                controller: 'BlogCtrl'
+                controller: 'BlogCtrl',
+                authenticate: true
             })
 //            .when('/takeTest', {
 //                templateUrl: 'partials/testStart',
@@ -71,6 +72,11 @@ angular.module('pupilsboardApp', [
             })
             .when('/viewQuestions', {
                 templateUrl: 'partials/questions/searchQuestions',
+                controller: 'QuestionCtrl',
+                authenticate: true
+            })
+            .when('/addQuestions', {
+                templateUrl: 'partials/questions/matchingQuestion',
                 controller: 'QuestionCtrl',
                 authenticate: true
             })

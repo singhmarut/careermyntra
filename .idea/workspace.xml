@@ -68,92 +68,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/blog/posts.html">
+      <file leaf-file-name="matchingQuestion.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="125" selection-start="690" selection-end="690" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="1095">
+            <state line="10" column="69" selection-start="545" selection-end="545" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="975">
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="355" column="14" selection-start="6570" selection-end="6579" vertical-scroll-proportion="0.0" vertical-offset="4837" max-vertical-offset="5520">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-socialshare.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
+      <file leaf-file-name="addQuestion.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/addQuestion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3450">
+            <state line="34" column="56" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.76119405" vertical-offset="0" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-socialshare.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/angular-socialshare.css">
+      <file leaf-file-name="ng-ckeditor.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4650">
+            <state line="69" column="31" selection-start="2727" selection-end="2727" vertical-scroll-proportion="-14.0" vertical-offset="671" max-vertical-offset="2205">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allPosts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/blog/allPosts.html">
+      <file leaf-file-name="editQuestion.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/editQuestion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="0" selection-end="70" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
+            <state line="27" column="30" selection-start="1633" selection-end="1839" vertical-scroll-proportion="-3.1" vertical-offset="250" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singlePost.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/blog/singlePost.html">
+      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
+            <state line="42" column="62" selection-start="1272" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluationKeys.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/evaluationKeys.html">
+      <file leaf-file-name="searchQuestions.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="0" selection-end="43" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/blog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="35" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/controllers/blogController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="40" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="59" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.43935928" vertical-offset="138" max-vertical-offset="1890">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="54" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-9.807693" vertical-offset="555" max-vertical-offset="2685">
-              <folding />
+            <state line="49" column="25" selection-start="3051" selection-end="3051" vertical-scroll-proportion="-8.125" vertical-offset="540" max-vertical-offset="1050">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,15 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/controllers/questionLoader.js" />
-        <option value="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.min.css" />
-        <option value="$PROJECT_DIR$/lib/controllers/questionController.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/paperSuccess.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html" />
-        <option value="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/candidate/paperActions.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/candidate/testReport.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/lib/oauth.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/config/express.js" />
@@ -208,20 +179,29 @@
         <option value="$PROJECT_DIR$/app/views/partials/signup.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/signup.js" />
         <option value="$PROJECT_DIR$/lib/controllers/users.js" />
-        <option value="$PROJECT_DIR$/lib/models/Article.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
         <option value="$PROJECT_DIR$/app/bower_components/angular-social/src/scripts/04-google-plus.js" />
         <option value="$PROJECT_DIR$/app/views/partials/blog/blog.html" />
         <option value="$PROJECT_DIR$/app/bower_components/angular-socialshare/angular-socialshare.js" />
-        <option value="$PROJECT_DIR$/lib/routes.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/newPost.html" />
         <option value="$PROJECT_DIR$/app/views/partials/blog/allPosts.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/partials/blog/singlePost.html" />
+        <option value="$PROJECT_DIR$/lib/models/Article.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/blog/posts.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/blog/newPost.html" />
         <option value="$PROJECT_DIR$/lib/controllers/blogController.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/blog.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/posts.html" />
+        <option value="$PROJECT_DIR$/lib/routes.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/matchingQuestion.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/question.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/styles/custom.css" />
+        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/ckeditor.js" />
+        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/samples/inlineall.html" />
+        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/views/index.html" />
+        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" />
       </list>
     </option>
   </component>
@@ -291,7 +271,123 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,11 +441,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,6 +460,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ng-ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,11 +498,11 @@
       <recent name="$PROJECT_DIR$/app/scripts/bootmetro" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/partials/questions" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/views/partials/candidate" />
       <recent name="$PROJECT_DIR$/app/views/partials/questionPaper" />
       <recent name="$PROJECT_DIR$/app/styles" />
-      <recent name="$PROJECT_DIR$/app/views/partials/questions" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Unnamed">
@@ -856,12 +952,12 @@
       <workItem from="1404802099459" duration="299000" />
       <workItem from="1404814468520" duration="41073000" />
       <workItem from="1404989942816" duration="41414000" />
-      <workItem from="1405310704801" duration="39015000" />
+      <workItem from="1405310704801" duration="57905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410430000" />
+    <option name="totallyTimeSpent" value="429320000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -892,11 +988,11 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31638417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09985935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2616034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34177214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -908,7 +1004,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3104435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23676682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -991,7 +1087,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="223" />
+      <option name="time" value="224" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -999,225 +1095,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="1094" selection-end="1106" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="2205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="16" selection-start="430" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="47" selection-start="1643" selection-end="1643" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="384" selection-end="384" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/dndtreeService">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8250">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="15" selection-start="857" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="1755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/passKey.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="36" selection-start="1281" selection-end="1281" vertical-scroll-proportion="-10.307693" vertical-offset="437" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="117" selection-start="1395" selection-end="1494" vertical-scroll-proportion="-8.5" vertical-offset="246" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="116" selection-start="2917" selection-end="2930" vertical-scroll-proportion="-6.0" vertical-offset="390" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="15" selection-start="2117" selection-end="2120" vertical-scroll-proportion="-5.6153846" vertical-offset="814" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="300" selection-end="400" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="14" selection-start="4735" selection-end="4813" vertical-scroll-proportion="0.0" vertical-offset="1572" max-vertical-offset="2025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/thing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="53" selection-start="1201" selection-end="1306" vertical-scroll-proportion="-2.68" vertical-offset="226" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/candidateDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="43" selection-start="0" selection-end="42" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/Article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="908" selection-end="908" vertical-scroll-proportion="-3.08" vertical-offset="71" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-social/src/styles/02-facebook.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-social/src/scripts/02-facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="61" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-social/angular-social.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="0" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-14.416667" vertical-offset="2804" max-vertical-offset="7215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-social/src/views/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/angular-socialshare/angular-socialshare.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/blog/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="22" selection-start="167" selection-end="178" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="375">
@@ -1256,37 +1133,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="60" selection-start="1821" selection-end="1836" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="28" selection-start="2659" selection-end="2659" vertical-scroll-proportion="-6.3461537" vertical-offset="1110" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/angular-socialshare/angular-socialshare.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="40" selection-start="3156" selection-end="3156" vertical-scroll-proportion="-8.653846" vertical-offset="1365" max-vertical-offset="3450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/newPost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="36" selection-start="1288" selection-end="1288" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/editQuestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
@@ -1305,41 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/singlePost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="54" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-9.807693" vertical-offset="555" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/blogController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="40" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="35" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="125" selection-start="690" selection-end="690" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3450">
@@ -1354,9 +1168,306 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/singlePost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="51" selection-start="719" selection-end="720" vertical-scroll-proportion="-2.6" vertical-offset="95" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="10" selection-start="3487" selection-end="3491" vertical-scroll-proportion="-2.4" vertical-offset="750" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="24" selection-start="2236" selection-end="2263" vertical-scroll-proportion="-10.625" vertical-offset="255" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-6.0" vertical-offset="75" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/Article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="260" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/blogController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="8" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="15" selection-start="2770" selection-end="2791" vertical-scroll-proportion="0.0" vertical-offset="1094" max-vertical-offset="2130">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/newPost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="127" selection-start="758" selection-end="758" vertical-scroll-proportion="-3.42" vertical-offset="54" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="36" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/uploadQuestions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/selectQuestions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="396" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="44" selection-start="5076" selection-end="5076" vertical-scroll-proportion="-55.384617" vertical-offset="375" max-vertical-offset="2910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="167" selection-start="1795" selection-end="2274" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/paper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="371" column="4" selection-start="13757" selection-end="13757" vertical-scroll-proportion="0.0" vertical-offset="5079" max-vertical-offset="5655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="57" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="2775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/samples/inlinetextarea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.5" vertical-offset="300" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="558" selection-end="560" vertical-scroll-proportion="45.53846" vertical-offset="1364" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="80475">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/LICENSE.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-14.961538" vertical-offset="5835" max-vertical-offset="19050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/contents.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="2" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.4964029" vertical-offset="1263" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="285" selection-start="84131" selection-end="84131" vertical-scroll-proportion="0.42643392" vertical-offset="2499" max-vertical-offset="14880">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/inlineall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="41" selection-start="10447" selection-end="10455" vertical-scroll-proportion="0.4987593" vertical-offset="4659" max-vertical-offset="5100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="29" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-8.583333" vertical-offset="424" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/checkspelling.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.3395786" vertical-offset="1853" max-vertical-offset="2280">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/spellcheck/handler.php">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.48184" vertical-offset="2677" max-vertical-offset="3090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/samples/inlineall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="65" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-4.3" vertical-offset="295" max-vertical-offset="4755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/examples/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="711" selection-end="711" vertical-scroll-proportion="14.375" vertical-offset="555" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="59" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.43935928" vertical-offset="138" max-vertical-offset="1890">
+        <state line="108" column="44" selection-start="5537" selection-end="5537" vertical-scroll-proportion="-6.1666665" vertical-offset="1472" max-vertical-offset="1905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/editQuestion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="1633" selection-end="1839" vertical-scroll-proportion="-3.1" vertical-offset="250" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="62" selection-start="1272" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="25" selection-start="3051" selection-end="3051" vertical-scroll-proportion="-8.125" vertical-offset="540" max-vertical-offset="1050">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="355" column="14" selection-start="6570" selection-end="6579" vertical-scroll-proportion="0.0" vertical-offset="4837" max-vertical-offset="5520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="31" selection-start="2727" selection-end="2727" vertical-scroll-proportion="-14.0" vertical-offset="671" max-vertical-offset="2205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="69" selection-start="545" selection-end="545" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="975">
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/addQuestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="56" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.76119405" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>

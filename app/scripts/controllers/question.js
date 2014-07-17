@@ -88,4 +88,11 @@ angular.module('pupilsboardApp')
                 //.xhr(function(xhr){xhr.upload.addEventListener(...)})// access and attach any event listener to XMLHttpRequest.
             }
         };
+
+
+        $scope.createMatchingQuestionOptions = { data: 'questions',
+            columnDefs: [
+                { field: 'content', displayName: 'Text',width: 90,height:180},
+                { field: '_id', displayName: 'Id', width: 90,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD" disabled/>' },
+                { field: 'selected',displayName: 'Select',width: 90,cellTemplate: '<input type="checkbox" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
 });
