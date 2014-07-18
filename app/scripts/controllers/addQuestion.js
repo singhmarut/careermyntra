@@ -12,17 +12,17 @@ angular.module('pupilsboardApp')
            console.log($scope.question.text);
         };
 
-        $scope.matchingQuestion = [{option: "", match: ""},
-            {option: "", match: ""},
-            {option: "", match: ""},
-            {option: "", match: ""},
-            {option: "", match: ""}];
+        $scope.matchingQuestion = [{idx: '',option: "", match: ""},
+            {idx: '1',option: "", match: ""},
+            {idx: '2',option: "", match: ""},
+            {idx: '3',option: "", match: ""},
+            {idx: '4',option: "", match: ""}];
 
-        $scope.matchingQuestionOption = [{option: ""},
-            {option: ""},
-            {option: ""},
-            {option: ""},
-            {option: ""}];
+        $scope.matchingQuestionOption = [{seq: '(a)',choice: ""},
+            {seq: "(b)",choice: ""},
+            {seq: '(c)',choice: ""},
+            {seq: '(d)',choice: ""},
+            {seq: '(e)',choice: ""}];
 
 //        $scope.matchingQuestionText = { data: 'questions',
 //            columnDefs: [
@@ -30,12 +30,14 @@ angular.module('pupilsboardApp')
 //                { field: '_id', displayName: 'Id', width: 90,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD" disabled/>' },
 //                { field: 'selected',displayName: 'Select',width: 90,cellTemplate: '<input type="checkbox" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
 
-        $scope.createMatchingChoice = { data: 'matchingQuestion',
+        $scope.createMatchingChoice = { data: 'matchingQuestionOption',
             columnDefs: [
-                { field: 'option', displayName: 'Options', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
+                { field: 'seq', displayName: 'Seq'},
+                { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
 
         $scope.createMatchingQuestionOptions = { data: 'matchingQuestion',
             columnDefs: [
+                { field: 'idx', displayName: ''},
                 { field: 'option', displayName: 'Option',width: 190, cellTemplate: '<input type="text" class="gridInput" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' },
                 { field: 'match', displayName: 'Match', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
     });
