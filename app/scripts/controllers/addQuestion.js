@@ -4,15 +4,15 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert) {
+    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal) {
         $scope.question = {};
         $scope.question.text = '';
 
         $scope.saveQuestion = function (){
-           console.log($scope.question.text);
+            var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
         };
 
-        $scope.matchingQuestion = [{idx: '',option: "", match: ""},
+        $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
             {idx: '1',option: "", match: ""},
             {idx: '2',option: "", match: ""},
             {idx: '3',option: "", match: ""},
@@ -21,8 +21,7 @@ angular.module('pupilsboardApp')
         $scope.matchingQuestionOption = [{seq: '(a)',choice: ""},
             {seq: "(b)",choice: ""},
             {seq: '(c)',choice: ""},
-            {seq: '(d)',choice: ""},
-            {seq: '(e)',choice: ""}];
+            {seq: '(d)',choice: ""}];
 
 //        $scope.matchingQuestionText = { data: 'questions',
 //            columnDefs: [
@@ -33,11 +32,11 @@ angular.module('pupilsboardApp')
         $scope.createMatchingChoice = { data: 'matchingQuestionOption',
             columnDefs: [
                 { field: 'seq', displayName: 'Seq'},
-                { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
+                { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" style="width: 100%;" ng-model="COL_FIELD"/>' }]};
 
         $scope.createMatchingQuestionOptions = { data: 'matchingQuestion',
             columnDefs: [
                 { field: 'idx', displayName: ''},
-                { field: 'option', displayName: 'Option',width: 190, cellTemplate: '<input type="text" class="gridInput" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' },
-                { field: 'match', displayName: 'Match', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' }]};
+                { field: 'option', displayName: 'Option',width: 190, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' },
+                { field: 'match', displayName: 'Match', width: 190,cellTemplate: '<input type="text" ng-input="COL_FIELD" style="width: 100%;" ng-model="COL_FIELD"/>' }]};
     });

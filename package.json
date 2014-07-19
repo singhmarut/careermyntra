@@ -23,7 +23,8 @@
     "passport-google": "^0.3.0",
     "passport-local": "~0.1.6",
     "static-favicon": "~1.0.1",
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+     "connect-busboy": "0.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

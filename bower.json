@@ -27,6 +27,7 @@
   },
   "testPath": "test/client/spec",
   "resolutions": {
-    "angular": "1.2.18"
+    "angular": "1.2.20",
+    "jquery": "2.0.1"
   }
 }

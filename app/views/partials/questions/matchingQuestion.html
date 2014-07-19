@@ -1,63 +1,18 @@
 <div ng-include="'partials/navbar.html'"></div>
 
 <div class="container" ng-controller="AddquestionCtrl">
+    <div class="page-header"></div>
     <h2 class="text-primary">Add Matching Questions </h2>
-    <textarea rows="2" cols="30" spellcheck="true"  ckeditor="" style="height: 100px;" ng-model="question.text"></textarea>
+    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.text"></textarea>
     <div class="row">
          <div class="col-lg-6">
              <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
          </div>
         <div class="col-lg-3">
-            <textarea rows="6" cols="45" style="height: 180px;" spellcheck="true"></textarea>
+            <textarea rows="4" cols="45" style="height: 180px;" spellcheck="true"></textarea>
         </div>
         <div class="col-lg-3">
             <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
         </div>
     </div>
-    <!--<textarea rows="2" cols="50" spellcheck="true" ckeditor="editorOptions" ng-model="question.text"></textarea>-->
-    <!--<div spellcheck="true">-->
-        <!--<form>-->
-        <!--<table>-->
-            <!--<thead>-->
-                 <!--<tr>-->
-                     <!--<th>Text</th>-->
-                 <!--</tr>-->
-            <!--</thead>-->
-            <!--<tbody>-->
-                <!--<tr>-->
-                    <!--<td><textarea rows="2" cols="50" spellcheck="true" ckeditor="editorOptions" ng-model="question.text"></textarea></td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                    <!--<table>-->
-                        <!--<tbody>-->
-                            <!--<tr>-->
-                                <!--<td><input type="text" value="text" spellcheck="true"/></td>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                            <!--</tr>-->
-                            <!--<tr>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                                <!--<td><input type="text" value="text"/></td>-->
-                            <!--</tr>-->
-                        <!--</tbody>-->
-                    <!--</table>-->
-                <!--</tr>-->
-            <!--</tbody>-->
-        <!--</table>-->
-            <!--<button type="button" class="btn btn-sm btn-primary" ng-click="saveQuestion()">Edit</button>-->
-
-        <!--</form>-->
-    <!--</div>-->
-
-    <!--<div>-->
-        <!--<button type="button" class="btn btn-default" ng-click="dismissModal()">Cancel</button>-->
-        <!--<button type="button" class="btn btn-primary" ng-click="confirmQuestions()">Save</button>-->
-    <!--</div>-->
 </div>
