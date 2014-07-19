@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc00af51-0919-4e72-9a6f-9304e475ad74" name="Default" comment="Changes for Question Editing">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/question.js" afterPath="$PROJECT_DIR$/lib/models/question.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pupilsboard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,11 +74,11 @@
       <file leaf-file-name="matchingQuestion2.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="129" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.7368421" vertical-offset="180" max-vertical-offset="750">
+            <state line="1" column="54" selection-start="55" selection-end="55" vertical-scroll-proportion="0.02631579" vertical-offset="0" max-vertical-offset="735">
               <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -870,12 +869,12 @@
       <workItem from="1405588096732" duration="1789000" />
       <workItem from="1405673271137" duration="6000" />
       <workItem from="1405673620964" duration="1854000" />
-      <workItem from="1405685221513" duration="9704000" />
+      <workItem from="1405685221513" duration="9914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442915000" />
+    <option name="totallyTimeSpent" value="443125000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1331,11 +1330,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="129" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.7368421" vertical-offset="180" max-vertical-offset="750">
+        <state line="1" column="54" selection-start="55" selection-end="55" vertical-scroll-proportion="0.02631579" vertical-offset="0" max-vertical-offset="735">
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
