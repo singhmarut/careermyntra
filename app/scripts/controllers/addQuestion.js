@@ -6,9 +6,22 @@
 angular.module('pupilsboardApp')
     .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal) {
         $scope.question = {};
-        $scope.question.text = '';
+        $scope.question.content = '';
+        $scope.question.extraContent = '';
+        $scope.question.matchingOptions = [];
+        $scope.question.choices = [];
 
         $scope.saveQuestion = function (){
+            var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
+            for (var i = 0, len = matchingData.length; i < len; i++) {
+                var matchingOption = new Object();
+                matchingOption.option = matchingData[i].option;
+                matchingOption.match = matchingData[i].match;
+                $scope.question.matchingOptions.push(matchingOption);
+            };
+
+            console.log(JSON.stringify($scope.question.matchingOptions));
+
             var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
         };
 
@@ -17,6 +30,17 @@ angular.module('pupilsboardApp')
             {idx: '2',option: "", match: ""},
             {idx: '3',option: "", match: ""},
             {idx: '4',option: "", match: ""}];
+
+//        $scope.addjQueryToPartial = function()
+//        {
+//            $(document).on("click", "#saveQuestion", function() {
+//                alert('yo');
+//            });
+////            angular.element('saveQuestion').click(function() //angular way of accessing jQuery
+////            {
+////                alert('yo');
+////            });
+//        }
 
         $scope.matchingQuestionOption = [{seq: '(a)',choice: ""},
             {seq: "(b)",choice: ""},
