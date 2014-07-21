@@ -9,7 +9,7 @@
                     <label>Main Text</label>
                 </div>
                 <div class="col-lg-6">
-                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.text"></textarea>
+                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 <label>Remaining Text</label>
             </div>
             <div class="col-lg-6">
-                <textarea rows="1" cols="90" spellcheck="true">Select the Correct Option</textarea>
+                <textarea rows="1" cols="90" spellcheck="true" ng-model="question.extraContent" placeholder="Select the Correct Option"></textarea>
             </div>
         </div>
        <div class="row">

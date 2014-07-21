@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal) {
+    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal,$route) {
         $scope.question = {};
         $scope.question.content = '';
         $scope.question.extraContent = '';
@@ -13,6 +13,7 @@ angular.module('pupilsboardApp')
 
         $scope.saveQuestion = function (){
             var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
+            var optionsData = $scope.createMatchingChoice.ngGrid.data;
             for (var i = 0, len = matchingData.length; i < len; i++) {
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
@@ -20,9 +21,20 @@ angular.module('pupilsboardApp')
                 $scope.question.matchingOptions.push(matchingOption);
             };
 
-            console.log(JSON.stringify($scope.question.matchingOptions));
+            for (var i = 0, len = optionsData.length; i < len; i++) {
+                var newOption = new Object();
+                newOption.choice = optionsData[i].choice;
+                $scope.question.choices.push(matchingOption);
+            };
 
-            var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
+            console.log(JSON.stringify($scope.question));
+            $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
+                console.log('inside error');
+            })
+            .success(function(data){
+                    var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
+                    $route.reload();
+            });
         };
 
         $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
