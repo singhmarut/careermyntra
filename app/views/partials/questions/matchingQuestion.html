@@ -1,18 +1,44 @@
-<div ng-include="'partials/navbar.html'"></div>
 
-<div class="container" ng-controller="AddquestionCtrl">
-    <div class="page-header"></div>
+<div class="container" ng-controller="QuestionCtrl">
+    <!--<div class="page-header"></div>-->
     <h2 class="text-primary">Add Matching Questions </h2>
-    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.text"></textarea>
-    <div class="row">
-         <div class="col-lg-6">
-             <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
-         </div>
-        <div class="col-lg-3">
-            <textarea rows="4" cols="45" style="height: 180px;" spellcheck="true"></textarea>
+    <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-1">
+                    <label>Main Text</label>
+                </div>
+                <div class="col-lg-6">
+                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
+        <div class="row">
+            <div class="col-lg-1">
+                <label>Match Options</label>
+            </div>
+            <div class="col-lg-6">
+                <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-lg-1">
+                <label>Remaining Text</label>
+            </div>
+            <div class="col-lg-6">
+                <textarea rows="1" cols="90" spellcheck="true" ng-model="question.extraContent" placeholder="Select the Correct Option"></textarea>
+            </div>
+        </div>
+       <div class="row">
+           <div class="col-lg-1">
+               <label>Options</label>
+           </div>
+           <div class="col-lg-3">
+               <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
+           </div>
+           <div class="col-lg-3">
+               <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion()">Save Question</button>
+           </div>
+       </div>
+    </form>
 </div>

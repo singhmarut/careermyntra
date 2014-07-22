@@ -8,6 +8,15 @@ angular.module('pupilsboardApp')
             {key:'By Invitation', shade:'BY_INVITATION'}
         ];
 
+        $scope.getAllTags = function(row){
+            $http.get('/api/questions/tag/' + row.entity.tag).error(function(err){
+                console.log('error while fetching questions...');
+            })
+            .success(function(data){
+                $scope.questions = data;
+            });
+        };
+
         $scope.questionPaper = new Object();
         $scope.questionPaper.sections = [];
         var newSection = new Object();

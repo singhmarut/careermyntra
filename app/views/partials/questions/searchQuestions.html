@@ -1,10 +1,19 @@
 <div ng-include="'partials/navbar.html'"></div>
 
 <div class="container-fluid" ng-controller="QuestionCtrl" style="margin-left: 20px;">
-    <h3 class="page-header">Search By Tag</h3>
+    <h3 class="page-header">Search Questions</h3>
     <div class="row">
             <div class="col-lg-2 center">
+                <label>Tag</label>
                 <input type="text" class="form-control search-query" ng-model="searchTag">
+            </div>
+            <div class="col-lg-2">
+                <label>Start Date</label>
+                <input type="date" rows="5" class="form-control resizeNone" ng-model="search.startDate" placeholder="Start Date">
+            </div>
+            <div class="col-lg-2">
+                <label>End Date</label>
+                <input type="date" rows="5" class="form-control resizeNone" ng-model="search.endDate" placeholder="Start Date">
             </div>
             <div class="col-sm-2">
                 <button type="submit" class="btn btn-small" ng-click="viewTagQuestions(searchTag)">Search</button>
@@ -14,12 +23,11 @@
         <div class="col-lg-12">
             <div ng-if="questions">
             <h3>Questions</h3>
-            <div class="col-lg-7">
             <ul class="pagination">
                 <li ng-repeat="question in questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
             </ul>
 
-            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index" ng-init="editable=0">
+            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index" ng-init="editable=0;populateQuestion(question)">
                 <div id="questionEdit" class="clearfix btn-group pull-right" >
                     <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
                     <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
@@ -27,33 +35,50 @@
                 </div>
                 <div ng-switch="question.type">
                     <!--<h3>Question #{{$index + 1}} </h3>-->
-                    <p ng-bind-html="question.content"></p>
-                    <br/><br/>
-                    <div class="row">
-                        <div ng-switch-when="MCQ">
-                            <div ng-repeat="choice in question.choices" class="active">
-                                <p style="vertical-align: middle">
-                                <label>Choice {{$index+1}}</label>
-                                <div class="row-fluid">
-                                <div class="col-lg-6"></div>
-                                    <textarea rows="2" cols=170" ng-model="choice.choice" ng-disabled="editable == 0"></textarea>
+                    <!--<p ng-bind-html="question.content"></p>-->
+                    <!--<br/><br/>-->
+                    <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <label>Main Text</label>
                                 </div>
-                                <div class="col-sm-1"></div>
-                                    <input type="checkbox" ng-model="choice.isCorrectAnswer" ng-disabled="editable == 0">
+                                <div class="col-lg-6">
+                                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
                                 </div>
-                                </p>
                             </div>
-                            <p>Answer: </p>
-                            <textarea cols="30" rows="5" style="height: 100px;width: 100px;" ckeditor="editorOptions" ng-model="question.answer"></textarea>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Match Options</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Remaining Text</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <textarea rows="1" cols="90" spellcheck="true" ng-model="question.extraContent"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Options</label>
+                            </div>
+                            <div class="col-lg-3">
+                                <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div id="questionNav" class="clearfix btn-group-sm pull-right" >
                 <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1"> Previous </button>
                 <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < questions.length" ng-click="curQuestionIndex = curQuestionIndex+1"> Next </button>
             </div>
-    </div>
         </div>
         </div>
     </div>

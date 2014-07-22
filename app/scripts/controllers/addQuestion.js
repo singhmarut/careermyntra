@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal,$route) {
+    .controller('AddquestionCtrl', function ($scope,$http,$upload,$alert,$modal,$route,$routeParams) {
         $scope.question = {};
         $scope.question.content = '';
         $scope.question.extraContent = '';
@@ -26,8 +26,9 @@ angular.module('pupilsboardApp')
                 newOption.choice = optionsData[i].choice;
                 $scope.question.choices.push(matchingOption);
             };
+            $scope.question.tags = [];
+            $scope.question.tags.push($routeParams.tag);
 
-            console.log(JSON.stringify($scope.question));
             $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
                 console.log('inside error');
             })
