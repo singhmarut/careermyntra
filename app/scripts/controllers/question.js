@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('QuestionCtrl', function ($scope,$http,$upload,$alert,$modal,$routeParams) {
+    .controller('QuestionCtrl', function ($scope,$http,$upload,$alert,$modal,$route,$routeParams) {
         $scope.questions = [];
         $scope.searchTag = '';
         //$scope.editable=0;
@@ -16,7 +16,9 @@ angular.module('pupilsboardApp')
         $scope.question.extraContent = '';
         $scope.question.matchingOptions = [];
         $scope.question.choices = [];
+        $scope.question.extraTags = '';
         $scope.question.tags = [];
+        $scope.allTags = [];
         //$scope.editable = false;
 
         $scope.editQuestion = function(editable) {
@@ -28,6 +30,15 @@ angular.module('pupilsboardApp')
             }
         };
 
+        $scope.getAllTags = function(){
+            $http.get('/api/questions/tags').error(function(err){
+                console.log('error while fetching tags...');
+            })
+            .success(function(data){
+                $scope.allTags = data;
+            });
+        };
+
         // setup editor options
         $scope.editorOptions = {
             language: 'en',
@@ -37,6 +48,8 @@ angular.module('pupilsboardApp')
         };
 
         $scope.saveQuestion = function (question){
+            console.log($scope.question.extraTags);
+
             $http.post('/api/question',JSON.stringify(question)).error(function(err){
                var alert = $alert({
                     "title": "Question Change!",
@@ -105,7 +118,10 @@ angular.module('pupilsboardApp')
             };
 
             $scope.question.tags.push(tagName);
+            if ($scope.question.extraTags != 'undefined' && $scope.question.extraTags != ''){
+                $scope.question.tags.push($scope.question.extraTags.split(","));
 
+            }
             console.log(JSON.stringify($scope.question));
             $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
                 console.log('inside error');

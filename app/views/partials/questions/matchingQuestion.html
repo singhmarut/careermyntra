@@ -1,16 +1,26 @@
 
-<div class="container" ng-controller="QuestionCtrl">
+<div class="container" ng-controller="QuestionCtrl" ng-init="getAllTags()">
     <!--<div class="page-header"></div>-->
     <h2 class="text-primary">Add Matching Questions </h2>
     <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-lg-1">
-                    <label>Main Text</label>
-                </div>
-                <div class="col-lg-6">
-                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
-                </div>
+        <div class="row">
+            <div class="col-lg-1">
+                <label>Tags(Comma separated)</label>
+            </div>
+            <div class="col-lg-6">
+                <!--<select multiple ng-model="question.extraTags">-->
+                    <!--<option ng-repeat="tag in allTags" value="{{tag.name}}">{{tag.name}}</option>-->
+                <!--</select>-->
+                <input type="text" model="question.extraTags">
+            </div>
+        </div>
+        <div class="row">
+            <br/>
+            <div class="col-lg-1">
+                <label>Main Text1</label>
+            </div>
+            <div class="col-lg-6">
+                <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
             </div>
         </div>
         <div class="row">

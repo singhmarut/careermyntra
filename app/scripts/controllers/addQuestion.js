@@ -10,6 +10,16 @@ angular.module('pupilsboardApp')
         $scope.question.extraContent = '';
         $scope.question.matchingOptions = [];
         $scope.question.choices = [];
+        $scope.allTags = [];
+
+//        $scope.getAllTags = function(){
+//            $http.get('/api/questions/tags').error(function(err){
+//                console.log('error while fetching tags...');
+//            })
+//            .success(function(data){
+//                $scope.allTags = data;
+//            });
+//        };
 
         $scope.saveQuestion = function (){
             var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
