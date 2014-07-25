@@ -19,6 +19,8 @@ angular.module('pupilsboardApp')
         $scope.question.extraTags = '';
         $scope.question.tags = [];
         $scope.allTags = [];
+        $scope.choicesData = [];
+
         //$scope.editable = false;
 
         $scope.editQuestion = function(editable) {
@@ -47,11 +49,14 @@ angular.module('pupilsboardApp')
             cols: 10
         };
 
-        $scope.saveQuestion = function (question){
-            console.log($scope.question.extraTags);
+        $scope.updateQuestion = function (question){
+            if (question.extraTags != 'undefined' && question.extraTags != ''){
+                question.tags = [];
+                question.tags.push(question.extraTags.split(","));
+            }
 
-            $http.post('/api/question',JSON.stringify(question)).error(function(err){
-               var alert = $alert({
+            $http.put('/api/question',JSON.stringify(question)).error(function(err){
+               var alert = $modal({
                     "title": "Question Change!",
                     "content": "error while saving question",
                     "type": "error"
@@ -59,16 +64,24 @@ angular.module('pupilsboardApp')
             })
             .success(function(data){
                  $scope.editable=0;
-                    var alert = $alert({
+                    var alert = $modal({
                         "title": "Question Change!",
                         "content": "Question was saved successfully",
                         "type": "info",
                         placement: 'top-left',
-                        duration: 2,
                         show: true
                     });
             });
         };
+
+        $scope.getQuestionFormattedTag = function(question){
+            var formattedTag = '';
+            angular.forEach(question.tags,function(tag){
+                formattedTag += tag + ",";
+            })
+            question.extraTags = formattedTag;
+            return formattedTag;
+        }
 
         $scope.onFileSelect = function($files) {
             //$files: an array of files selected, each file has name, size, and type.
@@ -108,7 +121,9 @@ angular.module('pupilsboardApp')
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
                 matchingOption.match = matchingData[i].match;
-                $scope.question.matchingOptions.push(matchingOption);
+                if (matchingOption.option != '' || matchingOption.match != ''){
+                    $scope.question.matchingOptions.push(matchingOption);
+                }
             };
 
             for (var i = 0, len = optionsData.length; i < len; i++) {
@@ -120,7 +135,6 @@ angular.module('pupilsboardApp')
             $scope.question.tags.push(tagName);
             if ($scope.question.extraTags != 'undefined' && $scope.question.extraTags != ''){
                 $scope.question.tags.push($scope.question.extraTags.split(","));
-
             }
             console.log(JSON.stringify($scope.question));
             $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
@@ -143,6 +157,10 @@ angular.module('pupilsboardApp')
             if ($scope.search.text != undefined){
                 filterUrl += "&text=" + $scope.search.text;
             }
+            var questionStatus =  $("#questionStatus").val();
+            if (questionStatus != undefined){
+                filterUrl += "&status=" + questionStatus;
+            }
             $http.get('/api/questions/tag/' + tag + filterUrl).error(function(err){
                 console.log('error while fetching questions...');
             })
@@ -153,13 +171,25 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.populateQuestion = function(question){
+        $scope.populateQuestion = function(idx){
+            var question = $scope.questions[idx];
+            $scope.choicesData = [];
+            var charCode = 65;
             for (var i = 0; i < question.choices.length; i++){
-                var choice = {choice: question.choices[i].choice};
+                //var choice = {choice: question.choices[i].choice};
 //                $scope.matchingQuestionOptionData=[];
-                //TODO: MAke sure shuffling of choices does not make any impact
-                $scope.matchingQuestionOptionData[i].choice = question.choices[i].choice;
+                var choice = new Object();
+                choice.seq =String.fromCharCode(charCode + i);
+                choice.choice = question.choices[i].choice;
+                $scope.choicesData.push(choice);
+                //TODO: Make sure shuffling of choices does not make any impact
+                //$scope.choicesData[i].choice = question.choices[i].choice;
             }
+//            $scope.choicesData = [{seq: '(a)',choice: "a"},
+//                {seq: "(b)",choice: "s"},
+//                {seq: '(c)',choice: "d"},
+//                {seq: '(d)',choice: "f"}];
+            console.log($scope.choicesData);
         }
 
         $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
@@ -179,16 +209,29 @@ angular.module('pupilsboardApp')
 ////            });
 //        }
 
-        $scope.matchingQuestionOptionData = [{seq: '(a)',choice: ""},
+        $scope.choicesData = [{seq: '(a)',choice: ""},
             {seq: "(b)",choice: ""},
             {seq: '(c)',choice: ""},
             {seq: '(d)',choice: ""}];
 
+        $scope.choiceColumnDefs = [
+            { field: 'seq', displayName: 'Seq'},
+            { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }];
 
-        $scope.createMatchingChoice = { data: 'matchingQuestionOptionData',
-            columnDefs: [
-                { field: 'seq', displayName: 'Seq'},
-                { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }]};
+//        $scope.$watch('choicesData', function() {
+//            $scope.colDefs = [];
+//
+//            angular.forEach(Object.keys($scope.choicesData[0]), function(key){
+//                $scope.choiceColumnDefs.push({ field: key });
+//            });
+//        });
+
+
+        $scope.createMatchingChoice = { data: 'choicesData',
+            columnDefs: $scope.choiceColumnDefs,
+            enableColumnResize: false,
+            showGroupPanel: true,
+            enablePaging: false};
 
         $scope.createMatchingQuestionOptions = { data: 'matchingQuestion',
             columnDefs: [
