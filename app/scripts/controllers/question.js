@@ -52,7 +52,12 @@ angular.module('pupilsboardApp')
         $scope.updateQuestion = function (question){
             if (question.extraTags != 'undefined' && question.extraTags != ''){
                 question.tags = [];
-                question.tags.push(question.extraTags.split(","));
+                var newTags = question.extraTags.split(",");
+                angular.forEach(newTags,function(tag){
+                    if (tag && tag != ''){
+                        question.tags.push(tag);
+                    }
+                });
             }
 
             $http.put('/api/question',JSON.stringify(question)).error(function(err){
@@ -146,7 +151,8 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.viewTagQuestions = function(tag){
+        $scope.viewTagQuestions = function(tagObject){
+            var tag = tagObject.name;
             var filterUrl = "?";
             if ($scope.search.startDate != undefined && $scope.search.endDate != undefined){
                 filterUrl += "&startDate=" + $scope.search.startDate + "&endDate=" + $scope.search.endDate;
@@ -197,6 +203,11 @@ angular.module('pupilsboardApp')
             {idx: '2',option: "", match: ""},
             {idx: '3',option: "", match: ""},
             {idx: '4',option: "", match: ""}];
+
+        $scope.publishQuestion = function(question){
+            question.status = 'PUBLISHED';
+            $scope.updateQuestion(question);
+        };
 
 //        $scope.addjQueryToPartial = function()
 //        {
