@@ -18,7 +18,7 @@
         <div class="row">
             <br/>
             <div class="col-lg-1">
-                <label>Main Text1</label>
+                <label>Main Text</label>
             </div>
             <div class="col-lg-6">
                 <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
@@ -44,12 +44,21 @@
            <div class="col-lg-1">
                <label>Options</label>
            </div>
-           <div class="col-lg-3">
+           <div class="col-lg-6">
                <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
            </div>
-           <div class="col-lg-3">
+           <div class="col-lg-2">
                <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion()">Save Question</button>
            </div>
        </div>
+        <div class="row">
+            <br/>
+            <div class="col-lg-1">
+                <label>Answer</label>
+            </div>
+            <div class="col-lg-6">
+                <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.answer"></textarea>
+            </div>
+        </div>
     </form>
 </div>

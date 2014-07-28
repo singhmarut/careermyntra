@@ -134,6 +134,7 @@ angular.module('pupilsboardApp')
             for (var i = 0, len = optionsData.length; i < len; i++) {
                 var newOption = new Object();
                 newOption.choice = optionsData[i].choice;
+                newOption.isCorrectAnswer = optionsData[i].isCorrect;
                 $scope.question.choices.push(newOption);
             };
 
@@ -187,14 +188,15 @@ angular.module('pupilsboardApp')
             $scope.updateQuestion(question);
         };
 
-        $scope.choicesData = [{seq: '(a)',choice: ""},
-            {seq: "(b)",choice: ""},
-            {seq: '(c)',choice: ""},
-            {seq: '(d)',choice: ""}];
+        $scope.choicesData = [{seq: '(a)',choice: "",isCorrect:false},
+            {seq: "(b)",choice: "",isCorrect:false},
+            {seq: '(c)',choice: "",isCorrect:false},
+            {seq: '(d)',choice: "",isCorrect:false}];
 
         $scope.choiceColumnDefs = [
             { field: 'seq', displayName: 'Seq'},
-            { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }];
+            { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' },
+            { field: 'isCorrect', displayName: 'Correct Answer', width: 190,cellTemplate: '<input type="checkbox" style="width: 100%;" ng-model="COL_FIELD"/>' }];
 
         $scope.createMatchingChoice = { data: 'choicesData',
             columnDefs: $scope.choiceColumnDefs,
