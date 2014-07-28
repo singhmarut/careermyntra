@@ -3,16 +3,28 @@
     <!--<div class="page-header"></div>-->
     <h2 class="text-primary">Add Matching Questions </h2>
     <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
+        <div class="row" ng-show="question.tags.length > 0">
+            <div class="col-lg-1">
+                <label>Tags</label>
+            </div>
+            <div class="col-lg-11" style="line-height: 2.2">
+                <a class="btn btn-xs" style="margin-right: 10px;" ng-class="btn-info" ng-repeat="tag in question.tags">
+                    {{tag}}
+                    <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag)"></span>
+                </a>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-1">
-                <label>Tags(Comma separated)</label>
+                <label>Select Tags</label>
             </div>
             <div class="col-lg-6">
                 <!--<select multiple ng-model="question.extraTags">-->
                     <!--<option ng-repeat="tag in allTags" value="{{tag.name}}">{{tag.name}}</option>-->
                 <!--</select>-->
-                <!--<input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-options="tag.name for tag in allTags" bs-typeahead>-->
-                <input type="text" model="question.extraTags">
+                <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion()" ng-options="tag.name for tag in allTags" bs-typeahead>
+                <!--<input type="text" model="question.extraTags">-->
             </div>
         </div>
         <div class="row">

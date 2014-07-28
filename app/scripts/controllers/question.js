@@ -116,6 +116,32 @@ angular.module('pupilsboardApp')
                 //.xhr(function(xhr){xhr.upload.addEventListener(...)})// access and attach any event listener to XMLHttpRequest.
             }
         };
+        $scope.addTagToQuestion = function (){
+            if (angular.isObject($scope.searchTag) && ($routeParams.tag != $scope.searchTag.name)){
+                var isPresent = false;
+                for (var idx = 0; idx < $scope.question.tags.length; idx++) {
+                    var findTag = $scope.question.tags[idx];
+                    if ((findTag == $scope.searchTag.name)){
+                        isPresent = true;
+                        break;
+                    }
+                }
+                if (!isPresent){
+                    $scope.question.tags.push($scope.searchTag.name);
+                    $scope.searchTag = '';
+                }
+            }
+        };
+
+        $scope.removeTagFromQuestion = function (tag){
+            for (var idx = 0; idx < $scope.question.tags.length; idx++) {
+                var findTag = $scope.question.tags[idx];
+                if (findTag === tag){
+                    $scope.question.tags.splice(idx,1);
+                    break;
+                }
+            }
+        };
 
         $scope.saveQuestion = function (){
             var tagName = $routeParams.tag;
