@@ -32,8 +32,9 @@ angular.module('pupilsboardApp')
                     console.log('inside error');
                  })
                  .success(function(data){
-                    console.log('inside error');
-                    $location.path('/questionPaper/'+data.questionPaperId); //use $location.path(url).replace() if you want to replace the location instead
+                     var myOtherModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/instructions.html', show: true});
+
+                     $location.path('/questionPaper/'+data.questionPaperId); //use $location.path(url).replace() if you want to replace the location instead
                  });
          };
 
@@ -57,7 +58,6 @@ angular.module('pupilsboardApp')
                 $scope.totalTime = totalTime;
                 $scope.startTime(true,0,0,0);
                 console.log('Total time of test is:' + totalTime);
-
             });
         };
 
@@ -110,7 +110,7 @@ angular.module('pupilsboardApp')
                     s = 59;
                 }
             }
-            if (h == 0 && m === 0 && s == 0){
+            if (h == 0 && (m-0) == 0 && (s-0) == 0){
                 //section.isOver = true;
                 var myAlert = $alert({title: 'Time UP', content: 'Time is UP..Paper will be submitted', placement: 'top', type: 'warning', show: true,duration: 3});
                 $scope.finish();
@@ -124,7 +124,7 @@ angular.module('pupilsboardApp')
         };
 
         $scope.checkTime = function (i){
-            if (i<10) {
+            if (i<10 && i.toString().length < 2) {
                 i = "0" + i;
             }
             return i;

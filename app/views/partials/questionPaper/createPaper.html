@@ -1,7 +1,25 @@
 <div ng-include="'partials/navbar'" xmlns="http://www.w3.org/1999/html"></div>
 
-<div class="container-fluid">
-<div ng-controller="CreatequestionpaperCtrl">
+<!--<div ng-include="'partials/questions/searchQuestions.html'"></div>-->
+
+<div class="container-fluid" ng-controller="QuestionpaperCtrl">
+    <h3 class="page-header">Search Questions</h3>
+    <div class="row">
+        <div class="col-lg-2 center">
+            <label>Tag</label>
+            <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="search.tag" ng-options="tag.name for tag in allTags" bs-typeahead>
+        </div>
+        <div class="col-sm-2">
+            <label>Start Date</label>
+            <input type="date" rows="5" class="form-control resizeNone" ng-model="search.startDate" placeholder="Start Date">
+        </div>
+        <div class="col-sm-2">
+            <label>End Date</label>
+            <input type="date" rows="5" class="form-control resizeNone" ng-model="search.endDate" placeholder="Start Date">
+        </div>
+    </div>
+
+<div>
     <div class="row">
     <div>
         <h2 class="text-primary">Create a new Question Paper </h2>
@@ -15,7 +33,7 @@
             <label>Invitation Type</label>
             <select name="invitationType" ng-model="invitationType" ng-options="invitation.key for invitation in invitations" required></select>
         </div>
-        <div style="height: 200px;" ng-grid="gridOptions"></div>
+        <div style="height: 200px;" ng-init="getAllTags()" ng-grid="gridOptions"></div>
     </div>
     </div>
 

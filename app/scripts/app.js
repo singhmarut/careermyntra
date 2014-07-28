@@ -71,7 +71,7 @@ angular.module('pupilsboardApp', [
                 authenticate: true
             })
             .when('/viewQuestions', {
-                templateUrl: 'partials/questions/searchQuestions',
+                templateUrl: 'partials/questions/viewQuestions',
                 controller: 'QuestionCtrl',
                 authenticate: true
             })

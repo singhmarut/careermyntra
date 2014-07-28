@@ -1,0 +1,113 @@
+<div ng-include="'partials/navbar.html'"></div>
+
+<!--<div ng-include="'partials/questions/searchQuestions.html'"></div>-->
+
+<div class="container-fluid" ng-controller="QuestionCtrl" style="margin-left: 20px;">
+    <h3 class="page-header">Search Questions</h3>
+    <div class="row">
+        <div class="col-lg-2 center">
+            <label>Tag</label>
+            <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-options="tag.name for tag in allTags" bs-typeahead>
+        </div>
+        <div class="col-sm-2">
+            <label>Start Date</label>
+            <input type="date" rows="5" class="form-control resizeNone" ng-model="search.startDate" placeholder="Start Date">
+        </div>
+        <div class="col-sm-2">
+            <label>End Date</label>
+            <input type="date" rows="5" class="form-control resizeNone" ng-model="search.endDate" placeholder="Start Date">
+        </div>
+        <div class="col-lg-2">
+            <select multiple id="questionStatus">
+                <optgroup label="Status">
+                    <option>DRAFT</option>
+                    <option>PUBLISHED</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="col-sm-2">
+            <button type="submit" class="btn btn-small" ng-click="viewTagQuestions(searchTag.name)">Search</button>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-lg-12">
+            <div ng-if="questions">
+            <h3>Questions</h3>
+            <ul class="pagination">
+                <li ng-repeat="question in questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
+            </ul>
+            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index" ng-init="editable=0">
+                <button type="submit" ng-if="question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion(question)">Publish</button>
+                <div id="questionEdit" class="clearfix btn-group pull-right" >
+                    <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
+                    <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; updateQuestion(questions[curQuestionIndex])">Save</button>
+                </div>
+                <div ng-switch="question.type">
+                    <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <label>Main Text</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Tags</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" ng-model="question.extraTags" ng-init="getQuestionFormattedTag(question)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Match Options</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <div ng-repeat="matchingOption in question.matchingOptions">
+                                    <table>
+                                        <tbody>
+                                            <td><input type="text" ng-model="matchingOption.option"></td>
+                                            <td><input type="text" ng-model="matchingOption.choice"></td>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Remaining Text</label>
+                            </div>
+                            <div class="col-lg-6">
+                                <textarea rows="1" cols="90" spellcheck="true" ng-model="question.extraContent"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label>Options</label>
+                            </div>
+                            <div class="col-lg-3">
+                                <div ng-repeat="choice in question.choices">
+                                    <input type="text" ng-model="choice.choice">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="questionNav" class="clearfix btn-group-sm pull-right" >
+                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1;"> Previous </button>
+                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < questions.length" ng-click="curQuestionIndex = curQuestionIndex+1;"> Next </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr>
+    <div ng-include="'partials/footer'"></div>
+
+</div>
+

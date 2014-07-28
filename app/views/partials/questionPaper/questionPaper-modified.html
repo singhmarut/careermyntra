@@ -50,7 +50,6 @@
                 </div>
             </div>
             <div ng-repeat="section in questionPaper.sections">
-                <p>curIndex {{curQuestionIndex}}</p>
                 <div class="panel panel-blue" ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index">
                     <div class="panel-heading">
                         <span class="pull-right subject-section">Section: {{section.name}}</span>

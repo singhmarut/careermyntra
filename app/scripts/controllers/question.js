@@ -151,8 +151,7 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.viewTagQuestions = function(tagObject){
-            var tag = tagObject.name;
+        $scope.viewTagQuestions = function(tag){
             var filterUrl = "?";
             if ($scope.search.startDate != undefined && $scope.search.endDate != undefined){
                 filterUrl += "&startDate=" + $scope.search.startDate + "&endDate=" + $scope.search.endDate;
@@ -177,27 +176,6 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.populateQuestion = function(idx){
-            var question = $scope.questions[idx];
-            $scope.choicesData = [];
-            var charCode = 65;
-            for (var i = 0; i < question.choices.length; i++){
-                //var choice = {choice: question.choices[i].choice};
-//                $scope.matchingQuestionOptionData=[];
-                var choice = new Object();
-                choice.seq =String.fromCharCode(charCode + i);
-                choice.choice = question.choices[i].choice;
-                $scope.choicesData.push(choice);
-                //TODO: Make sure shuffling of choices does not make any impact
-                //$scope.choicesData[i].choice = question.choices[i].choice;
-            }
-//            $scope.choicesData = [{seq: '(a)',choice: "a"},
-//                {seq: "(b)",choice: "s"},
-//                {seq: '(c)',choice: "d"},
-//                {seq: '(d)',choice: "f"}];
-            console.log($scope.choicesData);
-        }
-
         $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
             {idx: '1',option: "", match: ""},
             {idx: '2',option: "", match: ""},
@@ -209,17 +187,6 @@ angular.module('pupilsboardApp')
             $scope.updateQuestion(question);
         };
 
-//        $scope.addjQueryToPartial = function()
-//        {
-//            $(document).on("click", "#saveQuestion", function() {
-//                alert('yo');
-//            });
-////            angular.element('saveQuestion').click(function() //angular way of accessing jQuery
-////            {
-////                alert('yo');
-////            });
-//        }
-
         $scope.choicesData = [{seq: '(a)',choice: ""},
             {seq: "(b)",choice: ""},
             {seq: '(c)',choice: ""},
@@ -228,15 +195,6 @@ angular.module('pupilsboardApp')
         $scope.choiceColumnDefs = [
             { field: 'seq', displayName: 'Seq'},
             { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }];
-
-//        $scope.$watch('choicesData', function() {
-//            $scope.colDefs = [];
-//
-//            angular.forEach(Object.keys($scope.choicesData[0]), function(key){
-//                $scope.choiceColumnDefs.push({ field: key });
-//            });
-//        });
-
 
         $scope.createMatchingChoice = { data: 'choicesData',
             columnDefs: $scope.choiceColumnDefs,
