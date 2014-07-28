@@ -220,20 +220,22 @@ angular.module('pupilsboardApp')
             {seq: '(d)',choice: "",isCorrect:false}];
 
         $scope.choiceColumnDefs = [
-            { field: 'seq', displayName: 'Seq'},
-            { field: 'choice', displayName: 'Choice', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' },
-            { field: 'isCorrect', displayName: 'Correct Answer', width: 190,cellTemplate: '<input type="checkbox" style="width: 100%;" ng-model="COL_FIELD"/>' }];
+            { field: 'seq', displayName: 'Seq',width: 60},
+            { field: 'choice', displayName: 'Choice', width: 350,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' },
+            { field: 'isCorrect', displayName: 'Correct Answer', width: 160,cellTemplate: '<input type="checkbox" style="width: 100%;" ng-model="COL_FIELD"/>' }];
 
         $scope.createMatchingChoice = { data: 'choicesData',
             columnDefs: $scope.choiceColumnDefs,
-            enableColumnResize: false,
-            showGroupPanel: true,
-            enablePaging: false};
+            enableColumnResize: true,
+            enablePaging: false
+        };
 
         $scope.createMatchingQuestionOptions = { data: 'matchingQuestion',
             columnDefs: [
-                { field: 'idx', displayName: ''},
-                { field: 'option', displayName: 'Option',width: 190, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-model="COL_FIELD"/>' },
-                { field: 'match', displayName: 'Match', width: 190,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }]};
+                { field: 'idx', displayName: '',width: 70},
+                { field: 'option', displayName: 'Option',width: 250, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-model="COL_FIELD"/>' },
+                { field: 'match', displayName: 'Match', width: 220,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }],
+            enableColumnResize: true
+        };
 
 });
