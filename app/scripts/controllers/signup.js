@@ -15,7 +15,7 @@ angular.module('pupilsboardApp')
           password: $scope.user.password
         })
         .then( function() {
-         var myAlert = $alert({title: 'Registration Complete', content: 'An email has been sent to your emailid.\n Please verify your email address', placement: 'top', type: 'info', show: true});
+         var myAlert = $alert({title: 'Registration Complete', content: 'An email has been sent to your emailid.\n Please verify your email address', placement: 'top', type: 'info', show: true,duration:3});
           // Account created, redirect to home
           $location.path('/');
         })

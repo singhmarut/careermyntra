@@ -8,7 +8,7 @@
                 <label>Tags</label>
             </div>
             <div class="col-lg-11" style="line-height: 2.2">
-                <a class="btn btn-xs" style="margin-right: 10px;" ng-class="btn-info" ng-repeat="tag in question.tags">
+                <a class="btn btn-xs btn-info" style="margin-right: 10px;" ng-repeat="tag in question.tags">
                     {{tag}}
                     <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag)"></span>
                 </a>
@@ -60,7 +60,7 @@
                <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
            </div>
            <div class="col-lg-2">
-               <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion()">Save Question</button>
+               <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false)">Save Question</button>
            </div>
        </div>
         <div class="row">

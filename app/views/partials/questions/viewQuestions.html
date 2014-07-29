@@ -36,15 +36,26 @@
             <ul class="pagination">
                 <li ng-repeat="question in questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
             </ul>
-            <div ng-repeat="question in questions" ng-show="curQuestionIndex == $index" ng-init="editable=0">
-                <button type="submit" ng-if="question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion(question)">Publish</button>
+            <div ng-init="editable=0;question=getQuestion(curQuestionIndex)">
+                <button type="submit" ng-if="question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion()">Publish</button>
                 <div id="questionEdit" class="clearfix btn-group pull-right" >
                     <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
                     <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
-                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; updateQuestion(questions[curQuestionIndex])">Save</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion()">Save</button>
                 </div>
                 <div ng-switch="question.type">
                     <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
+                        <div class="row" ng-show="question.tags.length > 0">
+                            <div class="col-lg-1">
+                                <label>Tags</label>
+                            </div>
+                            <div class="col-lg-11" style="line-height: 2.2">
+                                <a class="btn btn-xs btn-info" style="margin-right: 10px;" ng-repeat="tag in question.tags">
+                                    {{tag}}
+                                    <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag)"></span>
+                                </a>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-lg-1">
@@ -57,25 +68,10 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-1">
-                                <label>Tags</label>
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="text" ng-model="question.extraTags" ng-init="getQuestionFormattedTag(question)">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-1">
                                 <label>Match Options</label>
                             </div>
                             <div class="col-lg-6">
-                                <div ng-repeat="matchingOption in question.matchingOptions">
-                                    <table>
-                                        <tbody>
-                                            <td><input type="text" ng-model="matchingOption.option"></td>
-                                            <td><input type="text" ng-model="matchingOption.choice"></td>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -90,18 +86,16 @@
                             <div class="col-lg-1">
                                 <label>Options</label>
                             </div>
-                            <div class="col-lg-3">
-                                <div ng-repeat="choice in question.choices">
-                                    <input type="text" ng-model="choice.choice">
-                                </div>
+                            <div class="col-lg-6">
+                                <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
             <div id="questionNav" class="clearfix btn-group-sm pull-right" >
-                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1;"> Previous </button>
-                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < questions.length" ng-click="curQuestionIndex = curQuestionIndex+1;"> Next </button>
+                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1;question=getQuestion(curQuestionIndex)"> Previous </button>
+                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < questions.length" ng-click="curQuestionIndex = curQuestionIndex+1;question=getQuestion(curQuestionIndex)"> Next </button>
             </div>
         </div>
         </div>

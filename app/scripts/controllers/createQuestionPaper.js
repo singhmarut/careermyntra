@@ -4,18 +4,24 @@ angular.module('pupilsboardApp')
     .controller('CreatequestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert) {
 
 
-        $scope.questionPaper = new Object();
+        $scope.questionPaper = {};
+
         $scope.questionPaper.sections = [];
-        var newSection = new Object();
-        $scope.questionPaper.sections[0] = newSection;
+        $scope.paperName = '';
+        var newSection = {};
         newSection.questionIds = [];
+        $scope.questionPaper.sections[0] = newSection;
+
         $scope.myData = [];
         $scope.search = {};
+        $scope.duration = 60;
 
+        $scope.sectionName = 'General Studies';
         $scope.invitations = [
             {key:'Open For All', value:'OPEN_FOR_ALL'},
-            {key:'By Invitation', shade:'BY_INVITATION'}
+            {key:'By Invitation', value:'BY_INVITATION'}
         ];
+        $scope.invitationType = $scope.invitations[0];
 
         $scope.getAllTags = function(){
             $http.get('/api/questions/tags').error(function(err){
@@ -75,6 +81,28 @@ angular.module('pupilsboardApp')
                 $scope.showModal();
             });
 
+            $scope.showModal = function() {
+                myOtherModal.$promise.then(myOtherModal.show);
+            };
+
+            $scope.dismissModal = function() {
+                myOtherModal.hide();
+            };
+
+            $scope.confirmQuestions = function() {
+                var data = $scope.selectQuestionGridOptions.ngGrid.data;
+
+                for (var i = 0, len = data.length; i < len; i++) {
+                    if (data[i].selected && !$scope.isInArray($scope.questionPaper.sections[0].questionIds,data[i]._id)){
+                        $scope.questionPaper.sections[0].questionIds.push(data[i]._id);
+                    }else if(!data[i].selected){
+                        $scope.removeElement($scope.questionPaper.sections[0].questionIds,data[i]._id);
+                    }
+                };
+                myOtherModal.hide();
+            };
+        };
+
 //            $http.get('/api/questions/tag/' + row.entity.tag).error(function(err){
 //                console.log('error while fetching questions...');
 //            })
@@ -92,9 +120,7 @@ angular.module('pupilsboardApp')
 //                $scope.showModal();
 //            });
 
-            $scope.showModal = function() {
-                myOtherModal.$promise.then(myOtherModal.show);
-            };
+
 
             $scope.isQuestionSelected = function(row){
                var selected = $scope.isInArray($scope.questionPaper.sections[0].questionIds,row.entity._id);
@@ -132,36 +158,19 @@ angular.module('pupilsboardApp')
                 }
             };
 
-            $scope.dismissModal = function() {
-                myOtherModal.hide();
-            };
-
-            $scope.confirmQuestions = function() {
-                console.log('selecting questions..' + $scope.tag);
-                var data = $scope.selectQuestionGridOptions.ngGrid.data;
-                $scope.questionPaper.sections[0].name = $scope.sectionName;
-                $scope.questionPaper.sections[0].totalTime = $scope.duration;
-                for (var i = 0, len = data.length; i < len; i++) {
-                    if (data[i].selected && !$scope.isInArray($scope.questionPaper.sections[0].questionIds,data[i]._id)){
-                        $scope.questionPaper.sections[0].questionIds.push(data[i]._id);
-                    }else if(!data[i].selected){
-                        $scope.removeElement($scope.questionPaper.sections[0].questionIds,data[i]._id);
-                    }
-                };
-                myOtherModal.hide();
-            };
-
             $scope.createPaper = function() {
                 $scope.questionPaper.name = $scope.paperName;
+                $scope.questionPaper.sections[0].name = $scope.sectionName;
+                $scope.questionPaper.sections[0].totalTime = $scope.duration;
                 $scope.questionPaper.invitation = $scope.invitationType.value;
-                JSON.stringify($scope.questionPaper);
+                console.log(JSON.stringify($scope.questionPaper));
+
                 $http.post('/api/questionPaper',JSON.stringify($scope.questionPaper)).error(function(err){
                     var myAlert = $modal({title: 'Question Paper', content: 'Error while creating paper '+ err, placement: 'top', type: 'error', show: true});
                 })
                 .success(function(data){
-                        var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true});
+                    var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true});
                 });
             };
-        }
 
 });

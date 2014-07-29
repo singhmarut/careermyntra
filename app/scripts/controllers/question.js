@@ -41,6 +41,13 @@ angular.module('pupilsboardApp')
             });
         };
 
+        $scope.getQuestion = function(curQuestionIndex){
+            var question =  $scope.questions[curQuestionIndex];
+            $scope.getChoicesData(question);
+            $scope.question = question;
+            return question;
+        }
+
         // setup editor options
         $scope.editorOptions = {
             language: 'en',
@@ -50,16 +57,6 @@ angular.module('pupilsboardApp')
         };
 
         $scope.updateQuestion = function (question){
-            if (question.extraTags != 'undefined' && question.extraTags != ''){
-                question.tags = [];
-                var newTags = question.extraTags.split(",");
-                angular.forEach(newTags,function(tag){
-                    if (tag && tag != ''){
-                        question.tags.push(tag);
-                    }
-                });
-            }
-
             $http.put('/api/question',JSON.stringify(question)).error(function(err){
                var alert = $modal({
                     "title": "Question Change!",
@@ -143,11 +140,13 @@ angular.module('pupilsboardApp')
             }
         };
 
-        $scope.saveQuestion = function (){
+        $scope.saveQuestion = function (update){
             var tagName = $routeParams.tag;
 
             var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
             var optionsData = $scope.createMatchingChoice.ngGrid.data;
+            $scope.question.matchingOptions = [];
+            $scope.question.choices = [];
             for (var i = 0, len = matchingData.length; i < len; i++) {
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
@@ -164,18 +163,26 @@ angular.module('pupilsboardApp')
                 $scope.question.choices.push(newOption);
             };
 
-            $scope.question.tags.push(tagName);
-            if ($scope.question.extraTags != 'undefined' && $scope.question.extraTags != ''){
-                $scope.question.tags.push($scope.question.extraTags.split(","));
+            if (tagName != 'undefined' && tagName != null && tagName != ''){
+                $scope.question.tags.push(tagName);
             }
             console.log(JSON.stringify($scope.question));
-            $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
-                console.log('inside error');
-            })
-            .success(function(data){
-                var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
-                $route.reload();
-            });
+            if (update == false){
+                $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
+                    console.log('inside error');
+                })
+                .success(function(data){
+                    var myModal = $modal({title: 'Question Saved', content: 'Question is saved', show: true});
+                    $route.reload();
+                });
+            }else{
+                $http.put('/api/question/',JSON.stringify($scope.question)).error(function(err){
+                    console.log('inside error');
+                })
+                .success(function(data){
+                    var myModal = $modal({title: 'Question Updated', content: 'Question is updated', show: true});
+                });
+            }
         };
 
         $scope.viewTagQuestions = function(tag){
@@ -209,12 +216,20 @@ angular.module('pupilsboardApp')
             {idx: '3',option: "", match: ""},
             {idx: '4',option: "", match: ""}];
 
-        $scope.publishQuestion = function(question){
-            question.status = 'PUBLISHED';
-            $scope.updateQuestion(question);
+        $scope.publishQuestion = function(){
+            $scope.question.status = 'PUBLISHED';
+            $scope.saveQuestion(true);
         };
 
-        $scope.choicesData = [{seq: '(a)',choice: "",isCorrect:false},
+        $scope.getChoicesData = function(question){
+            for (var idx = 0; idx < $scope.choicesData.length; idx++){
+                $scope.choicesData[idx].isCorrect = question.choices[idx].isCorrectAnswer;
+                $scope.choicesData[idx].choice = question.choices[idx].choice;
+            }
+        };
+
+        $scope.choicesData = [
+            {seq: '(a)',choice: "",isCorrect:false},
             {seq: "(b)",choice: "",isCorrect:false},
             {seq: '(c)',choice: "",isCorrect:false},
             {seq: '(d)',choice: "",isCorrect:false}];
