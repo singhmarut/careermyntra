@@ -89,6 +89,11 @@ angular.module('pupilsboardApp', [
 //            authenticate: true
 //        })
             .when('/questionPaper/:id', {
+                templateUrl: 'partials/questionPaper/instructions',
+                controller: 'QuestionpaperCtrl',
+                authenticate: true
+            })
+            .when('/questionPaper/:id/start', {
                 templateUrl: 'partials/questionPaper/questionPaper-modified',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true

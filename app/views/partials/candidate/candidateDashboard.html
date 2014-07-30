@@ -16,11 +16,16 @@
                             <ul class="dropdown-menu" aria-labelledby="dropCandidatePaperActions" style="position: relative;float: right; min-width: 100px;">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/report/{{answerSheet._id}}" ng-show="answerSheet.status == 'CO'">View Report</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/questionPaper/{{answerSheet._id}}" ng-show="answerSheet.status != 'CO'">Start Test</a></li>
+                                <!--<li role="presentation"><a role="menuitem" tabindex="-1" ng-href="/questionPaper/{{answerSheet._id}}" ng-show="answerSheet.status != 'CO'">Start Test</a></li>-->
                             </ul>
-                            <div class="text-header">{{answerSheet.name}}</div>
+                            <!--<div class="text-header">{{answerSheet.name}}</div>-->
                             <!--<div class="text">{{answerSheet.description}}</div>-->
                             <div>
-                                <label><p style="color:white">{{answerSheet.creationDate | date : 'medium'}}</p></label>
+                                <div class="caption" style="text-align: center; margin-top: -10px;">
+                                    <h4>{{answerSheet.name}}</h4>
+                                    <!--<span style="color: lightgreen;">1 Pass</span>,-->
+                                    <label class="MarginTop TxtColorGreen"><span style="color: lightgreen;">Created On</span> : <span style="color: red;">{{answerSheet.creationDate|date:'dd-MM-yyyy'}}</span></label>
+                                </div>
                             </div>
                         </div>
                     </div>

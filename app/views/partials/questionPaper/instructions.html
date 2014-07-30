@@ -1,5 +1,18 @@
-<div class="jumbotron">
-    <p class="lead">
-        <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
-    </p>
+<div ng-include="'partials/navbar'"></div>
+
+<div class="container-fluid" id="content" ng-controller="QuestionpaperCtrl" ng-init="loadInstructions()">
+    <div class="jumbotron">
+        <p ng-bind-html = "instruction">
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-lg-11"></div>
+        <div class="col-lg-1">
+            <div class="float: right-10">
+                <input type="submit" id="submit" class= "btn-large btn-success" value="Start Test" ng-click="startTest()"/>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div ng-include="'partials/footer'"></div>

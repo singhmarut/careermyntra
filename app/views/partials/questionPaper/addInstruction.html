@@ -1,0 +1,11 @@
+<div class="container-fluid" id="content" ng-controller="CreatequestionpaperCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="questionPaper.instruction"></textarea>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn btn-default" ng-click="dismissModal()">Cancel</button>
+        <button type="button" class="btn btn-primary" ng-click="saveModal(questionPaper.instruction)">Save</button>
+    </div>
+</div>

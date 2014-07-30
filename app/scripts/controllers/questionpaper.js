@@ -28,14 +28,16 @@ angular.module('pupilsboardApp')
             };
 
          $scope.startTest = function(){
-             $http.get('/api/questionPaper/load/'+ $scope.authKey.toString()).error(function(err,data){
-                    console.log('inside error');
-                 })
-                 .success(function(data){
-                     var myOtherModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/instructions.html', show: true});
+             $location.path('/questionPaper/'+ $routeParams.id + '/start'); //use $location.path(url).replace() if you want to replace the location instead
 
-                     $location.path('/questionPaper/'+data.questionPaperId); //use $location.path(url).replace() if you want to replace the location instead
-                 });
+//             $http.get('/api/questionPaper/load/'+ $scope.authKey.toString()).error(function(err,data){
+//                    console.log('inside error');
+//                 })
+//                 .success(function(data){
+//                     var myOtherModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/instructions.html', show: true});
+//
+//                     $location.path('/questionPaper/'+data.questionPaperId); //use $location.path(url).replace() if you want to replace the location instead
+//                 });
          };
 
         $scope.loadTest = function(){
@@ -61,6 +63,15 @@ angular.module('pupilsboardApp')
             });
         };
 
+        $scope.loadInstructions = function(){
+            $http.get('/api/questionPaper/'+ $routeParams.id + '/instruction').error(function(err){
+                console.log('inside error');
+            })
+            .success(function(data){
+                $scope.instruction = data;
+            });
+        };
+
         $scope.selectQuestionOption = function(selectedQuestion,c){
             angular.forEach(selectedQuestion.choices, function (c) {
                 c.isUserAnswer = false;
@@ -83,10 +94,7 @@ angular.module('pupilsboardApp')
         };
 
         $scope.clickPagination = function(index){
-            console.log('paginationn clicked');
-            console.log($scope.curQuestionIndex);
             $scope.curQuestionIndex = index;
-            console.log($scope.curQuestionIndex);
         };
 
         $scope.startTime = function(firstTime,h,m,s) {
@@ -96,6 +104,10 @@ angular.module('pupilsboardApp')
                 h = parseInt(h);
                 m = parseInt($scope.totalTime - h*60);//section.totalTime - h*60;
                 m = Math.max(m - 1,0);
+                if (m == 0){
+                    h = h-1;
+                    m = 59;
+                }
                 s = 59; //Initially start with
             } else{
                 if (s >= 1){

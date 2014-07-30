@@ -5,7 +5,7 @@ angular.module('pupilsboardApp')
 
 
         $scope.questionPaper = {};
-
+        $scope.questionPaper.instruction="All Questions are compulsory";
         $scope.questionPaper.sections = [];
         $scope.paperName = '';
         var newSection = {};
@@ -14,7 +14,8 @@ angular.module('pupilsboardApp')
 
         $scope.myData = [];
         $scope.search = {};
-        $scope.duration = 60;
+        $scope.search.tags = [];
+        $scope.duration = 180;
 
         $scope.sectionName = 'General Studies';
         $scope.invitations = [
@@ -27,13 +28,41 @@ angular.module('pupilsboardApp')
             $http.get('/api/questions/tags').error(function(err){
                 console.log('error while fetching tags...');
             })
-            .success(function(data){
-                $scope.allTags = data;
-                angular.forEach(data,function(tag){
-                    $scope.myData = [];
-                    $scope.myData.push({tag:tag.name,age:30});
+                .success(function(data){
+                    $scope.allTags = data;
+                    angular.forEach(data,function(tag){
+                        $scope.myData = [];
+                        $scope.myData.push({tag:tag.name,age:30});
+                    });
                 });
-            });
+        };
+
+        $scope.addTagForSearch = function(){
+            if (angular.isObject($scope.search.tag)){
+                var tags = $scope.search.tags;
+                var isPresent = false;
+                for (var idx = 0; idx < tags.length; idx++) {
+                    var findTag = tags[idx];
+                    if ((findTag == $scope.search.tag.name)){
+                        isPresent = true;
+                        break;
+                    }
+                }
+                if (!isPresent){
+                    tags.push($scope.search.tag.name);
+                    $scope.search.tag = '';
+                }
+            }
+        };
+        $scope.removeTagFromSearch = function(tag){
+            var tags = $scope.search.tags;
+            var isPresent = false;
+            for (var idx = 0; idx < tags.length; idx++) {
+                var findTag = tags[idx];
+                if ((findTag == tag)){
+                    tags.splice(idx,1);
+                }
+            }
         };
 
         //editableCellTemplate:self.editableCellTempate ,enableCellEdit:true
@@ -43,7 +72,7 @@ angular.module('pupilsboardApp')
                     cellTemplate: '<a ng-input="COL_FIELD" ng-click="selectQuestions(row)" data-animation="am-fade-and-slide-top" ng-model="COL_FIELD">Select Questions</a>' },
                 { field: 'count', displayName: 'Select',cellClass: 'ageCell', headerClass: 'ageHeader',
                     cellTemplate: '<input type="text" ng-model="COL_FIELD">Count</a>' }
-                ]};
+            ]};
 
         $scope.selectQuestions = function(row){
 
@@ -59,11 +88,14 @@ angular.module('pupilsboardApp')
             if ($scope.search.text != undefined){
                 filterUrl += "&text=" + $scope.search.text;
             }
-            if ($scope.search.tag != undefined){
-                tag = $scope.search.tag.name;
+            for (var idx =0;idx< $scope.search.tags.length; idx++){
+                filterUrl += "&tag=" + $scope.search.tags[idx];
             }
+//            if ($scope.search.tag != undefined){
+//                tag = $scope.search.tag.name;
+//            }
             filterUrl += "&status=PUBLISHED";
-            $http.get('/api/questions/tag/' + tag + filterUrl).error(function(err){
+            $http.get('/api/questions/filter/' + filterUrl).error(function(err){
                 console.log('error while fetching questions...');
             })
             .success(function(data){
@@ -88,6 +120,7 @@ angular.module('pupilsboardApp')
             $scope.dismissModal = function() {
                 myOtherModal.hide();
             };
+
 
             $scope.confirmQuestions = function() {
                 var data = $scope.selectQuestionGridOptions.ngGrid.data;
@@ -122,55 +155,70 @@ angular.module('pupilsboardApp')
 
 
 
-            $scope.isQuestionSelected = function(row){
-               var selected = $scope.isInArray($scope.questionPaper.sections[0].questionIds,row.entity._id);
-               return selected;
-            };
+        $scope.isQuestionSelected = function(row){
+            var selected = $scope.isInArray($scope.questionPaper.sections[0].questionIds,row.entity._id);
+            return selected;
+        };
 
-            $scope.markSelect = function(row){
-                var data = $scope.selectQuestionGridOptions.ngGrid.data;
-                for (var idx =0 ; idx < data.length; idx++){
-                    if (data[idx] === data.entity._id){
-                        data[idx].selected = true;
-                        break;
-                    }
+        $scope.markSelect = function(row){
+            var data = $scope.selectQuestionGridOptions.ngGrid.data;
+            for (var idx =0 ; idx < data.length; idx++){
+                if (data[idx] === data.entity._id){
+                    data[idx].selected = true;
+                    break;
                 }
-            };
+            }
+        };
 
-            $scope.isInArray = function(arr,elem){
-                var selected = false;
-                angular.forEach(arr, function(arrElem){
-                    if (elem == arrElem){
-                        selected = true;
-                    }
-                });
-                return selected;
-            };
-
-            $scope.removeElement = function(arr,elem){
-                var selected = false;
-                var idx = 0;
-                for (var idx =0 ; idx < arr.length; idx++){
-                    if (arr[idx] === elem){
-                        arr.splice(idx,1);
-                        break;
-                    }
+        $scope.isInArray = function(arr,elem){
+            var selected = false;
+            angular.forEach(arr, function(arrElem){
+                if (elem == arrElem){
+                    selected = true;
                 }
+            });
+            return selected;
+        };
+
+        $scope.removeElement = function(arr,elem){
+            var selected = false;
+            var idx = 0;
+            for (var idx =0 ; idx < arr.length; idx++){
+                if (arr[idx] === elem){
+                    arr.splice(idx,1);
+                    break;
+                }
+            }
+        };
+
+        $scope.addInstruction = function(){
+            var instructionModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/addInstruction.html', title: 'Question Paper', placement: 'top', type: 'info', show: true});
+
+            $scope.saveModal = function(instruction) {
+                console.log(instruction);
+                $scope.questionPaper.instruction = instruction;
+                instructionModal.hide();
             };
 
-            $scope.createPaper = function() {
-                $scope.questionPaper.name = $scope.paperName;
-                $scope.questionPaper.sections[0].name = $scope.sectionName;
-                $scope.questionPaper.sections[0].totalTime = $scope.duration;
-                $scope.questionPaper.invitation = $scope.invitationType.value;
-                console.log(JSON.stringify($scope.questionPaper));
-
-                $http.post('/api/questionPaper',JSON.stringify($scope.questionPaper)).error(function(err){
-                    var myAlert = $modal({title: 'Question Paper', content: 'Error while creating paper '+ err, placement: 'top', type: 'error', show: true});
-                })
-                .success(function(data){
-                    var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true});
-                });
+            $scope.dismissModal = function() {
+                instructionModal.hide();
             };
 
-});
+        };
+
+        $scope.createPaper = function() {
+            $scope.questionPaper.name = $scope.paperName;
+            $scope.questionPaper.sections[0].name = $scope.sectionName;
+            $scope.questionPaper.sections[0].totalTime = $scope.duration;
+            $scope.questionPaper.invitation = $scope.invitationType.value;
+            console.log(JSON.stringify($scope.questionPaper));
+
+            $http.post('/api/questionPaper',JSON.stringify($scope.questionPaper)).error(function(err){
+                var myAlert = $modal({title: 'Question Paper', content: 'Error while creating paper '+ err, placement: 'top', type: 'error', show: true});
+            })
+            .success(function(data){
+                var myAlert = $modal({title: 'Question Paper', content: 'Question Paper Created', placement: 'top', type: 'info', show: true});
+            });
+        };
+
+    });
