@@ -1,7 +1,7 @@
 <div ng-include="'partials/navbar'"></div>
 
 <!--CONTENT-->
-<div class="container-fluid" id="content" ng-controller="QuestionpaperCtrl" ng-init="loadTest()">
+<div class="container-fluid" id="content" ng-controller="QuestionpaperCtrl" ng-init="loadAnswerSheet()">
     <div class="well well-lg well-white">
         <div class="row">
             <div class="col-lg-7 col-md-8">
@@ -12,7 +12,6 @@
             </div>
             <div class="col-lg-5 col-md-4 col-sm-6 txt-right-left-mob-break992">
                 <span class="no-wrap heading-instructions"><i class="fa fa-file-text-o"></i> <a href="#">Instructions</a></span>
-                <span class="no-wrap heading-time">Time Left: <span id="timer" class="font-bold"></span></span>
             </div>
         </div>
     </div>
@@ -22,7 +21,7 @@
                 <div class="panel panel-blue">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                                <span class="pull-right badge question-left">{{filterAnswered(section)}} left</span>
+                            <span class="pull-right badge question-left">{{filterAnswered(section)}} left</span>
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                 {{section.name}}
                             </a>
@@ -42,9 +41,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div class="btn-group pull-right">
-                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                English <span class="caret"></span>
-                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -60,7 +57,7 @@
                         <form role="form" class="form-horizontal font-size13">
                             <div class="">
                                 <div ng-repeat="choice in question.choices">
-                                    <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
+                                    <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="markAnswered(question);selectQuestionOption(question,choice)" disabled> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
                                 </div>
                             </div>
                         </form>
@@ -86,11 +83,6 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext();markVisited(question)">Save &amp; Next</button>
                             </div>
-                            <div class="btn-group pull-right">
-                                <button class="btn btn-primary btn-sm" type="button" ng-click="finish()">
-                                    Finish
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,6 +92,6 @@
 </div>
 
 <div class="container-fluid">
-<hr>
-<div ng-include="'partials/footer'"></div>
+    <hr>
+    <div ng-include="'partials/footer'"></div>
 </div>

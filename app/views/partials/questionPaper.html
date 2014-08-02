@@ -2,66 +2,57 @@
 <div class="container-fluid" ng-controller="QuestionpaperCtrl" ng-init="loadTest()">
 
     <div class="row">
-    <div class="col-lg-3 sidebar" style="margin-left: -15px;">
-        <h3>Time remaining</h3> <span id="timer"></span>
-    </div>
-    <div class="col-lg-9">
-        <h2>{{questionPaper.name}}</h2>
+        <div class="col-lg-3 sidebar" style="margin-left: -15px;">
+            <h3>Time remaining</h3> <span id="timer"></span>
+        </div>
+        <div class="col-lg-9">
+            <h2>{{questionPaper.name}}</h2>
 
-        <form class="form" name="form" ng-submit="finish(form)">
+            <form class="form" name="form" ng-submit="finish(form)">
 
-        <div ng-init="curSectionName = 'abc' " class="centerDiv">
-            <select ng-model='section' id="paperSection" required ng-options="section.name for section in questionPaper.sections" ng-change="changeSection(section)">
-            </select>
-            <!--<div id="sectionHeader" class="row">-->
-                 <!--<h4>{{section.name}} <span style="margin-left: 20px;">Time Remaining {{section.timeRemaining}} min</span></h4>-->
-            <!--</div>-->
-            <div ng-repeat="section in questionPaper.sections">
-              <div ng-show="curSection.name == section.name">
-                  <fieldset>
-                  <ul class="pagination">
-                      <li ng-repeat="question in section.questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
-                  </ul>
-                    <div ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index">
-                        <div ng-switch="question.type">
-                            <!--<h3>Question #{{$index + 1}} </h3>-->
-                            <p ng-bind-html="question.content"></p>
-                            <br/><br/>
-                            <div class="row">
-                                <div ng-switch-when="MCQ">
-                                        <p class="text-left">Select correct option</p>
-                                        <div ng-repeat="choice in question.choices">
-                                             <input type="checkbox" value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice)"> <span>{{choice.choice}}</span><br/><br/>
-                                        </div>
-                                </div>
-                            <div ng-switch-when="MCA">
-                                <p class="text-info">Select correct option</p>
-                                <ul>
-                                    <li ng-repeat="choice in question.choices">
-                                        <input name="answerOption" type="checkbox" ng-model="choice.isUserAnswer" ng-value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice.id)">{{choice.choice}} <br/><br/>
-                                    </li>
+                <div ng-init="curSectionName = 'abc' " class="centerDiv">
+                    <select ng-model='section' id="paperSection" required ng-options="section.name for section in questionPaper.sections" ng-change="changeSection(section)">
+                    </select>
+                    <!--<div id="sectionHeader" class="row">-->
+                    <!--<h4>{{section.name}} <span style="margin-left: 20px;">Time Remaining {{section.timeRemaining}} min</span></h4>-->
+                    <!--</div>-->
+                    <div ng-repeat="section in questionPaper.sections">
+                        <div ng-show="curSection.name == section.name">
+                            <fieldset>
+                                <ul class="pagination">
+                                    <li ng-repeat="question in section.questions"><a href ng-click="clickPagination($index)">{{$index + 1}}</a></li>
                                 </ul>
+                                <div ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index">
+                                    <div ng-switch="question.type">
+                                        <!--<h3>Question #{{$index + 1}} </h3>-->
+                                        <p ng-bind-html="question.content"></p>
+                                        <br/><br/>
+                                        <div class="row">
+                                            <div ng-switch-when="MCQ">
+                                                <div ng-repeat="choice in question.choices">
+                                                    <input type="checkbox" value="true" ng-checked="choice.isUserAnswer" ng-click="selectQuestionOption(question,choice)"> <span>{{choice.choice}}</span><br/><br/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div id="questionNav" class="clearfix btn-group-sm pull-right" >
+                                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1"> Previous </button>
+                                <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="curQuestionIndex = curQuestionIndex+1"> Next </button>
                             </div>
                         </div>
                     </div>
-                    </div>
-                  </fieldset>
-
-                  <div id="questionNav" class="clearfix btn-group-sm pull-right" >
-                      <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1"> Previous </button>
-                      <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="curQuestionIndex = curQuestionIndex+1"> Next </button>
-                  </div>
-              </div>
-            </div>
+                </div>
+                <br/><br/><br/>
+                <button type="submit" class="btn btn-success pull-right"> Finish Test </button>
+            </form>
         </div>
-        <br/><br/><br/>
-        <button type="submit" class="btn btn-success pull-right"> Finish Test </button>
-    </form>
-    </div>
     </div>
 </div>
 
- <script type="text/javascript">
-     $( "#paperSection" ).change(function(e) {
-     });
- </script>
+<script type="text/javascript">
+    $( "#paperSection" ).change(function(e) {
+    });
+</script>

@@ -15,6 +15,9 @@ angular.module('pupilsboardApp')
             countMap['marked'] = [];
             countMap['unanswered'] = [];
             $scope.countMap = countMap;
+
+            $scope.Math = window.Math
+
             $scope.changeSection = function($event,section){
                 console.log('changing from ' + $scope.curSection.name + 'to: ' + $scope.section.name);
                 if ($scope.curSection && !$scope.section.isOver){
@@ -59,6 +62,17 @@ angular.module('pupilsboardApp')
                 });
                 $scope.totalTime = totalTime;
                 $scope.startTime(true,0,0,0);
+                console.log('Total time of test is:' + totalTime);
+            });
+        };
+
+        $scope.loadAnswerSheet = function(){
+            console.log("Loading paper");
+            $http.get('/api/candidate/answerSheets/'+ $routeParams.id).error(function(err){
+                console.log('inside error');
+            })
+            .success(function(data){
+                $scope.questionPaper = data;
                 console.log('Total time of test is:' + totalTime);
             });
         };
@@ -169,7 +183,9 @@ angular.module('pupilsboardApp')
 
         $scope.moveNext = function(){
             console.log('moving next');
-            $scope.curQuestionIndex++;
+            if ($scope.curQuestionIndex < $scope.questionPaper.sections[0].questions.length - 1){
+                $scope.curQuestionIndex++;
+            }
         };
 
         $scope.markAnswered = function(question){
@@ -192,9 +208,9 @@ angular.module('pupilsboardApp')
         };
 
         $scope.markForReview = function(question){
-            var index = countMap['nonvisited'].indexOf(question._id);
-            if (index != -1){
-                countMap['nonvisited'].splice(index,1);
+            var index = countMap['marked'].indexOf(question._id);
+            if (index == -1){
+                countMap['marked'].push(question._id);
             }
         };
   });
