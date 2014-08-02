@@ -37,6 +37,7 @@ module.exports = function (grunt) {
       prod: {
         options: {
           script: 'dist/server.js',
+          debug: false,
           node_env: 'production'
         }
       }
@@ -451,7 +452,7 @@ module.exports = function (grunt) {
       'bower-install',
       'concurrent:server',
       'autoprefixer',
-      'express:dev',
+      'express:prod',
       'open',
       'watch'
     ]);
