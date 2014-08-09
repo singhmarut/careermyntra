@@ -44,6 +44,7 @@ angular.module('pupilsboardApp')
         $scope.getQuestion = function(curQuestionIndex){
             var question =  $scope.questions[curQuestionIndex];
             $scope.getChoicesData(question);
+            $scope.getMatchingOptionsData(question);
             $scope.question = question;
             return question;
         }
@@ -213,7 +214,7 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
+        $scope.matchingQuestionData = [{idx: 'Heading',option: "", match: ""},
             {idx: '1',option: "", match: ""},
             {idx: '2',option: "", match: ""},
             {idx: '3',option: "", match: ""},
@@ -229,6 +230,29 @@ angular.module('pupilsboardApp')
                 $scope.choicesData[idx].isCorrect = question.choices[idx].isCorrectAnswer;
                 $scope.choicesData[idx].choice = question.choices[idx].choice;
             }
+        };
+
+        $scope.getMatchingOptionsData = function(question){
+            if (question.matchingOptions != undefined){
+                var optionIdx = 0;
+                if ($scope.matchingQuestionData[0] == undefined || !$scope.matchingQuestionData[0].isHeader){
+                    optionIdx = 1;
+                }
+                for (var idx= 0; idx < question.matchingOptions.length; idx++){
+                    $scope.matchingQuestionData[optionIdx + idx].option = question.matchingOptions[idx].option;
+                    $scope.matchingQuestionData[optionIdx + idx].match = question.matchingOptions[idx].match;
+                }
+            }
+
+//            for (var idx = 0; idx < $scope.matchingQuestionData.length; idx++){
+//                if (question.matchingOptions[idx] != undefined){
+//                    if ((idx == 0 && $scope.matchingQuestionData[idx].isHeader) || (idx > 0))
+//                    {
+//                        $scope.matchingQuestionData[idx].option = question.matchingOptions[idx].option;
+//                        $scope.matchingQuestionData[idx].match = question.matchingOptions[idx].match;
+//                    }
+//                }
+//            }
         };
 
         $scope.choicesData = [
@@ -248,7 +272,7 @@ angular.module('pupilsboardApp')
             enablePaging: false
         };
 
-        $scope.createMatchingQuestionOptions = { data: 'matchingQuestion',
+        $scope.createMatchingQuestionOptions = { data: 'matchingQuestionData',
             columnDefs: [
                 { field: 'idx', displayName: '',width: 70},
                 { field: 'option', displayName: 'Option',width: 250, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-model="COL_FIELD"/>' },

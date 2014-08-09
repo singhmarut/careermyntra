@@ -28,6 +28,7 @@ angular.module('pupilsboardApp')
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
                 matchingOption.match = matchingData[i].match;
+                matchingOption.isHeader = matchingData[i].isHeader;
                 $scope.question.matchingOptions.push(matchingOption);
             };
 
@@ -48,11 +49,11 @@ angular.module('pupilsboardApp')
             });
         };
 
-        $scope.matchingQuestion = [{idx: 'Heading',option: "", match: ""},
-            {idx: '1',option: "", match: ""},
-            {idx: '2',option: "", match: ""},
-            {idx: '3',option: "", match: ""},
-            {idx: '4',option: "", match: ""}];
+        $scope.matchingQuestion = [{idx: 'Heading',option: "", match: "",isHeader: true},
+            {idx: '1',option: "", match: "",isHeader: false},
+            {idx: '2',option: "", match: "",isHeader: false},
+            {idx: '3',option: "", match: "",isHeader: false},
+            {idx: '4',option: "", match: "",isHeader: false}];
 
 //        $scope.addjQueryToPartial = function()
 //        {
