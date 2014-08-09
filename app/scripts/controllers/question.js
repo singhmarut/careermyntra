@@ -187,6 +187,9 @@ angular.module('pupilsboardApp')
 
         $scope.viewTagQuestions = function(tag){
             var filterUrl = "?";
+            if (tag != undefined){
+                filterUrl += "&tag=" + tag;
+            }
             if ($scope.search.startDate != undefined && $scope.search.endDate != undefined){
                 filterUrl += "&startDate=" + $scope.search.startDate + "&endDate=" + $scope.search.endDate;
             }
@@ -200,7 +203,7 @@ angular.module('pupilsboardApp')
             if (questionStatus != undefined){
                 filterUrl += "&status=" + questionStatus;
             }
-            $http.get('/api/questions/tag/' + tag + filterUrl).error(function(err){
+            $http.get('/api/questions/filter' + filterUrl).error(function(err){
                 console.log('error while fetching questions...');
             })
             .success(function(data){
