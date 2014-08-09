@@ -152,6 +152,9 @@ angular.module('pupilsboardApp')
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
                 matchingOption.match = matchingData[i].match;
+                if (matchingData[i].idx == 'Heading'){
+                    matchingOption.isHeader = true;
+                }
                 if (matchingOption.option != '' || matchingOption.match != ''){
                     $scope.question.matchingOptions.push(matchingOption);
                 }
@@ -234,9 +237,9 @@ angular.module('pupilsboardApp')
 
         $scope.getMatchingOptionsData = function(question){
             if (question.matchingOptions != undefined){
-                var optionIdx = 0;
-                if ($scope.matchingQuestionData[0] == undefined || !$scope.matchingQuestionData[0].isHeader){
-                    optionIdx = 1;
+                var optionIdx = 1;
+                if (question.matchingOptions[0].isHeader){
+                    optionIdx = 0;
                 }
                 for (var idx= 0; idx < question.matchingOptions.length; idx++){
                     $scope.matchingQuestionData[optionIdx + idx].option = question.matchingOptions[idx].option;
