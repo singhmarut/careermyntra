@@ -122,18 +122,20 @@ angular.module('pupilsboardApp')
             console.log('search Tag' + $scope.searchTag);
             if (angular.isObject($scope.searchTag)){
                 console.log('tag selected' + $scope.searchTag.name);
-                if ($routeParams.tag == undefined ||  ($routeParams.tag != undefined) && ($routeParams.tag != $scope.searchTag.name))
-                var isPresent = false;
-                for (var idx = 0; idx < $scope.question.tags.length; idx++) {
-                    var findTag = $scope.question.tags[idx];
-                    if ((findTag == $scope.searchTag.name)){
-                        isPresent = true;
-                        break;
+                if ($routeParams.tag == undefined || (($routeParams.tag != undefined) && ($routeParams.tag != $scope.searchTag.name)))
+                {
+                    var isPresent = false;
+                    for (var idx = 0; idx < $scope.question.tags.length; idx++) {
+                        var findTag = $scope.question.tags[idx];
+                        if ((findTag == $scope.searchTag.name)){
+                            isPresent = true;
+                            break;
+                        }
                     }
-                }
-                if (!isPresent){
-                    $scope.question.tags.push($scope.searchTag.name);
-                    $scope.searchTag = '';
+                    if (!isPresent){
+                        $scope.question.tags.push($scope.searchTag.name);
+                        $scope.searchTag = '';
+                    }
                 }
             }
         };
