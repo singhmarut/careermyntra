@@ -238,7 +238,7 @@ angular.module('pupilsboardApp')
         $scope.getMatchingOptionsData = function(question){
             if (question.matchingOptions != undefined){
                 var optionIdx = 1;
-                if (question.matchingOptions[0].isHeader){
+                if (question.matchingOptions[0] != undefined && question.matchingOptions[0].isHeader){
                     optionIdx = 0;
                 }
                 for (var idx= 0; idx < question.matchingOptions.length; idx++){
