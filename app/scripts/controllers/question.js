@@ -7,10 +7,11 @@ angular.module('pupilsboardApp')
     .controller('QuestionCtrl', function ($scope,$http,$upload,$alert,$modal,$route,$routeParams) {
         $scope.questions = [];
         $scope.searchTag = '';
+
         //$scope.editable=0;
         $scope.curQuestionIndex = 0;
         $scope.search = {};
-
+        $scope.search.findTag = '';
         $scope.question = {};
         $scope.question.content = '';
         $scope.question.extraContent = '';
@@ -114,8 +115,14 @@ angular.module('pupilsboardApp')
                 //.xhr(function(xhr){xhr.upload.addEventListener(...)})// access and attach any event listener to XMLHttpRequest.
             }
         };
-        $scope.addTagToQuestion = function (){
-            if (angular.isObject($scope.searchTag) && ($routeParams.tag != $scope.searchTag.name)){
+        $scope.addTagToQuestion = function(tag){
+            if (tag != undefined){
+                $scope.searchTag = tag;
+            }
+            console.log('search Tag' + $scope.searchTag);
+            if (angular.isObject($scope.searchTag)){
+                console.log('tag selected' + $scope.searchTag.name);
+                if ($routeParams.tag == undefined ||  ($routeParams.tag != undefined) && ($routeParams.tag != $scope.searchTag.name))
                 var isPresent = false;
                 for (var idx = 0; idx < $scope.question.tags.length; idx++) {
                     var findTag = $scope.question.tags[idx];

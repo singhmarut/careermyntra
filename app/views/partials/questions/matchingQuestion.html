@@ -20,7 +20,7 @@
                 <label>Select Tags</label>
             </div>
             <div class="col-lg-6">
-                <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion()" ng-options="tag.name for tag in allTags" bs-typeahead>
+                <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag)" ng-options="tag.name for tag in allTags" bs-typeahead>
             </div>
         </div>
         <div class="row">
