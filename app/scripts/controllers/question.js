@@ -43,6 +43,7 @@ angular.module('pupilsboardApp')
         };
 
         $scope.getQuestion = function(curQuestionIndex){
+            $scope.question = {};
             var question =  $scope.questions[curQuestionIndex];
             $scope.getChoicesData(question);
             $scope.getMatchingOptionsData(question);
@@ -150,6 +151,18 @@ angular.module('pupilsboardApp')
             }
         };
 
+        $scope.initializeTags = function (){
+            var tagName = $routeParams.tag;
+            console.log(typeof(tagName));
+            //var otherArray = tagName.split(",");
+           // console.log("Route Tags :" + otherArray);
+            $scope.question.tags = $scope.question.tags.concat(tagName);
+//            for (var idx = 0; idx < $scope.question.tags.length; idx++) {
+//                var findTag = $scope.question.tags[idx];
+//                $scope.question.tags.push(tagName);
+//            }
+        };
+
         $scope.saveQuestion = function (update){
             var tagName = $routeParams.tag;
 
@@ -176,9 +189,9 @@ angular.module('pupilsboardApp')
                 $scope.question.choices.push(newOption);
             };
 
-            if (tagName != 'undefined' && tagName != null && tagName != ''){
-                $scope.question.tags.push(tagName);
-            }
+//            if (tagName != 'undefined' && tagName != null && tagName != ''){
+//                $scope.question.tags.push(tagName);
+//            }
             console.log(JSON.stringify($scope.question));
             if (update == false){
                 $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
@@ -245,7 +258,8 @@ angular.module('pupilsboardApp')
         };
 
         $scope.getMatchingOptionsData = function(question){
-            if (question.matchingOptions != undefined){
+            console.log('matching options' + $scope.matchingOptions);
+            if ((question.matchingOptions != undefined )&& (question.matchingOptions.length != 0)){
                 var optionIdx = 1;
                 if (question.matchingOptions[0] != undefined && question.matchingOptions[0].isHeader){
                     optionIdx = 0;
@@ -253,6 +267,11 @@ angular.module('pupilsboardApp')
                 for (var idx= 0; idx < question.matchingOptions.length; idx++){
                     $scope.matchingQuestionData[optionIdx + idx].option = question.matchingOptions[idx].option;
                     $scope.matchingQuestionData[optionIdx + idx].match = question.matchingOptions[idx].match;
+                }
+            }else{
+                for (var idx= 0; idx < $scope.matchingQuestionData.length; idx++){
+                    $scope.matchingQuestionData[idx].option = '';
+                    $scope.matchingQuestionData[idx].match = '';
                 }
             }
 

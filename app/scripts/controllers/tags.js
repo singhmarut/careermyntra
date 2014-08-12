@@ -4,7 +4,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('TagsCtrl', function ($scope,$http,$upload,$alert,$modal) {
+    .controller('TagsCtrl', function ($scope,$http,$upload,$alert,$modal,$location) {
         $scope.questions = [];
         $scope.searchTag = '';
         //$scope.editable=0;
@@ -22,9 +22,22 @@ angular.module('pupilsboardApp')
         $scope.tagsSchema = { data: 'tags',
             columnDefs: [
                 { field: 'name', displayName: 'Tag Name', width: 190 },
+                { field: 'selected',displayName: 'Select',width: 90,cellTemplate: '<input type="checkbox" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' },
                 { field: 'upload', displayName: 'Upload Questions',
                     cellTemplate: '<a ng-input="COL_FIELD" ng-href="/addQuestions?tag={{row.entity.name}}" ng-model="COL_FIELD">Upload Questions</a>' }]};
 
+        $scope.addQuestions = function (){
+            var data = $scope.tagsSchema.ngGrid.data;
+            var tagParam = "";
+
+            for (var idx =0 ; idx < data.length; idx++){
+                if (data[idx].selected){
+                    tagParam += "&tag=" + data[idx].name;
+                }
+            }
+            console.log("tags: " + tagParam);
+            $location.url("/addQuestions?" + tagParam);
+        }
 
         $scope.saveTag = function (question){
             $http.post('/api/questions/tags',{tag:$scope.tags.tag}).error(function(err){
