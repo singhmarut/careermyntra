@@ -11,6 +11,7 @@ angular.module('pupilsboardApp')
         //$scope.editable=0;
         $scope.curQuestionIndex = 0;
         $scope.search = {};
+        $scope.search.tags = [];
         $scope.search.findTag = '';
         $scope.question = {};
         $scope.question.content = '';
@@ -33,6 +34,44 @@ angular.module('pupilsboardApp')
             }
         };
 
+        $scope.broadcastQuestionChange = function(question) {
+            $scope.$emit('questionChanged', question);
+        };
+
+        $scope.removeTagFromSearch = function(tag) {
+            var tagCollection = $scope.search.tags;
+            var isPresent = false;
+            for (var idx = 0; idx < tagCollection.length; idx++) {
+                var findTag = tagCollection[idx];
+                if ((findTag == tag)){
+                    isPresent = true;
+                    tagCollection.splice(idx,1);
+                    $scope.search.findTag = '';
+                    break;
+                }
+            }
+        };
+
+        $scope.addTagForSearch = function(tag) {
+            $scope.searchTag = tag;
+            if (angular.isObject($scope.searchTag)){
+                var tagCollection = $scope.search.tags;
+                var isPresent = false;
+                for (var idx = 0; idx < tagCollection.length; idx++) {
+                    var findTag = tagCollection[idx];
+                    if ((findTag == $scope.searchTag.name)){
+                        isPresent = true;
+                        break;
+                    }
+                }
+                if (!isPresent){
+                    tagCollection.push($scope.searchTag.name);
+                    $scope.searchTag = '';
+                    $scope.search.findTag = '';
+                }
+            }
+        };
+
         $scope.getAllTags = function(){
             $http.get('/api/questions/tags').error(function(err){
                 console.log('error while fetching tags...');
@@ -48,6 +87,7 @@ angular.module('pupilsboardApp')
             $scope.getChoicesData(question);
             $scope.getMatchingOptionsData(question);
             $scope.question = question;
+            $scope.broadcastQuestionChange(question);
             return question;
         }
 
@@ -78,15 +118,6 @@ angular.module('pupilsboardApp')
                     });
             });
         };
-
-        $scope.getQuestionFormattedTag = function(question){
-            var formattedTag = '';
-            angular.forEach(question.tags,function(tag){
-                formattedTag += tag + ",";
-            })
-            question.extraTags = formattedTag;
-            return formattedTag;
-        }
 
         $scope.onFileSelect = function($files) {
             //$files: an array of files selected, each file has name, size, and type.
@@ -120,21 +151,22 @@ angular.module('pupilsboardApp')
             if (tag != undefined){
                 $scope.searchTag = tag;
             }
+            var tagCollection = $scope.question.tags;
             console.log('search Tag' + $scope.searchTag);
             if (angular.isObject($scope.searchTag)){
                 console.log('tag selected' + $scope.searchTag.name);
                 if ($routeParams.tag == undefined || (($routeParams.tag != undefined) && ($routeParams.tag != $scope.searchTag.name)))
                 {
                     var isPresent = false;
-                    for (var idx = 0; idx < $scope.question.tags.length; idx++) {
-                        var findTag = $scope.question.tags[idx];
+                    for (var idx = 0; idx < tagCollection.length; idx++) {
+                        var findTag = tagCollection[idx];
                         if ((findTag == $scope.searchTag.name)){
                             isPresent = true;
                             break;
                         }
                     }
                     if (!isPresent){
-                        $scope.question.tags.push($scope.searchTag.name);
+                        tagCollection.push($scope.searchTag.name);
                         $scope.searchTag = '';
                     }
                 }
@@ -211,11 +243,12 @@ angular.module('pupilsboardApp')
             }
         };
 
-        $scope.viewTagQuestions = function(tag){
+        $scope.viewTagQuestions = function(){
             var filterUrl = "?";
-            if (tag != undefined){
-                filterUrl += "&tag=" + tag;
+            for (var idx = 0; idx < $scope.search.tags.length; idx++){
+                filterUrl += "&tag=" + $scope.search.tags[idx];
             }
+
             if ($scope.search.startDate != undefined && $scope.search.endDate != undefined){
                 filterUrl += "&startDate=" + $scope.search.startDate + "&endDate=" + $scope.search.endDate;
             }
@@ -274,16 +307,6 @@ angular.module('pupilsboardApp')
                     $scope.matchingQuestionData[idx].match = '';
                 }
             }
-
-//            for (var idx = 0; idx < $scope.matchingQuestionData.length; idx++){
-//                if (question.matchingOptions[idx] != undefined){
-//                    if ((idx == 0 && $scope.matchingQuestionData[idx].isHeader) || (idx > 0))
-//                    {
-//                        $scope.matchingQuestionData[idx].option = question.matchingOptions[idx].option;
-//                        $scope.matchingQuestionData[idx].match = question.matchingOptions[idx].match;
-//                    }
-//                }
-//            }
         };
 
         $scope.choicesData = [

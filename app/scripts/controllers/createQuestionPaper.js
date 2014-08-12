@@ -16,6 +16,7 @@ angular.module('pupilsboardApp')
         $scope.search = {};
         $scope.search.tags = [];
         $scope.duration = 180;
+        $scope.question = {};
 
         $scope.sectionName = 'General Studies';
         $scope.invitations = [
@@ -24,46 +25,55 @@ angular.module('pupilsboardApp')
         ];
         $scope.invitationType = $scope.invitations[0];
 
-        $scope.getAllTags = function(){
-            $http.get('/api/questions/tags').error(function(err){
-                console.log('error while fetching tags...');
-            })
-                .success(function(data){
-                    $scope.allTags = data;
-                    angular.forEach(data,function(tag){
-                        $scope.myData = [];
-                        $scope.myData.push({tag:tag.name,age:30});
-                    });
-                });
+        $scope.$on('questionChanged', function (event, question) {
+            $scope.question = question;
+            console.log(question.content); // 'Some data'
+        });
+
+        $scope.confirmQuestions = function() {
+            $scope.questionPaper.sections[0].questionIds.push($scope.question._id);
         };
 
-        $scope.addTagForSearch = function(){
-            if (angular.isObject($scope.search.tag)){
-                var tags = $scope.search.tags;
-                var isPresent = false;
-                for (var idx = 0; idx < tags.length; idx++) {
-                    var findTag = tags[idx];
-                    if ((findTag == $scope.search.tag.name)){
-                        isPresent = true;
-                        break;
-                    }
-                }
-                if (!isPresent){
-                    tags.push($scope.search.tag.name);
-                    $scope.search.tag = '';
-                }
-            }
-        };
-        $scope.removeTagFromSearch = function(tag){
-            var tags = $scope.search.tags;
-            var isPresent = false;
-            for (var idx = 0; idx < tags.length; idx++) {
-                var findTag = tags[idx];
-                if ((findTag == tag)){
-                    tags.splice(idx,1);
-                }
-            }
-        };
+//        $scope.getAllTags = function(){
+//            $http.get('/api/questions/tags').error(function(err){
+//                console.log('error while fetching tags...');
+//            })
+//                .success(function(data){
+//                    $scope.allTags = data;
+//                    angular.forEach(data,function(tag){
+//                        $scope.myData = [];
+//                        $scope.myData.push({tag:tag.name,age:30});
+//                    });
+//                });
+//        };
+//
+//        $scope.addTagForSearch = function(){
+//            if (angular.isObject($scope.search.tag)){
+//                var tags = $scope.search.tags;
+//                var isPresent = false;
+//                for (var idx = 0; idx < tags.length; idx++) {
+//                    var findTag = tags[idx];
+//                    if ((findTag == $scope.search.tag.name)){
+//                        isPresent = true;
+//                        break;
+//                    }
+//                }
+//                if (!isPresent){
+//                    tags.push($scope.search.tag.name);
+//                    $scope.search.tag = '';
+//                }
+//            }
+//        };
+//        $scope.removeTagFromSearch = function(tag){
+//            var tags = $scope.search.tags;
+//            var isPresent = false;
+//            for (var idx = 0; idx < tags.length; idx++) {
+//                var findTag = tags[idx];
+//                if ((findTag == tag)){
+//                    tags.splice(idx,1);
+//                }
+//            }
+//        };
 
         //editableCellTemplate:self.editableCellTempate ,enableCellEdit:true
         $scope.gridOptions = { data: 'myData',
