@@ -14,6 +14,7 @@ angular.module('pupilsboardApp')
         $scope.search.tags = [];
         $scope.search.findTag = '';
         $scope.question = {};
+        $scope.question.quality = 'OK';
         $scope.question.content = '';
         $scope.question.extraContent = '';
         $scope.question.matchingOptions = [];
@@ -22,7 +23,7 @@ angular.module('pupilsboardApp')
         $scope.question.tags = [];
         $scope.allTags = [];
         $scope.choicesData = [];
-
+        $scope.qualityOptions = ['OK','UNCLEAR'];
         //$scope.editable = false;
 
         $scope.editQuestion = function(editable) {

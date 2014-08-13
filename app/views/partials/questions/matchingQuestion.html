@@ -56,6 +56,10 @@
                <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
            </div>
            <div class="col-lg-2">
+               <label>Quality</label>
+               <select class="form-control" ng-model="question.quality" ng-options="qualtiy for qualtiy in qualityOptions">Quality</select>
+           </div>
+           <div class="col-lg-2">
                <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false)">Save Question</button>
            </div>
        </div>
