@@ -73,7 +73,6 @@ angular.module('pupilsboardApp')
             })
             .success(function(data){
                 $scope.questionPaper = data;
-                console.log('Total time of test is:' + totalTime);
             });
         };
 
@@ -186,6 +185,11 @@ angular.module('pupilsboardApp')
             if ($scope.curQuestionIndex < $scope.questionPaper.sections[0].questions.length - 1){
                 $scope.curQuestionIndex++;
             }
+        };
+
+        $scope.selectCurrentQuestion = function(index){
+            console.log('selecting question');
+            $scope.curQuestionIndex = index;
         };
 
         $scope.markAnswered = function(question){

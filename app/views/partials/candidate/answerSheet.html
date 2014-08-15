@@ -2,16 +2,11 @@
 
 <!--CONTENT-->
 <div class="container-fluid" id="content" ng-controller="QuestionpaperCtrl" ng-init="loadAnswerSheet()">
-    <div class="well well-lg well-white">
+    <div>
         <div class="row">
-            <div class="col-lg-7 col-md-8">
-                <span class="no-wrap heading-not-answered"><i class="fa fa-lightbulb-o"></i> <a href="#">Not Answered ({{countMap['unanswered'].length}})</a></span>
-                <span class="no-wrap heading-marked"><i class="fa fa-lightbulb-o"></i> <a href="#">Marked ({{countMap['marked'].length}})</a></span>
-                <span class="no-wrap heading-not-visited"><i class="fa fa-lightbulb-o"></i> <a href="#">Not Visited ({{Math.max(0,countMap['nonvisited'].length - 1)}})</a></span>
-                <span class="no-wrap heading-answered"><i class="fa fa-lightbulb-o"></i> <a href="#">Answered ({{countMap['answered'].length}})</a></span>
-            </div>
-            <div class="col-lg-5 col-md-4 col-sm-6 txt-right-left-mob-break992">
-                <span class="no-wrap heading-instructions"><i class="fa fa-file-text-o"></i> <a href="#">Instructions</a></span>
+            <div class="col-lg-12 col-md-12">
+                <input type="email" class="form-control well well-lg well-white" id="exampleInputEmail1" placeholder="Enter Comment">
+                <!--<textarea contenteditable="true"/>-->
             </div>
         </div>
     </div>
@@ -29,7 +24,7 @@
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body" ng-repeat="question in section.questions">
-                            <span class="clearfix no-wrap"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="curQuestionIndex = $index">Question no. {{$index+1}}</a></span>
+                            <span class="clearfix no-wrap"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="selectCurrentQuestion($index)">Q. {{$index+1}}</a></span>
                         </div>
                     </div>
                 </div>
@@ -37,15 +32,15 @@
         </div>
 
         <div class="col-lg-10 col-md-10 col-sm-9">
-            <div class="well well-sm common-well">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <div class="btn-group pull-right">
+            <!--<div class="well well-sm common-well">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
+                        <!--<div class="btn-group pull-right">-->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
             <div ng-repeat="section in questionPaper.sections">
                 <div class="panel panel-blue" ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index">
                     <div class="panel-heading">
@@ -57,31 +52,24 @@
                         <form role="form" class="form-horizontal font-size13">
                             <div class="">
                                 <div ng-repeat="choice in question.choices">
-                                    <input type="radio" value="true" ng-checked="choice.isUserAnswer" ng-click="markAnswered(question);selectQuestionOption(question,choice)" disabled> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
+                                    <input type="radio" value="true" ng-checked="choice.isUserAnswer" disabled> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span><br/><br/>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="panel-footer">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <button type="button" class="btn btn-warning btn-sm" ng-click="markVisited(question)">Clear Response</button>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <div ng-switch="curQuestionIndex < section.questions.length-1">
-                                    <div ng-switch-when="true">
-                                        <button type="button" class="btn btn-default btn-sm" ng-click="markForReview(question);moveNext()">Mark for Review and Next</button>
-                                    </div>
-                                    <div ng-switch-when="false">
-                                        <button type="button" class="btn btn-default btn-sm" ng-click="markForReview(question);">Mark for Review</button>
-                                    </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div>
+                                    <button type="button" class="btn btn-default btn-sm" ng-click="saveComment(question)">Save Comment</button>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                 <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex > 0" ng-click="movePrev()">Previous</button>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext();markVisited(question)">Save &amp; Next</button>
+                                <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext()">Next</button>
                             </div>
                         </div>
                     </div>
@@ -92,6 +80,5 @@
 </div>
 
 <div class="container-fluid">
-    <hr>
     <div ng-include="'partials/footer'"></div>
 </div>

@@ -30,7 +30,7 @@ angular.module('pupilsboardApp')
             console.log(question.content); // 'Some data'
         });
 
-        $scope.confirmQuestions = function() {
+        $scope.addQuestionToPaper = function() {
             $scope.questionPaper.sections[0].questionIds.push($scope.question._id);
         };
 
