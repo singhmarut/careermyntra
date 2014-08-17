@@ -5,6 +5,7 @@
     "angular": "1.2.16",
     "body-parser": "~1.0.0",
     "compression": "~1.0.1",
+    "connect-busboy": "0.0.1",
     "connect-mongo": "~0.4.1",
     "cookie-parser": "~1.0.1",
     "crypto": "0.0.3",
@@ -13,8 +14,11 @@
     "excel": "^0.1.1",
     "express": "~4.0.0",
     "express-session": "~1.0.2",
+    "feed": "^0.2.6",
     "lodash": "~2.4.1",
     "method-override": "~1.0.0",
+    "moment": "^2.8.1",
+    "moment-timezone": "^0.2.1",
     "mongoose": "~3.8.8",
     "morgan": "~1.0.0",
     "multer": "^0.1.0",
@@ -22,9 +26,9 @@
     "passport": "~0.2.0",
     "passport-google": "^0.3.0",
     "passport-local": "~0.1.6",
+    "rss": "^0.3.2",
     "static-favicon": "~1.0.1",
-    "underscore": "~1.6.0",
-     "connect-busboy": "0.0.1"
+    "underscore": "~1.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

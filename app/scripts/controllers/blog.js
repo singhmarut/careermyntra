@@ -25,7 +25,7 @@ angular.module('pupilsboardApp')
         $scope.createPost = function(form,status){
             var tags = $scope.post.tags.split(",");
             $http.post('/api/blog/post',{title: $scope.post.title,
-                content: $scope.post.content,tags:tags,status:status})
+                content: $scope.post.content,tags:tags,status:status,publishedAt:$scope.publishedAt})
                 .success(function(data) {
                     $location.path('/posts');
                 }).error(function(err) {
@@ -65,7 +65,7 @@ angular.module('pupilsboardApp')
                     .success(function(data) {
                         $scope.articles = data;
                     }).error(function(err) {
-                        console.log("Unable to post article" + err);
+                        console.log("Unable to Retrieve blog" + err);
                     });
             }else{
 //                $location.path('/posts/'+postId);

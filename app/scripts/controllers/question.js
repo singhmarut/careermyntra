@@ -246,6 +246,7 @@ angular.module('pupilsboardApp')
 
         $scope.viewTagQuestions = function(){
             var filterUrl = "?";
+            $scope.questions = [];
             for (var idx = 0; idx < $scope.search.tags.length; idx++){
                 filterUrl += "&tag=" + $scope.search.tags[idx];
             }
@@ -281,6 +282,11 @@ angular.module('pupilsboardApp')
 
         $scope.publishQuestion = function(){
             $scope.question.status = 'PUBLISHED';
+            $scope.saveQuestion(true);
+        };
+
+        $scope.unPublishQuestion = function(){
+            $scope.question.status = 'DRAFT';
             $scope.saveQuestion(true);
         };
 

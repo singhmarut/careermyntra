@@ -17,11 +17,11 @@
         </div>
     </div>
 </div>
-<div class="container" ng-init="baseUrl='http://careermyntra.com/posts/'">
+<div class="container" ng-init="baseUrl='http://upsc.pariksharthi.com'">
     <div class="row">
         <div class="col-lg-9">
         <div ng-repeat="article in articles">
-            <b></b><h2>{{article.title}},{{ article.status}}</h2></b>
+            <b><h2>{{article.title}} [{{ article.status}}]</h2></b>
             <div ng-show="currentUser && currentUser.role == 'admin' && article.status === 'DRAFT'">
                 <button class="btn btn-default" type="button" ng-click="">Publish</button>
              </div>
@@ -30,9 +30,9 @@
             <br/><br/>
             <p ng-bind-html="article.content"></p>
             <div>
-                <div gplus class="g-plus" data-size="tall" data-annotation="bubble" data-href='http://careermyntra.com/posts' data-action='share'></div>
-                <div facebook class="facebookShare" data-url='http://careermyntra.com/posts' data-shares='shares'>{{ shares }}</div>
-                <a twitter  data-lang="en" data-count='horizontal' data-url='http://careermyntra.com/posts' data-via='notsosleepy' data-size="medium" data-text='Testing Twitter Share' ></a>
+                <div gplus class="g-plus" data-size="tall" data-annotation="bubble" data-href='{baseUrl}}/{{article._id}}' data-action='share'></div>
+                <div facebook class="facebookShare" data-url='{{baseUrl}}/{{article._id}}' data-shares='shares'>{{ shares }}</div>
+                <a twitter  data-lang="en" data-count='horizontal' data-url='{{baseUrl}}/{{article._id}}' data-via='notsosleepy' data-size="medium" data-text='Testing Twitter Share' ></a>
             </div>
             <hr>
         </div>

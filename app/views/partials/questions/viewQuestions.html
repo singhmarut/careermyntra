@@ -59,7 +59,8 @@
                 <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < questions.length" ng-click="curQuestionIndex = curQuestionIndex+1;question=getQuestion(curQuestionIndex)"> Next </button>
             </div>
             <div ng-init="editable=0;question=getQuestion(curQuestionIndex)">
-                <button type="submit" ng-show="editable == 1" ng-if="question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion()">Publish</button>
+                <button type="submit" ng-show = "question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion()">Publish</button>
+                <button type="submit" ng-show = "question.status != 'DRAFT'" class="btn btn-small" ng-click="unPublishQuestion()">UnPublish</button>
                 <div id="questionEdit" class="clearfix btn-group pull-right" >
                     <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
                     <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
