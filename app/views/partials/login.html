@@ -52,7 +52,8 @@
                           data-callback="http://localhost:8000/api/auth/google/return"
                           data-clientid="315683619107-fnp6sent75d11i6je5beq3ivbg6cu3nl.apps.googleusercontent.com"
                           data-cookiepolicy="single_host_origin"
-                          data-scope="profile">
+                          data-scope="profile https://www.googleapis.com/auth/userinfo.email"
+                          >
                   </span>
             </span>
         </div>
@@ -67,6 +68,7 @@
 
 <script type="text/javascript">
     (function() {
+        console.log('google');
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
         po.src = 'https://apis.google.com/js/client:plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);

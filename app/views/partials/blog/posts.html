@@ -26,7 +26,8 @@
                 <button class="btn btn-default" type="button" ng-click="">Publish</button>
              </div>
             <hr>
-            <span>{{article.createdAt | date:'medium'}}</span>
+            <span ng-show="article.publishedAt != null">{{article.publishedAt | date:'d MMM, y'}}</span>
+            <span ng-show="article.publishedAt == 'undefined' || article.publishedAt == null">{{article.createdAt | date:'d MMM, y'}}</span>
             <br/><br/>
             <p ng-bind-html="article.content"></p>
             <div>
