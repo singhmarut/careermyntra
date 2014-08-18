@@ -61,28 +61,28 @@ angular.module('pupilsboardApp')
         $scope.getAllPosts = function(){
             var postId = $routeParams.id;
             if (postId == undefined){
-                $http.get('/api/blog/posts')
+                $http.get('/api/blog/posts/' + postId)
                     .success(function(data) {
                         $scope.articles = data;
                     }).error(function(err) {
                         console.log("Unable to Retrieve blog" + err);
                     });
             }else{
-//                $location.path('/posts/'+postId);
-//                $http.get('/api/blog/posts/' + postId)
-//                    .success(function(data) {
-//                        $scope.articles = data;
-//                        console.log(JSON.stringify(data));
-//                    }).error(function(err) {
-//                        console.log("Unable to get articles" + err);
-//                    });
+                $location.path('/posts/'+postId);
+                $http.get('/api/blog/posts/' + postId)
+                    .success(function(data) {
+                        $scope.articles = data;
+                        console.log(JSON.stringify(data));
+                    }).error(function(err) {
+                        console.log("Unable to get articles" + err);
+                    });
                 //$location.path('/posts/'+postId);
             }
         };
 
         $scope.getPostById = function(){
             var postId = $routeParams.id;
-            $http.get('/api/blog/posts?id=' + postId)
+            $http.get('/api/blog/posts/' + postId)
                 .success(function(data) {
                     $scope.articles.push(data);
                     console.log(JSON.stringify($scope.articles));

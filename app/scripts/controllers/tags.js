@@ -23,6 +23,7 @@ angular.module('pupilsboardApp')
             columnDefs: [
                 { field: 'name', displayName: 'Tag Name', width: 190 },
                 { field: 'selected',displayName: 'Select',width: 90,cellTemplate: '<input type="checkbox" ng-input="COL_FIELD" ng-model="COL_FIELD"/>' },
+                {field:  'qCount', displayName: 'Count', width: 90 },
                 { field: 'upload', displayName: 'Upload Questions',
                     cellTemplate: '<a ng-input="COL_FIELD" ng-href="/addQuestions?tag={{row.entity.name}}" ng-model="COL_FIELD">Upload Questions</a>' }]};
 
