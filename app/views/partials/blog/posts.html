@@ -58,7 +58,7 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Recent Posts</div>
                     <div class="panel-body">
-                        <div ng-repeat="article in articles">
+                        <div ng-repeat="article in articles | limitTo:5 ">
                             <li><a  ng-href="/posts/{{article._id}}">{{article.title}}</a></li>
                         </div>
                     </div>

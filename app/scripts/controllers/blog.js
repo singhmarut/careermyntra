@@ -33,9 +33,21 @@ angular.module('pupilsboardApp')
                 });
         };
 
+        $scope.getPostForEdit = function(){
+            var action = $routeParams.action;
+
+            var postId = $routeParams.id;
+            $http.get('/api/blog/posts/' + postId)
+                .success(function(data) {
+                   $scope.post = data;
+                }).error(function(err) {
+                    console.log("Unable to get articles" + err);
+                });
+        };
+
         $scope.publishPost = function(status){
             var tags = $scope.post.tags.split(",");
-            $http.put('/api/blog/post',{title: $scope.post.title,
+            $http.put('/api/blog/post/'+ $routeParams.id,{title: $scope.post.title,
                 content: $scope.post.content,tags:tags,status:status})
                 .success(function(data) {
                     $location.path('/posts');
@@ -61,7 +73,7 @@ angular.module('pupilsboardApp')
         $scope.getAllPosts = function(){
             var postId = $routeParams.id;
             if (postId == undefined){
-                $http.get('/api/blog/posts/' + postId)
+                $http.get('/api/blog/posts')
                     .success(function(data) {
                         $scope.articles = data;
                     }).error(function(err) {

@@ -1,0 +1,44 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="container-fluid page-header" ng-init="getPostForEdit()">
+    <hr>
+    <div class="row-fluid">
+        <form class="form" name="form">
+            <div class="col-lg-7">
+                <input type="text" class="form-control" placeholder="Post Title" ng-model="post.title"/>
+            </div>
+            <div class="col-lg-2">
+                <input type="text" class="form-control" ng-model="post.publishedAt" placeholder="Submit Date" bs-datepicker>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn-success btn-small btn-default form-control" type="submit" ng-click="publishPost('PUBLISHED')">Publish</button>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn-success btn-small btn-default  form-control" type="submit" ng-click="publishPost('DRAFT')">Save</button>
+            </div>
+            <div class="col-lg-9">
+                <hr>
+                <textarea rows="30" cols=170" class="form-control" ckeditor="editorOptions" ng-model="post.content"></textarea>
+            </div>
+
+            <div class="col-lg-3">
+                <hr>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Tags</div>
+                    <div class="panel-body">
+                        <label></label>
+                        <input type="text" ng-model="post.tags">
+                        <br/>
+                        <!--<button class="btn-small btn-success btn-default" type="submit" ng-click="addTag()">Add</button>-->
+                        <label>{{post.tags}}</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <hr>
+    <div ng-include="'partials/footer'"></div>
+</div>

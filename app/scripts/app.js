@@ -55,6 +55,10 @@ angular.module('pupilsboardApp', [
                 templateUrl: 'partials/blog/singlePost',
                 controller: 'BlogCtrl'
             })
+            .when('/editPosts/:id', {
+                templateUrl: 'partials/blog/editPost',
+                controller: 'BlogCtrl'
+            })
             .when('/newPost', {
                 templateUrl: 'partials/blog/newPost',
                 controller: 'BlogCtrl',
