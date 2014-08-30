@@ -324,8 +324,8 @@ angular.module('pupilsboardApp')
 
         $scope.choiceColumnDefs = [
             { field: 'seq', displayName: 'Seq',width: 60},
-            { field: 'choice', displayName: 'Choice', width: 350,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' },
-            { field: 'isCorrect', displayName: 'Correct Answer', width: 160,cellTemplate: '<input type="checkbox" style="width: 100%;" ng-model="COL_FIELD"/>' }];
+            { field: 'choice', displayName: 'Choice', width: 350,cellTemplate: '<input type="text" tabindex="(($index + 1) * 10) + col.colIndex()" style="width: 100%;" ng-model="COL_FIELD"/>' },
+            { field: 'isCorrect', displayName: 'Correct Answer', width: 160,cellTemplate: '<input type="checkbox" tabindex="(($index + 1) * 10) + col.colIndex()" style="width: 100%;" ng-model="COL_FIELD"/>' }];
 
         $scope.createMatchingChoice = { data: 'choicesData',
             columnDefs: $scope.choiceColumnDefs,
