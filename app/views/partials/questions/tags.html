@@ -3,6 +3,9 @@
 <div class="container" ng-controller="TagsCtrl" ng-init="getAllTags()">
     <div class="page-header"></div>
     <div class="row">
+       Comma separated tags
+    </div>
+    <div class="row">
     <form class="form-horizontal">
         <input type="text" ng-model="tags.tag" placeholder="Enter Tag Name here">
         <button class="btn-success btn-small btn-default clickme" type="submit" ng-click="saveTag()">Add Tag</button>
