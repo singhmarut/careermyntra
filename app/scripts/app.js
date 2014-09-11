@@ -84,7 +84,11 @@ angular.module('pupilsboardApp', [
                 controller: 'QuestionCtrl'
             })
             .when('/tags', {
-                templateUrl: 'partials/questions/tags',
+                templateUrl: 'partials/admin/tags',
+                controller: 'TagsCtrl'
+            })
+            .when('/questions/summary', {
+                templateUrl: 'partials/admin/questionSummary',
                 controller: 'TagsCtrl'
             })
 //        .when('/questions/view/:tag', {

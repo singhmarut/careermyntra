@@ -1,0 +1,11 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div  class="container-fluid" ng-controller="AdminCtrl" ng-init="getQuestionsPerAccount()">
+    <div class="container" ng-controller="TagsCtrl" ng-init="getAllTags()">
+        <div class="page-header"></div>
+        <div class="row">
+            <div style="height: 600px;" ng-grid="questionReportSchema"></div>
+        </div>
+    </div>
+
+</div>
