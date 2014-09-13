@@ -63,6 +63,10 @@ angular.module('pupilsboardApp', [
                 templateUrl: 'partials/blog/newPost',
                 controller: 'BlogCtrl',
                 authenticate: true
+            }).when('/refreshIndex', {
+                template: ' ',
+                controller: 'SearchCtrl',
+                authenticate: true
             })
 //            .when('/takeTest', {
 //                templateUrl: 'partials/testStart',
@@ -133,11 +137,11 @@ angular.module('pupilsboardApp', [
                 controller: 'SkillsCtrl',
                 authenticate: true
             })
-            .when('/tilesDemo', {
-                templateUrl: 'partials/demo/tilesdemo'
-                //controller: 'SkillsCtrl',
-                //authenticate: true
-            })
+//            .when('/tilesDemo', {
+//                templateUrl: 'partials/demo/tilesdemo'
+//                //controller: 'SkillsCtrl',
+//                //authenticate: true
+//            })
             .when('/dummyPaper', {
                 templateUrl: 'partials/questionPaper/dummyPaper'
                 //controller: 'SkillsCtrl',

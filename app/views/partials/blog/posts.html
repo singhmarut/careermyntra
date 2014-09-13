@@ -8,9 +8,9 @@
         <div class="col-lg-3">
             <!--<span class="glyphicon glyphicon-search"></span>-->
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type text to search here" name="srch-term" id="srch-term">
+                <input type="text" class="form-control" placeholder="Type text to search here" ng-model="searchStr" name="srch-term" id="srch-term">
                 <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    <button class="btn btn-default" type="submit" ng-click="searchPosts(searchStr)"><i class="glyphicon glyphicon-search"></i></button>
                 </div>
             </div>
         </div>
@@ -20,13 +20,14 @@
     <div class="row">
         <div class="col-lg-9">
         <div ng-repeat="article in articles">
-            <b><h2>{{article.title}} [{{ article.status}}]</h2></b>
+            <b><h2>{{article.title}}</h2><span ng-show="currentUser && currentUser.role == 'admin'">[{{ article.status}}]</span></b>
             <div ng-show="currentUser && currentUser.role == 'admin' && article.status === 'DRAFT'">
-                <button class="btn btn-default" type="button" ng-click="">Publish</button>
+                <button class="btn btn-default" type="button" ng-click="publishPost(article,'PUBLISHED')">Publish</button>
              </div>
             <hr>
             <span ng-show="article.publishedAt != null">{{article.publishedAt | date:'d MMM, y'}}</span>
             <span ng-show="article.publishedAt == 'undefined' || article.publishedAt == null">{{article.createdAt | date:'d MMM, y'}}</span>
+            <a ng-href="/posts/{{article._id}}">Leave a comment</a>
             <br/><br/>
             <p ng-bind-html="article.content"></p>
             <div>
@@ -34,7 +35,6 @@
                 <div facebook class="facebookShare" data-url='{{baseUrl}}/{{article._id}}' data-shares='shares'>{{ shares }}</div>
                 <a twitter  data-lang="en" data-count='horizontal' data-url='{{baseUrl}}/{{article._id}}' data-via='notsosleepy' data-size="medium" data-text='Testing Twitter Share' ></a>
             </div>
-            <hr>
         </div>
         </div>
         <div class="col-lg-3">

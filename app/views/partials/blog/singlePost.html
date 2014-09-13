@@ -1,1 +1,20 @@
 <div ng-include="'partials/blog/posts'" onload="getPostById()"></div>
+
+<div class="container" ng-init="baseUrl='http://examcue.com'">
+
+<div class="row" style="margin-top: -300px;" ng-repeat="articleComment in articles[0].comments">
+    <div class="col-lg-8 col-md-12">
+        <input type="text" class="form-control well well-lg well-white" ng-model="articleComment.text">
+        <!--<textarea contenteditable="true"/>-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3">
+        <textarea rows="3" cols="40" ng-model="comment"></textarea>
+    </div>
+    <div class="col-lg-1">
+        <button type="button" class="form-control btn btn-xs btn-primary" ng-click="addComment(comment)">Post</button>
+    </div>
+</div>
+
+</div>

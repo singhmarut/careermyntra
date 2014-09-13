@@ -45,10 +45,19 @@ angular.module('pupilsboardApp')
                 });
         };
 
-        $scope.publishPost = function(status){
-            var tags = $scope.post.tags.split(",");
-            $http.put('/api/blog/post/'+ $routeParams.id,{title: $scope.post.title,
-                content: $scope.post.content,tags:tags,status:status})
+        $scope.publishPost = function(post,status){
+            var tags = post.tags;
+            $http.put('/api/blog/post/'+ post._id + '/status',{title: post.title,
+                content: post.content,tags:tags,status:status})
+                .success(function(data) {
+                    $location.path('/posts');
+                }).error(function(err) {
+                    console.log("Unable to post article" + err);
+                });
+        };
+
+        $scope.addComment = function(comment){
+            $http.post('/api/blog/post/'+ $routeParams.id + '/comment',{comment: comment})
                 .success(function(data) {
                     $location.path('/posts');
                 }).error(function(err) {
@@ -101,6 +110,26 @@ angular.module('pupilsboardApp')
             }).error(function(err) {
                 console.log("Unable to get articles" + err);
             });
+        };
+
+        $scope.searchPosts = function(searchStr){
+            var postId = $routeParams.id;
+            $http.get('/api/blog/posts/search?id=' + searchStr)
+                .success(function(data) {
+                    $scope.articles = data;
+                }).error(function(err) {
+                    console.log("Unable to get articles" + err);
+                });
+        };
+
+        $scope.searchPosts = function(searchStr){
+            var postId = $routeParams.id;
+            $http.get('/api/blog/posts/search?id=' + searchStr)
+                .success(function(data) {
+                    $scope.articles = data;
+                }).error(function(err) {
+                    console.log("Unable to get articles" + err);
+                });
         };
 
 });
