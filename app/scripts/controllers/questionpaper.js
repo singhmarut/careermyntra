@@ -9,6 +9,7 @@ angular.module('pupilsboardApp')
             $scope.curIndex = 0;
             $scope.curSection = {};
             $scope.totalTime = 0;
+
             var countMap = new Object();
             countMap['nonvisited'] = [];
             countMap['answered'] = [];
@@ -59,6 +60,8 @@ angular.module('pupilsboardApp')
                         countMap['unanswered'].push(question._id);
                         countMap['nonvisited'].push(question._id);
                     });
+                    $scope.curSection=section;
+
                 });
                 $scope.totalTime = totalTime;
                 $scope.startTime(true,0,0,0);
@@ -73,6 +76,8 @@ angular.module('pupilsboardApp')
             })
             .success(function(data){
                 $scope.questionPaper = data;
+                $scope.curSection=data.sections[0];
+                console.log('section questions',$scope.curSection.questions.length);
             });
         };
 
@@ -103,6 +108,18 @@ angular.module('pupilsboardApp')
             .success(function(data){
                 console.log('Paper finished successfully');
                 $location.path('/paperCompleted');
+            });
+        };
+
+        $scope.saveComment = function(question){
+            //var selectedSection = $scope.selectedSection;
+            console.log("Saving comment" + $scope.curQuestionIndex);
+            ///api/answerSheet/:id/question/:questionId/comment
+            $http.put('/api/answerSheet/' + $scope.questionPaper._id + '/question/' + question._id + '/comment',{comment: question.comment}).error(function(err){
+                console.log('error while saving paper...');
+            })
+            .success(function(data){
+                console.log('Paper finished successfully');
             });
         };
 
