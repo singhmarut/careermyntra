@@ -30,7 +30,7 @@
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body" ng-repeat="question in section.questions">
-                            <span class="clearfix no-wrap"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="curQuestionIndex = $index">Question no. {{$index+1}}</a></span>
+                            <span class="clearfix"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="curQuestionIndex = $index">{{$index+1}} {{section.questions[$index].content | limitTo:30}}</p></a></span>
                         </div>
                     </div>
                 </div>
