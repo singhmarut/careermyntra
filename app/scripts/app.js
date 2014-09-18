@@ -28,6 +28,14 @@ angular.module('pupilsboardApp', [
                 templateUrl: 'partials/login',
                 controller: 'logout()'
             })
+            .when('/subjects', {
+                templateUrl: 'partials/platform/selectSubjects',
+                controller: 'SubjectCtrl'
+            })
+            .when('/:subject/topics', {
+                templateUrl: 'partials/platform/selectTopics',
+                controller: 'SubjectCtrl'
+            })
             .when('/dashboard', {
                 templateUrl: 'partials/dashboard',
                 controller: 'AccountCtrl',
@@ -36,6 +44,11 @@ angular.module('pupilsboardApp', [
             .when('/createPaper', {
                 templateUrl: 'partials/questionPaper/createPaper',
                 controller: 'CreatequestionpaperCtrl',
+                authenticate: true
+            })
+            .when('/cloneQuestion/:id', {
+                templateUrl: 'partials/questions/cloneQuestion',
+                controller: 'QuestionCtrl',
                 authenticate: true
             })
             .when('/uploadQuestions', {
@@ -100,13 +113,24 @@ angular.module('pupilsboardApp', [
 //            controller: 'QuestionCtrl',
 //            authenticate: true
 //        })
+            .when('/questionPaper', {
+                templateUrl: 'partials/questionPaper/instructions',
+                controller: 'QuestionpaperCtrl',
+                authenticate: true
+            })
             .when('/questionPaper/:id', {
                 templateUrl: 'partials/questionPaper/instructions',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true
             })
+
             .when('/answerSheet/:id', {
                 templateUrl: 'partials/candidate/answerSheet',
+                controller: 'QuestionpaperCtrl',
+                authenticate: true
+            })
+            .when('/samplePaper', {
+                templateUrl: 'partials/questionPaper/questionPaper-modified',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true
             })

@@ -1,0 +1,181 @@
+
+<div class="container" ng-init="getQuestionById()">
+    <!--<div>-->
+        <!--<h3 class="page-header">Search Questions</h3>-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-2 center">-->
+                <!--<label>Tag</label>-->
+                <!--<input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-options="tag.name for tag in allTags" bs-typeahead>-->
+            <!--</div>-->
+            <!--<div class="col-sm-2">-->
+                <!--<label>Start Date</label>-->
+                <!--<input type="date" rows="5" class="form-control resizeNone" ng-model="search.startDate" placeholder="Start Date">-->
+            <!--</div>-->
+            <!--<div class="col-sm-2">-->
+                <!--<label>End Date</label>-->
+                <!--<input type="date" rows="5" class="form-control resizeNone" ng-model="search.endDate" placeholder="Start Date">-->
+            <!--</div>-->
+            <!--<div class="col-lg-2">-->
+                <!--<select multiple id="questionStatus">-->
+                    <!--<optgroup label="Status">-->
+                        <!--<option>DRAFT</option>-->
+                        <!--<option>PUBLISHED</option>-->
+                    <!--</optgroup>-->
+                <!--</select>-->
+            <!--</div>-->
+            <!--<div class="col-sm-2">-->
+                <!--<button type="submit" class="btn btn-small" ng-click="viewTagQuestions(searchTag.name)">Search</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="page-header"></div>-->
+    <h2 class="text-primary">Clone Question</h2>
+    <div class="row">
+        <div class="col-lg-6">
+            <div>
+                <div class="row" ng-show="question.tags.length > 0">
+                    <div class="col-lg-1">
+                        <label>Tags</label>
+                    </div>
+                    <div class="col-lg-5" style="line-height: 2.2">
+                        <a class="btn btn-xs btn-info" style="margin-right: 10px;" ng-repeat="tag in question.tags">
+                            {{tag}}
+                            <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag)"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label>Select Tags</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag)" ng-options="tag.name for tag in allTags" bs-typeahead>
+                    </div>
+                </div>
+                <div class="row">
+                    <br/>
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Main Text</label>-->
+                    <!--</div>-->
+                    <div>
+                        <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.content"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Match Options</label>-->
+                    <!--</div>-->
+                    <div>
+                        <div style="height: 180px;" ng-grid="createMatchingQuestionOptions"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Remaining Text</label>-->
+                    <!--</div>-->
+                    <div>
+                        <textarea rows="1" cols="90" spellcheck="true" ng-model="question.extraContent" placeholder="Select the Correct Option"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Options</label>-->
+                    <!--</div>-->
+                    <div>
+                        <div style="height: 180px;" ng-grid="createMatchingChoice"></div>
+                    </div>
+                    <!--<div class="col-lg-2">-->
+                    <!--<label>Quality</label>-->
+                    <!--<select class="form-control" ng-model="question.quality" ng-options="qualtiy for qualtiy in qualityOptions">Quality</select>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-2">-->
+                    <!--<button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false)">Save Question</button>-->
+                    <!--</div>-->
+                </div>
+                <div class="row">
+                    <br/>
+                    <div class="col-lg-1">
+                        <label>Answer</label>
+                    </div>
+                    <div>
+                        <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="question.answer"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label>Tags</label>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn-success btn-small btn-default clickme" type="submit" ng-click="cloneQuestion(question)">Clone Question</button>
+                    </div>
+                    <div class="col-lg-3">
+                        <button class="btn-primary btn-small btn-default clickme" type="submit" ng-click="saveQuestion(false,cloneQuestion)">Save Question</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-1">
+                        <label>Select Tags</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control search-query" disabled="true"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <br/>
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Main Text</label>-->
+                    <!--</div>-->
+                    <div>
+                        <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="cloneQuestion.content"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Match Options</label>-->
+                    <!--</div>-->
+                    <div>
+                        <div style="height: 180px;" ng-grid="createMatchingQuestionOptionsClone"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Remaining Text</label>-->
+                    <!--</div>-->
+                    <div>
+                        <textarea rows="1" cols="90" spellcheck="true" ng-model="cloneQuestion.extraContent" placeholder="Select the Correct Option"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--<div class="col-lg-1">-->
+                    <!--<label>Options</label>-->
+                    <!--</div>-->
+                    <div>
+                        <div style="height: 180px;" ng-grid="createMatchingChoiceClone"></div>
+                    </div>
+                    <!--<div class="col-lg-2">-->
+                    <!--<label>Quality</label>-->
+                    <!--<select class="form-control" ng-model="question.quality" ng-options="qualtiy for qualtiy in qualityOptions">Quality</select>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-2">-->
+                    <!--<button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false)">Save Question</button>-->
+                    <!--</div>-->
+                </div>
+                <div class="row">
+                    <br/>
+                    <div class="col-lg-1">
+                        <label>Answer</label>
+                    </div>
+                    <div>
+                        <textarea rows="2" cols="30" spellcheck="true" ckeditor="" style="height: 100px;" ng-model="cloneQuestion.answer"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -92,6 +92,19 @@ angular.module('pupilsboardApp')
             return question;
         }
 
+
+        $scope.getQuestionById = function(){
+            $http.get('/api/questions/' + $routeParams.id).error(function(err){
+                console.log('error while fetching question...');
+            })
+            .success(function(data){
+                var question = data;
+                $scope.getChoicesData(question);
+                $scope.getMatchingOptionsData(question);
+                $scope.question = question;
+            });
+        };
+
         // setup editor options
         $scope.editorOptions = {
             language: 'en',
@@ -196,13 +209,13 @@ angular.module('pupilsboardApp')
 //            }
         };
 
-        $scope.saveQuestion = function (update){
+        $scope.saveQuestion = function (update,question){
             var tagName = $routeParams.tag;
 
             var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
             var optionsData = $scope.createMatchingChoice.ngGrid.data;
-            $scope.question.matchingOptions = [];
-            $scope.question.choices = [];
+            question.matchingOptions = [];
+            question.choices = [];
             for (var i = 0, len = matchingData.length; i < len; i++) {
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
@@ -211,7 +224,7 @@ angular.module('pupilsboardApp')
                     matchingOption.isHeader = true;
                 }
                 if (matchingOption.option != '' || matchingOption.match != ''){
-                    $scope.question.matchingOptions.push(matchingOption);
+                    question.matchingOptions.push(matchingOption);
                 }
             };
 
@@ -219,15 +232,15 @@ angular.module('pupilsboardApp')
                 var newOption = new Object();
                 newOption.choice = optionsData[i].choice;
                 newOption.isCorrectAnswer = optionsData[i].isCorrect;
-                $scope.question.choices.push(newOption);
+                question.choices.push(newOption);
             };
 
 //            if (tagName != 'undefined' && tagName != null && tagName != ''){
 //                $scope.question.tags.push(tagName);
 //            }
-            console.log(JSON.stringify($scope.question));
+            console.log(JSON.stringify(question));
             if (update == false){
-                $http.post('/api/question/',JSON.stringify($scope.question)).error(function(err){
+                $http.post('/api/question/',JSON.stringify(question)).error(function(err){
                     console.log('inside error');
                 })
                 .success(function(data){
@@ -235,7 +248,7 @@ angular.module('pupilsboardApp')
                     $route.reload();
                 });
             }else{
-                $http.put('/api/question/',JSON.stringify($scope.question)).error(function(err){
+                $http.put('/api/question/',JSON.stringify(question)).error(function(err){
                     console.log('inside error');
                 })
                 .success(function(data){
@@ -280,6 +293,12 @@ angular.module('pupilsboardApp')
             {idx: '3',option: "", match: ""},
             {idx: '4',option: "", match: ""}];
 
+        $scope.matchingQuestionDataClone = [{idx: 'Heading',option: "", match: ""},
+            {idx: '1',option: "", match: ""},
+            {idx: '2',option: "", match: ""},
+            {idx: '3',option: "", match: ""},
+            {idx: '4',option: "", match: ""}];
+
         $scope.publishQuestion = function(){
             $scope.question.status = 'PUBLISHED';
             $scope.saveQuestion(true);
@@ -316,6 +335,40 @@ angular.module('pupilsboardApp')
             }
         };
 
+        $scope.getChoicesDataClone = function(question){
+            for (var idx = 0; idx < $scope.choicesData.length; idx++){
+                $scope.choicesDataClone[idx].isCorrect = question.choices[idx].isCorrectAnswer;
+                $scope.choicesDataClone[idx].choice = question.choices[idx].choice;
+            }
+        };
+
+        $scope.getMatchingOptionsDataClone = function(question){
+            console.log('matching options' + $scope.matchingOptions);
+            if ((question.matchingOptions != undefined )&& (question.matchingOptions.length != 0)){
+                var optionIdx = 1;
+                if (question.matchingOptions[0] != undefined && question.matchingOptions[0].isHeader){
+                    optionIdx = 0;
+                }
+                for (var idx= 0; idx < question.matchingOptions.length; idx++){
+                    $scope.matchingQuestionDataClone[optionIdx + idx].option = question.matchingOptions[idx].option;
+                    $scope.matchingQuestionDataClone[optionIdx + idx].match = question.matchingOptions[idx].match;
+                }
+            }else{
+                for (var idx= 0; idx < $scope.matchingQuestionData.length; idx++){
+                    $scope.matchingQuestionDataClone[idx].option = '';
+                    $scope.matchingQuestionDataClone[idx].match = '';
+                }
+            }
+        };
+
+        $scope.cloneQuestion = function(question){
+           $scope.cloneQuestion = angular.copy(question);
+           $scope.choicesDataClone = $scope.choicesData;
+           $scope.matchingQuestionDataClone =  $scope.matchingQuestionData;
+           delete $scope.cloneQuestion._id;
+        };
+
+
         $scope.choicesData = [
             {seq: '(a)',choice: "",isCorrect:false},
             {seq: "(b)",choice: "",isCorrect:false},
@@ -334,6 +387,27 @@ angular.module('pupilsboardApp')
         };
 
         $scope.createMatchingQuestionOptions = { data: 'matchingQuestionData',
+            columnDefs: [
+                { field: 'idx', displayName: '',width: 70},
+                { field: 'option', displayName: 'Option',width: 250, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-model="COL_FIELD"/>' },
+                { field: 'match', displayName: 'Match', width: 220,cellTemplate: '<input type="text" style="width: 100%;" ng-model="COL_FIELD"/>' }],
+            enableColumnResize: true
+        };
+
+        $scope.choicesDataClone = [
+            {seq: '(a)',choice: "",isCorrect:false},
+            {seq: "(b)",choice: "",isCorrect:false},
+            {seq: '(c)',choice: "",isCorrect:false},
+            {seq: '(d)',choice: "",isCorrect:false}];
+
+
+        $scope.createMatchingChoiceClone = { data: 'choicesDataClone',
+            columnDefs: $scope.choiceColumnDefs,
+            enableColumnResize: true,
+            enablePaging: false
+        };
+
+        $scope.createMatchingQuestionOptionsClone = { data: 'matchingQuestionDataClone',
             columnDefs: [
                 { field: 'idx', displayName: '',width: 70},
                 { field: 'option', displayName: 'Option',width: 250, cellTemplate: '<input type="text" class="gridInput" style="width: 100%;" ng-model="COL_FIELD"/>' },
