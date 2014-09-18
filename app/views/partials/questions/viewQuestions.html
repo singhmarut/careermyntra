@@ -60,11 +60,12 @@
             </div>
             <div ng-init="editable=0;question=getQuestion(curQuestionIndex)">
                 <button type="submit" ng-show = "question.status == 'DRAFT'" class="btn btn-small" ng-click="publishQuestion()">Publish</button>
+                <a ng-href="/cloneQuestion/{{question._id}}" class="btn btn-primary btn-lg active" role="button">Clone Question</a>
                 <button type="submit" ng-show = "question.status != 'DRAFT'" class="btn btn-small" ng-click="unPublishQuestion()">UnPublish</button>
                 <div id="questionEdit" class="clearfix btn-group pull-right" >
                     <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
                     <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
-                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion()">Save</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion(true,question)">Save</button>
                 </div>
                     <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
                         <div class="row" ng-show="question.tags.length > 0">
