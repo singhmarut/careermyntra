@@ -53,6 +53,11 @@ angular.module('pupilsboardApp')
       return route === $location.path();
     };
 
+    $scope.selectSubjects = function(){
+        console.log('select subjects');
+        var myModal = $modal({scope:$scope,title: 'Select Subject',
+            contentTemplate: 'partials/platform/selectSubjects.html', show: true});
+    };
 //    $scope.createDummyPaper = function() {
 //        console.log('creating dummy paper...');
 //        $http.post('/api/createDummyPaper').error(function(err,data){

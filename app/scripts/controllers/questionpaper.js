@@ -45,28 +45,40 @@ angular.module('pupilsboardApp')
          };
 
         $scope.loadTest = function(){
-            console.log("Loading paper");
-            $http.get('/api/questionPaper/'+ $routeParams.id).error(function(err){
-                console.log('inside error');
-            })
-            .success(function(data){
-                $scope.questionPaper = data;
-                console.log('Paper loaded successfully..' + JSON.stringify(data));
 
-                var totalTime = 0;
-                angular.forEach(data.sections,function(section){
-                    totalTime += section.totalTime;
-                    angular.forEach(section.questions,function(question){
-                        countMap['unanswered'].push(question._id);
-                        countMap['nonvisited'].push(question._id);
-                    });
-                    $scope.curSection=section;
+            if ($routeParams.samplePaper){
 
+                $http.get('/api/questionPaper/sample?tags='+ $routeParams.topic).error(function(err){
+                    console.log('Error while getting topics ' + err);
+                })
+                .success(function(data){
+                    console.log(data);
+                        $scope.questionPaper = data;
                 });
-                $scope.totalTime = totalTime;
-                $scope.startTime(true,0,0,0);
-                console.log('Total time of test is:' + totalTime);
-            });
+            }else{
+                console.log("Loading paper");
+                $http.get('/api/questionPaper/'+ $routeParams.id).error(function(err){
+                    console.log('inside error');
+                })
+                .success(function(data){
+                    $scope.questionPaper = data;
+                    console.log('Paper loaded successfully..' + JSON.stringify(data));
+
+                    var totalTime = 0;
+                    angular.forEach(data.sections,function(section){
+                        totalTime += section.totalTime;
+                        angular.forEach(section.questions,function(question){
+                            countMap['unanswered'].push(question._id);
+                            countMap['nonvisited'].push(question._id);
+                        });
+                        $scope.curSection=section;
+
+                    });
+                    $scope.totalTime = totalTime;
+                    $scope.startTime(true,0,0,0);
+                    console.log('Total time of test is:' + totalTime);
+                });
+            }
         };
 
         $scope.loadAnswerSheet = function(){
