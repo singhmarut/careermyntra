@@ -33,15 +33,6 @@ angular.module('pupilsboardApp')
 
          $scope.startTest = function(){
              $location.path('/questionPaper/'+ $routeParams.id + '/start'); //use $location.path(url).replace() if you want to replace the location instead
-
-//             $http.get('/api/questionPaper/load/'+ $scope.authKey.toString()).error(function(err,data){
-//                    console.log('inside error');
-//                 })
-//                 .success(function(data){
-//                     var myOtherModal = $modal({scope: $scope, contentTemplate: 'partials/questionPaper/instructions.html', show: true});
-//
-//                     $location.path('/questionPaper/'+data.questionPaperId); //use $location.path(url).replace() if you want to replace the location instead
-//                 });
          };
 
         $scope.loadTest = function(){
@@ -52,8 +43,7 @@ angular.module('pupilsboardApp')
                     console.log('Error while getting topics ' + err);
                 })
                 .success(function(data){
-                    console.log(data);
-                        $scope.questionPaper = data;
+                    $scope.initializeQuestionPaper(data);
                 });
             }else{
                 console.log("Loading paper");
@@ -61,24 +51,30 @@ angular.module('pupilsboardApp')
                     console.log('inside error');
                 })
                 .success(function(data){
-                    $scope.questionPaper = data;
-                    console.log('Paper loaded successfully..' + JSON.stringify(data));
-
-                    var totalTime = 0;
-                    angular.forEach(data.sections,function(section){
-                        totalTime += section.totalTime;
-                        angular.forEach(section.questions,function(question){
-                            countMap['unanswered'].push(question._id);
-                            countMap['nonvisited'].push(question._id);
-                        });
-                        $scope.curSection=section;
-
-                    });
-                    $scope.totalTime = totalTime;
-                    $scope.startTime(true,0,0,0);
-                    console.log('Total time of test is:' + totalTime);
+                        $scope.initializeQuestionPaper(data);
                 });
             }
+        };
+
+        $scope.initializeQuestionPaper = function(data){
+            $scope.questionPaper = data;
+            var totalTime = 0;
+            angular.forEach(data.sections,function(section){
+                totalTime += section.totalTime;
+                var count = 0 ;
+                angular.forEach(section.questions,function(question){
+                    countMap['unanswered'].push(question._id);
+                    if (count != 0){
+                        countMap['nonvisited'].push(question._id);
+                    }
+                    count++;
+                });
+                $scope.curSection=section;
+
+            });
+            $scope.totalTime = totalTime;
+            $scope.startTime(true,0,0,0);
+            console.log('Total time of test is:' + totalTime);
         };
 
         $scope.loadAnswerSheet = function(){
@@ -204,22 +200,24 @@ angular.module('pupilsboardApp')
             return count;
         };
 
+        $scope.setCurrentIdx = function(idx){
+            $scope.curQuestionIndex = idx;
+            $scope.markVisited($scope.curSection.questions[idx]);
+        };
+
         $scope.movePrev = function(){
-            console.log('moving next');
             $scope.curQuestionIndex--;
         };
 
         $scope.moveNext = function(){
-            console.log('moving next');
             if ($scope.curQuestionIndex < $scope.questionPaper.sections[0].questions.length - 1){
                 $scope.curQuestionIndex++;
             }
         };
 
-        $scope.selectCurrentQuestion = function(index){
-            console.log('selecting question');
-            $scope.curQuestionIndex = index;
-        };
+//        $scope.selectCurrentQuestion = function(index){
+//            $scope.curQuestionIndex = index;
+//        };
 
         $scope.markAnswered = function(question){
             var index = countMap['unanswered'].indexOf(question._id);
@@ -234,6 +232,7 @@ angular.module('pupilsboardApp')
         };
 
         $scope.markVisited = function(question){
+            //var question = $scope.curSection.questions[idx];
             var index = countMap['nonvisited'].indexOf(question._id);
             if (index != -1){
                 countMap['nonvisited'].splice(index,1);

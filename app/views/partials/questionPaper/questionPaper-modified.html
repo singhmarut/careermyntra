@@ -7,7 +7,7 @@
             <div class="col-lg-7 col-md-8">
                 <span class="no-wrap heading-not-answered"><i class="fa fa-lightbulb-o"></i> <a href="#">Not Answered ({{countMap['unanswered'].length}})</a></span>
                 <span class="no-wrap heading-marked"><i class="fa fa-lightbulb-o"></i> <a href="#">Marked ({{countMap['marked'].length}})</a></span>
-                <span class="no-wrap heading-not-visited"><i class="fa fa-lightbulb-o"></i> <a href="#">Not Visited ({{Math.max(0,countMap['nonvisited'].length - 1)}})</a></span>
+                <span class="no-wrap heading-not-visited"><i class="fa fa-lightbulb-o"></i> <a href="#">Not Visited ({{Math.max(0,countMap['nonvisited'].length)}})</a></span>
                 <span class="no-wrap heading-answered"><i class="fa fa-lightbulb-o"></i> <a href="#">Answered ({{countMap['answered'].length}})</a></span>
             </div>
             <div class="col-lg-5 col-md-4 col-sm-6 txt-right-left-mob-break992">
@@ -30,7 +30,7 @@
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body" ng-repeat="question in section.questions">
-                            <span class="clearfix"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="curQuestionIndex = $index">{{$index+1}} {{section.questions[$index].content | limitTo:30}}</p></a></span>
+                            <span class="clearfix"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="setCurrentIdx($index)">{{$index+1}} {{section.questions[$index].content | limitTo:30}}</p></a></span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <span class="pull-right subject-section">Section: {{section.name}}</span>
                         <h3 class="panel-title">Question no. {{$index + 1}}</h3>
                     </div>
-                    <div class="panel-body">
+                    <div class="panel-body" >
                         <p ng-bind-html="question.content"></p>
                         <form role="form" class="form-horizontal font-size13">
                             <div class="">

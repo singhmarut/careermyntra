@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row" ng-init="initTopics()">
         <ul class="list-group" ng-repeat="topic in topics">
-            <a href="#" ng-click="startSamplePaper(topic)"  class="list-group-item">{{topic}}</a>
+            <a ng-href="samplePaper?samplePaper=1&topic={{topic}}"  class="list-group-item">{{topic}}</a>
         </ul>
     </div>
 </div>

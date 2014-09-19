@@ -13,9 +13,9 @@ angular.module('pupilsboardApp')
 
         $scope.startSamplePaper = function (topic){
             console.log('inside startSamplePaper');
-            var path = '/questionPaper?samplePaper=1&topic=' + topic;
+            var path = '/samplePaper?samplePaper=1&topic=' + topic;
             console.log(path);
-            $location.path(path);
+            $location.path('/questions/summary');
         };
 
 //        $scope.getTopics = function (subject){
