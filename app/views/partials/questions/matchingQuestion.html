@@ -10,7 +10,7 @@
             <div class="col-lg-11" style="line-height: 2.2">
                 <a class="btn btn-xs btn-info" style="margin-right: 10px;" ng-repeat="tag in question.tags">
                     {{tag}}
-                    <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag)"></span>
+                    <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag,question)"></span>
                 </a>
             </div>
         </div>
@@ -20,7 +20,7 @@
                 <label>Select Tags</label>
             </div>
             <div class="col-lg-6">
-                <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag)" ng-options="tag.name for tag in allTags" bs-typeahead>
+                <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag,question)" ng-options="tag.name for tag in allTags" bs-typeahead>
             </div>
         </div>
         <div class="row">
@@ -60,7 +60,7 @@
                <select class="form-control" ng-model="question.quality" ng-options="qualtiy for qualtiy in qualityOptions">Quality</select>
            </div>
            <div class="col-lg-2">
-               <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false,question)">Save Question</button>
+               <button class="btn-success btn-small btn-default clickme" type="submit" id="saveQuestion" ng-click="saveQuestion(false,question,choicesData,matchingQuestionData,false)">Save Question</button>
            </div>
        </div>
         <div class="row">

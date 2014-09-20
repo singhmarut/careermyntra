@@ -35,6 +35,10 @@
             <label>End Date</label>
             <input type="date" rows="5" class="form-control resizeNone" ng-model="search.endDate" placeholder="Start Date">
         </div>
+        <div class="col-sm-2">
+            <label>Text</label>
+            <input type="text" class="form-control resizeNone" ng-model="search.text" placeholder="Enter your search">
+        </div>
         <div class="col-lg-2">
             <select multiple id="questionStatus">
                 <optgroup label="Status">
@@ -65,7 +69,7 @@
                 <div id="questionEdit" class="clearfix btn-group pull-right" >
                     <button type="button" class="btn btn-sm btn-danger btn-default" ng-show="currentUser && currentUser.role == 'admin' && editable == 0" ng-click="editable = 1">Edit</button>
                     <button type="button" class="btn btn-sm btn-warning" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable = 0">Cancel</button>
-                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion(true,question)">Save</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-show="currentUser && currentUser.role == 'admin' && editable == 1" ng-click="editable=0; saveQuestion(true,question,choicesData,matchingQuestionData,false)">Save</button>
                 </div>
                     <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
                         <div class="row" ng-show="question.tags.length > 0">

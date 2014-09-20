@@ -161,12 +161,11 @@ angular.module('pupilsboardApp')
                 //.xhr(function(xhr){xhr.upload.addEventListener(...)})// access and attach any event listener to XMLHttpRequest.
             }
         };
-        $scope.addTagToQuestion = function(tag){
+        $scope.addTagToQuestion = function(tag,question){
             if (tag != undefined){
                 $scope.searchTag = tag;
             }
-            var tagCollection = $scope.question.tags;
-            console.log('search Tag' + $scope.searchTag);
+            var tagCollection = question.tags;
             if (angular.isObject($scope.searchTag)){
                 console.log('tag selected' + $scope.searchTag.name);
                 if ($routeParams.tag == undefined || (($routeParams.tag != undefined) && ($routeParams.tag != $scope.searchTag.name)))
@@ -187,11 +186,11 @@ angular.module('pupilsboardApp')
             }
         };
 
-        $scope.removeTagFromQuestion = function (tag){
-            for (var idx = 0; idx < $scope.question.tags.length; idx++) {
-                var findTag = $scope.question.tags[idx];
+        $scope.removeTagFromQuestion = function (tag,question){
+            for (var idx = 0; idx < question.tags.length; idx++) {
+                var findTag = question.tags[idx];
                 if (findTag === tag){
-                    $scope.question.tags.splice(idx,1);
+                    question.tags.splice(idx,1);
                     break;
                 }
             }
@@ -209,13 +208,17 @@ angular.module('pupilsboardApp')
 //            }
         };
 
-        $scope.saveQuestion = function (update,question){
+        $scope.saveQuestion = function (update,question,optionsData,matchingData,isClone){
             var tagName = $routeParams.tag;
 
-            var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
-            var optionsData = $scope.createMatchingChoice.ngGrid.data;
+            //var matchingData = $scope.createMatchingQuestionOptions.ngGrid.data;
+            //var optionsData = $scope.createMatchingChoice.ngGrid.data;
             question.matchingOptions = [];
             question.choices = [];
+            if (isClone){
+                question._id = null;
+                delete question._id;
+            }
             for (var i = 0, len = matchingData.length; i < len; i++) {
                 var matchingOption = new Object();
                 matchingOption.option = matchingData[i].option;
@@ -363,8 +366,8 @@ angular.module('pupilsboardApp')
 
         $scope.cloneQuestion = function(question){
            $scope.cloneQuestion = angular.copy(question);
-           $scope.choicesDataClone = $scope.choicesData;
-           $scope.matchingQuestionDataClone =  $scope.matchingQuestionData;
+           $scope.choicesDataClone = angular.copy($scope.choicesData);
+           $scope.matchingQuestionDataClone =  angular.copy($scope.matchingQuestionData);
            delete $scope.cloneQuestion._id;
         };
 

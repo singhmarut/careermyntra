@@ -43,7 +43,7 @@ angular.module('pupilsboardApp')
                     console.log('Error while getting topics ' + err);
                 })
                 .success(function(data){
-                    $scope.initializeQuestionPaper(data);
+                    $scope.initializeQuestionPaper(data,true);
                 });
             }else{
                 console.log("Loading paper");
@@ -51,12 +51,12 @@ angular.module('pupilsboardApp')
                     console.log('inside error');
                 })
                 .success(function(data){
-                        $scope.initializeQuestionPaper(data);
+                        $scope.initializeQuestionPaper(data,false);
                 });
             }
         };
 
-        $scope.initializeQuestionPaper = function(data){
+        $scope.initializeQuestionPaper = function(data,sample){
             $scope.questionPaper = data;
             var totalTime = 0;
             angular.forEach(data.sections,function(section){
@@ -72,9 +72,10 @@ angular.module('pupilsboardApp')
                 $scope.curSection=section;
 
             });
-            $scope.totalTime = totalTime;
-            $scope.startTime(true,0,0,0);
-            console.log('Total time of test is:' + totalTime);
+            if (!sample){
+                $scope.totalTime = totalTime;
+                $scope.startTime(true,0,0,0);
+            }
         };
 
         $scope.loadAnswerSheet = function(){
