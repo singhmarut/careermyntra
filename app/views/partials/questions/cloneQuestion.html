@@ -31,6 +31,14 @@
     <!--<div class="page-header"></div>-->
     <h2 class="text-primary">Clone Question</h2>
     <div class="row">
+        <div class="col-lg-2">
+            <button class="btn-success btn-small btn-default clickme" type="submit" ng-click="cloneQuestion(question)">Clone Question</button>
+        </div>
+        <div class="col-lg-2">
+            <button class="btn-primary btn-small btn-default clickme" type="submit" ng-click="saveQuestion(false,cloneQuestion,choicesDataClone,matchingQuestionDataClone,true)">Save Question</button>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-6">
             <div>
                 <div class="row" ng-show="question.tags.length > 0">
@@ -50,7 +58,7 @@
                         <label>Select Tags</label>
                     </div>
                     <div class="col-lg-6">
-                        <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag)" ng-options="tag.name for tag in allTags" bs-typeahead>
+                        <input type="text" class="form-control search-query" disabled>
                     </div>
                 </div>
                 <div class="row">
@@ -110,11 +118,18 @@
                     <div class="col-lg-1">
                         <label>Tags</label>
                     </div>
-                    <div class="col-lg-3">
-                        <button class="btn-success btn-small btn-default clickme" type="submit" ng-click="cloneQuestion(question)">Clone Question</button>
-                    </div>
-                    <div class="col-lg-3">
-                        <button class="btn-primary btn-small btn-default clickme" type="submit" ng-click="saveQuestion(false,cloneQuestion)">Save Question</button>
+
+                    <!--<div class="col-lg-3">-->
+                        <!--<button class="btn-success btn-small btn-default clickme" type="submit" ng-click="cloneQuestion(question)">Clone Question</button>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-3">-->
+                        <!--<button class="btn-primary btn-small btn-default clickme" type="submit" ng-click="saveQuestion(false,cloneQuestion)">Save Question</button>-->
+                    <!--</div>-->
+                    <div class="col-lg-11" style="line-height: 2.2">
+                        <a class="btn btn-xs btn-info" style="margin-right: 10px;" ng-repeat="tag in cloneQuestion.tags">
+                            {{tag}}
+                            <span class="glyphicon glyphicon-remove" style="margin-left: 10px;" ng-click="removeTagFromQuestion(tag,cloneQuestion)"></span>
+                        </a>
                     </div>
                 </div>
 
@@ -123,7 +138,7 @@
                         <label>Select Tags</label>
                     </div>
                     <div class="col-lg-6">
-                        <input type="text" class="form-control search-query" disabled="true"/>
+                        <input type="text" class="form-control search-query" ng-init="getAllTags()" ng-model="searchTag" ng-change="addTagToQuestion(searchTag,cloneQuestion)" ng-options="tag.name for tag in allTags" bs-typeahead>
                     </div>
                 </div>
                 <div class="row">

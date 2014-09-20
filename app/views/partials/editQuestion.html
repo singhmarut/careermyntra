@@ -26,7 +26,7 @@
                         </div>
                         <div id="questionNav" class="clearfix btn-group-sm pull-right" >
                             <button type="button" class="btn btn-sm btn-primary" ng-show="currentUser && currentUser.role == 'admin'" ng-show="curQuestionIndex > 0" ng-click="editable = true">Edit</button>
-                            <button type="button" class="btn btn-sm btn-primary" ng-show="currentUser && currentUser.role == 'admin'" ng-show="editable" ng-click="saveQuestion(section.questions[curQuestionIndex])">Save</button>
+                            <button type="button" class="btn btn-sm btn-primary" ng-show="currentUser && currentUser.role == 'admin'" ng-show="editable" ng-click="saveQuestion(true,section.questions[curQuestionIndex],choicesData,matchingQuestionData,false)">Save</button>
                             <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex > 0" ng-click="curQuestionIndex = curQuestionIndex-1"> Previous </button>
                             <button type="button" class="btn btn-sm btn-primary" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="curQuestionIndex = curQuestionIndex+1"> Next </button>
                         </div>
