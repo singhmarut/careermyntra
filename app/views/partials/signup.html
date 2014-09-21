@@ -1,6 +1,12 @@
 <!--<div ng-include="'partials/navbar.html'"></div>-->
+<div ng-include="'partials/navbar.html'"></div>
 
 <div class="container-fluid" ng-controller="SignupCtrl">
+    <div class="page-header">
+        <div class="col-sm-12">
+            <h1 class="text-primary">Sign Up</h1>
+        </div>
+    </div>
   <div class="col-sm-6">
     <form class="form" name="form" ng-submit="$hide();register(form)" novalidate>
 
@@ -38,12 +44,12 @@
         <label>Password</label>
         
         <input type="password" name="password" class="form-control" ng-model="user.password"
-               ng-minlength="3"
+               ng-minlength="6"
                required
                mongoose-error/>
         <p class="help-block"
            ng-show="(form.password.$error.minlength || form.password.$error.required) && submitted">
-          Password must be at least 3 characters.
+          Password must be at least 6 characters.
         </p>
         <p class="help-block" ng-show="form.password.$error.mongoose">
           {{ errors.password }}
