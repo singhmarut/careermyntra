@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert) {
+  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert,$rootScope) {
             $scope.questionPaper = null;
             $scope.curQuestionIndex = 0;
 
@@ -26,8 +26,6 @@ angular.module('pupilsboardApp')
                     $scope.curSection = $scope.section;
                     $scope.startTime(true,0,0);
                 }else{
-                    console.log($event);
-                    console.log('Section is already over');
                 }
             };
 
@@ -40,15 +38,15 @@ angular.module('pupilsboardApp')
             if ($routeParams.samplePaper){
 
                 $http.get('/api/questionPaper/sample?tags='+ $routeParams.topic).error(function(err){
-                    console.log('Error while getting topics ' + err);
+                    alert('Unable to load paper. Please try again')
                 })
                 .success(function(data){
+                    delete data._id;
                     $scope.initializeQuestionPaper(data,true);
                 });
             }else{
-                console.log("Loading paper");
                 $http.get('/api/questionPaper/'+ $routeParams.id).error(function(err){
-                    console.log('inside error');
+                    alert('Unable to load paper. Please try again')
                 })
                 .success(function(data){
                         $scope.initializeQuestionPaper(data,false);
@@ -79,20 +77,16 @@ angular.module('pupilsboardApp')
         };
 
         $scope.loadAnswerSheet = function(){
-            console.log("Loading paper");
             $http.get('/api/candidate/answerSheets/'+ $routeParams.id).error(function(err){
-                console.log('inside error');
             })
             .success(function(data){
                 $scope.questionPaper = data;
                 $scope.curSection=data.sections[0];
-                console.log('section questions',$scope.curSection.questions.length);
             });
         };
 
         $scope.loadInstructions = function(){
             $http.get('/api/questionPaper/'+ $routeParams.id + '/instruction').error(function(err){
-                console.log('inside error');
             })
             .success(function(data){
                 $scope.instruction = data;
@@ -105,19 +99,26 @@ angular.module('pupilsboardApp')
             });
 
             c.isUserAnswer = true;
-            console.log(JSON.stringify(selectedQuestion));
         };
 
         $scope.finish = function(){
-            console.log("Finishing paper" + JSON.stringify($scope.questionPaper));
-            //var selectedSection = $scope.selectedSection;
-            $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
-                console.log('error while saving paper...');
-            })
-            .success(function(data){
-                console.log('Paper finished successfully');
-                $location.path('/paperCompleted');
-            });
+            if ($routeParams.samplePaper){
+                $http.post('/api/answerSheet?samplePaper=1' ,JSON.stringify($scope.questionPaper)).error(function(err){
+                })
+                .success(function(data){
+                    var path = '/login?samplePaper=1&sheet=' + data._id;
+                    console.log('redirect path is ' + path);
+                    $location.path( '/signup' ).search('samplePaper', '1').search('sheet',data._id);
+                });
+                //$scope.$emit("submitSamplePaper", $scope.questionPaper);
+            }else{
+                //var selectedSection = $scope.selectedSection;
+                $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
+                })
+                .success(function(data){
+                    $location.path('/paperCompleted');
+                });
+            }
         };
 
         $scope.saveComment = function(question){
@@ -125,10 +126,8 @@ angular.module('pupilsboardApp')
             console.log("Saving comment" + $scope.curQuestionIndex);
             ///api/answerSheet/:id/question/:questionId/comment
             $http.put('/api/answerSheet/' + $scope.questionPaper._id + '/question/' + question._id + '/comment',{comment: question.comment}).error(function(err){
-                console.log('error while saving paper...');
             })
             .success(function(data){
-                console.log('Paper finished successfully');
             });
         };
 
@@ -183,7 +182,6 @@ angular.module('pupilsboardApp')
 
         $scope.emitEvent = function(form){
             $http.post('/api/emitEvent').error(function(err){
-                console.log('error while saving paper...');
             })
             .success(function(data){
             });
@@ -245,5 +243,9 @@ angular.module('pupilsboardApp')
             if (index == -1){
                 countMap['marked'].push(question._id);
             }
+        };
+
+        $scope.log = function(index){
+            console.log(index);
         };
   });
