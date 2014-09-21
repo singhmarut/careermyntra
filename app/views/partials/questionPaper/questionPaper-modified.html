@@ -30,7 +30,7 @@
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
                         <div class="panel-body" ng-repeat="question in section.questions">
-                            <span class="clearfix"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="setCurrentIdx($index)">{{$index+1}} {{section.questions[$index].content | limitTo:30}}</p></a></span>
+                            <span class="clearfix"><i class="fa fa-lightbulb-o panel-blue-question-icon answered"></i><a href="" ng-click="setCurrentIdx($index)">Q. {{$index+1}} <p ng-bind-html="section.questions[$index].content | limitTo:30"></p></a></span>
                         </div>
                     </div>
                 </div>
@@ -50,9 +50,12 @@
                 </div>
             </div>
             <div ng-repeat="section in questionPaper.sections">
-                <div class="panel panel-blue" ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index">
+                <div class="panel panel-blue" ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index" >
+                    <div ng-if="curQuestionIndex == $index">
+                        <div ng-init="markVisited(question)"></div>
+                    </div>
                     <div class="panel-heading">
-                        <span class="pull-right subject-section">Section: {{section.name}}</span>
+                        <!--<span class="pull-right subject-section">Section: {{section.name}}</span>-->
                         <h3 class="panel-title">Question no. {{$index + 1}}</h3>
                     </div>
                     <div class="panel-body" >
@@ -68,7 +71,7 @@
                     <div class="panel-footer">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <button type="button" class="btn btn-warning btn-sm" ng-click="markVisited(question)">Clear Response</button>
+                                <button type="button" class="btn btn-warning btn-sm" ng-click="">Clear Response</button>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <div ng-switch="curQuestionIndex < section.questions.length-1">
@@ -84,7 +87,7 @@
                                 <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex > 0" ng-click="movePrev()">Previous</button>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext();markVisited(question)">Save &amp; Next</button>
+                                <button type="button" class="btn btn-success btn-sm pull-right" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext()">Save &amp; Next</button>
                             </div>
                             <div class="btn-group pull-right">
                                 <button class="btn btn-primary btn-sm" type="button" ng-click="finish()">
