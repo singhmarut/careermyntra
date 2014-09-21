@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pupilsboardApp', [
+var app = angular.module('pupilsboardApp', [
         'ngCookies',
         'ngResource',
         'ngSanitize',
@@ -23,6 +23,10 @@ angular.module('pupilsboardApp', [
             .when('/login', {
                 templateUrl: 'partials/login',
                 controller: 'LoginCtrl'
+            })
+            .when('/signup', {
+                templateUrl: 'partials/signup',
+                controller: 'SignupCtrl'
             })
             .when('/logout', {
                 templateUrl: 'partials/login',
@@ -113,11 +117,10 @@ angular.module('pupilsboardApp', [
 //            controller: 'QuestionCtrl',
 //            authenticate: true
 //        })
-            .when('/questionPaper', {
-                templateUrl: 'partials/questionPaper/instructions',
-                controller: 'QuestionpaperCtrl',
-                authenticate: true
-            })
+//            .when('/questionPaper', {
+//                templateUrl: 'partials/questionPaper/questionPaper-modified',
+//                controller: 'QuestionpaperCtrl'
+//            })
             .when('/questionPaper/:id', {
                 templateUrl: 'partials/questionPaper/instructions',
                 controller: 'QuestionpaperCtrl',
@@ -131,8 +134,7 @@ angular.module('pupilsboardApp', [
             })
             .when('/samplePaper', {
                 templateUrl: 'partials/questionPaper/questionPaper-modified',
-                controller: 'QuestionpaperCtrl',
-                authenticate: true
+                controller: 'QuestionpaperCtrl'
             })
             .when('/questionPaper/:id/start', {
                 templateUrl: 'partials/questionPaper/questionPaper-modified',
@@ -221,9 +223,17 @@ angular.module('pupilsboardApp', [
 
         // Redirect to login if route requires auth and you're not logged in
         $rootScope.$on('$routeChangeStart', function (event, next) {
-
+            console.log("event" + event);
             if (next.authenticate && !Auth.isLoggedIn()) {
                 $location.path('/login');
             }
         });
+
+        $rootScope.$on('submitSamplePaper', function(event, args) {
+            $rootScope.$broadcast('handleSubmitSamplePaper',args);
+
+            //$rootScope.$broadcast('helloEvent', 'Sathyalog');
+           // $rootScope.$broadcast('questionChanged', args);
+        });
     });
+
