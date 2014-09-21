@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .factory('Auth', function Auth($location, $rootScope, Session, User, $cookieStore) {
+  .factory('Auth', function Auth($location, $rootScope,$routeParams, Session, User, $cookieStore,$http) {
     
     // Get currentUser from cookie
     $rootScope.currentUser = $cookieStore.get('user') || null;
@@ -56,12 +56,18 @@ angular.module('pupilsboardApp')
        * @return {Promise}            
        */
       createUser: function(user, callback) {
-        var cb = callback || angular.noop;
+          var cb = callback || angular.noop;
+
 
         return User.save(user,
           function(user) {
-           console.log('user' + JSON.stringify(user));
-            //$rootScope.currentUser = user;
+            $rootScope.currentUser = user;
+              if ($routeParams.samplePaper && $routeParams.sheet){
+                  var sheetId = $routeParams.sheet;
+                  $http.put('/api/sampleAnswerSheet/' + sheetId,{email: user.email}).error(function(err){
+
+                  });
+              }
             return cb(user);
           },
           function(err) {
