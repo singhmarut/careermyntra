@@ -50,10 +50,7 @@ module.exports = function (grunt) {
     watch: {
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: true
-        }
+        tasks: ['newer:jshint:all']
       },
       mochaTest: {
         files: ['test/server/{,*/}*.js'],
@@ -70,18 +67,6 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
-      livereload: {
-        files: [
-          '<%= yeoman.app %>/views/{,*//*}*.{html,jade}',
-          '{.tmp,<%= yeoman.app %>}/styles/{,*//*}*.css',
-          '{.tmp,<%= yeoman.app %>}/scripts/{,*//*}*.js',
-          '<%= yeoman.app %>/images/{,*//*}*.{png,jpg,jpeg,gif,webp,svg}'
-        ],
-
-        options: {
-          livereload: true
-        }
-      },
       express: {
         files: [
           'server.js',
@@ -89,7 +74,6 @@ module.exports = function (grunt) {
         ],
         tasks: ['newer:jshint:server', 'express:dev', 'wait'],
         options: {
-          livereload: true,
           nospawn: true //Without this option specified express won't be reloaded
         }
       }
@@ -414,18 +398,6 @@ module.exports = function (grunt) {
         NODE_ENV: 'test'
       }
     }
-  });
-
-  // Used for delaying livereload until after server has restarted
-  grunt.registerTask('wait', function () {
-    grunt.log.ok('Waiting for server reload...');
-
-    var done = this.async();
-
-    setTimeout(function () {
-      grunt.log.writeln('Done waiting!');
-      done();
-    }, 500);
   });
 
   grunt.registerTask('express-keepalive', 'Keep grunt running', function() {
