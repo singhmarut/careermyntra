@@ -10,7 +10,7 @@ var express = require('express'),
 /**
  * Main application file
  */
-
+console.log(process.argv[3]);
 // Set default node environment to development
 process.env.NODE_ENV = process.argv[2];
 
