@@ -12,7 +12,7 @@ var express = require('express'),
  */
 
 // Set default node environment to development
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.argv[2];
 
 var config = require('./lib/config/config');
 var db = mongoose.connect(config.mongo.uri, config.mongo.options);
