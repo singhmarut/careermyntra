@@ -10,7 +10,7 @@
     "angular-resource": ">=1.2.*",
     "angular-cookies": ">=1.2.*",
     "angular-sanitize": ">=1.2.*",
-    "angular-route": ">=1.2.*",
+    "angular-route": "1.2.*",
     "ng-ckeditor": "0.2.1",
     "angular-strap": "~2.0.3",
     "angular-motion": "~0.3.3",
