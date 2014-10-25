@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('SignupCtrl', function ($scope, Auth, $location,$alert,$routeParams) {
+  .controller('SignupCtrl', function ($scope, Auth, $location,$alert,$routeParams,$http) {
 
     $scope.user = {};
     $scope.errors = {};
@@ -36,4 +36,15 @@ angular.module('pupilsboardApp')
         });
       }
     };
+
+        $scope.sendInvitation = function(form) {
+            if(form.$valid) {
+                $http.post('/api/users/invite'+ "?referredEmail=" + $scope.user.email).error(function(err){
+                    var myAlert = $alert({title: 'Error sending Invitation', content: 'Unable to send invitation.\n Please try again!!', placement: 'top', type: 'warn', show: true,duration:3});
+                })
+                .success(function(data){
+                    var myAlert = $alert({title: 'Registration Complete', content: 'An email has been sent to your emailid.\n Please verify your email address', placement: 'top', type: 'info', show: true,duration:3});
+                });
+            }
+        };
   });
