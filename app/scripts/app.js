@@ -28,6 +28,10 @@ var app = angular.module('pupilsboardApp', [
                 templateUrl: 'partials/signup',
                 controller: 'SignupCtrl'
             })
+            .when('/invite', {
+                templateUrl: 'partials/invite',
+                controller: 'SignupCtrl'
+            })
             .when('/logout', {
                 templateUrl: 'partials/login',
                 controller: 'logout()'

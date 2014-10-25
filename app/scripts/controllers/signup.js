@@ -1,9 +1,14 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('SignupCtrl', function ($scope, Auth, $location,$alert) {
+  .controller('SignupCtrl', function ($scope, Auth, $location,$alert,$routeParams) {
+
     $scope.user = {};
     $scope.errors = {};
+
+    if($routeParams.emailId != 'undefined'){
+        $scope.user.email = $routeParams.emailId;
+    }
 
     $scope.register = function(form) {
       $scope.submitted = true;
