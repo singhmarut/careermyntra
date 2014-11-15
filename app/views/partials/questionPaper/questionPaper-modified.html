@@ -51,6 +51,7 @@
             </div>
             <div ng-repeat="section in questionPaper.sections">
                 <div class="panel panel-blue" ng-repeat="question in section.questions" ng-show="curQuestionIndex == $index" >
+                    <p ng-show="currentUser && currentUser.role == 'admin'">Question Id : {{question._id}}</p>
                     <div ng-if="curQuestionIndex == $index">
                         <div ng-init="markVisited(question)"></div>
                     </div>

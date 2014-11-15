@@ -8,7 +8,14 @@ angular.module('pupilsboardApp')
 
         $scope.getSubjects = function (){
             console.log('inside getSubjects');
-            $scope.subjects.push('Polity');
+            $scope.subjects.push('Economy');
+            $scope.subjects.push('Indian History');
+            $scope.subjects.push('Indian Polity');
+            $scope.subjects.push('IGeography');
+            $scope.subjects.push('World Geography');
+            $scope.subjects.push('General Science');
+            $scope.subjects.push('Environment & Ecology');
+            $scope.subjects.push('CURRENT AFFAIRS & G.K');
         };
 
         $scope.startSamplePaper = function (topic){
@@ -25,8 +32,58 @@ angular.module('pupilsboardApp')
 
         $scope.initTopics = function (){
             var url = '/api/subject/' + $routeParams.subject + '/topics';
+
+            if (!angular.isObject($scope.topics)){
+                console.log('routes: ' + url);
+                $http.get(url).error(function(err){
+                    console.log('Error while getting topics ' + err);
+                })
+                .success(function(data){
+                    console.log(data);
+                    $scope.topics = data;
+                });
+            };
+        };
+
+        $scope.getCategoryPapers = function (){
+            var url = '/api/questionPaper/category/' + $routeParams.category;
+
+            $http.get(url).error(function(err){
+                console.log('Error while getting topics ' + err);
+            })
+            .success(function(data){
+                console.log(data);
+                $scope.papers = data;
+            });
+        };
+
+        $scope.loadCategoryPapers = function (category){
+            $location.path('/take-test/category/'+ category);
+        };
+
+        $scope.loadPaper = function (paperId){
+            $location.path('/questionPaper/'+ paperId);
+        };
+
+        $scope.initMainSubjects = function (){
+            var url = '/api/subject/' + 'Main' + '/topics';
             console.log('routes: ' + url);
 
+            $http.get(url).error(function(err){
+                console.log('Error while getting topics ' + err);
+            })
+            .success(function(data){
+                console.log(data);
+                $scope.topics = data;
+            });
+        };
+
+        $scope.getSubjectTopics = function (subject){
+            $location.path('/subjects/' + subject + '/topics');
+        };
+
+        $scope.getTopicsForSubject = function(){
+            var url = '/api/subject/' + 'Main' + '/topics';
             $http.get(url).error(function(err){
                 console.log('Error while getting topics ' + err);
             })

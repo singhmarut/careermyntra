@@ -1,0 +1,18 @@
+<!--<div ng-include="'partials/navbar.html'"></div>-->
+<!--<div class="container-fluid" style="margin-top: 200px;">-->
+    <!--<div class="row" ng-init="initMainSubjects()">-->
+        <!--<ul class="list-group" ng-repeat="topic in topics">-->
+            <!--<a ng-href="samplePaper?samplePaper=1&topic=Main"  class="list-group-item">{{topic}}</a>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div ng-include="'partials/navbar.html'"></div>
+<div class="container-fluid">
+    <div class="row" ng-init="getTopicsForSubject()" style="margin-top: 200px;">
+        <ul class="list-group" ng-repeat="topic in topics">
+            <a ng-href="" ng-click="getTopicPaper(topic)" class="list-group-item">{{topic}}</a>
+            <!--<a ng-href="samplePaper?samplePaper=1&topic=Main"  class="list-group-item">{{topic}}</a>-->
+        </ul>
+    </div>
+</div>

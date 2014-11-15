@@ -1,0 +1,9 @@
+<div ng-include="'partials/navbar.html'"></div>
+<div class="container-fluid">
+    <div class="row" ng-init="getCategoryPapers()" style="margin-top: 180px;">
+        <ul class="list-group" ng-repeat="paper in papers">
+            <a ng-href="" ng-click="loadPaper(paper._id)" class="list-group-item">{{paper.name}}</a>
+            <!--<a ng-href="samplePaper?samplePaper=1&topic=Main"  class="list-group-item">{{topic}}</a>-->
+        </ul>
+    </div>
+</div>

@@ -36,12 +36,16 @@ var app = angular.module('pupilsboardApp', [
                 templateUrl: 'partials/login',
                 controller: 'logout()'
             })
-            .when('/subjects', {
+            .when('/take-test/subjects', {
                 templateUrl: 'partials/platform/selectSubjects',
                 controller: 'SubjectCtrl'
             })
-            .when('/:subject/topics', {
-                templateUrl: 'partials/platform/selectTopics',
+            .when('/take-test/category/:category', {
+                templateUrl: 'partials/platform/categoryPapers',
+                controller: 'SubjectCtrl'
+            })
+            .when('/subjects/:subject/topics', {
+                templateUrl: 'partials/platform/selectSingleSubject',
                 controller: 'SubjectCtrl'
             })
             .when('/dashboard', {

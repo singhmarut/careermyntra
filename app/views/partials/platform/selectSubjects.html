@@ -2,7 +2,7 @@
 <div class="container" style="margin-top: 200px;">
     <div class="row" ng-init="getSubjects()">
         <ul class="list-group" ng-repeat="subject in subjects">
-            <a ng-href="/{{subject}}/topics"  class="list-group-item">{{subject}}</a>
+            <a ng-href="" ng-click="loadCategoryPapers(subject)"  class="list-group-item">{{subject}}</a>
         </ul>
     </div>
 </div>

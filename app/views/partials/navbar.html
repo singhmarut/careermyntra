@@ -21,8 +21,9 @@
                             <li><a href="/invite">Send an Invitation</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Nav header</li>
+                            <li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/viewQuestions">Search Questions</a></li>
+                            <li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/tags">View Tags</a></li>
                             <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
                     <li><a href="#blog">Blog</a></li>
