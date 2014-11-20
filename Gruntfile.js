@@ -26,7 +26,8 @@ module.exports = function (grunt) {
     },
     express: {
       options: {
-        port: process.env.PORT || 9000
+        port: process.env.PORT || 9000,
+        mongo: 'localhost'
       },
       dev: {
         options: {
@@ -38,6 +39,7 @@ module.exports = function (grunt) {
         options: {
           script: 'dist/server.js',
           debug: false,
+          port: grunt.option('port'),
           node_env: 'production'
         }
       }
@@ -47,37 +49,37 @@ module.exports = function (grunt) {
         url: 'http://localhost:<%= express.options.port %>'
       }
     },
-    watch: {
-      js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all']
-      },
-      mochaTest: {
-        files: ['test/server/{,*/}*.js'],
-        tasks: ['env:test', 'mochaTest']
-      },
-      jsTest: {
-        files: ['test/client/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
-      },
-      styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
-      },
-      gruntfile: {
-        files: ['Gruntfile.js']
-      },
-      express: {
-        files: [
-          'server.js',
-          'lib/**/*.{js,json}'
-        ],
-        tasks: ['newer:jshint:server', 'express:dev', 'wait'],
-        options: {
-          nospawn: true //Without this option specified express won't be reloaded
-        }
-      }
-    },
+//    watch: {
+//      js: {
+//        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+//        tasks: ['newer:jshint:all']
+//      },
+//      mochaTest: {
+//        files: ['test/server/{,*/}*.js'],
+//        tasks: ['env:test', 'mochaTest']
+//      },
+//      jsTest: {
+//        files: ['test/client/spec/{,*/}*.js'],
+//        tasks: ['newer:jshint:test', 'karma']
+//      },
+//      styles: {
+//        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+//        tasks: ['newer:copy:styles', 'autoprefixer']
+//      },
+//      gruntfile: {
+//        files: ['Gruntfile.js']
+//      },
+//      express: {
+//        files: [
+//          'server.js',
+//          'lib/**/*.{js,json}'
+//        ],
+//        tasks: ['newer:jshint:server', 'express:dev', 'wait'],
+//        options: {
+//          nospawn: true //Without this option specified express won't be reloaded
+//        }
+//      }
+//    },
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
@@ -112,16 +114,6 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/*',
             '!<%= yeoman.dist %>/.git*',
             '!<%= yeoman.dist %>/Procfile'
-          ]
-        }]
-      },
-      heroku: {
-        files: [{
-          dot: true,
-          src: [
-            'heroku/*',
-            '!heroku/.git*',
-            '!heroku/Procfile'
           ]
         }]
       },
@@ -178,12 +170,12 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the app
-    'bower-install': {
-      app: {
-        html: '<%= yeoman.app %>/views/index.html',
-        ignorePath: '<%= yeoman.app %>/'
-      }
-    },
+//    'bower-install': {
+//      app: {
+//        html: '<%= yeoman.app %>/views/index.html',
+//        ignorePath: '<%= yeoman.app %>/'
+//      }
+//    },
 
     // Renames files for browser caching purposes
     rev: {
@@ -305,6 +297,12 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>/views',
           src: '**/*.jade'
         }, {
+            expand: true,
+            dot: true,
+            cwd: '<%= yeoman.app %>/scripts',
+            dest: '<%= yeoman.dist %>/scripts',
+            src: '**/*.js'
+        }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/public/images',
@@ -346,37 +344,41 @@ module.exports = function (grunt) {
       },
       dist: [
         'copy:styles',
-        'imagemin',
+        //'imagemin',
         'svgmin',
         'htmlmin'
       ]
     },
 
-    // By default, your `index.html`'s <!-- Usemin block --> will take care of
-    // minification. These next options are pre-configured if you do not wish
-    // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css',
-    //         '<%= yeoman.app %>/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%= yeoman.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
+//    By default, your `index.html`'s <!-- Usemin block --> will take care of
+//    minification. These next options are pre-configured if you do not wish
+//    to use the Usemin blocks.
+    cssmin: {
+       dist: {
+         files: {
+           '<%= yeoman.dist %>/styles/main.css': [
+             '.tmp/styles/{,*/}*.css',
+             '<%= yeoman.app %>/styles/{,*/}*.css'
+           ]
+         }
+       }
+    },
+    uglify: {
+        options: {
+            // the banner is inserted at the top of the output
+            banner: '/*! examcue <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        },
+       dist: {
+         files: {
+           '<%= yeoman.dist %>/scripts/scripts.js': [
+           '<%= yeoman.app %>/scripts/{,*/}*.js'
+           ]
+         }
+       }
+    },
+    concat: {
+       dist: {}
+    },
 
     // Test settings
     karma: {
@@ -421,12 +423,11 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'bower-install',
+      //'bower-install',
       'concurrent:server',
       'autoprefixer',
       'express:prod',
-      'open',
-      'watch'
+      'open'
     ]);
   });
 
@@ -460,7 +461,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'bower-install',
+    //'bower-install',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

@@ -33,6 +33,27 @@ angular.module('pupilsboardApp')
              $location.path('/questionPaper/'+ $routeParams.id + '/start'); //use $location.path(url).replace() if you want to replace the location instead
          };
 
+
+        $scope.sortByName = function (paper){
+            var splitNames = paper.name.split(" ");
+            return parseInt(splitNames[splitNames.length - 1]);
+        };
+
+        $scope.getCategoryPapers = function (){
+            var url = '/api/questionPaper/category/' + $routeParams.category;
+            if (angular.isString($routeParams.subject)){
+                url += "?tag=" + $routeParams.subject;
+            }
+
+            $http.get(url).error(function(err){
+                console.log('Error while getting topics ' + err);
+            })
+            .success(function(data){
+                console.log(data);
+                $scope.papers = data;
+            });
+        };
+
         $scope.loadTest = function(){
 
             if ($routeParams.samplePaper){

@@ -40,9 +40,9 @@ var app = angular.module('pupilsboardApp', [
                 templateUrl: 'partials/platform/selectSubjects',
                 controller: 'SubjectCtrl'
             })
-            .when('/take-test/category/:category', {
+            .when('/take-test/:category/list', {
                 templateUrl: 'partials/platform/categoryPapers',
-                controller: 'SubjectCtrl'
+                controller: 'QuestionpaperCtrl'
             })
             .when('/subjects/:subject/topics', {
                 templateUrl: 'partials/platform/selectSingleSubject',

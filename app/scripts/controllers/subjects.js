@@ -45,16 +45,9 @@ angular.module('pupilsboardApp')
             };
         };
 
-        $scope.getCategoryPapers = function (){
-            var url = '/api/questionPaper/category/' + $routeParams.category;
 
-            $http.get(url).error(function(err){
-                console.log('Error while getting topics ' + err);
-            })
-            .success(function(data){
-                console.log(data);
-                $scope.papers = data;
-            });
+        $scope.loadQuizForSubjects = function (subject){
+            $location.path('/take-test/Quizzes/list?subject=' + subject);
         };
 
         $scope.loadCategoryPapers = function (category){
