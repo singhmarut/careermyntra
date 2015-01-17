@@ -1,0 +1,364 @@
+/*  
+    BASE > Base rules for typography ONLY 
+    
+    Notes on using typography.css :
+    -----------------------------------
+      1) Styles here GENERICALLY apply color, font, and text styles.
+            a) Styles here are either GENERIC (e.g. body, h1, etc) or apply to more than one section, dialog or flow.
+            b) Do NOT add margins, padding, or line-height to generic selectors
+            
+	  2) Styles should NOT apply to a specific carrier
+            a) For example, if rules specify colors for a specific carrier, consider adding those rules to CARRIER or APP
+
+	  3) Styles that are UNIQUE to a particular content section should be placed in the relevant content_foo.css.
+
+	  4) If you are ADDING a new classname:
+	        a) FIRST check the current styles and classes and make sure you aren't duplicating existing rules
+			b) Add new classnames and/or relevent headers to the TOC list    
+
+			
+    NOTE: CURRENTLY : some colors currently defined here need to either be moved to specific carrier or vanilla 
+			
+
+    ---------------------------------------
+    TOC : Typography includes:
+    ---------------------------------------
+	-  body font
+	
+     - headers 
+	    - h1 - h6
+		- image headers
+		
+     - paragraphs
+	 
+     - special text styles 
+	     - errors
+		 - em, strong, & additional classes
+
+     - interactive styles 
+	     - off / on
+		 - hide / show
+
+     - special highlight box-type text
+	    - note
+		- notice
+		- disclaimer
+     	 
+	 - forms
+	   - labels & inputs
+	   - text area
+	   - placeholder text
+
+	 - button text (place in buttons.css)   
+	   
+     - links
+	    - nav links
+		- footer links
+		- links in other locations
+		
+	 - text in certain locations
+		- allowed & select-box
+		- day of week picker
+	 
+     - margins  (  OBSOLETE? : set top and bottom margins to override default margins )
+	 
+	 - width ( OBSOLETE )
+ 
+     -.clear-both
+
+
+     DO NOT ADD:
+     ------------
+       - margins or line-height on generic html selectors : 
+	      - add margins or line-height ONLY to more specific styles OR consider adding margins to specific css such as content_foo.css    
+	   
+*/
+/**********************************************************/
+/*                B O D Y     F O N T                     */
+/**********************************************************/
+/*
+     NOTE:
+     -------------------
+     - set default base font size, family, and color 
+*/
+body {font-family: 'Futura LT Light', sans-serif, Helvetica, Verdana, sans-serif; color:#000000;}
+
+.font-color-red{
+    color:#df1f1f;
+}
+.font-color-green{
+    color:#32b45f;
+}
+.font-color-blue{
+    color:#0072c5;
+}
+.font-size13{
+    font-size:13px;
+}
+.font-bold{
+    font-weight:bold;
+}
+@font-face {
+  font-family: 'Futura LT Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/futura-lt-light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Futura LT Bold';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/futura-lt-bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/helveticaneue-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../../fonts/helveticaneue-light-webfont.woff) format('woff');
+}
+/***Font Styles***/
+
+/******************************************************/
+/*                H E A D E R S                       */
+/******************************************************/
+/*
+     NOTE:
+     -------------------
+     - add ONLY font-size & weight 
+*/
+
+
+/*
+   -----------------------
+        H1  OVERRIDES 
+   -----------------------
+*/
+
+
+
+/*
+   -----------------------
+        H2  OVERRIDES 
+   -----------------------
+*/
+
+/*
+   -----------------------
+        H3  OVERRIDES 
+   -----------------------
+*/
+       
+/*
+   -----------------------
+        H4  OVERRIDES 
+   -----------------------
+*/
+
+
+/*
+   -----------------------
+        H5  OVERRIDES 
+   -----------------------
+*/
+
+
+/*
+   -----------------------
+        IMAGE HEADER 
+   -----------------------
+*/
+/*
+     NOTE:
+     -------------------
+	 - use when MUST substitute image for header text
+     - try to use ONLY on non-shared pages that are unique to a carrier
+	   ( e.g. landing pages, tos, etc.)
+*/
+
+.img-header {text-indent:-90000px;}
+
+
+/**********************************************************/
+/*                P A R A G R A P H S                     */
+/**********************************************************/
+.txt-right-left-mob-break992{
+    text-align: right;
+}
+
+.figure-block-red .figure-title{
+	font-size: 48px;
+}
+
+.figure-block-red .figure-value{
+    font-weight: normal;
+    font-size: 24px;
+}
+.comments{
+	font-family: 'HelveticaNeue-Light',  'Helvetica',Arial,sans-serif;
+}
+
+#offer p,
+.comments p{
+	font-weight: 100;
+	text-align: justify;
+}
+.canvas-txt{
+	font-weight: normal;
+	font-family: 'Helvetica',Arial,sans-serif;
+}
+
+.full-access{
+	font-family: 'Helvetica';
+	color: #4d4d4d;
+}
+
+.overall-col div{
+	color: #999999;
+}
+
+.activity{
+	font-family: 'Arial';
+	color: #808080;
+}
+
+
+blockquote{
+	font-family: 'Helvetica';
+	font-weight: bold;
+}
+
+blockquote{
+	font-size: 36px; 
+	font-weight: normal;
+}
+
+
+
+blockquote cite{font-size: 0.9em;}
+blockquote p:before {
+	content: '\f10d';
+	font-family: 'FontAwesome';
+}
+blockquote p:after {
+	content: '\f10e';
+	font-family: 'FontAwesome';
+}
+#offer h2,
+.comments h2{
+	padding-left: 75px;
+	padding-bottom: 10px;
+	min-height: 55px;
+	line-height: 55px;
+}
+
+	
+#offer  a,
+.comments a{
+	font-size: 24px;
+}
+
+.canvas-txt span{font-weight: bold; font-size: 18px; display: block;}
+.comments h2,
+.comments a{
+	color: #ef383a;
+}
+
+
+.overall-detail{
+	color: #4d4d4d;
+	font-size: 21px;
+	font-family: 'Helvetica';
+}
+.overall-percentage{
+	font-size: 70px;
+}
+
+.overall-col i{
+	font-size: 30px;
+}
+
+
+/****************** test paper *********************/
+.test-paper{
+	font-size: 21px;
+	font-family: 'Helvetica';
+}
+
+.test-paper div span{
+	color: #000;
+	display: block;
+}
+.test-paper .right-arrow{
+	font-size: 50px;
+}
+
+
+
+/************************ --- YEAR WISE AND TOPIC WISE QUESTION PAPER ---  *************************/
+
+.question-year-wise{
+	font-family: 'Arial';
+	font-size: 20px;
+	color: #4d4d4d;
+}
+.question-year-wise .fa-caret-left,
+.question-year-wise .fa-caret-right{
+	font-size: 6em;
+	color: #e6e6e6;
+}
+
+.attempt{
+	color: #000;
+}
+.question-completed span{
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.question-year-wise .table tr td:first-child {
+	text-align: left;
+}
+
+.activity h3{
+	color: #4d4d4d;
+}
+
+/**************** common styling ******************/
+.figure-block-red .figure-title,
+blockquote,
+blockquote cite,
+blockquote footer:before, 
+blockquote small:before, 
+blockquote .small:before,
+#offer h2,
+#offer  a,
+.test-paper div,
+.questions-overview{
+	color: #fff;
+}
+
+
+.test-footer,
+.figure-block-red,
+.canvas-txt,
+.overall-percentage,
+.full-access h1, 
+.full-access h3{
+	text-align: center;
+}
+
+
+#offer p,
+.comments p,
+.canvas-txt,
+.full-access,
+.overall-col div,
+.activity{
+	font-size: 18px;
+}

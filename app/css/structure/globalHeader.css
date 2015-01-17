@@ -1,0 +1,59 @@
+/*   BASE  > Base rules for globalHeader
+
+     Use, ONLY AS NECESSARY, to style the header
+	 -----------------------------------------------------------
+	 1) Styles should NOT apply to a specific carrier
+           a) For example, if rules specify colors for a specific carrier, consider adding those rules to CARRIER
+
+
+     This style sheet is for:
+     --------------------------      
+     - application header
+     - carrier, application, company, and sponsor logos
+
+
+     DO NOT ADD:
+     ------------
+	  - styles for navigational pieces, such as tab and site-nav, which are styled in navigation.css
+
+*/
+/****************************************************************/
+/*                     H E A D E R                              */
+/****************************************************************/
+
+#header{
+	position: relative; 
+	height: auto; 
+	width: 100%; 
+	clear: none; 
+	min-height:10.5em; 
+	width:auto;
+/*	background-color:#fff; */
+ }
+
+/* CNI overrides */
+#header-cni{min-height:100px;}
+
+
+/****************************************************************/
+/*                       L O G O S                              */
+/****************************************************************/
+#header #carrier-logo {
+	position:absolute;
+	top:52px;
+	left:35px;
+	width:176px; 
+	height: 38px; 
+	text-indent: -9000px;
+	background: transparent url(../../../img/base/logo_app.png) top left no-repeat;
+}
+
+#poweredByLogo{
+	position:absolute;
+	top:21px;
+	right:15px;
+	width:177px; 
+	height: 23px;
+	background: transparent url(../../../img/base/logo_app_poweredBy.png) top left no-repeat;
+	text-indent:-9999px;
+}

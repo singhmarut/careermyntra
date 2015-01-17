@@ -15,7 +15,7 @@ angular.module('pupilsboardApp')
             $scope.subjects.push('World Geography');
             $scope.subjects.push('General Science');
             $scope.subjects.push('Environment & Ecology');
-            $scope.subjects.push('CURRENT AFFAIRS & G.K');
+            $scope.subjects.push('Current Affaris & G.K');
         };
 
         $scope.startSamplePaper = function (topic){
@@ -58,6 +58,41 @@ angular.module('pupilsboardApp')
             $location.path('/questionPaper/'+ paperId);
         };
 
+        $scope.getCategoryPapers = function (type){
+            var url = '/api/questionPaper/category/papers';
+            if (angular.isString($routeParams.subject)){
+                url += "?tag=" + $routeParams.subject;
+            }
+            //Type of the Quizzes..either sample or full
+            //url += "&tag=" + type;
+            var subjectPapers;
+            $http.get(url).success(function(data){
+                console.log(data);
+                $scope.papers = data;
+//                .then(function(result1) {
+//                console.log(result1.data);
+//                subjectPapers = result1.data;
+//                var scoreSummaryUrl = '/api/questionPaper/category/' + $routeParams.subject + '/score/summary';
+//                return $http.get(scoreSummaryUrl).error(function(err){
+//                    console.log('Error while getting topics ' + err);
+//                }).success(function(data){
+//
+//                    angular.forEach(data, function(scoreSummary){
+//                        angular.forEach(subjectPapers,function(paper){
+//                            if (scoreSummary.paperId == paper._id){
+//                                paper.score = scoreSummary.score;
+//                            }
+//                        });
+//                    });
+//                    $scope.papers = subjectPapers;
+//                });
+//            }).error(function(err){
+//                console.log('Error while getting topics ' + err);
+//            })
+
+            });
+        };
+
         $scope.initMainSubjects = function (){
             var url = '/api/subject/' + 'Main' + '/topics';
             console.log('routes: ' + url);
@@ -84,5 +119,10 @@ angular.module('pupilsboardApp')
                 console.log(data);
                 $scope.topics = data;
             });
-        }
+        };
+
+        $scope.sortByName = function (paper){
+            var splitNames = paper.name.split(" ");
+            return parseInt(splitNames[splitNames.length - 1]);
+        };
 });

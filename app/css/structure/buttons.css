@@ -1,0 +1,74 @@
+/*   BASE > Base styles for buttons ONLY 
+
+     Use, ONLY AS NECESSARY, to style buttons
+	 -----------------------------------------------------------
+     1) Currently, rules are for graphical buttons, which are obsolete : 
+	    a) When graphical styles are removed, general css3 styles will be added here 
+		
+     2) Add graphical button classnames ALPHABETICALLY	
+
+
+     This style sheet contains:
+     --------------------------      
+	  - css3 buttons
+	  - vanilla specific rules for :  ( to be moved to vanilla -- styles and images -- when vanilla is buidling )	     
+		 - slider buttons   	
+		 - non-slider buttons
+		 - previous & next buttons
+      - some icons for locator    ( to be moved to graphics.css when those carriers are building )
+
+
+     DO NOT ADD:
+     ------------
+       - positioning information : position buttons in forms.css or content_foo.css    
+	   
+*/
+
+/*****************************************************************/
+/*                  C S S 3   B U T T O N S                      */
+/*****************************************************************/
+/* 
+   Note: 
+   ----------
+   - this classname needs to be removed ; 
+   - can be basis for css3 buttons ;
+*/   
+.btn{
+	border-radius: 0;
+}
+.btn-danger{
+	background-color: #ef383a;
+}
+
+.test-footer .btn{
+	background-color: #4d4d4d;
+	color: #fff;
+	margin: 10px 10px;
+	padding: 5px 16px;
+}
+.test-footer .btn-danger.pull-right{
+	width: 250px;
+	padding: 15px 16px;
+	margin: 0;
+}
+.test-footer .btn-danger{
+	background-color: #ef383a;
+}
+
+
+
+/*****************************************************************SOCIAL BUTTONS STYLES******************************************************************/
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.btn-social :first-child{position:absolute;left:17px;top:15px;bottom:15px;width:22px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(256,256,256,1)}
+.btn-social.btn-sm{padding-left:80px;}.btn-social.btn-sm :first-child{line-height:18px;width:22px;font-size:0.8em; text-align: left;}
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding-left:0;padding-right:0}.btn-social-icon :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+

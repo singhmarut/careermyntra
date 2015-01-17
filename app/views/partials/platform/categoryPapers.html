@@ -1,9 +1,66 @@
+
 <div ng-include="'partials/navbar.html'"></div>
-<div class="container-fluid">
-    <div class="row" ng-init="getCategoryPapers()" style="margin-top: 180px;">
-        <ul class="list-group" ng-repeat="paper in papers | orderBy : sortByName">
-            <a ng-href="/questionPaper/{{paper._id}}" class="list-group-item">{{paper.name}}</a>
-            <!--<a ng-href="samplePaper?samplePaper=1&topic=Main"  class="list-group-item">{{topic}}</a>-->
-        </ul>
+<div id="dashboard" ng-init="getCategoryPapers('quizzes')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 question-year-wise">
+                <i class="fa fa-caret-left"></i>
+                <i class="fa fa-caret-right"></i>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 questions-overview">
+                        <div class="pull-left">Topic-wise Test Paper
+                            <span class="attempt">0/{{papers.length}} attempted</span>
+                        </div>
+                        <div class="pull-right question-completed">
+                            <span>3%</span>completed
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                            <th>Quiz Name</th>
+                            <th>Score</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="paper in papers | orderBy : sortByName" ng-switch on="paper.marks">
+                            <td>{{paper.name}}</td>
+                            <td>{{paper.marks}}/600</td>
+                            <td ng-switch-when="undefined"><a ng-href="/questionPaper/{{paper._id}}">ATTEMPT</a></td>
+                            <td ng-switch-default><a ng-href="/questionPaper/{{paper._id}}">RE-ATTEMPT</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--<div class="col-lg-3 col-sm-12 pull-right activity">-->
+                <!--<div class="bdr pull-left col-lg-12 col-sm-12">-->
+                    <!--<div class="col-lg-12 col-sm-12">-->
+                        <!--<h3>ACTIVITY</h3>-->
+                        <!--<span>ATTEMPT</span>-->
+                        <!--<span class="pull-right">0/64</span>-->
+                        <!--<div class="progress">-->
+                            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-12 col-sm-12">-->
+                        <!--<span>SCORE</span>-->
+                        <!--<span class="pull-right">56/600</span>-->
+                        <!--<div class="progress">-->
+                            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-lg-12 col-sm-12">-->
+                        <!--<span>RANK</span>-->
+                        <!--<span class="pull-right">3,124/12,453</span>-->
+                        <!--<div class="progress">-->
+                            <!--<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
     </div>
+
 </div>

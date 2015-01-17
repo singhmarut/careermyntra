@@ -17,7 +17,7 @@ var app = angular.module('pupilsboardApp', [
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'partials/main',
+                templateUrl: 'partials/main ',
                 controller: 'NavbarCtrl'
             })
             .when('/login', {
@@ -36,8 +36,14 @@ var app = angular.module('pupilsboardApp', [
                 templateUrl: 'partials/login',
                 controller: 'logout()'
             })
+            //Show all subjects
             .when('/take-test/subjects', {
                 templateUrl: 'partials/platform/selectSubjects',
+                controller: 'SubjectCtrl'
+            })
+            //Get sample quizzes for selected subject
+            .when('/take-test/subject/:subject/quizzes', {
+                templateUrl: 'partials/platform/categoryPapers',
                 controller: 'SubjectCtrl'
             })
             .when('/take-test/:category/list', {
@@ -145,7 +151,7 @@ var app = angular.module('pupilsboardApp', [
                 controller: 'QuestionpaperCtrl'
             })
             .when('/questionPaper/:id/start', {
-                templateUrl: 'partials/questionPaper/questionPaper-modified',
+                templateUrl: 'partials/questionPaper/questionPaper',
                 controller: 'QuestionpaperCtrl',
                 authenticate: true
             })

@@ -1,0 +1,585 @@
+/*  
+    BASE > Base rules for popups ONLY 
+    
+    Notes on using popups.css :
+    -------------------------------
+	  1) Styles should NOT apply to a specific carrier
+            a) For example, if rules specify colors for a specific carrier, consider adding those rules to CARRIER
+			
+      2) Browser popup windows - content that displays in a new browser window - are styled in layouts.css
+	  
+      3) If you need a different HEIGHT or WIDTH for your container:
+	        a) FIRST check the current classes for generic HEIGHTS and widths under .popup-foo and/or .dialog
+			b) Consider adding a GENERIC class named after 
+			     i) a size, such as .wide, .extraWide, 
+			          OR 
+				ii) a particular use, such as .video-dialog 
+
+
+      4) If you need to change MULTIPLE styles for your carrier :
+	        a) Add overrides to CARRIER level instead - make sure carrier is consistent
+
+
+    ---------------------------------------
+    TOC : Popups include:
+    ---------------------------------------
+     - generic popup elements  ( .popup-foo )
+	    - top
+		- closeLink
+		- content
+		   - generic classes for changing heights & widths
+		- bottom 
+		
+     - flyouts
+
+     - dialogs 
+	    - (.popup-foo overrides, e.g. top, bottom, etc)
+	    - specific dialogs
+	    - iFrames in dialogs
+		- headers and text
+        
+     - map popups
+
+     - mapContextMenus (right-click on map)
+
+	 - alpha transparency layers 
+	 
+	 - loading (MOVE TO FORMS?)
+
+*/
+/******************************************************************************************************************/
+/*                G E N E R I C     P O P U P     E L E M E N T S    -    . p o p u p - f o o                    */
+/*****************************************************************************************************************/
+/*  
+    NOTES  on .popup-foo :
+ 	---------------------------
+	 - structure of .dialog type of popups can be found in dialogFrame.js
+	 - complex structure can support transparent shadow bg border images for style OR a simplier css3 style for supported browsers
+	 - generic popup elements are base structures for the subclasses: flyouts, dialogs, and map popup menus
+	    - need to double-check mapContextMenus : not all use structure from dialogFrame.js
+        - not all structures/styles are used for each subclass
+     - heights and widths currently set for modal dialogs using bg images for style    
+*/
+/*
+   ------------------------
+        POPUP : top 
+   ------------------------
+*/
+div.popup-top {
+   position:relative;
+   width: 379px;
+   height:45px;
+}
+div.popup-top-left, div.popup-top-right {
+   position: absolute; 
+   height:45px;
+   width: 12px; 
+}
+div.popup-top-left  {
+   left: 0;
+   background-position:top left;
+   background-repeat: no-repeat;
+}
+div.popup-top-right {
+   right: 0;
+   background-repeat: no-repeat;
+}
+div.popup-top-center {
+   position: absolute;
+   left: 12px;
+   width: 357px;
+   height: 45px;
+    background-repeat: repeat-x;
+}
+ 
+div.dialog.resetSSO div.popup-top {background:white; height:50px;}
+
+/*
+   ----------------------------
+        POPUP : closeLink 
+   ----------------------------
+*/
+.popup-closeLink {
+   position: absolute;
+   top: 7px ;
+   right: 17px;
+   display: block;
+   width: 29px;
+   padding: 2px 16px 0 0;
+   cursor: pointer;
+   background: transparent url(../../../img/base/close_x.png) 100% 80% no-repeat;
+ }
+
+/*
+   -------------------------------
+        POPUP : content 
+   -------------------------------
+*/
+div.popup-content  { background-color:#fff; width: 369px;  height: 248px;}
+
+/* GENERIC HEIGHTS */
+.short div.popup-content { height: 120px; }
+.medium div.popup-content { height: 180px; }
+.tall div.popup-content { height: 350px; }
+.full div.popup-content { width: 846px; height: 430px; }
+
+.popup-content-left, 
+.popup-content-right {   position:absolute;  }
+.popup-content-left {left: 0;}
+.popup-content-right {right: 0;}
+
+/*
+   -------------------------------
+        POPUP : bottoms 
+   -------------------------------
+*/
+div.popup-bottom {
+   position:relative;
+   height:12px;
+   width: 379px; 
+}
+
+.full .popup-bottom { width: 848px ; }
+
+/*--- popup: right/left bottoms ---*/
+div.popup-bottom-left, 
+div.popup-bottom-right {
+   position: absolute; 
+   width:12px;
+   height:12px;
+}
+div.popup-bottom-left  { left: 0px; background-repeat: no-repeat; }
+div.popup-bottom-right { right: 0px; background-repeat: no-repeat; }
+
+div.popup-bottom-center {
+   position: absolute;
+   left: 12px;
+   width: 355px;
+   height: 12px;
+    background-repeat: repeat-x;
+}
+
+/******************************************************************************/
+/*                              F L Y O U T                                   */
+/******************************************************************************/
+/*  
+    NOTES  on .flyout :
+ 	---------------------------
+	 - structure of .flyout type of popups can be found in flyoutFrame.js
+	 - how used : in locator : click on sidebar button and a container with actions and a pointer displays
+	 - used in locator to display asset or landmark "actions" such as change photo, edit landmark, etc. 
+	    ( for these actions, see elements.css : actionsMenu flyout overrides )
+*/
+
+div.flyout{
+   position: absolute;
+   width: 288px;
+   overflow: hidden !important;
+   z-index:200;
+}
+
+/*
+   -------------------------------
+        FLYOUTS : top 
+   -------------------------------
+*/
+div.flyout div.popup-top {   left: 13px; height:9px; width: 275px; }
+
+div.flyout div.popup-top-left, 
+div.flyout div.popup-top-right { height: 9px; width: 11px; }
+div.flyout div.popup-top-left  { background:url(../../../img/base/flyout_box.png) -11px 0 no-repeat; }
+div.flyout div.popup-top-right { background:url(../../../img/base/flyout_box.png) -203px 0 no-repeat; }
+div.flyout div.popup-top-center {
+   left: 11px;
+   width: 253px;
+   height: 9px;
+   background-image:url(../../../img/base/flyout_tc.png);
+}
+
+/*
+   -------------------------------
+        FLYOUTS : content 
+   -------------------------------
+*/
+div.flyout .popup-content {  width: 270px; height: 86px; margin: 0 0 0 13px; background-color:#fff; z-index:200;}
+div.flyout.landmark-flyout .popup-content {height: 127px; width: 270px;}
+
+div.flyout .popup-content-left, 
+div.flyout .popup-content-right { width: 5px; height:86px; }
+div.flyout.landmark-flyout .popup-content-left, 
+div.flyout.landmark-flyout .popup-content-right {height: 127px;}
+
+div.flyout .popup-content-left { 
+  left: 13px;
+  width: 1px;
+  border-left: 1px solid #7f7f7f;
+}
+div.flyout .popup-content-right {
+  right:0px;
+  background-image : url(../../../img/base/flyout_sr.png);
+  background-repeat: repeat-y;
+}
+
+/*
+   -------------------------------
+        FLYOUTS : pointer
+   -------------------------------
+*/
+div.flyout .popup-content-arrow {
+   position: absolute;
+   top:23px;
+   left: 2px;
+   width: 12px;
+   height: 15px;
+   background: transparent url(../../../img/base/flyout_box.png) 0px -37px no-repeat;
+   z-index: 200;
+}
+div.flyout.landmark-flyout .popup-content-arrow {top: 43px;}
+
+/*
+   -------------------------------
+        FLYOUTS : bottom 
+   -------------------------------
+*/
+div.flyout div.popup-bottom{
+   left:13px;
+   height:9px;
+   width: 275px;
+}
+div.flyout div.popup-bottom-left, 
+div.flyout div.popup-bottom-right { width: 11px; height:9px;}
+div.flyout div.popup-bottom-left  { left: 0px; background:url(../../../img/base/flyout_box.png) -11px -157px no-repeat; }
+div.flyout div.popup-bottom-right {  background:url(../../../img/base/flyout_box.png) -203px -157px no-repeat;  }
+div.flyout div.popup-bottom-center {
+   left: 11px;
+   width: 253px;
+   height: 9px;
+   background-image:url(../../../img/base/flyout_bc.png);
+    background-repeat: repeat-x;
+}
+
+/******************************************************************************/
+/*                              D I A L O G                                   */
+/******************************************************************************/
+/*  
+    NOTES  on .dialog :
+ 	---------------------------
+	 - structure of .dialog type of popups can be found in dialogFrame.js
+	 - how used : modal dialog used to display forms or static content / inforamtion
+*/
+div.dialog{
+   position: absolute;
+   width: 379px;
+   height:305px;
+   overflow: hidden ;
+   z-index:200;
+   }
+
+div.dialog.short { height: 190px;}
+div.dialog.large { height: 420px;}
+
+/* specific dialogs */
+div.dialog.activation {width:758px;}
+div.dialog.survey #surveyMonkeyInfo {position:relative; left: -32px;}/* needed to realign iframe content within this dialog (CNI) */
+div.dialog.resetSSO {padding:0;}
+
+/* modules inside dialogs */
+div.dialog.firstRun .module {text-align:center; padding-bottom:2em; width:100%;}
+
+/* iframe content in dialogs */
+div.dialog.survey #surveyMonkeyInfo {padding: 10px 20px 0;}
+
+
+/*
+   -----------------------------
+        DIALOG : top 
+   -----------------------------
+*/
+div.dialog div.popup-top-left  { background-image:url(../../../img/base/dialog_box.png); }
+div.dialog div.popup-top-right { background: transparent url(../../../img/base/dialog_box.png) top right no-repeat; }
+div.dialog div.popup-top-center {background-image:url(../../../img/base/dialog_tc.png); }
+
+
+/*
+   --------------------------------
+        DIALOG : headers & text 
+   --------------------------------
+*/
+/* h2 elements */
+.dialog h2 { position:absolute; top:15px ; left:15px; }
+
+/* h3 elements */
+.dialog.activityWindow h3 {padding:0;}
+
+/* p elements */
+.dialog.resetSSO .popup-content-inner form p {width:95%; }
+.dialog.childConsent p.instructions {margin-bottom:32px;}/* Bug #37216 */
+
+div.dialog.childConsent .loading.childConsentSent p,
+#loadingPane .loading p {padding-left:0; margin-top:1em;}
+
+
+/*
+   --------------------------------
+        DIALOG : content 
+   --------------------------------
+*/
+div.dialog .popup-content {  margin: 0 0 0 3px;}
+div.dialog.short .popup-content {height: 133px;  width: 369px;}
+div.dialog.large .popup-content {height: 363px;  width: 369px;}
+
+div.dialog .popup-content-left, 
+div.dialog .popup-content-right { width: 3px; height: 248px; }
+div.dialog.short .popup-content-left, 
+div.dialog.short .popup-content-right {height:133px;}
+div.dialog.large .popup-content-left, 
+div.dialog.large .popup-content-right {height: 363px;}
+div.dialog .popup-content-left { 
+  background-image: url(../../../img/base/dialog_sl.png);
+  background-repeat: repeat-y;
+  border-width: 0px;
+}
+div.dialog .popup-content-right {
+  width:7px;
+  background-image : url(../../../img/base/dialog_sr.png);
+  background-repeat: repeat-y;
+}
+
+.dialog .popup-content-inner {width: 89.5%; margin:0 32px;}/* adding 32px standard to this element in popups */
+  
+div.dialog.activation .popup-content-left, 
+div.dialog.activation .popup-content-right {height: 100%;}  
+  
+div.dialog.activation .popup-content-inner {width: 91.5%;}
+
+
+/*
+   --------------------------------
+        DIALOG : bottom 
+   --------------------------------
+*/
+div.dialog div.popup-bottom-left  {
+   background-image: url(../../../img/base/dialog_box.png);
+   background-position: 0px -267px;
+   background-repeat: no-repeat;
+}
+div.dialog div.popup-bottom-right {
+   background: transparent url(../../../img/base/dialog_box.png) bottom right no-repeat;
+   background-position: 100% -267px;
+}
+div.dialog div.popup-bottom-center {background-image:url(../../../img/base/dialog_bc.png); }
+
+
+/******************************************************************************/
+/*                         M A P   P O P U P                                  */
+/******************************************************************************/
+/*  
+    NOTES  on .map-popup :
+ 	---------------------------
+	 - structure of .map-popup type of popups can be found in dialogFrame.js
+	 - how used : displays asset locate info after a locate is returned
+*/
+#feed-map-container .map-popup{visibility:hidden;}
+
+.map-popup {width:300px; height:167px; position:relative; margin-left:5px; margin-top:-170px; }
+
+.map-popup .popup-top,
+.map-popup .popup-top-center {height: 75px; }
+
+.map-popup .popup-top,
+.map-popup .popup-bottom { width: 300px;  }
+
+/*
+   -------------------------------------
+        MAP POPUP :  top  : left & right 
+   -------------------------------------
+*/
+.map-popup .popup-top-left, .map-popup .popup-top-right { height:75px; width: 16px;}
+
+.map-popup .popup-top-left {background:url(../../../img/base/bg_mapPopup.png) 0 0 no-repeat; }
+.map-popup .popup-top-right {background: url(../../../img/base/bg_mapPopup.png) -233px 0px no-repeat; right: 1px; }
+
+.map-popup .popup-top-center {width: 268px; left:16px; background-image:url(../../../img/base/bg_mapPopup_tc.png);}
+
+.map-popup .popup-content-inner {width: 96%;}
+
+
+/*
+   -------------------------------------
+        MAP POPUP : content 
+   -------------------------------------
+*/
+.map-popup .popup-content  { width: 287px; height:57px; margin-left:8px; }
+
+.map-popup .popup-content-left {
+  background-image: url(../../../img/base/bg_mapPopup_sl.png);
+  background-repeat: repeat-y;
+  border-width: 0px; 
+  width: 8px;
+}
+
+.map-popup .popup-content-right {
+  background-image : url(../../../img/base/bg_mapPopup_sr.png);
+  background-repeat: repeat-y;
+   width: 6px; 
+}
+
+.map-popup .popup-content-left,
+.map-popup .popup-content-right {height: 57px;}  
+
+
+.map-popup .pop-header, .map-popup .pop-header a{color:#ffffff; font-size:80%; padding-top:30px; text-decoration:none;}
+.map-popup .pop-header h3{font-size:138%; font-weight:600; color:#fff;}
+.map-popup .asset-image, #feed-items .map-popup .asset-image {
+  float:left;
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-color:#ffffff;
+  height: 47px;
+  width: 47px;
+  border: 2px solid #ffffff;
+  margin:15px 10px 0 0;
+  padding:0;
+ -moz-box-shadow: 1px 1px 1px #ccc; 
+  -webkit-box-shadow: 1px 1px 1px #ccc;  
+  box-shadow:1px 1px 1px #ccc;  
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+ 
+.map-popup .popup-content-inner p {font-size:75%; color:#666666; padding:4px 10px; line-height:14px;}
+.map-popup .popup-content-inner p a {font-size:75%; color:#666666; padding:4px 10px; text-decoration:none; display:block;}
+
+/*
+   -------------------------------------
+        MAP POPUP : bottoms 
+   -------------------------------------
+*/
+
+.map-popup .popup-bottom {clear:both;}
+
+.map-popup .popup-bottom,
+.map-popup .popup-bottom-center {height: 16px;}
+
+/* note: popup-bottom-left also displays the pointer */
+.map-popup .popup-bottom-left  {
+  width: 58px;
+  height:45px;
+  background: url(../../../img/base/bg_mapPopup.png) 0px -122px no-repeat;
+}
+
+.map-popup .popup-bottom-right {
+  width:18px; 
+  height:18px;
+  background: transparent url(../../../img/base/bg_mapPopup.png) -233px -122px no-repeat;
+}
+
+.map-popup .popup-bottom-center {
+  left: 58px; 
+  width: 226px;
+  background-image:url(../../../img/base/bg_mapPopup_bc.png);
+}
+
+
+/******************************************************************************/
+/*                    M A P C O N T E X T M E N U                             */
+/******************************************************************************/
+/*  
+    NOTES  on .mapContextMenu :
+ 	---------------------------
+	 - structure of .mapContextMenu can be found in mapPopupMenu.js
+	 - how used : right-click on map to display map actions such as zoom, center, etc.
+*/
+
+div.mapContextMenu{
+   position: absolute;
+   width: 120px;
+   height:auto;
+   overflow: hidden ;
+   border: 1px solid #7f7f7f;
+   background-color: #fff;
+   text-align: left;
+   z-index:200;
+}
+div.mapContextMenu .popup-content {width: 100%;   height:auto; background-color: #fff; }
+
+.contextMenuBox { width: 100%; }
+.contextMenuBox li {display: block; width: 100%;  margin: 0; padding: 0; }
+.contextMenuBox li:last-child { border: 0px;}
+.contextMenuBox li a {padding: 4px 0 6px 5px; font-size: 1em; font-weight:500; height: 1em; text-decoration:none; display: block; width: 100%;}
+.contextMenuBox li a:hover {background-color: #cde5fd; }
+
+
+
+/********************************************************************************************************/
+/*                A L P H A     T R A N S P A R E N C Y     L A Y E R S                                 */
+/********************************************************************************************************/
+/*  
+    NOTES  on transparency layers :
+ 	-----------------------------------
+	 - usually display below a popup
+	 - transparency layers are not always visible, but used to close the popup onClick
+*/
+
+/*
+   ----------------------------------------------------------
+        DIALOG-UNDERLAY : Alpha layer below modal dialogs 
+   ----------------------------------------------------------
+*/
+div.dialog-underlay {
+   background-color : #002141;
+   opacity: 0.67;
+   z-index : 199;
+   position : absolute;
+}
+
+/* unclear if this style is still being used */
+#fullPagePopupAlpha { 
+   position:absolute;
+   top: 0; left:0;
+   width:100%;
+   background-color : #002141;
+   opacity: 0.67;
+   z-index : 150;
+}
+
+/*
+   ----------------------------------------------------------
+        FLYOUT-UNDERLAY : invisible layer below flyouts 
+   ----------------------------------------------------------
+*/
+/*   
+    NOTES:
+	------------------
+     - used when flyout menu is displayed 
+	 - Clicking off the flyout closes the flyout : the simplest way to implement this behavior : have a full-page invisible div that closes the flyout when clicked. 
+*/ 
+
+div.flyout-underlay {
+   opacity: 0.6;
+   z-index : 199;
+   position : absolute;
+}
+
+/* This is a clear div which grabs clicks outside of map popup menus */
+div.popup-underlay {
+   position: absolute;
+   z-index : 199;
+}
+
+
+/*****************************************************************************/
+/*                             L O A D I N G                                 */
+/*****************************************************************************/
+/*  
+    NOTES  :
+ 	-----------------------------------
+	 - .loading refers to text and/or a an animation that displays after a button click, usually hiding the button and replacing it with .loading
+	
+*/
+
+div.dialog.childConsent .loading,
+#loadingPane .loading {margin-top:0;}
+div.dialog.childConsent .loading.childConsentSent,
+#loadingPane .loading {margin:0 auto; background-position: 0 50px; padding:4em 0;}

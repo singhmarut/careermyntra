@@ -1,0 +1,657 @@
+/*
+    BASE > Base rules for reusable elements ONLY 
+    
+    Notes on using elements.css :
+    -------------------------------
+      1) Reusable styles are styles used in more than 1 page, flow, section, or dialog
+	  
+	  2) Styles should NOT apply to a specific carrier
+            a) For example, if rules specify colors for a specific carrier, consider adding those rules to CARRIER or APP
+			
+      3) Default style for an element is sometimes noted where it is used so you can see an example.
+	        a) Note that variations / overrides to default MAY be:
+               - listed below the default style 
+                     OR 
+               - applied in page specific style sheet (e.g. content_foo.css)
+			
+      4) If you are ADDING a new element / classname:
+	        a) FIRST check the current elements and make sure you aren't duplicating existing elements
+			b) Add new classnames and/or relevent headers to the TOC list
+	
+	------------------------
+    TOC : Elements include:
+    ------------------------
+      - lists
+         - default ol & ul 
+         - actionsMenu
+            - flyout actionsMenu
+         - actions
+      - item
+      - emtpyInfo
+      - noActivity
+	  - allowed-box & selection-box
+      - note
+          - note
+          - note-inline
+      - notice
+          (overrides noted per section)
+          - notice : layout structure
+          - notice : content, header & text
+
+          - notice-tip (obsolete : unclear what to use)
+          - notice-offer (obsolete : use .offer)
+		  - notice-disclaimer (obsolete : use .disclaimer)      
+          
+          - notice-warning & notice-reminder
+		  - .firstRun, .serviceInterrupted, .update, .download, .childConsent
+
+	  - activate-phones-section
+	      - activate-steps
+      
+*/      
+
+/********************************************************/
+/*                     L I S T S                        */
+/********************************************************/
+/*
+   -----------------------
+     DEFAULT LIST STYLES
+   -----------------------
+
+     NOTE:
+     -------------------
+     OBSOLETE STYLES: 
+       - .orderedList  
+        - .bulletedList
+        - .list-disc
+        - .list-num 
+     USE INSTEAD:
+       .list-default for BOTH ol & ul
+ */
+.orderedList{margin:0 0 0 20px; list-style:outside decimal;}
+.bulletedList{margin:0 0 0 16px; list-style:outside disc;}
+.orderedList li, .bulletedList li{margin:0 0 10px 0;}
+ol.list-num { list-style-type:decimal; margin: 10px auto 10px 25px;}
+ol.list-num li {margin: 5px auto ;}
+ul.list-disc {list-style-type: disc; margin: 10px auto 10px 25px; }
+ul.list-disc li {margin: 5px auto ;}
+
+.list-default { margin: 10px 0 10px 25px;}
+.list-default li{display:list-item;}/* required for disc to appear in FF */
+
+ul.list-default{list-style:outside disc;}
+ol.list-default {list-style:outside decimal;}
+
+ol.list-default li {margin: 5px auto 5px 20px;}
+
+
+/* overrides 
+   - display:block; to first override display:inline; rule
+   - display:list-item; in order to show disc
+*/
+.module .module-info ul.list-default li{display:block; display:list-item; margin-bottom:.5em;}
+
+
+/* 
+   -----------------------
+        ACTIONSMENU 
+   -----------------------
+
+     NOTE:
+     -------------------
+     - default example : in locator - feed actionsMenu 
+*/
+ul.actionsMenu {display: block; padding:10px; }
+ul.actionsMenu li a { margin: 0; padding: 13px 0 12px 50px; display:block; border-bottom: 1px dashed #9CF;}
+ul.actionsMenu li:last-child a{border:0;}
+ul.actionsMenu li a{background-position: 10px center; background-repeat:no-repeat;}
+ul.actionsMenu li a.deleteLandmark{background-image: url(../../../img/base/icon_delete.png); }
+ul.actionsMenu li a.editName,
+ul.actionsMenu li a.editLandmark{background-image: url(../../../img/base/icon_pencil.png); }
+ul.actionsMenu li a.changeImage {background-image: url(../../../img/base/icon_camera.png);}
+ul.actionsMenu li a.createSchedCheck {background-image: url(../../../img/base/icon_calendar_med.png);}
+ul.actionsMenu li a.addLandmark {background-image: url(../../../img/base/icon_landmark_add.png);}
+ul.actionsMenu li a.viewProfile {background-image: url(../../../img/base/icon_profile.png);}
+ul.actionsMenu li a:hover {background-color:#ffc;}
+
+/* 
+   ------------------------------------
+      ACTIONSMENU : flyout overrides 
+   ------------------------------------
+*/
+div.flyout ul.actionsMenu {width: 93%; overflow:hidden; padding:0 10px 5px 10px;}
+div.flyout ul.actionsMenu li a {font-weight: bold; }
+div.flyout ul.actionsMenu li a.changeImage {background-position: 7px 7px;}
+div.flyout ul.actionsMenu li a.viewProfile { background-position: 7px 7px;}
+div.flyout ul.actionsMenu li a.createSchedCheck {padding: 13px 0 10px 50px;} 
+div.flyout ul.actionsMenu li a.deleteLandmark { background-position: 7px center;}
+div.flyout ul.actionsMenu li a:hover {background-color:#cde5fd;}
+
+/* 
+   -----------------------
+        ACTIONS 
+   -----------------------
+    - show/hide details, edit & delete 
+
+     NOTE:
+     -------------------
+     - default example : in locator - alerts and profiles (places)
+
+*/
+.actions{position:absolute; top:10px; right:25px; width:190px; width:21%;}
+.actions ul{float:right; padding-left:15px; padding-top:.75em; padding-bottom:.75em; margin-left:15px; min-height:30px; border-left:1px dotted white; }
+.actions ul li{margin:5px 0;}
+.actions .showDetails,
+.actions .hideDetails{margin:10px 0; float:right;}
+
+
+/*****************************************************/
+/*                     I T E M                       */
+/*****************************************************/
+/*
+ 
+    NOTE : 
+    --------------
+     - "item" is a reserved word
+
+    Use .item class ONLY for
+    --------------------------
+      - item boxes for LOCATOR : 
+	        - asset detail and landmark detail boxes on map sidebar
+			- alerts details
+			- feeds details
+			- assets in profiles sidebar
+      - item boxes for DWD & CNI :
+	        - asset details in sidebar
+			- button to add more assets in sidebar
+
+
+    DO NOT USE "item" 
+    -------------------
+     - as a part of any other classname to any other selector (e.g. ".fooItem" or ".itemFoo" are NOT allowed)
+
+*/
+.item,
+.item.on:hover{
+   margin-bottom:5px;
+   padding:10px;
+   position:relative;
+   min-height:60px;
+   
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   border-radius:6px;
+   
+   background: #afd2fb;
+   background: -moz-radial-gradient(center, ellipse, #cbe2fb 45%, #afd2fb 100%); 
+   background: -webkit-gradient(radial, center center, 70, center center, 575, from(#e2effd), to(#afd2fb)); 
+}
+
+.item:hover{
+   background: #c9e2fc;
+   background: -moz-radial-gradient(center, ellipse, #e2effc 45%, #c9e2fc 100%); 
+   background: -webkit-gradient(radial, center center, 100, center center, 775, from(#eff6fd), to(#c9e2fc)); 
+}
+
+
+/***************************************************************/
+/*                    E M P T Y     i N F O                    */
+/***************************************************************/
+/* 
+    NOTE : 
+    --------------
+     - default example : in locator - no alerts, feeds, children, etc.
+
+    Use .emptyInfo 
+    ----------------
+     - when a set of things / items / data is supposed to display, but none have been added or all have been removed
+	 - when the app displays a "no foo added yet" message
+	 
+*/
+.emptyInfo{
+   background:#F2F2F2;
+   padding:20px;
+   min-height:210px; /* w/ padding = 250px */
+   height:210px; /* w/ padding = 250px */
+   position:relative;
+   
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   border-radius:6px;
+   }
+   
+.emptyInfo p:first-child,
+.emptyInfo p.firstChild{background:url(../../../img/base/arrow_emptyInfo.png) 0 center no-repeat; padding-top:7px; padding-bottom:7px;}
+/* was: width: 625 */
+.emptyInfo p{ width:70%; max-width:55em; padding-left:35px;}
+
+/*
+   -----------------------------
+     EMPTY INFO : overrides 
+   -----------------------------
+*/
+#body-cni-home table .emptyInfo{
+   margin:1em;
+   padding:13px;
+   background:#F6F6F6; 
+   border:0;
+   -moz-border-radius:0; 
+   -webkit-border-radius:0; 
+   border-radius:0; 
+   }
+#body-cni-home table .emptyInfo p{width:90%;}
+
+
+/***************************************************************/
+/*                N O    A C T I V I T Y                       */
+/***************************************************************/
+/* 
+    NOTE : 
+    --------------
+     - default example : in dwd - history
+
+    Use .noActivity 
+    ----------------
+     - when alerts or other data are present, but report "no activity"	 
+ */								  
+.noActivity {background:#ecedee; overflow:auto; margin:0 0 5px 0; padding:10px 5px;}
+.noActivity  h2 {float:left; width:25%; margin:0; padding:0;}
+.noActivity  p {float:left; width:75%; margin:0; padding:0;}
+
+
+/**************************************************************************************************/
+/*                 A L L O W E D - B O X    &    S E L E C T I O N - B O X                        */
+/**************************************************************************************************/
+/*
+    NOTE : 
+    --------------
+     - default example : in dwd - allowed & select contacts and apps 
+
+    Use .allowed-box and .selection-box : 
+    --------------------------------------
+     - when user can create a white list (e.g. allowed-box) from a (usually longer) list of contacts, apps, etc. (e.g. selection-box)
+*/
+.allowed-box, .selection-box {
+  position: relative;
+  float:left;
+  width: 42%;
+}
+.item-detail-inner .allowed-box {float: none;}
+.allowed-box {margin: 25px 35px 0 17px;  }
+.selection-box { width: 48%; padding-bottom: 2em; border:1px solid #d2d2d2; box-shadow: inset 0 0 3px #c2c3c4; }
+.selection-box.disabled { opacity: .4;}
+
+.dialog .allowed-box {margin-right: 30px; margin-left:0;}
+.dialog .selection-box {width: 46%;}
+#set-preferences-autoReply-dialog .allowed-box {width: 47%; }
+
+.allowed-box ol {list-style-position: outside;  list-style-type: decimal; margin: 20px 0 10px 20px;}
+.allowed-box ol li {clear: both; /*float:left; */ margin: 0; width:100%; height:auto; min-height: 1.75em;  }
+.allowed-box div {/*clear: both; */ display: inline-block; float: none; margin-left: 10px; width: 90%;}
+.allowed-box span {display: inline-block; float: left; width: 72%; overflow:hidden; text-overflow:ellipsis;}
+.allowed-box a {display: block; float: right; }
+
+.dialog .allowed-box p {margin: 0 0 10px; padding:0; width: auto;}
+.dialog .allowed-box a, 
+.dialog .allowed-box span {padding-top: 6px;} 
+.dialog .selection-box p {padding: 0; margin: 25px 20px 10px; color: #000; }
+.dialog .selection-box p.action-link {margin: 10px 20px 0px;}
+.dialog .selection-box p#sms-char-count {margin-top: 10px;}
+
+#selection-box-pointer {
+    position: absolute; 
+    top: 15px; 
+    left:-32px;
+   width: 35px; 
+    height: 45px;
+   background:transparent url(../../../img/base/common/pointer_selection_box.png) top left no-repeat;
+    z-index:50;
+}
+.selection-box ul {
+    height: 125px;  
+    margin: 5px 20px ; 
+    overflow:hidden;
+    overflow-y: scroll;    
+   border:1px solid #c2c3c4;  
+    box-shadow: inset 0 0 4px #c2c3c4;
+    }
+.selection-box ul li { display:block; height: 1.75em; padding: 0 0 5px; font-size: 120%;}
+.allowed-box ol li:nth-child(even),
+.selection-box ul li:nth-child(even) {background-color:#e8eaed; }
+.selection-box ul li span {display:block; width: 75%; height:1.65em; line-height: 1.65em; margin-left: 5px; overflow:hidden; text-overflow:ellipsis;}
+.selection-box ul li button span {line-height:120%; margin-left:0;}
+.selection-box ul li span,
+.selection-box ul li button {float:left;}
+.selection-box ul li button span {float:none;}
+.selection-box ul li button.btn-small, 
+.selection-box ul li button.btn-small span {line-height: 12px; }
+.selection-box ul li button {margin-top: 8px;}
+.selection-box textarea {margin-left: 20px; resize:none; }
+
+
+/***************************************************************/
+/*                        N O T E                              */
+/***************************************************************/
+/*
+    NOTE : 
+    -------------------------------------
+	 - .note is a reserved word
+     - .note is in the flow of the document and currently only in #content-help.
+*/
+
+/* .note : displays as block */
+.note { background-color:#e8eaed; padding: 5px; }
+.module .module-info .note {background:none;}/* module-btm already has bkgd color & padding */
+
+/*not sure where .inline is used : needs to be reclassed to .note-inline */
+.note.inline, .note-inline{display:inline;}
+
+
+/***************************************************************/
+/*                    N O T I C E                              */
+/***************************************************************/
+/*
+    NOTE : 
+    --------
+   	  - Notices display dynamically when needed to notify the user of some action required or other infrequent information 
+		  (e.g. "we are updating," "you need to download x", etc.)
+      - structure of notices can be found in notice.js
+	  - flavors of notice (e.g. classes applied to outermost notice div) are listed at the top of notice.js
+      - See notice.js for placement of notice.
+*/
+
+/* NOTE: .notice and .notice-alternate may need to be repaced 
+   Commenting out .notice for now
+.notice { border: 1px solid #ababab; background-color:#ffc; padding: 2px ; }
+*/
+.notice-alternate { border: 1px solid #ffc; background-color:#eee; padding: 2px ; }
+
+
+/********************************************************************************************/
+/*                    N O T I C E  :  L A Y O U T   S T R U C T U R E                       */
+/********************************************************************************************/
+.notice-outer { 
+   width:99.7%;
+   min-height: 65px;
+   border:1px solid #DEDEDE; /* grayscale / monochrome : also used by sprint */
+}
+
+.notice {
+  border: 1px solid #fff;  /* give appearance of white inner shadow */
+  /*  Add CARRIER bg colors to this div in CARRIER > common > elements.css  */
+}
+
+.notice-inner { padding: 0.75em 0 0.75em 1.5em; }
+
+
+#dwd-item-details-inner .notice-outer { width: 69.7%;}
+#dwd-item-details-inner .notice-inner {min-height: 45px; padding-left: 7px;}
+
+/**********************************************************************************************************/
+/*                    N O T I C E  :  C O N T E N T  ,  H E A D E R S   &   T E X T                       */
+/**********************************************************************************************************/
+.notice-content-inner {float:left; width:70%;}
+.notice-content-inner  p {margin-bottom:0.5em;}
+
+#dwd-item-details-inner .notice-content-inner {width: 90%;}
+
+/*
+   ------------------------
+       NOTICE-TIP 
+   ------------------------
+*/
+/* NOTE: .notice-tip needs to be replaced with ??? */
+/* tip , .notice-tip : app-related info */
+.tip { display: block; float: none; clear: both; }
+.tip p {background-color: #eee; }
+.dialog .tip { width: 91%;}
+
+#activate-phones-section .notice-tip{
+  width:50%;
+  float:left; 
+  margin-bottom:0;  
+	position:relative;
+  background:F7F7F7;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  }
+#activate-phones-section .notice-tip .icon{display:inline-block; position:relative; float:left;}
+#activate-phones-section .notice-tip .notice-content{float:left;}
+/* notice-tip: grab phones */
+#activate-phones-section .notice-tip#grabPhones{float:right; width:45%;}/* bkgd color set in carrier */
+#activate-phones-section .notice-tip#grabPhones .icon{
+  float:none;
+  position:absolute;
+  right:6%;
+  bottom:0;
+  }
+#activate-phones-section .notice-tip#grabPhones .notice-content{margin:2.25em 0 2.25em 2.25em; width:60%;}
+/* notice-tip: android required */
+#activate-phones-section .notice-tip#androidRequired{padding:.5em .75em; width:44.75%; float:none; background-color:#E8E8E8; margin-top:1em;}
+#activate-phones-section .notice-tip#androidRequired .notice-content{float:left; margin-left:1.5em; width:85%; }
+
+
+/*
+   ----------------------------------------
+       NOTICE-WARNING & NOTICE-REMINDER 
+   ----------------------------------------
+*/
+/*
+    DO NOT USE "alert" 
+    -------------------
+     - as a part of any notice
+	 - alert is a reserved word for CNI alerts to parent re: particular child phone activity
+*/
+/*
+COMMENTED OUT FOR NOW : need dwd to be refactored
+
+.notice-warning, 
+.notice-reminder {
+     padding: 6px;
+     background-color:#FFD336; 
+     background: -moz-linear-gradient(59% 100% 90deg,#FFD336, #FFE480, #FFE78E 50%,#FFF2C4 75%,#FFFFFE 96%);  
+     background-image: -webkit-linear-gradient(bottom , #FFD336, #FFE480 59.0%,#FFE78E 50.0%,#FFF2C4 75.0%,#FFFFFE 96.0%); 
+     background-image: -ms-linear-gradient(bottom , #FFD336, #FFE480 59.0%,#FFE78E 50.0%,#FFF2C4 75.0%,#FFFFFE 96.0%); 
+     background-image: linear-gradient(bottom , #FFD336, #FFE480 59.0%,#FFE78E 50.0%,#FFF2C4 75.0%,#FFFFFE 96.0%);
+    
+     -moz-box-shadow: 0px 5px 2px #eee;
+     -webkit-box-shadow: 0px 5px 2px #eee;
+     box-shadow: 0px 5px 2px #eee;
+     border:1px solid #d9d9d9;
+     }
+		 
+.notice-reminder {
+     background: none; 
+     background-color:#f6f6f6;
+     background-color:#EBEBEB; 
+     background-image: -moz-linear-gradient(90deg, #EBEBEB, #FFFFFF 87.0%); 
+     }     
+		 
+.notice-warning .warning-icon {
+	width: 23px; 
+	height: 23px; 
+	float:left; 
+	background: transparent url(../../../img/base/common/icon_exclamation_point.png) 0px 0 no-repeat;
+	}
+*/	
+
+
+/*
+.dialog .notice-warning,
+#content-cni-pending .notice-warning{padding:0; border:none; background:none; -moz-box-shadow: none; -webkit-box-shadow:none; box-shadow: none;}
+#content-cni-pending .notice-warning{margin-bottom:2em;}
+#content-cni-pending .notice-pending .icon-pending,
+#content-cni-pending .notice-warning .icon-warning{float:left; display:block; }*//* width is set by sprite icon */
+/*
+#content-cni-pending .notice-pending .notice-content,
+#content-cni-pending .notice-warning .notice-content{float:right; width:86%;}*//* by floating right, the correct distance for icon is always set */
+/*
+#content-cni-pending .notice-warning .notice-content{width:90%;}*/
+/*
+.dwd-item-detail-subsection .notice-warning,
+.dwd-item-detail-subsection .notice-reminder { padding-right:0; padding-left:0; position:relative;}
+.dwd-item-detail-subsection .notice-warning .warning-icon,
+.dwd-item-detail-subsection .notice-reminder .warning-icon {margin-left: 8px;}
+.dwd-item-detail-subsection .notice-warning h5,
+.dwd-item-detail-subsection .notice-reminder h5 {padding-left: 42px; margin: 5px 0 3px;  }
+.dwd-item-detail-subsection .notice-warning p,
+.dwd-item-detail-subsection .notice-reminder p { display:block; clear:none; margin: 0 32px 0 42px; }
+.dwd-item-detail-subsection .notice-warning p.shorten-width,
+.dwd-item-detail-subsection .notice-reminder p.shorten-width {margin-top: 5px; margin-right:0; }
+.dwd-item-detail-subsection .notice-warning button,
+.dwd-item-detail-subsection .notice-reminder button {position: absolute; top: 11px; right: 8px; float:none; margin: 0; clear:none;}
+*/
+
+
+
+/*
+   ----------------------
+       NOTICE-OFFER 
+   -----------------------
+*/
+/*
+    Use .notice-offer : 
+    ------------------------------
+     - when displaying marking offers for other apps, trials, deals etc.	 
+*/
+/* CNI/DWD: REGISTRATION and ACTIVATE PHONES (registration & add a family member) */
+/* notice offer (may no longer be used in registration) */
+.notice-offer { float: right; width: auto; text-align:center;}/* marketing info */
+
+/*
+   -------------------------
+       NOTICE-DISCLAIMER 
+   -------------------------
+*/
+/*
+    Use .notice-disclaimer : 
+    ------------------------------
+     - when displaying additional, "disclaimer" info in small text, often with an asterisk.	 
+*/
+.notice-disclaimer{width:auto; margin-top:.5em; font-size:.9em;}
+#content-registration .notice-disclaimer{margin-top:2em; width:auto; color:#BABABA;}
+
+
+
+/**********************************************************************/
+/*               A C T I V A T E     P H O N E S                      */
+/**********************************************************************/
+/*
+    Use #activate-phones-secion : 
+    ------------------------------
+     - where user is activating child phones (e.g. in registration and from within app)	 
+*/
+
+/* SH: move to carrier (ATT only at the moment) */
+#activate-phones-section .planCost-perPhone{margin-bottom:2em;}
+
+#content-registration #activate-phones-section h2 { margin: 0 0 10px;}
+#activate-phones-section {margin-left: 10px; margin-right:10px;}/* revised structure uses columns */
+#activate-phones-section ul {margin-bottom:20px; width:50%; float:left; }
+#activate-phones-section ul li {margin-bottom:.5em; border:0; padding:0;}
+#activate-phones-section ul .errors{width:90%;}
+
+/*
+   ------------------------
+       ACTIVATE-STEPS 
+   ------------------------
+*/
+/* consolidate styles between activation and activate pending step icons (after carrier sprite is made) 
+   - i prepped app level for when the carrier sprite is created (but only for pending page)
+*/
+
+/* CNI: PENDING - ACTIVATE STEPS and NOTICE overrides */
+#content-cni-pending .activate-steps,
+#content-cni-pending .notice-pending {/* set in carrier*/}
+	
+#content-cni-pending .activate-steps{margin-top:.5em;}
+#content-cni-pending .activate-steps li{margin-bottom: 1.75em;}
+#content-cni-pending .activate-steps li .step-icon{margin-bottom: 1em; float:left; display:block;}
+#content-cni-pending .activate-steps li .step-content{float:left; display:inline-block; width:80%;}
+#content-cni-pending .activate-steps li p,
+#content-cni-pending .notice-content p{margin-bottom:.5em;}
+#content-cni-pending .activate-steps li:last-child,
+#content-cni-pending .activate-steps li p:last-child,
+#content-cni-pending .notice-content p:last-child{margin-bottom:0;}
+
+/* CNI/DWD ACTIVATION INSTRUCTIONS DIALOG */
+.dialog.activation .activate-steps li{margin-bottom: 1em;}
+.dialog.activation .activate-steps li .step-icon{margin-bottom: 1em; float:left; display:block;}
+.dialog.activation .activate-steps li .step-content{float:left; display:inline-block; }
+.dialog.activation button{margin-top:2em;}
+
+
+/*  
+   -----------------------------------------------------------------------------------------------------------------------------------------------------
+              !!!!!!!!!!!!!!!!!!!!!          NOT SURE WHAT TO DO WITH THE ELEMENTS LISTED BELOW               !!!!!!!!!!!!!!!!!!!!!
+   -----------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* SECTION HEADER: universal style (with and without icon) - (My Alerts, Create a Schedule Check, Family Profiles) - ideal if section icons were same width and height */
+.sectionHeader, .sectionHeader_wIcon{margin-bottom:20px; width:70%; max-width:55em;}
+.sectionHeader p, .sectionHeader_wIcon p{margin-bottom:1em;}
+.sectionHeader_wIcon{position:relative;}
+.sectionHeader_wIcon .icon{position:absolute; top:0; left:0;}/* to style icon bkgd image, add class to .sectionHeader_wIcon (e.g. .sectionHeader_wIcon.scheduleCheck) */
+.sectionHeader_wIcon .info{margin-left:60px; min-height:50px;}/* (contains h2 and p),(margin-left is based on width of .icon + 10px), (min-height is based on height of .icon) */
+
+
+/* --- HR --- */
+/* default*/
+.hr{height:1px; display:block; border-bottom:1px dashed #CCC;}
+
+/* hr in notice */
+div.notice-container .hr { border-bottom: 1px dashed #9F9F9F; height:1px; margin:0 13px;}
+/* pending page */
+#content-cni-pending .hr{margin:3em 0;}
+
+/* form instructions 
+   - instructional text related to a field in form (placed inside fieldset)
+	 - all inclusive since some instructions appear next to buttons which are not in fieldsets
+	 - bkgd positioning for icon (if applicable) is applied to .icon.icon-[iconName]
+*/
+form .instructions{width:40%; float:right; margin-top:0; position:relative;}
+form .instructions .icon{display:inline-block; position:relative; float:left;}
+
+
+/* LIST-BOX (Deactivate Phones) */
+.list-box {padding:0 0 0 0;}
+.dialog .list-box h3 {padding:0 0 10px 0;}
+.list-box li {margin:0 0 5px 0;}
+
+
+/*
+ * Stuff related to loadingOverlay
+ */
+
+.loading-overlay {
+   position : fixed;
+   background-color : #002141;
+   top : 0;
+   left : 0;
+   bottom : 0;
+   right : 0;
+   z-index:250;
+   /* will have opacity between 0 and 0.67 in live site */
+}
+
+.loading-panel {
+   position : fixed;
+   top : 0;
+   left : 0;
+   bottom : 0;
+   right : 0;
+   z-index:255;
+}
+
+.loading-panel div.container {
+   width : 300px;
+   margin-top : 300px;
+   margin-left : auto;
+   margin-right : auto;
+   border: 2px solid #222266;
+   background-color : #ffffff;
+   padding : 20px
+}
+
+.loading-panel div.container div {position : absolute; width : 300px;}

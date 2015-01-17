@@ -1,0 +1,271 @@
+﻿/*****************************************************************COMMON******************************************************************/
+
+/***Font Styles***/
+
+/***Margin and Padding***/
+/***Margin and Padding***/
+/***Others***/
+.border-radius0{
+    border-radius:0px;
+}
+.no-wrap{
+    white-space:nowrap;
+}
+
+a:hover,
+a:visited,
+a:focus  {
+	text-decoration: none;
+}
+/***Others***/
+
+/*Figure block*/
+/*Wrapper*/
+.wrapper-red{
+    background-color:#ef383a;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.figure-block-red .structure{top: -174px; right: 35%; position: absolute;}
+/*Wrapper ends*/
+/*Figure block*/
+.figure-block-red{
+    text-align:center;
+}
+.figure-block-red .figure-title{
+    color:#ffffff;
+    margin-bottom:0;
+	font-size: 48px;
+}
+.figure-block-red .figure-value{
+    margin-bottom:20px;
+    font-weight:normal;
+    font-size: 24px;
+}
+/*Figure block ends*/
+
+
+.figure-block-red .figure-title{
+    margin-bottom:0;
+}
+.figure-block-red .figure-value{
+    margin-bottom:20px;
+}
+
+.comments{
+	font-family: 'HelveticaNeue-Light',  'Helvetica',Arial,sans-serif;
+}
+#offer .col-md-6:first-child,
+.comments .col-md-6:first-child{
+	padding-right: 3%;	
+}
+#offer .col-md-6:last-child,
+.comments .col-md-6:last-child{
+	padding-left: 3%;
+}
+
+#offer p,
+.comments p{
+	margin-bottom: 20px;
+}
+
+blockquote{
+	border: none; 
+	padding: 35px 1.1em 40px;
+}
+
+blockquote p:before {
+	margin-right: 0.5em;
+	margin-left: -1.4em;
+}
+blockquote p:after {
+	margin-left: 0.5em;
+}
+#offer h2,
+.comments h2{	
+	padding-left: 75px;
+	padding-bottom: 10px;
+	min-height: 55px;
+	line-height: 55px;
+}
+
+.canvas-cont{padding: 20px 0 40px 0; margin-top: 10px;}
+
+.comments-hd{background: #ef383a; margin: 0;}
+
+.canvas-txt{
+	height: 200px; 
+	margin-bottom: -200px; 
+	padding-top: 45px;
+}
+
+.bdr{
+	border: 1px solid #808080;
+}
+
+/********************************* DASHBOARD ***********************************/
+#dashboard{
+	margin-top: 80px;
+}
+
+.overall-detail{
+	padding: 30px 30px 10px;
+}
+.overall-detail h2{
+	margin: 0;
+}
+
+.overall-col{
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.overall-col i{
+	margin-top: 7px;
+	margin-right: 10px;
+	float: left;
+}
+.overall-col div{
+	padding-left: 40px;
+}
+
+.full-access{
+	padding: 10px 20px;
+}
+.full-access h1, .full-access h3{
+	margin: 5px 0;
+}
+
+
+.side-header h3{
+	padding: 15px 0; 
+	margin: 0;
+	color: #fff;
+}
+
+
+/****** test paper button ******/
+.test-paper{
+	padding: 0;
+	margin-top: 30px;
+}
+.test-paper div span{
+	display: block;
+}
+.test-paper .right-arrow{
+	float: right;
+	line-height: 50px;
+}
+.test-paper a{
+	padding: 19px;
+	float: left;
+} 
+.summary{
+	float: left;
+	margin: 10px 0;
+	min-width: 14.25%;
+}
+.summary i {
+display: block;
+float: left;
+margin: 0 15px 10px 0;
+vertical-align: middle;
+text-align: center;
+font-size: 35px;
+color: #4f4f4f;
+}
+
+.txt-red{
+	color: #ef383a;
+}
+
+.summary .box-info {
+	font-size: 20px;
+	font-weight: bold;
+	color: #7d7d7d;
+	line-height: 20px;
+}
+.summary .box-info .txt-red{
+	font-size: 25px;
+}
+/************************ --- YEAR WISE AND TOPIC WISE QUESTION PAPER ---  *************************/
+
+.question-year-wise .fa-caret-left,
+.question-year-wise .fa-caret-right{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	line-height: 80px;
+}
+.question-year-wise .fa-caret-left{
+	left: -45px;
+}
+.question-year-wise .fa-caret-right{
+	right: -46px;
+}
+.questions-overview{
+	background-color: #ef383a;
+	padding: 12px 15px;
+}
+.attempt{
+	display: block;
+	color: #000;
+}
+
+.question-year-wise .table{
+	text-align: right;
+}
+.question-year-wise .table tr td{
+	background-color: #e6e6e6;
+	border-top: 9px solid #fff;
+	padding: 7px 15px 6px;
+}
+
+.numbering{
+	list-style-type:decimal;
+	padding: 0 20px;
+	margin:	 0;
+}
+.numbering li{
+	list-style-type: decimal;
+	margin: 10px 0;
+}
+.numbering li a{
+	color: #000;
+	padding: 5px 10px;
+}
+
+.numbering li a:hover{
+	background: #f00;
+	color: #fff;
+}
+.progress-bar-danger{
+	background-color: #ef383a;
+}
+
+.progress{
+	box-shadow: none;
+	border-radius: 0;
+	background-color: #808080;
+	width: 90%;
+	margin-top: 5px;
+	height: 12px;
+}
+.progress-bar{
+	box-shadow: none;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
+
+
+/******************** media query ********/
+@media (min-width: 768px){
+	.navbar-red .navbar-collapse, .navbar-red .navbar-form{
+		margin-top: 13px;
+	}
+}

@@ -6,11 +6,233 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc00af51-0919-4e72-9a6f-9304e475ad74" name="Default" comment="Changes for Question Editing">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen-satelite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen-wifi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon-structure.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_spinning.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap1.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/blog/feed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/globalFooter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/globalFooter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/globalHeader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/globalHeader.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/graphics.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/graphics.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/layouts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/layouts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/navigation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/old-custom .css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/old-custom1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/popups.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/popups.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/spinning.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/test.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/typography.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/typography.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/variables.less" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-114-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-144-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-57-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-72-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Coding app.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Devices.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/My Apps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Octocat-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/RegEdit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows 8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows Store.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/appbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/avatar-movie-puzzles-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-appbar-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-appbar-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-charms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-headermenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-hub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-themes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/github-icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/github.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/h2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero3-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/less-css-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles-wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles-widepeek.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/octocat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-dark.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-light.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-dark-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-dark.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-light-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-light.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/slide1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/slider2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/windows-8-fish.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/windows_8_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/dummy-tranformer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/folder_plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/googleplus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/question_mark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/trash-empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/yeoman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/custom1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/paper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/partials/hierarchyTreed3js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/images/ExamCue-logo.png" afterPath="$PROJECT_DIR$/app/images/ExamCue-logo-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/LICENSE" afterPath="$PROJECT_DIR$/app/bootmetro/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-charms.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-charms.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-responsive.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-responsive.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-tiles.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-tiles.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-ui-light.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-ui-light.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootstrap-responsive.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootstrap.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/datepicker.css" afterPath="$PROJECT_DIR$/app/bootmetro/datepicker.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/demo.css" afterPath="$PROJECT_DIR$/app/bootmetro/demo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/icomoon.css" afterPath="$PROJECT_DIR$/app/bootmetro/icomoon.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-tiles-old.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-tiles-old.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-dark.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-dark.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-light.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-light.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-semilight.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-semilight.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.eot" afterPath="$PROJECT_DIR$/app/font/IcoMoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.svg" afterPath="$PROJECT_DIR$/app/font/IcoMoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.ttf" afterPath="$PROJECT_DIR$/app/font/IcoMoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.woff" afterPath="$PROJECT_DIR$/app/font/IcoMoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/LICENSE.txt" afterPath="$PROJECT_DIR$/app/font/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.eot" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.svg" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.ttf" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.woff" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/index.html" afterPath="$PROJECT_DIR$/app/font/icomoon97172/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/license.txt" afterPath="$PROJECT_DIR$/app/font/icomoon97172/license.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/style.css" afterPath="$PROJECT_DIR$/app/font/icomoon97172/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.dev.svg" afterPath="$PROJECT_DIR$/app/fonts/iconFont.dev.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.eot" afterPath="$PROJECT_DIR$/app/fonts/iconFont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.json" afterPath="$PROJECT_DIR$/app/fonts/iconFont.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.svg" afterPath="$PROJECT_DIR$/app/fonts/iconFont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.ttf" afterPath="$PROJECT_DIR$/app/fonts/iconFont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.woff" afterPath="$PROJECT_DIR$/app/fonts/iconFont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.svg" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.ttf" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.woff" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/ExamCue-logo.png" afterPath="$PROJECT_DIR$/app/images/ExamCue-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/logo.png" afterPath="$PROJECT_DIR$/app/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/answerSheet.js" afterPath="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/env/development.js" afterPath="$PROJECT_DIR$/lib/config/env/development.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.html" afterPath="$PROJECT_DIR$/app/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/main.html" afterPath="$PROJECT_DIR$/app/views/partials/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/middleware.js" afterPath="$PROJECT_DIR$/lib/middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/navbar.html" afterPath="$PROJECT_DIR$/app/views/partials/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/question.js" afterPath="$PROJECT_DIR$/lib/models/question.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/questionPaperController.js" afterPath="$PROJECT_DIR$/lib/controllers/questionPaperController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.js" afterPath="$PROJECT_DIR$/lib/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/subjects.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/subjects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/subjectsController.js" afterPath="$PROJECT_DIR$/lib/controllers/subjectsController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pupilsboard.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="node_modules/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +240,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -34,14 +261,14 @@
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
+        <option name="SUSPEND" value="false" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -51,14 +278,14 @@
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
+        <option name="SUSPEND" value="false" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -71,15 +298,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="matchingQuestion2.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="54" selection-start="55" selection-end="55" vertical-scroll-proportion="0.02631579" vertical-offset="0" max-vertical-offset="735">
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="30" column="30" selection-start="883" selection-end="883" vertical-scroll-proportion="-5.1923075" vertical-offset="315" max-vertical-offset="3885">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="18" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.9583335" vertical-offset="22" max-vertical-offset="1335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questionPaperController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaperController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="123" column="0" selection-start="4703" selection-end="4703" vertical-scroll-proportion="1.63" vertical-offset="1682" max-vertical-offset="5595">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="10" selection-start="378" selection-end="383" vertical-scroll-proportion="-0.625" vertical-offset="210" max-vertical-offset="1485">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answerSheet.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-9.423077" vertical-offset="655" max-vertical-offset="2940">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,83 +346,43 @@
       <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/models/question.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="24" selection-start="667" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="2145">
+            <state line="100" column="9" selection-start="3960" selection-end="3965" vertical-scroll-proportion="-13.884615" vertical-offset="1139" max-vertical-offset="2370">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addQuestion.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/addQuestion.js">
+      <file leaf-file-name="subjectsController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/subjectsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="9" selection-start="1286" selection-end="1636" vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1065">
-              <folding>
-                <marker date="1405747928000" expanded="true" signature="2582:2594" placeholder="..." />
-                <marker date="1405747928000" expanded="true" signature="2905:2917" placeholder="..." />
-                <marker date="1405747928000" expanded="true" signature="3096:3108" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createQuestionPaper.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="18" selection-start="2726" selection-end="3175" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1335">
+            <state line="63" column="7" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginmodal.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
+      <file leaf-file-name="subjects.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/subjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="32" selection-start="1379" selection-end="1495" vertical-scroll-proportion="-13.125" vertical-offset="135" max-vertical-offset="735">
+            <state line="70" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/config.js">
+      <file leaf-file-name="categoryPapers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="26" column="104" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-15.0" vertical-offset="30" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contents.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/contents.css">
+      <file leaf-file-name="timer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/timer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1680">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/styles.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="53" selection-start="439" selection-end="442" vertical-scroll-proportion="-5.076923" vertical-offset="3" max-vertical-offset="1755">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ng-ckeditor.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="72" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2205">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="42" selection-start="2909" selection-end="2909" vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="2820">
+            <state line="7" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -178,61 +397,66 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="bootstrap-ui" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/config/env/development.js" />
-        <option value="$PROJECT_DIR$/lib/config/env/production.js" />
-        <option value="$PROJECT_DIR$/lib/models/user.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/session.js" />
-        <option value="$PROJECT_DIR$/lib/config/passport.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/addNewSchedule.html" />
         <option value="$PROJECT_DIR$/app/views/partials/editQuestion.html" />
-        <option value="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.css" />
-        <option value="$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html" />
-        <option value="$PROJECT_DIR$/app/styles/dummy.css" />
-        <option value="$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/login.html" />
-        <option value="$PROJECT_DIR$/lib/controllers/questionPaper.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/main.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/loginmodal.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html" />
-        <option value="$PROJECT_DIR$/app/scripts/services/blog.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/blogService.js" />
+        <option value="$PROJECT_DIR$/dist/lib/controllers/blogController.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/search.js" />
+        <option value="$PROJECT_DIR$/dist/lib/controllers/questionController.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/login.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/navbar.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/navbar.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/signup.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/signup.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/users.js" />
-        <option value="$PROJECT_DIR$/app/bower_components/angular-social/src/scripts/04-google-plus.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/blog.html" />
-        <option value="$PROJECT_DIR$/app/bower_components/angular-socialshare/angular-socialshare.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/allPosts.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/singlePost.html" />
-        <option value="$PROJECT_DIR$/lib/models/Article.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/posts.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/blog/newPost.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/auth.js" />
         <option value="$PROJECT_DIR$/lib/controllers/blogController.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/blog.js" />
-        <option value="$PROJECT_DIR$/lib/routes.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/matchingQuestion.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/question.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/feed.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/session.js" />
         <option value="$PROJECT_DIR$/app/styles/custom.css" />
-        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/ckeditor.js" />
-        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/samples/inlineall.html" />
-        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/app/styles/custom1.css" />
+        <option value="$PROJECT_DIR$/app/views/partials/login.html" />
+        <option value="$PROJECT_DIR$/lib/config/env/all.js" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/lib/controllers/questionPaper.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/email.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/signup.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/invite.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/signup.js" />
+        <option value="$PROJECT_DIR$/lib/models/user.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/users.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/platform/selectTopics.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/lib/config/env/production.js" />
+        <option value="$PROJECT_DIR$/lib/config/express.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/admin/tags.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html" />
+        <option value="$PROJECT_DIR$/lib/controllers/questionController.js" />
+        <option value="$PROJECT_DIR$/lib/middleware.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/main.html" />
         <option value="$PROJECT_DIR$/app/views/index.html" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/questions/matchingQuestions2.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" />
+        <option value="$PROJECT_DIR$/lib/routes.js" />
+        <option value="$PROJECT_DIR$/lib/config/env/development.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
+        <option value="$PROJECT_DIR$/lib/controllers/subjectsController.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/subjects.js" />
         <option value="$PROJECT_DIR$/lib/models/question.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html" />
+        <option value="$PROJECT_DIR$/lib/controllers/questionPaperController.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" />
       </list>
     </option>
   </component>
@@ -244,9 +468,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="717" />
+    <option name="width" value="1436" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -335,47 +560,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,24 +663,50 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/models" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="940" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/styles" />
-      <recent name="$PROJECT_DIR$/app/scripts/directives" />
       <recent name="$PROJECT_DIR$/app/images" />
-      <recent name="$PROJECT_DIR$/app/views/partials/questionPaper" />
-      <recent name="$PROJECT_DIR$/app/scripts/bootmetro" />
+      <recent name="$PROJECT_DIR$/app/styles" />
+      <recent name="$PROJECT_DIR$/app/styles/css" />
+      <recent name="$PROJECT_DIR$/app/fonts" />
+      <recent name="$PROJECT_DIR$/app/views/partials/platform" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/partials/questions" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/views/partials/candidate" />
-      <recent name="$PROJECT_DIR$/app/views/partials/questionPaper" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/styles" />
+      <recent name="$PROJECT_DIR$/app/scripts" />
+      <recent name="$PROJECT_DIR$/app/views/partials/admin" />
+      <recent name="$PROJECT_DIR$/app/views/partials/questions" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Unnamed">
@@ -446,20 +737,81 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
+    <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="/usr/local/bin/node" />
+      <envs />
+      <setting name="passParentEnvVars" value="true" />
+      <setting name="nodeunitModuleDir" value="$PROJECT_DIR$/node_modules/nodeunit" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="testType" value="JS_FILE" />
+      <setting name="jsFile" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
@@ -485,41 +837,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -531,38 +848,6 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -620,18 +905,27 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -686,21 +980,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <extension name="scalaCoverage" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -720,12 +999,208 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="careermyntra" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CMTest" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="careermyntra" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="server.js" application-parameters="development 8000" working-dir="$PROJECT_DIR$">
       <browser start="false" name="Chrome" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tests" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="/usr/local/bin/node" />
+      <envs />
+      <setting name="passParentEnvVars" value="true" />
+      <setting name="nodeunitModuleDir" value="$PROJECT_DIR$/node_modules/nodeunit" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="testType" value="JS_FILE" />
+      <setting name="jsFile" value="test/server/thing/api.js" />
+      <RunnerSettings RunnerId="Nodeunit.debug" />
+      <ConfigurationWrapper RunnerId="Nodeunit.debug" />
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.21" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -823,10 +1298,12 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in sample" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.CMTest" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="Nodeunit.Tests" />
+      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in sample" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -869,12 +1346,448 @@
       <workItem from="1405588096732" duration="1789000" />
       <workItem from="1405673271137" duration="6000" />
       <workItem from="1405673620964" duration="1854000" />
-      <workItem from="1405685221513" duration="9914000" />
+      <workItem from="1405685221513" duration="44023000" />
+      <workItem from="1406299477149" duration="81839000" />
+      <workItem from="1407083952714" duration="3312000" />
+      <workItem from="1407137163950" duration="30000" />
+      <workItem from="1407244077997" duration="1347000" />
+      <workItem from="1407554944028" duration="9236000" />
+      <workItem from="1407738004614" duration="20901000" />
+      <workItem from="1407899617361" duration="2147000" />
+      <workItem from="1407985549023" duration="1118000" />
+      <workItem from="1407997425347" duration="442000" />
+      <workItem from="1408000343397" duration="32840000" />
+      <workItem from="1408369402086" duration="7343000" />
+      <workItem from="1408435180585" duration="64000" />
+      <workItem from="1408524924981" duration="3744000" />
+      <workItem from="1408690650723" duration="2240000" />
+      <workItem from="1408868724303" duration="843000" />
+      <workItem from="1408962712627" duration="4076000" />
+      <workItem from="1409392047284" duration="4965000" />
+      <workItem from="1409844210470" duration="3619000" />
+      <workItem from="1410063501211" duration="6140000" />
+      <workItem from="1410197212124" duration="3513000" />
+      <workItem from="1410321140355" duration="1693000" />
+      <workItem from="1410334227800" duration="2263000" />
+      <workItem from="1410408369434" duration="11080000" />
+      <workItem from="1410442005849" duration="4443000" />
+      <workItem from="1410519196551" duration="16465000" />
+      <workItem from="1410702073601" duration="24876000" />
+      <workItem from="1410937066567" duration="8661000" />
+      <workItem from="1411056392925" duration="5618000" />
+      <workItem from="1411115897342" duration="29192000" />
+      <workItem from="1411479187205" duration="1611000" />
+      <workItem from="1411911727400" duration="3668000" />
+      <workItem from="1412586182611" duration="1507000" />
+      <workItem from="1412596976559" duration="1153000" />
+      <workItem from="1412841992451" duration="56000" />
+      <workItem from="1413000328631" duration="1074000" />
+      <workItem from="1413380147881" duration="3551000" />
+      <workItem from="1413655771194" duration="14370000" />
+      <workItem from="1414140736690" duration="5719000" />
+      <workItem from="1414235012598" duration="7929000" />
+      <workItem from="1414401001996" duration="4116000" />
+      <workItem from="1414420259770" duration="10814000" />
+      <workItem from="1414508326334" duration="2834000" />
+      <workItem from="1414597673591" duration="4146000" />
+      <workItem from="1415073431306" duration="473000" />
+      <workItem from="1415284665635" duration="1342000" />
+      <workItem from="1415417781712" duration="589000" />
+      <workItem from="1415518361637" duration="25316000" />
+      <workItem from="1416062715367" duration="7985000" />
+      <workItem from="1416479842520" duration="847000" />
+      <workItem from="1416486398935" duration="2851000" />
+      <workItem from="1416915696778" duration="923000" />
+      <workItem from="1419270232682" duration="2413000" />
+      <workItem from="1419273257420" duration="900000" />
+      <workItem from="1421043418406" duration="12910000" />
+      <workItem from="1421140341731" duration="24283000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes for Question Editing">
+      <created>1405927711085</created>
+      <updated>1405927711085</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes for Question Editing">
+      <created>1405945168729</created>
+      <updated>1405945168729</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes for question search/adding questions">
+      <created>1406043720102</created>
+      <updated>1406043720103</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes for Question Editing">
+      <created>1406043850876</created>
+      <updated>1406043850876</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes for tags">
+      <created>1406184999117</created>
+      <updated>1406184999117</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changes for Question Editing">
+      <created>1406301395701</created>
+      <updated>1406301395701</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes for Question Editing">
+      <created>1406303468685</created>
+      <updated>1406303468685</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes for Question Editing">
+      <created>1406360783716</created>
+      <updated>1406360783716</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changes for Question Editing and paper creation">
+      <created>1406532612306</created>
+      <updated>1406532612306</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added field for Answer and Correct Choice">
+      <created>1406535829246</created>
+      <updated>1406535829246</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changes for Question Editing">
+      <created>1406546935603</created>
+      <updated>1406546935603</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changes for Question Editing">
+      <created>1406547334332</created>
+      <updated>1406547334340</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes for Question paper">
+      <created>1406630627863</created>
+      <updated>1406630627863</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changes for question paper">
+      <created>1406727184981</created>
+      <updated>1406727184981</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Changes for Question Editing">
+      <created>1406960678628</created>
+      <updated>1406960678628</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changes for Question Editing">
+      <created>1406961425754</created>
+      <updated>1406961425754</updated>
+    </task>
+    <task id="LOCAL-00017" summary="disabled debugging of node.js">
+      <created>1406986001923</created>
+      <updated>1406986001923</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changes for removing Career Myntra">
+      <created>1407124276637</created>
+      <updated>1407124276637</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes for question search url">
+      <created>1407555747308</created>
+      <updated>1407555747308</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changes for Question Answer during review">
+      <created>1407559888554</created>
+      <updated>1407559888554</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Changes for Question Matching Options">
+      <created>1407563825597</created>
+      <updated>1407563825597</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Changes for Question Editing">
+      <created>1407606016560</created>
+      <updated>1407606016560</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Changed position of buttons">
+      <created>1407650118616</created>
+      <updated>1407650118616</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix for Question Paper Creation">
+      <created>1407651036436</created>
+      <updated>1407651036436</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changes for Question Viewing">
+      <created>1407768951504</created>
+      <updated>1407768951504</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Changes for Question Editing">
+      <created>1407772970019</created>
+      <updated>1407772970019</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Removed Duplicate tags">
+      <created>1407779120899</created>
+      <updated>1407779120899</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Changes for tagging">
+      <created>1407832101939</created>
+      <updated>1407832101940</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Removed metro theme">
+      <created>1407846545127</created>
+      <updated>1407846545127</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Changes for Adding question to paper...&#10;&#10;Changes for Question Search">
+      <created>1407858878357</created>
+      <updated>1407858878357</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added quality attribute with question">
+      <created>1407901863276</created>
+      <updated>1407901863276</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Changes for Question Paper Review">
+      <created>1408124541764</created>
+      <updated>1408124541764</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Changes for RSSFeed, Publish Date for blog">
+      <created>1408298452962</created>
+      <updated>1408298452962</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Changes for Blog">
+      <created>1408341643128</created>
+      <updated>1408341643128</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Changes for Question Editing">
+      <created>1408373368841</created>
+      <updated>1408373368841</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Changes for post editing">
+      <created>1408526307774</created>
+      <updated>1408526307774</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Changes for post editing">
+      <created>1408526340425</created>
+      <updated>1408526340425</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Changes for Question Search">
+      <created>1408529426324</created>
+      <updated>1408529426324</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Gave Special permission to Ankur">
+      <created>1409394185494</created>
+      <updated>1409394185494</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Gave Special permission to Ankur">
+      <created>1409395047003</created>
+      <updated>1409395047003</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Changes for Adding multiple tags">
+      <created>1409468916200</created>
+      <updated>1409468916200</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Changes for Adding tags">
+      <created>1409469057897</created>
+      <updated>1409469057897</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Changed base URL for Blog">
+      <created>1409844761674</created>
+      <updated>1409844761674</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Changes for Adding extra tags to questions....">
+      <created>1410230282131</created>
+      <updated>1410230282131</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Created a report for user wise question count">
+      <created>1410411733940</created>
+      <updated>1410411733940</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Created a report for user wise question count">
+      <created>1410411756024</created>
+      <updated>1410411756024</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Created a report for user wise question count">
+      <created>1410411932368</created>
+      <updated>1410411932368</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Created a report for user wise question count">
+      <created>1410412116371</created>
+      <updated>1410412116371</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Implemented Full Text Search in blog">
+      <created>1410618161052</created>
+      <updated>1410618161052</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Changes for Saving Question Comment">
+      <created>1410618205048</created>
+      <updated>1410618205049</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Changes for Saving Question Comment">
+      <created>1410618240779</created>
+      <updated>1410618240779</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Removed useless code">
+      <created>1410618257743</created>
+      <updated>1410618257743</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Implemented Full Text Search in blog">
+      <created>1410618290874</created>
+      <updated>1410618290874</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Changes for Adding extra tags in questions">
+      <created>1410929823091</created>
+      <updated>1410929823091</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Changes for Question Cloning">
+      <created>1411033577367</created>
+      <updated>1411033577368</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Show preview of question to 30 words">
+      <created>1411033615218</created>
+      <updated>1411033615218</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Changes for Question Cloning">
+      <created>1411033643568</created>
+      <updated>1411033643568</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Changes for Sample Papers">
+      <created>1411033661816</created>
+      <updated>1411033661817</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Changes for Sample Paper Subject Wise">
+      <created>1411033749913</created>
+      <updated>1411033749913</updated>
+    </task>
+    <task id="LOCAL-00060" summary="removed useless packages">
+      <created>1411034231500</created>
+      <updated>1411034231500</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Added cloning functionality">
+      <created>1411034262127</created>
+      <updated>1411034262128</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Changes for Question Paper">
+      <created>1411110152935</created>
+      <updated>1411110152935</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Changes for Question Editing">
+      <created>1411206494019</created>
+      <updated>1411206494019</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Changes for Full Text Search in Questions">
+      <created>1411206609750</created>
+      <updated>1411206609750</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Changes for Question Editing">
+      <created>1411207253861</created>
+      <updated>1411207253861</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Removed useless log statements...Redirect user to SignUP page on completion of sample paper">
+      <created>1411312587360</created>
+      <updated>1411312587361</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Changes for Sample Paper">
+      <created>1411312602157</created>
+      <updated>1411312602157</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Minor changes in test window">
+      <created>1411312647292</created>
+      <updated>1411312647292</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Changes for Sample Paper">
+      <created>1411312695282</created>
+      <updated>1411312695283</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Removed ID from Section in Question Paper...Created a new table for sample papers">
+      <created>1411312733707</created>
+      <updated>1411312733708</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Changes for Sample Paper..Saving email id after user log in">
+      <created>1411312831887</created>
+      <updated>1411312831887</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Changes for Sample Paper">
+      <created>1411312896411</created>
+      <updated>1411312896412</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Removed Live Reload useless">
+      <created>1411366499436</created>
+      <updated>1411366499436</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Changes for Crawler">
+      <created>1411479284342</created>
+      <updated>1411479284342</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Fix for Question Tag Editing">
+      <created>1412587838782</created>
+      <updated>1412587838782</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Fix for Adding question tag">
+      <created>1412597072465</created>
+      <updated>1412597072466</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Changes for providing a feature to match question with &quot;OR&quot; tags while adding extra tags in questions">
+      <created>1413383909338</created>
+      <updated>1413383909338</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Changed response from questions to question length">
+      <created>1413384091485</created>
+      <updated>1413384091485</updated>
+    </task>
+    <task id="LOCAL-00079" summary="changes">
+      <created>1413656200114</created>
+      <updated>1413656200115</updated>
+    </task>
+    <task id="LOCAL-00080" summary="New UI incorporated">
+      <created>1413720676603</created>
+      <updated>1413720676604</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Changes for Question Editing">
+      <created>1413720787123</created>
+      <updated>1413720787124</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Optional argument for server port">
+      <created>1413721748903</created>
+      <updated>1413721748904</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Changes for Question Editing">
+      <created>1413721928450</created>
+      <updated>1413721928451</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Changes for Question Editing">
+      <created>1413722095714</created>
+      <updated>1413722095714</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Changed root path for viewd during production">
+      <created>1413723696653</created>
+      <updated>1413723696654</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Changes for Question Editing">
+      <created>1413723759853</created>
+      <updated>1413723759854</updated>
+    </task>
+    <task id="LOCAL-00087" summary="increased bootstrap version">
+      <created>1413726310494</created>
+      <updated>1413726310495</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Applied quota limit of 30 questions">
+      <created>1414236950966</created>
+      <updated>1414236950966</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Implemented Invite User feature">
+      <created>1414244013009</created>
+      <updated>1414244013010</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Changes for Invitation">
+      <created>1414245483388</created>
+      <updated>1414245483388</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Changes for Question Editing">
+      <created>1414245583088</created>
+      <updated>1414245583088</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Implementation for User Quota">
+      <created>1414401639273</created>
+      <updated>1414401639273</updated>
+    </task>
+    <task id="LOCAL-00093" summary="changes for flow implementation">
+      <created>1416062813753</created>
+      <updated>1416062813753</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Changes for production environment">
+      <created>1416065922745</created>
+      <updated>1416065922745</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Navigational Changes">
+      <created>1416486462910</created>
+      <updated>1416486462910</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443125000" />
+    <option name="totallyTimeSpent" value="914664000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -897,38 +1810,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="717" extended-state="6" />
-    <editor active="true" />
+    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2542373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7875318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09985935" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18066157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31424937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29262087" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32480818" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36445013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326972" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17144907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -936,13 +1849,13 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2542373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -962,9 +1875,9 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -980,7 +1893,33 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <MESSAGE value="Changes for Full Text Search in Questions" />
+    <MESSAGE value="Removed useless log statements...Redirect user to SignUP page on completion of sample paper" />
+    <MESSAGE value="Minor changes in test window" />
+    <MESSAGE value="Removed ID from Section in Question Paper...Created a new table for sample papers" />
+    <MESSAGE value="Changes for Sample Paper..Saving email id after user log in" />
+    <MESSAGE value="Changes for Sample Paper" />
+    <MESSAGE value="Removed Live Reload useless" />
+    <MESSAGE value="Changes for Crawler" />
+    <MESSAGE value="Fix for Question Tag Editing" />
+    <MESSAGE value="Fix for Adding question tag" />
+    <MESSAGE value="Changes for providing a feature to match question with &quot;OR&quot; tags while adding extra tags in questions" />
+    <MESSAGE value="Changed response from questions to question length" />
+    <MESSAGE value="changes" />
+    <MESSAGE value="New UI incorporated" />
+    <MESSAGE value="Optional argument for server port" />
+    <MESSAGE value="Changed root path for viewd during production" />
+    <MESSAGE value="increased bootstrap version" />
+    <MESSAGE value="Applied quota limit of 30 questions" />
+    <MESSAGE value="Implemented Invite User feature" />
+    <MESSAGE value="Changes for Invitation" />
     <MESSAGE value="Changes for Question Editing" />
+    <MESSAGE value="Implementation for User Quota" />
+    <MESSAGE value="changes for flow implementation" />
+    <MESSAGE value="Changes for production environment" />
+    <MESSAGE value="Navigational Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigational Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -991,188 +1930,187 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>68</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/controllers/passKey.js</url>
           <line>30</line>
           <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js</url>
+          <line>81</line>
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/connect-mongo/lib/connect-mongo.js</url>
+          <line>181</line>
+          <option name="timeStamp" value="300" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/analyticsController.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="353" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/test/server/thing/api.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="356" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/test/server/thing/api.js</url>
+          <line>55</line>
+          <option name="timeStamp" value="362" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/scripts/controllers/signup.js</url>
+          <line>9</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/scripts/controllers/signup.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/users.js</url>
+          <line>29</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
+          <line>38</line>
+          <option name="timeStamp" value="607" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
+          <line>54</line>
+          <option name="timeStamp" value="608" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
+          <line>25</line>
+          <option name="timeStamp" value="609" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="224" />
+      <option name="time" value="616" />
     </breakpoint-manager>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history />
+    <find-history />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
+    <entry file="file://$PROJECT_DIR$/karma-e2e.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1050">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.218" vertical-offset="109" max-vertical-offset="900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="27" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/analyticsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html">
+    <entry file="file://$PROJECT_DIR$/lib/controllers/tagsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="63" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="15" column="44" selection-start="366" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1245" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/custom.css">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="14" selection-start="6570" selection-end="6579" vertical-scroll-proportion="0.0" vertical-offset="5325" max-vertical-offset="5520">
-          <folding />
-        </state>
+        <state line="4" column="102" selection-start="189" selection-end="233" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2325" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/addQuestion.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/admin/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="802" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/editQuestion.html">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="1633" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="705">
-          <folding />
-        </state>
+        <state line="2" column="115" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/body-parser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="24" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1590" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="6" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="2355" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="62" selection-start="1272" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1545">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6390" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="4" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0" vertical-offset="1454" max-vertical-offset="2955" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/userInformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="60" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="12" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
+    <entry file="file://$PROJECT_DIR$/app/views/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1050">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4155">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/blog.html">
+    <entry file="file://$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="167" selection-end="178" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="375" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="23580">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionLoader.js">
+    <entry file="file://$PROJECT_DIR$/app/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155" />
+        <state line="16" column="13" selection-start="248" selection-end="248" vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaper.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="36" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="3735" />
+        <state line="25" column="42" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/evaluationKeys.html">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/dummyPaper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="0" selection-end="43" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/allPosts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="0" selection-end="70" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/angular-socialshare.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4650" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/singlePost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="59" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="719" selection-end="720" vertical-scroll-proportion="-2.6" vertical-offset="95" max-vertical-offset="960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="10" selection-start="3487" selection-end="3491" vertical-scroll-proportion="-2.4" vertical-offset="750" max-vertical-offset="1095" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="24" selection-start="2236" selection-end="2263" vertical-scroll-proportion="-10.625" vertical-offset="255" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="1076" selection-end="1076" vertical-scroll-proportion="-6.0" vertical-offset="75" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/Article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="260" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/blogController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="8" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.0" vertical-offset="635" max-vertical-offset="1950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="15" selection-start="2770" selection-end="2791" vertical-scroll-proportion="0.0" vertical-offset="1094" max-vertical-offset="2130" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/blog/newPost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="127" selection-start="758" selection-end="758" vertical-scroll-proportion="-3.42" vertical-offset="54" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="36" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1500" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/uploadQuestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/selectQuestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="396" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="44" selection-start="5076" selection-end="5076" vertical-scroll-proportion="-55.384617" vertical-offset="375" max-vertical-offset="2910" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/paper.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="371" column="4" selection-start="13757" selection-end="13757" vertical-scroll-proportion="0.0" vertical-offset="5079" max-vertical-offset="5655" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.css">
@@ -1180,162 +2118,209 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="1" selection-start="1941" selection-end="2005" vertical-scroll-proportion="-1.5" vertical-offset="735" max-vertical-offset="3960" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="456" column="36" selection-start="10332" selection-end="10332" vertical-scroll-proportion="0.41713223" vertical-offset="6616" max-vertical-offset="8940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/testStart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="15" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="44" selection-start="5537" selection-end="5537" vertical-scroll-proportion="-6.1666665" vertical-offset="1472" max-vertical-offset="1905" />
+        <state line="16" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="-3.0882354" vertical-offset="30" max-vertical-offset="2040" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="62" selection-start="1272" selection-end="1280" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1545">
+        <state line="53" column="85" selection-start="3364" selection-end="3373" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="22" selection-start="3051" selection-end="3051" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1050">
+        <state line="89" column="95" selection-start="5452" selection-end="5452" vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="1560">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/connect-busboy/package.json">
+    <entry file="file://$PROJECT_DIR$/lib/middleware.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="44" selection-end="49" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="780">
+        <state line="25" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/lib/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="1350">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/auth.js">
+    <entry file="file://$PROJECT_DIR$/lib/config/dummydata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1755">
+        <state line="13" column="31" selection-start="384" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/ckeditor.js">
+    <entry file="file://$PROJECT_DIR$/lib/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14880">
+        <state line="48" column="3" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="679" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="39" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="52" selection-start="3096" selection-end="3104" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="18" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1080">
           <folding>
-            <element signature="n#!!doc" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/config.js">
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+        <state line="30" column="8" selection-start="655" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="3750" max-vertical-offset="4230">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/contents.css">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+        <state line="54" column="26" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/libs/ckeditor/styles.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="439" selection-end="442" vertical-scroll-proportion="-5.076923" vertical-offset="3" max-vertical-offset="1755">
+        <state line="6" column="46" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/ng-ckeditor/ng-ckeditor.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="72" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="0" selection-end="761" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/editQuestion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="2552" selection-end="2552" vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/loginmodal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="32" selection-start="1379" selection-end="1495" vertical-scroll-proportion="-13.125" vertical-offset="135" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="4" selection-start="6569" selection-end="6569" vertical-scroll-proportion="0.0" vertical-offset="5085" max-vertical-offset="5520">
+        <state line="11" column="18" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.9583335" vertical-offset="22" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="42" selection-start="2909" selection-end="2909" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="2820">
+        <state line="30" column="30" selection-start="883" selection-end="883" vertical-scroll-proportion="-5.1923075" vertical-offset="315" max-vertical-offset="3885">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js">
+    <entry file="file://$PROJECT_DIR$/lib/controllers/subjectsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="18" selection-start="2726" selection-end="3175" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="1335">
+        <state line="63" column="7" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="10" selection-start="378" selection-end="383" vertical-scroll-proportion="-0.625" vertical-offset="210" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-9.423077" vertical-offset="655" max-vertical-offset="2940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/subjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/models/question.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="667" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="2145">
+        <state line="100" column="9" selection-start="3960" selection-end="3965" vertical-scroll-proportion="-13.884615" vertical-offset="1139" max-vertical-offset="2370">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/core-scripting.rnc">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="18" selection-start="6634" selection-end="6634" vertical-scroll-proportion="0.33333334" vertical-offset="3086" max-vertical-offset="5175">
+        <state line="22" column="10" selection-start="574" selection-end="574" vertical-scroll-proportion="-0.15243903" vertical-offset="405" max-vertical-offset="3450">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/addQuestion.js">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="1286" selection-end="1636" vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1065">
-          <folding>
-            <marker date="1405747928000" expanded="true" signature="2582:2594" placeholder="..." />
-            <marker date="1405747928000" expanded="true" signature="2905:2917" placeholder="..." />
-            <marker date="1405747928000" expanded="true" signature="3096:3108" placeholder="..." />
-          </folding>
+        <state line="26" column="104" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-15.0" vertical-offset="30" max-vertical-offset="1065">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/matchingQuestion2.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/timer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="54" selection-start="55" selection-end="55" vertical-scroll-proportion="0.02631579" vertical-offset="0" max-vertical-offset="735">
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="7" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaperController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="4703" selection-end="4703" vertical-scroll-proportion="1.63" vertical-offset="1682" max-vertical-offset="5595">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +2330,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>skillsmap:war</last-edited>
+          <last-edited>sample:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1358,7 +2343,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1381,7 +2366,6 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1393,7 +2377,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>pupilsboard</last-edited>
+          <last-edited>careermyntra</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1406,7 +2390,6 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

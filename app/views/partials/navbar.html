@@ -1,4 +1,3 @@
-
 <div ng-controller="NavbarCtrl">
     <nav class="navbar navbar-red navbar-fixed-top" role="navigation">
         <div class="container">
@@ -9,15 +8,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/ExamCue-logo.png" /></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Take a Quiz <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Take a Quiz <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a ng-href="/myDashboard" ng-show="currentUser">Dashboard</a></li>
-                            <li><a href="/subjects">Take Sample Test</a></li>
+                            <li><a href="/take-test/subjects">Take Sample Test</a></li>
+                            <li><a ng-show="currentUser" ng-href="/take-test/subject/UPSCPapers/quizzes">Take Full
+                                Length Test</a></li>
                             <li><a href="/invite">Send an Invitation</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Nav header</li>
@@ -28,83 +29,56 @@
                     </li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#interviews">Interviews</a></li>
-                    <li><a ng-hide="currentUser" ng-href="#login">Login</a></li>
+                    <!--<li><a ng-hide="currentUser" ng-href="#login">Login</a></li>-->
                     <li><a href="" ng-show="currentUser" ng-click="logout()"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>
+
+                    <!-- ********************************************************
+					login form
+					********************************************************* -->
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
+
+                        <div class="login-frm dropdown-menu" role="menu">
+                            <form class="form-signin">
+                                <div class="social-box">
+                                    <div class="row mg-btm">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-block btn-social btn-sm btn-facebook">
+                                                <i class="fa fa-facebook"></i>LogIn with Facebook
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-block btn-social btn-sm btn-google-plus">
+                                                <i class="fa fa-google-plus"></i>LogIn with Google
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">or</div>
+                                <div class="main">
+
+                                    <input type="text" class="form-control" placeholder="Email" autofocus>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                    <span class="clearfix"></span>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Keep me logged in
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-lg btn-block btn-danger">Login</button>
+
+                            </form>
+                            <p class="forgot-password"><a>Forgot password</a></p>
+                        </div>
+
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-    <!--<nav class="navbar navbar-blue navbar-fixed-top" role="navigation">-->
-        <!--<div class="container-fluid">-->
-            <!--<div class="navbar-header">-->
-                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
-                    <!--<span class="sr-only">Toggle navigation</span>-->
-                    <!--<span class="icon-bar"></span>-->
-                    <!--<span class="icon-bar"></span>-->
-                    <!--<span class="icon-bar"></span>-->
-                <!--</button>-->
-                <!--<a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href=""><i class="fa fa-mortar-board"></i> Menu<span class="caret"></span></a>-->
-                <!--<ul class="dropdown-menu">-->
-                    <!--<li><a ng-href="/">Home</a></li>-->
-                    <!--<li><a ng-href="./news">News</a></li>-->
-                    <!--<li><a ng-href="/posts">Blog</a></li>-->
-                    <!--<li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/viewQuestions">Search Questions</a></li>-->
-                    <!--&lt;!&ndash;<li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/uploadQuestions">Upload Questions</a></li>&ndash;&gt;-->
-                    <!--<li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/tags">View Tags</a></li>-->
-                    <!--<li><a ng-show="currentUser && currentUser.role == 'admin'"  ng-href="/questions/summary">Question Summary</a></li>-->
-                    <!--<li><a ng-href="/dashboard" ng-show="currentUser && currentUser.role == 'admin'">Dashboard</a></li>-->
-                    <!--<li><a ng-href="/myDashboard" ng-show="currentUser && currentUser.role == 'user'">Dashboard</a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<div class="navbar-collapse collapse" >-->
-                    <!--<ul class="nav navbar-nav navbar-right">-->
-                        <!--<div ng-show="currentUser">-->
-                            <!--<li><a class="dropdown-header">Welcome, {{currentUser.name}}</a></li>-->
-                                <!--<li class="dropdown active">-->
-                                    <!--<a href="" class="dropdown-toggle" data-toggle="dropdown"> <i class="glyphicon glyphicon-user"></i> <span class="caret"></span></a>-->
-                                    <!--<ul class="dropdown-menu" role="menu">-->
-                                        <!--<li><a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings</a></li>-->
-                                        <!--<li><a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>-->
-                                        <!--<li class="divider"></li>-->
-                                        <!--<li><a href="" ng-click="logout()"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;&nbsp;Logout</a></li>-->
-                                    <!--</ul>-->
-                            <!--</li>-->
-                        <!--</div>-->
-                        <!--<div ng-hide="currentUser">-->
-                            <!--&lt;!&ndash;<a href="" ng-click="login()" role="button" class="btn btn-primary btn-lg">Login</a>&ndash;&gt;-->
-                            <!--<li><a class="btn btn-primary btn-lg" ng-hide="currentUser" ng-click="login()" role="button">Login</a></li>-->
-                        <!--</div>-->
-                    <!--</ul>-->
-                <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</nav>-->
-    <!--<div class="container">-->
-        <!--<div>-->
-        <!--<div class="subnav">-->
-            <!--<ul>-->
-                <!--<li  ng-class="{active: isActive('/login')}"><a ng-hide="currentUser" ng-href="/login">Login</a>-->
-                <!--&lt;!&ndash;<li  ng-class="{active: isActive('/signup')}"><a ng-hide="currentUser" ng-href="/signup">Sign up</a></li>&ndash;&gt;-->
-                <!--<li ng-class="{active: isActive('/dashboard')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/dashboard">Dashboard</a></li>-->
-                <!--<li ng-class="{active: isActive('/myDashboard')}"><a ng-show="currentUser && currentUser.role == 'user'" ng-href="/myDashboard">My Dashboard</a></li>-->
-                <!--&lt;!&ndash;<li ng-class="{active: isActive('/skills')}"><a ng-show="currentUser && currentUser.role == 'admin'" ng-href="/skills" ng-class="{active: isActive('/skills')}">Skills Chart</a></li>&ndash;&gt;-->
-                <!--<li class="dropdown" ng-class="{active: isActive('/viewQuestions') || isActive('/uploadQuestions')}">-->
-                    <!--<a ng-show="currentUser && currentUser.role == 'admin'"  data-toggle="dr  opdown" ng-href="" class="dropdown-toggle">Manage Questions</a>-->
-                    <!--<ul class="dropdown-menu">-->
-                        <!--<li><a ng-href="/viewQuestions">Search Questions</a></li>-->
-                        <!--<li><a ng-href="/uploadQuestions">Upload Questions</a></li>-->
-                    <!--</ul>-->
-                <!--</li>-->
-                <!--<li class="dropdown">-->
-                    <!--<a class="dropdown-toggle" data-toggle="dropdown" ng-show="currentUser && currentUser.role == 'admin'">Manage Users</a>-->
-                    <!--<ul class="dropdown-menu">-->
-                        <!--<li><a href="#navs">Manage Users</a></li>-->
-                    <!--</ul>-->
-                <!--</li>-->
-                <!--&lt;!&ndash;<li ng-class="{active: isActive('/takeTest')}"><a ng-show="currentUser" ng-href="/takeTest">Take a Test</a></li>&ndash;&gt;-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
    </div>
 </div>

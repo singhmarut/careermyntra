@@ -39,20 +39,6 @@ angular.module('pupilsboardApp')
             return parseInt(splitNames[splitNames.length - 1]);
         };
 
-        $scope.getCategoryPapers = function (){
-            var url = '/api/questionPaper/category/' + $routeParams.category;
-            if (angular.isString($routeParams.subject)){
-                url += "?tag=" + $routeParams.subject;
-            }
-
-            $http.get(url).error(function(err){
-                console.log('Error while getting topics ' + err);
-            })
-            .success(function(data){
-                console.log(data);
-                $scope.papers = data;
-            });
-        };
 
         $scope.loadTest = function(){
 
@@ -239,7 +225,8 @@ angular.module('pupilsboardApp')
 //            $scope.curQuestionIndex = index;
 //        };
 
-        $scope.markAnswered = function(question){
+        $scope.markAnswered = function(){
+            var question = $scope.questionPaper.sections[0].questions[$scope.curQuestionIndex];
             var index = countMap['unanswered'].indexOf(question._id);
             $scope.markVisited(question);
             if (index != -1){
@@ -251,7 +238,8 @@ angular.module('pupilsboardApp')
             }
         };
 
-        $scope.markVisited = function(question){
+        $scope.markVisited = function(){
+            var question = $scope.questionPaper.sections[0].questions[$scope.curQuestionIndex];
             //var question = $scope.curSection.questions[idx];
             var index = countMap['nonvisited'].indexOf(question._id);
             if (index != -1){
@@ -259,7 +247,8 @@ angular.module('pupilsboardApp')
             }
         };
 
-        $scope.markForReview = function(question){
+        $scope.markForReview = function(){
+            var question = $scope.questionPaper.sections[0].questions[$scope.curQuestionIndex];
             var index = countMap['marked'].indexOf(question._id);
             if (index == -1){
                 countMap['marked'].push(question._id);

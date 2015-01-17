@@ -1,0 +1,56 @@
+/*   BASE  > Base rules for graphics
+
+     Use, ONLY AS NECESSARY, to pull in graphics
+	 -----------------------------------------------------------
+	 1) Styles should NOT apply to a specific carrier
+            a) For example, if rules specify an image for a specific carrier, add those rules to CARRIER or APP
+
+
+     This style sheet is for:
+     --------------------------      
+      - graphics that are REUSED throughout the app
+         - icons
+         - animated gifs
+         - pointers
+
+
+     DO NOT ADD:
+     ----------------
+      - POSITIONING INFORMATION such as margins, top, left, position: rules, etc.
+      - graphics that ONLY display in landing or registration pages; place those rules in those style sheets
+
+
+	  NOTE:
+	  --------------
+	  - current styles do not use sprites -- will need to update rules for sprites
+	  
+*/
+
+/*************************************************************************/
+/*              I C O N   S H A R E D   S T Y L E S                      */
+/*************************************************************************/
+
+
+.structure{
+	background: url('../../images/icon-structure.png') no-repeat 0 0;
+	width: 194px;
+	height: 175px;
+}
+.current-affairs{
+	background: url('../../images/icon-affairs.png') no-repeat 0 0;
+}
+.topic{
+	background: url('../../images/icon-question.png') no-repeat 0 0;
+}
+.analysis{
+	background: url('../../images/icon-analysis.png') no-repeat 0 0;
+}
+.measurement{
+	background: url('../../images/icon-measurement.png') no-repeat 0 0;
+}
+.blog{
+	background: url('../../images/icon-blog.png') no-repeat 0 0;
+}
+.leads{
+	background: url('../../images/icon-lead.png') no-repeat 0 0;
+}

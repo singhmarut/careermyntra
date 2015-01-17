@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <title></title>
+</head>
+<body>
+<form method="post" action="/echo/html/" ajax="true">
+
+    <span id="result"><a href="http://wp.me/p2O9K2-b">jQuery + AJAX form submit script.</a></span>
+
+    <span>
+        <label>Message: </label>
+        <input type="text" name="html" placeholder="Howdy..." />
+    </span>
+
+    <span>
+        <label><img id="loadingimg" src="http://dev.cloudcell.co.uk/bin/loading.gif"/>   </label>
+        <input type="submit" value="Submit" />
+    </span>
+
+</form>
+</body>
+<script>
+    $(document).ready(function(e) {
+
+        $("form[ajax=true]").submit(function(e) {
+
+            e.preventDefault();
+
+            var form_data = $(this).serialize();
+            var form_url = 'http://10.0.1.13:9000/'
+            var form_method = $(this).attr("method").toUpperCase();
+
+            $("#loadingimg").show();
+
+            $.ajax({
+                url: form_url,
+                type: 'GET',
+                cache: false,
+                crossDomain: true,
+                headers: {"X-Test-Header": "test-value"},
+                success: function(returnhtml){
+                    //$("#result").html(returnhtml);
+                    $("#loadingimg").hide();
+                }
+            });
+
+        });
+
+    });
+</script>
+</html>

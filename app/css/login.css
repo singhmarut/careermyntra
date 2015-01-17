@@ -1,0 +1,58 @@
+﻿.login-frm {
+	width: 300px;
+	background-color: #e6e6e6;
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+}
+
+.login-frm.dropdown-menu{
+	padding: 0 18px;
+}
+.login-frm .checkbox{
+	padding-left: 1px;
+	margin: 2px 0 7px 0;
+}
+.login-frm .btn{
+	font-size: 17px;
+}
+.login-frm .btn-lg{
+	padding: 9px 12px;
+}
+.forgot-password,
+.forgot-password a{
+	margin-top: 5px;
+	color: #d9534f;
+	font-size: 15px;
+}
+.social-box {
+	margin: 0 auto;
+	padding: 18px 0;
+	padding-bottom: 2px;
+}
+.social-box  .btn{
+	border-radius: 0;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 9px;
+}
+.mg-btm { margin-bottom: 7px;}
+.form-signin .main {
+	padding: 2px 0;
+}
+.login-footer {
+	background: #f0f0f0;
+	margin: 0 auto;
+	border-top: 1px solid #dadada;
+	padding: 20px;
+}
+.form-signin input[type="password"],
+.form-signin input[type="text"] {
+	margin-bottom: 6px;
+	border-radius: 0;
+	padding: 22px 17px 21px;
+	font-size: 15px;
+}
+.form-signin input[type="password"]{
+	margin-bottom: 0;
+}

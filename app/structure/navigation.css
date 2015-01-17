@@ -1,0 +1,200 @@
+/*   BASE  > Base rules for navigation
+
+     Use, ONLY AS NECESSARY, to style NAVIGATIONAL pieces
+	 -----------------------------------------------------------
+	 1) Styles should NOT apply to a specific carrier
+            a) For example, if rules specify a color for a specific carrier, add those rules to CARRIER or APP
+
+     2) Navigational pieces include menus, tabs, and subtabs 
+
+
+     This style sheet is for:
+     --------------------------      
+      - site-nav
+	  - tabs-main
+	  - sidebar-subnav 
+	  - profile-tabs
+	  - .nav-subsection-links
+	  - #nav-subsection
+
+*/
+
+/*************************************************************/
+/*                  S I T E     N A V                        */
+/*************************************************************/
+
+/***Navigation***/
+.navbar-red {
+  /*red:ef383a*/
+  min-height: 75px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin: 0;
+  border: 0;
+  font-size: 24px;
+  background-color: #ffffff;
+}
+.navbar-red .navbar-brand {
+  color: #000000;
+}
+.navbar-red .navbar-brand:hover,
+.navbar-red .navbar-brand:focus {
+  color: #000000;
+  background-color: transparent;
+}
+.navbar-red .navbar-text {
+  color: #000000;
+}
+.navbar-red .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-red .navbar-nav > li > a:hover,
+.navbar-red .navbar-nav > li > a:focus {
+  color: #000000;
+  background-color: transparent;
+}
+.navbar-red .navbar-nav > .active > a,
+.navbar-red .navbar-nav > .active > a:hover,
+.navbar-red .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #ef383a;
+}
+.navbar-red .navbar-nav > .disabled > a,
+.navbar-red .navbar-nav > .disabled > a:hover,
+.navbar-red .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-red .navbar-toggle {
+  border-color: #ddd;
+
+  padding: 7px 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navbar-red .navbar-toggle:hover,
+.navbar-red .navbar-toggle:focus {
+  background-color: #0362a7;
+}
+.navbar-red .navbar-toggle .icon-bar {
+  background-color: #dddddd;
+}
+.navbar-red .navbar-collapse,
+.navbar-red .navbar-form {
+  border-color: #ef383a;
+}
+.navbar-red .navbar-nav > .open > a,
+.navbar-red .navbar-nav > .open > a:hover,
+.navbar-red .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #ef383a;
+}
+
+ .navbar-red .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+    font-size:18px;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #ef383a;
+  }
+@media (max-width: 767px) {
+	.figure-block-red .text-left{
+		text-align: center;
+	}
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+    background-color: transparent;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #ef383a;
+  }
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-red .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-red .navbar-link {
+  color: #000000;
+}
+.navbar-red .navbar-link:hover {
+  color: #000000;
+}
+.navbar-red .btn-link {
+  color: #000000;
+}
+.navbar-red .btn-link:hover,
+.navbar-red .btn-link:focus {
+  color: #000000;
+}
+.navbar-red .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-red .btn-link:hover,
+.navbar-red .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-red .btn-link:focus {
+  color: #ccc;
+}
+
+.navbar-red .navbar-nav > li > a {
+    padding: 20px 44px;
+}
+.navbar-red .navbar-brand {
+  height: 68px;
+  padding: 0;
+}
+
+/***Navigation***/
+
+
+/************** test nav ****************/
+
+.side-left ul{
+	list-style: none;
+	padding: 0 15px;
+	margin: 0;
+}
+.side-left ul li a{
+	color: #ccc;
+	text-decoration:none;
+	margin: 10px 0;
+	display: block;
+	font-size: 16px;
+}
+.side-left ul li a:hover, .side-left ul li a.active {
+	color: #666;
+}
+
+.test-content .header-actions ul{
+	list-style: none;
+	padding: 0 15px;
+	margin: 0;
+}
+.test-content .header-actions ul li{
+	display: inline-block;
+}
+
+.test-app-header nav ul{
+	margin: 0;
+}
+.test-app-header nav li,
+.test-app-header .navbar-nav > li > a{
+	display: inline-block;
+	list-style: none;
+	padding: 19px 20px 15px;
+	font-size: 16px;
+	color: #000;
+}
+
+.test-app-header .navbar-right{
+	margin: 0 50px 0 0;
+}
+

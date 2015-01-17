@@ -1,0 +1,271 @@
+/*   BASE  > Base rules for page layouts
+
+     Use, ONLY AS NECESSARY, to style layout pieces:
+	 -----------------------------------------------------------
+	 1) Styles should NOT apply to a specific carrier
+          a) For example, if rules specify colors for a specific carrier, consider adding those rules to CARRIER
+		  
+		
+	------------------------------
+    TOC : layout styles include:
+    ------------------------------
+	  - html & body selectors
+      - page containers 
+	     - container-outer
+		 - container-content
+		 - container-content-inner
+      - main ( see notes below )
+	  - .subsection-main
+	  - .page-fullWidth
+	  - #cni-item-details
+      - sidebar
+	     - sidebar-inner
+		 - sidebar-subsection
+		 - sidebar-subsection-buttons
+	  - columns
+      - page pointers
+      - main page headers
+	     - header pointer
+		 - app-main-header
+      - popupWindows (different from dialogs, etc. in that popupWindows open in a new window)   
+ */
+ 
+/**********************************************************************/
+/*                  H T M L   &   B O D Y                             */
+/**********************************************************************/ 
+html {
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+body {
+    font-family: 'Futura LT Light', sans-serif;
+    min-width:300px;
+    margin-bottom:170px;
+	width: 100%;
+	height: 100%;
+}
+
+/****************************************************************/
+/*            P A G E     C O N T A I N E R S                   */
+/****************************************************************/
+
+/*Wrapper*/
+#landing{
+	min-height: calc(100% - 80px);
+}
+#offer {
+	position: relative;
+	background: #808080;
+	padding: 60px 0 65px;
+	font-family: 'HelveticaNeue-Light',  'Helvetica',Arial,sans-serif;
+	min-height: 100%;
+}
+.col-cont{ min-height: 100%;}
+#counter{z-index: 1; position: relative;}
+
+
+.wrapper-red{
+    background-color:#ef383a;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.figure-block-red .structure{top: -174px; right: 35%; position: absolute;}
+/*Wrapper ends*/
+
+/**************************** SLIDER ******************************/
+
+.slier-container{
+	margin-top: 80px;
+}
+.slider{ width: 100%; margin-bottom: 210px;}
+.slide-one{
+	margin-top: 115px;
+}
+
+.img-container{
+	float: left;
+	text-align: center;
+	width: 50%;
+}
+.img-container img{
+	max-width: 100%;
+}
+.img-container a{
+	color: #ef383a;
+	font-size: 14px;
+	font-family: 'Futura LT Bold';
+	display: block;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+.detail-container{
+	color: #999999;
+	float: right;
+	text-align: center;
+}
+.detail-container p, 
+.detail-container span{
+	font-size: 36px;
+	margin: 0;
+}
+.detail-container span{
+	font-family: 'Futura LT Bold';
+	display: block;
+}
+
+.slide-two{
+	margin-top: 10px;
+}
+.slide-two .detail-container{
+	margin-top: 95px;
+}
+.slide-two .img-container a{
+	margin-right: 130px;
+}
+
+.slide-three{
+	margin-top: 60px;
+}
+.slide-three .img-container{
+	margin-top: 23px;
+}
+.slide-three .detail-container{
+	width: 322px;
+}
+/************************* end slider ************************/
+
+/********************************** test dashboard *****************************************/
+#test-wrapper{
+	padding: 0;
+	margin: 0;
+}
+#test-wrapper .container{
+	width: 100%;
+	padding: 0;
+}
+
+#test-wrapper .navbar-brand{
+	margin: 5px 0 0 50px;
+}
+
+.side-left {
+	position: fixed;
+	padding: 0;
+	width: 250px;
+	z-index: 2;
+	border-right: 1px solid #ccc;
+}
+.test-content,
+#test-review {
+	position: fixed;
+	padding: 0;
+	width: 100%;
+	z-index: 1;
+}
+.test-content{padding-left: 250px;}
+.side-left,
+.test-content,
+#test-review{
+	height: calc( 100% - 75px);
+	margin-top: 75px;
+	
+}
+
+.review-body .panel-body{
+	padding: 15px 5%;
+}
+
+.side-left .side-header{
+	background: #ef383a;
+	color: #fff;
+	text-align: center;
+}
+
+.test-content-spliter{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#test-content-main{
+	position: absolute;
+	margin: 0;
+	left: 0;
+	height: 100%;
+	overflow: auto;
+	right: 250px;
+}
+.test-app {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+	font-family: 'Helvetica';
+}
+.test-app.fixed-header {	
+padding-bottom: 60px;
+overflow: hidden;
+}
+.test-app-header {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	height: 56px;
+	z-index: 99;
+	background-color: #e6e6e6;
+}
+.test-app.fixed-header> .test-app-body {
+	height: calc(100% - 85px);
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 20px 15px 15px 50px;
+	position: relative;
+}
+
+#test-content-aside {
+	position: absolute;
+	height: 100%;
+	width: 250px;
+	right: 0;
+	overflow: auto;
+}
+
+.question-number{
+	position: absolute;
+	min-width: 40px;
+	min-height: 40px;
+	background: #333;
+	color: #fff;
+	font-size: 16px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 40px;
+	padding: 0 10px;
+}
+.question-detail{
+	padding: 20px;
+}
+.module-header {
+	position: relative;
+	height: 56px;
+	z-index: 99;
+	background: #ef383a;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+.module-header i{
+	font-size: 30px;
+	float: left;
+	margin: 5px 10px 0 0;
+}
+.test-footer{
+	position: absolute;
+	height: 54px;
+	bottom: 0;
+	width: 100%;
+	background: #ccc;
+}

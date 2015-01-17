@@ -1,0 +1,40 @@
+
+<div ng-include="'partials/navbar.html'"></div>
+<div id="dashboard" ng-init="getCategoryPapers('full-papers')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 question-year-wise">
+                <i class="fa fa-caret-left"></i>
+                <i class="fa fa-caret-right"></i>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 questions-overview">
+                        <div class="pull-left">Topic-wise Test Paper
+                            <span class="attempt">0/{{papers.length}} attempted</span>
+                        </div>
+                        <div class="pull-right question-completed">
+                            <span>3%</span>completed
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <th>Paper Name</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="paper in papers | orderBy : sortByName" ng-switch on="paper.score">
+                            <td>{{paper.name}}</td>
+                            <td>{{paper.score}}/600</td>
+                            <td ng-switch-when="undefined"><a ng-href="/questionPaper/{{paper._id}}">ATTEMPT</a></td>
+                            <td ng-switch-default><a ng-href="/questionPaper/{{paper._id}}">RE-ATTEMPT</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

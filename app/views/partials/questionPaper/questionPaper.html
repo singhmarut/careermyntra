@@ -1,0 +1,98 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="test-cont" ng-controller="QuestionpaperCtrl" ng-init="loadTest()">
+    <!--CONTENT-->
+    <section id="test-dashboard" class="container">
+        <aside class="side-left">
+            <div class="side-header">
+                <a href="#menu" class="dropdown-toggle" data-toggle="dropdown"><h3>Question List <b class="caret"></b></h3></a>
+                <!--<div class="side-body dropdown-menu" role="menu">-->
+                    <!--<nav class="side-nav col-sm-12">-->
+                        <!--&lt;!&ndash; open nav ul &ndash;&gt;-->
+                        <!--<ul>-->
+                            <!--<li class="side-nav-item">-->
+                                <!--<a href="messages.html">Q1. Regarding “Secular” word, consider the following and choose the correct option from below ......</a>-->
+                            <!--</li>-->
+                        <!--</ul>&lt;!&ndash; /nav ul&ndash;&gt;-->
+                    <!--</nav>-->
+                <!--</div>-->
+            </div>
+            <div ng-repeat="section in questionPaper.sections">
+            <div class="side-body" ng-repeat="question in section.questions">
+                <nav class="side-nav">
+                    <!-- open nav ul -->
+                    <ul>
+                        <li class="side-nav-item">
+                            <a href="" ng-click="setCurrentIdx($index)">Q. {{$index+1}} <p ng-bind-html="section.questions[$index].content | limitTo:30"></p></a>
+                        </li>
+                    </ul><!-- /nav ul-->
+                </nav>
+            </div>
+            </div>
+        </aside>
+        <section class="test-content">
+            <div class="test-content-spliter">
+                <section id="test-content-main">
+                    <div class="test-app fixed-header">
+                        <div class="test-app-header">
+                            <nav class="pull-left">
+                                <ul>
+                                    <li>Answered {{countMap['answered'].length}}</li>
+                                    <li>Unanswered {{countMap['unanswered'].length}}</li>
+                                    <li>Marked {{countMap['marked'].length}}</li>
+                                    <li>Unvisited {{Math.max(0,countMap['nonvisited'].length)}}</li>
+                                </ul>
+                            </nav>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Subject <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="test-app-body" ng-repeat="section in questionPaper.sections">
+                            <div class="panel panel-blue" ng-repeat="question in section.questions"
+                                 ng-show="curQuestionIndex == $index">
+                                <p ng-show="currentUser && currentUser.role == 'admin'">Question Id : {{question._id}}</p>
+                                <div ng-if="curQuestionIndex == $index">
+                                    <div ng-init="markVisited(question)"></div>
+                                </div>
+                                <div class="question-number">{{$index + 1}}.</div>
+                                <div class="question-detail">
+                                    <p ng-bind-html="question.content"></p> <br/>
+                                    <ul class="numbering" ng-repeat="choice in question.choices">
+                                        <li><input type="radio" value="true" ng-checked="choice.isUserAnswer"
+                                                ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span></li>
+                                    </ul>
+                                    </p><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="test-content-aside">
+                    <div class="module-header">
+                        <p class="module-title">
+                            <i class="fa fa-clock-o"></i> <span id="timer"></span><br/>PAUSE
+                        </p>
+                    </div>
+                </section>
+                <footer class="test-footer">
+                    <button type="submit" class="btn btn-lg btn-dgray" ng-show="curQuestionIndex > 0" ng-click="movePrev()">Previous</button>
+                    <button type="submit" class="btn btn-lg btn-dgray" ng-click="">Clear Response</button>
+                    <button type="submit" class="btn btn-lg btn-dgray" ng-click="markForReview();moveNext()">Mark for review & next</button>
+                    <button type="submit" class="btn btn-lg btn-danger" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext()">Save & next</button>
+                    <button type="submit" class="btn btn-lg btn-danger pull-right" ng-click="finish()">Submit</button>
+                </footer>
+            </div>
+        </section>
+    </section>
+</div>
+
