@@ -15,6 +15,9 @@ console.log(process.env.PORT);
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var config = require('./lib/config/config');
+
+console.log('mongo URI is : ' + config.mongo.uri);
+
 var db = mongoose.connect(config.mongo.uri, config.mongo.options);
 
 // Bootstrap models
