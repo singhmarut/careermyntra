@@ -12,7 +12,7 @@ var express = require('express'),
  */
 console.log(process.env.PORT);
 // Set default node environment to development
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = process.argv[2] || 'development';
 
 var config = require('./lib/config/config');
 
