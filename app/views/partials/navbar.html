@@ -45,11 +45,11 @@
                     <!-- ********************************************************
 					login form
 					********************************************************* -->
-                    <li ng-show="!currentUser">
+                    <li ng-show="!currentUser" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
 
                         <div class="login-frm dropdown-menu" role="menu">
-                            <form class="form-signin">
+                            <form class="form-signin" name="form" ng-submit="loginToPortal(form)">
                                 <div class="social-box">
                                     <div class="row mg-btm">
                                         <div class="col-md-12">
@@ -69,8 +69,8 @@
                                 <div class="text-center">or</div>
                                 <div class="main">
 
-                                    <input type="text" class="form-control" placeholder="Email" autofocus>
-                                    <input type="password" class="form-control" placeholder="Password">
+                                    <input type="text" class="form-control" ng-model="user.email" autofocus>
+                                    <input type="password" class="form-control" ng-model="user.password">
                                     <span class="clearfix"></span>
                                 </div>
                                 <div class="checkbox">
@@ -79,10 +79,10 @@
                                     </label>
                                 </div>
 
-                                <button type="submit" class="btn btn-lg btn-block btn-danger">Login</button>
+                                <button type="submit" class="btn btn-lg btn-block btn-success">Login</button>
 
                             </form>
-                            <p class="forgot-password"><a>Forgot password</a></p>
+                            <p class="forgot-password"><a ng-href="/forgotPassword">Forgot password</a></p>
                         </div>
 
                     </li>
