@@ -1,5 +1,15 @@
-<div ng-include="'partials/navbar'"></div>
+<!--
+  ~ Copyright (c) 2015. All rights reserved.
+  ~
+  ~   This file is created and owned by careermyntra. software licensed to you under enterprise Software License Agreement (the "License")
+  ~   You may not use this file except in compliance with the License. For licensing contact: support@careermyntra.com
+  ~
+  ~   Unauthorized reverse engineering, disassembly or modifications prohibited.
+  ~   CareerMyntra Confidential
+  -->
 
+<div ng-include="'partials/navbar'"></div>
+<div id="test-wrapper">
 <div class="test-cont" ng-controller="QuestionpaperCtrl" ng-init="loadTest()">
     <!--CONTENT-->
     <section id="test-dashboard" class="container">
@@ -67,9 +77,9 @@
                                 <div class="question-number">{{$index + 1}}.</div>
                                 <div class="question-detail">
                                     <p ng-bind-html="question.content"></p> <br/>
-                                    <ul class="numbering" ng-repeat="choice in question.choices">
-                                        <li><input type="radio" value="true" ng-checked="choice.isUserAnswer"
-                                                ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold">{{$index+1}}.</span> <span>{{choice.choice}}</span></li>
+                                    <ul class="numbering">
+                                        <li ng-repeat="choice in question.choices"><input type="radio" value="true" ng-checked="choice.isUserAnswer"
+                                                ng-click="markAnswered(question);selectQuestionOption(question,choice)"> <span class="font-bold"> </span> <span>{{choice.choice}}</span></li>
                                     </ul>
                                     </p><br/>
                                 </div>
@@ -94,5 +104,6 @@
             </div>
         </section>
     </section>
+</div>
 </div>
 

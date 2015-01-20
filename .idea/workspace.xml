@@ -5,229 +5,137 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc00af51-0919-4e72-9a6f-9304e475ad74" name="Default" comment="Changes for Question Editing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen-satelite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen-wifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/computer-screen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/icon-structure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/bootstrap1.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/blog/feed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/globalFooter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/globalFooter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/globalHeader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/globalHeader.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/graphics.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/graphics.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/layouts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/layouts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/navigation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/navigation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/old-custom .css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/old-custom1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/popups.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/popups.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/test.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/css/structure/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/structure/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/font-awesome-4.1.0/less/variables.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-114-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-144-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-57-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/apple-touch-icon-72-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/ico/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Coding app.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Devices.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/My Apps.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Octocat-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/RegEdit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows 8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows Store.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows alt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/Windows.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/appbar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/avatar-movie-puzzles-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-appbar-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-appbar-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-charms.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-headermenu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-hub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/detail-themes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/github-icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/github.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/h2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero3-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/hero3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/less-css-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles-wide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles-widepeek.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/metro-tiles.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/octocat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-dark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-light.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-dark-small.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-dark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-light-small.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/progress-indeterminate-ring-light.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/sample5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/slide1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/slider2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide-collection-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile-wide.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/tile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/windows-8-fish.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/content/img/windows_8_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/download.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/dummy-tranformer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/folder_plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/googleplus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/plus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/question_mark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/trash-empty.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/yeoman.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/custom1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/paper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/partials/hierarchyTreed3js.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/images/ExamCue-logo.png" afterPath="$PROJECT_DIR$/app/images/ExamCue-logo-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/LICENSE" afterPath="$PROJECT_DIR$/app/bootmetro/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-charms.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-charms.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-responsive.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-responsive.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-tiles.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-tiles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro-ui-light.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro-ui-light.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootmetro.min.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootmetro.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootstrap-responsive.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/bootstrap.css" afterPath="$PROJECT_DIR$/app/bootmetro/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/datepicker.css" afterPath="$PROJECT_DIR$/app/bootmetro/datepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/demo.css" afterPath="$PROJECT_DIR$/app/bootmetro/demo.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/icomoon.css" afterPath="$PROJECT_DIR$/app/bootmetro/icomoon.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-tiles-old.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-tiles-old.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-dark.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-dark.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-light.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-light.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/bootmetro/metro-ui-semilight.css" afterPath="$PROJECT_DIR$/app/bootmetro/metro-ui-semilight.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.eot" afterPath="$PROJECT_DIR$/app/font/IcoMoon.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.svg" afterPath="$PROJECT_DIR$/app/font/IcoMoon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.ttf" afterPath="$PROJECT_DIR$/app/font/IcoMoon.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/IcoMoon.woff" afterPath="$PROJECT_DIR$/app/font/IcoMoon.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/LICENSE.txt" afterPath="$PROJECT_DIR$/app/font/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.eot" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.svg" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.ttf" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/IcoMoon.woff" afterPath="$PROJECT_DIR$/app/font/icomoon97172/IcoMoon.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/index.html" afterPath="$PROJECT_DIR$/app/font/icomoon97172/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/license.txt" afterPath="$PROJECT_DIR$/app/font/icomoon97172/license.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/icomoon97172/style.css" afterPath="$PROJECT_DIR$/app/font/icomoon97172/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-bold-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-bold-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-light-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-light-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-regular-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-regular-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.eot" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.svg" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.ttf" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/font/opensans-semibold-webfont.woff" afterPath="$PROJECT_DIR$/app/font/opensans-semibold-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.dev.svg" afterPath="$PROJECT_DIR$/app/fonts/iconFont.dev.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.eot" afterPath="$PROJECT_DIR$/app/fonts/iconFont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.json" afterPath="$PROJECT_DIR$/app/fonts/iconFont.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.svg" afterPath="$PROJECT_DIR$/app/fonts/iconFont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.ttf" afterPath="$PROJECT_DIR$/app/fonts/iconFont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/iconFont.woff" afterPath="$PROJECT_DIR$/app/fonts/iconFont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.svg" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.ttf" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/fonts/metroSysIcons.woff" afterPath="$PROJECT_DIR$/app/fonts/metroSysIcons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/ExamCue-logo.png" afterPath="$PROJECT_DIR$/app/images/ExamCue-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/images/logo.png" afterPath="$PROJECT_DIR$/app/images/logo.png" />
+    <list default="true" id="bc00af51-0919-4e72-9a6f-9304e475ad74" name="Default" comment="mongo url changes&#10;">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootmetro-charms.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootmetro-icons-ie7.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootmetro-panorama.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootmetro-pivot.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootmetro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/bootmetro/bootstrap.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/404.html" afterPath="$PROJECT_DIR$/app/views/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/analytics/TestPaperAnalysis.html" afterPath="$PROJECT_DIR$/app/views/partials/analytics/TestPaperAnalysis.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/account.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/account.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/addInstruction.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/addInstruction.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/addNewSchedule.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/addNewSchedule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/addQuestion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/addQuestionToPaper.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/addQuestionToPaper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/admin.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/env/all.js" afterPath="$PROJECT_DIR$/lib/config/env/all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/allPosts.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/allPosts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/analyticsController.js" afterPath="$PROJECT_DIR$/lib/controllers/analyticsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js" afterPath="$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/candidate/answerSheet.html" afterPath="$PROJECT_DIR$/app/views/partials/candidate/answerSheet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/answerSheet.js" afterPath="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/api.js" afterPath="$PROJECT_DIR$/lib/controllers/api.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/auth.js" afterPath="$PROJECT_DIR$/app/scripts/services/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/blog.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/blog.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/blogController.js" afterPath="$PROJECT_DIR$/lib/controllers/blogController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/bootstrap-additions.css" afterPath="$PROJECT_DIR$/app/styles/bootstrap-additions.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/structure/buttons.css" afterPath="$PROJECT_DIR$/app/structure/buttons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html" afterPath="$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/candidateDashboard.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/candidateDashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/candidate/candidateReport.html" afterPath="$PROJECT_DIR$/app/views/partials/candidate/candidateReport.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/cloneQuestion.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/cloneQuestion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/config.js" afterPath="$PROJECT_DIR$/lib/config/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/contact.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/contact.js" afterPath="$PROJECT_DIR$/lib/controllers/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/contact.js" afterPath="$PROJECT_DIR$/lib/models/contact.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/feedback/contactUs.html" afterPath="$PROJECT_DIR$/app/views/partials/feedback/contactUs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/createPaper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/dashboard.html" afterPath="$PROJECT_DIR$/app/views/partials/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/dashboard.js" afterPath="$PROJECT_DIR$/lib/controllers/dashboard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/env/development.js" afterPath="$PROJECT_DIR$/lib/config/env/development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/dummyPaper.html" afterPath="$PROJECT_DIR$/app/views/partials/dummyPaper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/dummyPaper.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/dummyPaper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/dummydata.js" afterPath="$PROJECT_DIR$/lib/config/dummydata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/editPost.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/editPost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/editQuestion.html" afterPath="$PROJECT_DIR$/app/views/partials/editQuestion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/email.js" afterPath="$PROJECT_DIR$/lib/controllers/email.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/evaluationKeys.html" afterPath="$PROJECT_DIR$/app/views/partials/evaluationKeys.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/express.js" afterPath="$PROJECT_DIR$/lib/config/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/feed.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/feed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/feed.js" afterPath="$PROJECT_DIR$/lib/controllers/feed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/feedback/feedback.html" afterPath="$PROJECT_DIR$/app/views/partials/feedback/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/footer.html" afterPath="$PROJECT_DIR$/app/views/partials/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.html" afterPath="$PROJECT_DIR$/app/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/index.js" afterPath="$PROJECT_DIR$/lib/controllers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/instructions.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/instructions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/invite.html" afterPath="$PROJECT_DIR$/app/views/partials/invite.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma-e2e.conf.js" afterPath="$PROJECT_DIR$/karma-e2e.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/structure/layouts.css" afterPath="$PROJECT_DIR$/app/structure/layouts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/login.html" afterPath="$PROJECT_DIR$/app/views/partials/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/login.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/loginmodal.html" afterPath="$PROJECT_DIR$/app/views/partials/loginmodal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/main.html" afterPath="$PROJECT_DIR$/app/views/partials/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/matchingQuestion.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/messages.js" afterPath="$PROJECT_DIR$/lib/config/messages.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/middleware.js" afterPath="$PROJECT_DIR$/lib/middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/modalOptions.js" afterPath="$PROJECT_DIR$/app/scripts/directives/modalOptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/mongooseError.js" afterPath="$PROJECT_DIR$/app/scripts/directives/mongooseError.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/navbar.html" afterPath="$PROJECT_DIR$/app/views/partials/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/question.js" afterPath="$PROJECT_DIR$/lib/models/question.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/navbar.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/navbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/newPost.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/newPost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/newSection.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/newSection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/options.js" afterPath="$PROJECT_DIR$/lib/models/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/candidate/paperActions.html" afterPath="$PROJECT_DIR$/app/views/partials/candidate/paperActions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/paperSuccess.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/paperSuccess.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/passKey.js" afterPath="$PROJECT_DIR$/lib/controllers/passKey.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/passport.js" afterPath="$PROJECT_DIR$/lib/config/passport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/posts.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/posts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/env/production.js" afterPath="$PROJECT_DIR$/lib/config/env/production.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/question.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/question.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/questionController.js" afterPath="$PROJECT_DIR$/lib/controllers/questionController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/questionPaperController.js" afterPath="$PROJECT_DIR$/lib/controllers/questionPaperController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/admin/questionSummary.html" afterPath="$PROJECT_DIR$/app/views/partials/admin/questionSummary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/routes.js" afterPath="$PROJECT_DIR$/lib/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/rssFeedService" afterPath="$PROJECT_DIR$/app/scripts/services/rssFeedService" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/search.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/search.js" afterPath="$PROJECT_DIR$/lib/controllers/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/searchQuestions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/selectQuestions.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/selectQuestions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" afterPath="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/session.js" afterPath="$PROJECT_DIR$/app/scripts/services/session.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/session.js" afterPath="$PROJECT_DIR$/lib/controllers/session.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/settings.html" afterPath="$PROJECT_DIR$/app/views/partials/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/settings.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/signup.html" afterPath="$PROJECT_DIR$/app/views/partials/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/signup.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/blog/singlePost.html" afterPath="$PROJECT_DIR$/app/views/partials/blog/singlePost.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/skillHierarchy.html" afterPath="$PROJECT_DIR$/app/views/partials/skillHierarchy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/skills.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/skills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/font/icomoon97172/style.css" afterPath="$PROJECT_DIR$/app/font/icomoon97172/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/subjects.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/subjects.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/subjectsController.js" afterPath="$PROJECT_DIR$/lib/controllers/subjectsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/admin/tags.html" afterPath="$PROJECT_DIR$/app/views/partials/admin/tags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/tags.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/tags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/tags.js" afterPath="$PROJECT_DIR$/lib/models/tags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/tagsController.js" afterPath="$PROJECT_DIR$/lib/controllers/tagsController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/test.html" afterPath="$PROJECT_DIR$/app/views/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/env/test.js" afterPath="$PROJECT_DIR$/lib/config/env/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/candidate/testReport.html" afterPath="$PROJECT_DIR$/app/views/partials/candidate/testReport.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/testStart.html" afterPath="$PROJECT_DIR$/app/views/partials/testStart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/testmanage.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/testmanage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/models/thing.js" afterPath="$PROJECT_DIR$/lib/models/thing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/timer.js" afterPath="$PROJECT_DIR$/app/scripts/directives/timer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/uploadEmails.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/uploadEmails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/uploadQuestions.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/uploadQuestions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/user.js" afterPath="$PROJECT_DIR$/app/scripts/services/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/userInformation.html" afterPath="$PROJECT_DIR$/app/views/partials/userInformation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/users.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/controllers/users.js" afterPath="$PROJECT_DIR$/lib/controllers/users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questionPaper/viewInstructions.html" afterPath="$PROJECT_DIR$/app/views/partials/questionPaper/viewInstructions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html" afterPath="$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pupilsboard.iws" />
@@ -298,10 +206,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <file leaf-file-name="questionPaperController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaperController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="30" selection-start="883" selection-end="883" vertical-scroll-proportion="-5.1923075" vertical-offset="315" max-vertical-offset="3885">
+            <state line="70" column="13" selection-start="2699" selection-end="2699" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="5715">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="questionPaper.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="146" selection-start="4896" selection-end="4896" vertical-scroll-proportion="-11.416667" vertical-offset="941" max-vertical-offset="1725">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icomoon.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/bootmetro/icomoon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.9198606" vertical-offset="1125" max-vertical-offset="30900">
               <folding />
             </state>
           </provider>
@@ -310,25 +254,25 @@
       <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="18" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.9583335" vertical-offset="22" max-vertical-offset="1335">
+            <state line="56" column="73" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questionPaperController.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaperController.js">
+      <file leaf-file-name="contact.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="0" selection-start="4703" selection-end="4703" vertical-scroll-proportion="1.63" vertical-offset="1682" max-vertical-offset="5595">
+            <state line="13" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="passKey.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/controllers/passKey.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="10" selection-start="378" selection-end="383" vertical-scroll-proportion="-0.625" vertical-offset="210" max-vertical-offset="1485">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -337,52 +281,16 @@
       <file leaf-file-name="answerSheet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-9.423077" vertical-offset="655" max-vertical-offset="2940">
+            <state line="17" column="20" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3285">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="question.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/models/question.js">
+      <file leaf-file-name="angular-socialshare.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="9" selection-start="3960" selection-end="3965" vertical-scroll-proportion="-13.884615" vertical-offset="1139" max-vertical-offset="2370">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subjectsController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/controllers/subjectsController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="7" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="1950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subjects.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/subjects.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categoryPapers.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="104" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-15.0" vertical-offset="30" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/directives/timer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="615">
+            <state line="135" column="7" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.0" vertical-offset="1843" max-vertical-offset="3600">
               <folding />
             </state>
           </provider>
@@ -406,10 +314,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/partials/editQuestion.html" />
-        <option value="$PROJECT_DIR$/dist/lib/controllers/blogController.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/search.js" />
-        <option value="$PROJECT_DIR$/dist/lib/controllers/questionController.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/createQuestionPaper.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/login.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/navbar.js" />
@@ -431,8 +335,6 @@
         <option value="$PROJECT_DIR$/lib/controllers/users.js" />
         <option value="$PROJECT_DIR$/app/views/partials/platform/selectTopics.html" />
         <option value="$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/lib/config/env/production.js" />
         <option value="$PROJECT_DIR$/lib/config/express.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html" />
@@ -441,22 +343,28 @@
         <option value="$PROJECT_DIR$/lib/controllers/questionController.js" />
         <option value="$PROJECT_DIR$/lib/middleware.js" />
         <option value="$PROJECT_DIR$/app/views/partials/main.html" />
-        <option value="$PROJECT_DIR$/app/views/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/questionpaper.js" />
-        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
         <option value="$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html" />
         <option value="$PROJECT_DIR$/lib/routes.js" />
         <option value="$PROJECT_DIR$/lib/config/env/development.js" />
         <option value="$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html" />
-        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
         <option value="$PROJECT_DIR$/lib/controllers/subjectsController.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/subjects.js" />
         <option value="$PROJECT_DIR$/lib/models/question.js" />
-        <option value="$PROJECT_DIR$/lib/controllers/questionPaperController.js" />
         <option value="$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html" />
+        <option value="$PROJECT_DIR$/lib/config/env/production.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/app/views/index.html" />
+        <option value="$PROJECT_DIR$/lib/controllers/questionPaperController.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/analyticsController.js" />
+        <option value="$PROJECT_DIR$/lib/controllers/answerSheet.js" />
+        <option value="$PROJECT_DIR$/app/views/partials/navbar.html" />
+        <option value="$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html" />
+        <option value="$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/app/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/app/bootmetro/icomoon.css" />
       </list>
     </option>
   </component>
@@ -528,56 +436,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="careermyntra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -596,7 +454,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -614,11 +472,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,11 +494,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questionPaper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="careermyntra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,7 +538,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="copyright.profiles" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -1401,7 +1281,11 @@
       <workItem from="1419270232682" duration="2413000" />
       <workItem from="1419273257420" duration="900000" />
       <workItem from="1421043418406" duration="12910000" />
-      <workItem from="1421140341731" duration="24283000" />
+      <workItem from="1421140341731" duration="31986000" />
+      <workItem from="1421670572692" duration="1646000" />
+      <workItem from="1421721371044" duration="1468000" />
+      <workItem from="1421731081594" duration="1608000" />
+      <workItem from="1421755469794" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="Changes for Question Editing">
       <created>1405927711085</created>
@@ -1783,11 +1667,39 @@
       <created>1416486462910</created>
       <updated>1416486462910</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Changes for Question Editing">
+      <created>1421502295695</created>
+      <updated>1421502295695</updated>
+    </task>
+    <task id="LOCAL-00097" summary="minor changes">
+      <created>1421607748040</created>
+      <updated>1421607748041</updated>
+    </task>
+    <task id="LOCAL-00098" summary="mongo url changes">
+      <created>1421609643240</created>
+      <updated>1421609643241</updated>
+    </task>
+    <task id="LOCAL-00099" summary="mongo url changes&#10;">
+      <created>1421609801593</created>
+      <updated>1421609801594</updated>
+    </task>
+    <task id="LOCAL-00100" summary="mongo url changes&#10;">
+      <created>1421610075403</created>
+      <updated>1421610075403</updated>
+    </task>
+    <task id="LOCAL-00101" summary="mongo url changes&#10;">
+      <created>1421663474915</created>
+      <updated>1421663474915</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Fix HTML">
+      <created>1421670716335</created>
+      <updated>1421670716335</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="914664000" />
+    <option name="totallyTimeSpent" value="928054000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1814,14 +1726,13 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7875318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.56997454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18066157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31424937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29262087" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29643765" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32480818" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1832,7 +1743,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17144907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17144907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1841,6 +1752,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31424937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="SBT Execute" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1894,10 +1806,6 @@
       <TodoPanelSettings />
     </option>
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="Changes for Full Text Search in Questions" />
-    <MESSAGE value="Removed useless log statements...Redirect user to SignUP page on completion of sample paper" />
-    <MESSAGE value="Minor changes in test window" />
-    <MESSAGE value="Removed ID from Section in Question Paper...Created a new table for sample papers" />
     <MESSAGE value="Changes for Sample Paper..Saving email id after user log in" />
     <MESSAGE value="Changes for Sample Paper" />
     <MESSAGE value="Removed Live Reload useless" />
@@ -1914,12 +1822,16 @@
     <MESSAGE value="Applied quota limit of 30 questions" />
     <MESSAGE value="Implemented Invite User feature" />
     <MESSAGE value="Changes for Invitation" />
-    <MESSAGE value="Changes for Question Editing" />
     <MESSAGE value="Implementation for User Quota" />
     <MESSAGE value="changes for flow implementation" />
     <MESSAGE value="Changes for production environment" />
     <MESSAGE value="Navigational Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigational Changes" />
+    <MESSAGE value="Changes for Question Editing" />
+    <MESSAGE value="minor changes" />
+    <MESSAGE value="mongo url changes" />
+    <MESSAGE value="mongo url changes&#10;" />
+    <MESSAGE value="Fix HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix HTML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1931,7 +1843,7 @@
         </line-breakpoint>
         <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/lib/controllers/passKey.js</url>
-          <line>30</line>
+          <line>40</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
         <line-breakpoint type="javascript">
@@ -1959,41 +1871,36 @@
           <line>55</line>
           <option name="timeStamp" value="362" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/app/scripts/controllers/signup.js</url>
-          <line>9</line>
+          <line>19</line>
           <option name="timeStamp" value="483" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/app/scripts/controllers/signup.js</url>
-          <line>46</line>
+          <line>56</line>
           <option name="timeStamp" value="486" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/lib/controllers/users.js</url>
-          <line>29</line>
+          <line>39</line>
           <option name="timeStamp" value="490" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
-          <line>38</line>
-          <option name="timeStamp" value="607" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
-          <line>54</line>
+          <line>64</line>
           <option name="timeStamp" value="608" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/lib/controllers/answerSheet.js</url>
-          <line>25</line>
+          <line>35</line>
           <option name="timeStamp" value="609" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="616" />
+      <option name="time" value="633" />
     </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
@@ -2005,68 +1912,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/karma-e2e.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.218" vertical-offset="109" max-vertical-offset="900" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config/env/production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/analyticsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/tagsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="366" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1245" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questions/viewQuestions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="102" selection-start="189" selection-end="233" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2325" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/admin/tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="785" selection-end="785" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/candidate/candidateDashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="115" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/body-parser/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="24" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.0" vertical-offset="652" max-vertical-offset="1590" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/body-parser/node_modules/raw-body/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="6" selection-start="3253" selection-end="3253" vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="2355" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="4" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0" vertical-offset="1454" max-vertical-offset="2955" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/userInformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="825" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/platform/selectSingleSubject.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="60" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="360" />
@@ -2074,9 +1919,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="12" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1170">
-          <folding />
-        </state>
+        <state line="65" column="12" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/test.html">
@@ -2086,16 +1929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="23580">
-          <folding />
-        </state>
+        <state line="17" column="22" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4155" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/css/login.css">
@@ -2130,9 +1964,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="456" column="36" selection-start="10332" selection-end="10332" vertical-scroll-proportion="0.41713223" vertical-offset="6616" max-vertical-offset="8940">
-          <folding />
-        </state>
+        <state line="456" column="36" selection-start="10332" selection-end="10332" vertical-scroll-proportion="0.41713223" vertical-offset="6616" max-vertical-offset="8940" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/testStart.html">
@@ -2140,186 +1972,227 @@
         <state line="10" column="15" selection-start="544" selection-end="544" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="285" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="977" selection-end="977" vertical-scroll-proportion="-3.0882354" vertical-offset="30" max-vertical-offset="2040" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper-modified.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="85" selection-start="3364" selection-end="3373" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="95" selection-start="5452" selection-end="5452" vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="1560">
-          <folding />
-        </state>
+        <state line="53" column="85" selection-start="3364" selection-end="3373" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/middleware.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/config/dummydata.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="384" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="3" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0" vertical-offset="679" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="13" column="31" selection-start="384" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/config/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/config/env/development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="52" selection-start="3096" selection-end="3104" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3270">
-          <folding />
-        </state>
+        <state line="99" column="52" selection-start="3096" selection-end="3104" vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="3270" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/platform/selectSubjects.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1080">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="655" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="3750" max-vertical-offset="4230">
-          <folding />
-        </state>
+        <state line="36" column="18" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/questionpaper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="4005">
-          <folding />
-        </state>
+        <state line="54" column="26" selection-start="2016" selection-end="2016" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="4005" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/partials/platform/fullLengthPapers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="46" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.9583335" vertical-offset="22" max-vertical-offset="1335">
-          <folding />
-        </state>
+        <state line="6" column="46" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="30" selection-start="883" selection-end="883" vertical-scroll-proportion="-5.1923075" vertical-offset="315" max-vertical-offset="3885">
-          <folding />
-        </state>
+        <state line="30" column="30" selection-start="883" selection-end="883" vertical-scroll-proportion="-5.1923075" vertical-offset="315" max-vertical-offset="3885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/subjectsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="7" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="1950">
+        <state line="63" column="7" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="1950" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/subjects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="9" selection-start="3960" selection-end="3965" vertical-scroll-proportion="-13.884615" vertical-offset="1139" max-vertical-offset="2370" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="104" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-15.0" vertical-offset="30" max-vertical-offset="1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/timer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/angular/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/env/development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="28" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="3" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0" vertical-offset="534" max-vertical-offset="1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="27" selection-start="1790" selection-end="1790" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/questionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="30" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="4380" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="378" selection-end="383" vertical-scroll-proportion="-0.625" vertical-offset="210" max-vertical-offset="1485">
+        <state line="7" column="28" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="956" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="17" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/analyticsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/blogController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/controllers/passKey.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/answerSheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-9.423077" vertical-offset="655" max-vertical-offset="2940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/subjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="35" selection-start="2616" selection-end="2616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/question.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="9" selection-start="3960" selection-end="3965" vertical-scroll-proportion="-13.884615" vertical-offset="1139" max-vertical-offset="2370">
+        <state line="17" column="20" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/angular-socialshare.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="10" selection-start="574" selection-end="574" vertical-scroll-proportion="-0.15243903" vertical-offset="405" max-vertical-offset="3450">
+        <state line="135" column="7" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.0" vertical-offset="1843" max-vertical-offset="3600">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/partials/platform/categoryPapers.html">
+    <entry file="file://$PROJECT_DIR$/app/views/partials/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="104" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-15.0" vertical-offset="30" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/timer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="615">
+        <state line="56" column="73" selection-start="3511" selection-end="3511" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/questionPaperController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="4703" selection-end="4703" vertical-scroll-proportion="1.63" vertical-offset="1682" max-vertical-offset="5595">
+        <state line="70" column="13" selection-start="2699" selection-end="2699" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="5715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/partials/questionPaper/questionPaper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="146" selection-start="4896" selection-end="4896" vertical-scroll-proportion="-11.416667" vertical-offset="941" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/font-awesome-4.1.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="23730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootmetro/icomoon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.9198606" vertical-offset="1125" max-vertical-offset="31050">
           <folding />
         </state>
       </provider>
@@ -2336,6 +2209,18 @@
               <list>
                 <option value="0.2" />
                 <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>careermyntra</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
