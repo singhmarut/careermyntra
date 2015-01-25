@@ -2,15 +2,15 @@
   "name": "pupilsboard",
   "version": "0.0.0",
   "dependencies": {
-    "angular": ">=1.2.*",
+    "angular": "1.2.20",
     "json3": "~3.2.6",
     "es5-shim": "~2.1.0",
     "jquery": "2.0.1",
     "bootstrap": "~3.2.0",
-    "angular-resource": ">=1.2.*",
-    "angular-cookies": ">=1.2.*",
-    "angular-sanitize": ">=1.2.*",
-    "angular-route": "1.2.*",
+    "angular-resource": "1.2.20",
+    "angular-cookies": "1.2.20",
+    "angular-sanitize": "1.2.20",
+    "angular-route": "1.2.20",
     "ng-ckeditor": "0.2.1",
     "angular-strap": "~2.0.3",
     "angular-motion": "~0.3.3",
@@ -25,8 +25,8 @@
     "angular-bootstrap": "~0.11.0"
   },
   "devDependencies": {
-    "angular-mocks": ">=1.2.*",
-    "angular-scenario": ">=1.2.*"
+    "angular-mocks": "1.2.20",
+    "angular-scenario": "1.2.20*"
   },
   "testPath": "test/client/spec",
   "resolutions": {
