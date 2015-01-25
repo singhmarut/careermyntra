@@ -11,7 +11,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .factory('Auth', function Auth($location, $rootScope,$routeParams, Session, User, $cookieStore,$http) {
+  .factory('Auth', function Auth($location, $rootScope,$routeParams, Session, User, $cookieStore,$http,$modal) {
     
     // Get currentUser from cookie
     $rootScope.currentUser = $cookieStore.get('user') || null;
@@ -19,6 +19,9 @@ angular.module('pupilsboardApp')
 
     return {
 
+   showLogin: function() {
+        var myAlert = $modal({scope: $scope,title: 'Login',html:true, contentTemplate: 'partials/login', placement: 'top', type: 'warning', show: true});
+    },
       /**
        * Authenticate user
        * 

@@ -1,53 +1,116 @@
-<!--
-  ~ Copyright (c) 2015. All rights reserved.
-  ~
-  ~   This file is created and owned by careermyntra. software licensed to you under enterprise Software License Agreement (the "License")
-  ~   You may not use this file except in compliance with the License. For licensing contact: support@careermyntra.com
-  ~
-  ~   Unauthorized reverse engineering, disassembly or modifications prohibited.
-  ~   CareerMyntra Confidential
-  -->
+<!--<div id="loginModal">-->
 
-<div class="container-fluid">
-    <div class="row">
-    <div class="col-sm-8">
-        <div class="col-sm-6">
-            <form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>
-
-                <div class="form-group" ng-class="{ 'has-success': form.email.$valid && submitted,
-                                              'has-error': form.email.$invalid && submitted }">
-                    <label>Email</label>
-
-                    <input type="email" name="email" class="" ng-model="user.email"
-                           required/>
-                </div>
-
-                <div class="form-group" ng-class="{ 'has-success': form.password.$valid && submitted,
-                                              'has-error': form.password.$invalid && submitted }">
-                    <label>Password</label>
-
-                    <input type="password" name="password" class="" ng-model="user.password"
-                           ng-minlength="3"
-                           required/>
-                </div>
-
-                <div class="form-group has-error">
-                    <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
-                        Please enter your email and password.
-                    </p>
-                    <p class="help-block">{{ errors.other }}</p>
-                </div>
-
-                <button class="btn-success btn-small btn-default" type="submit" ng-click="$hide()">Sign In</button>
-            </form>
-         </div>
-        <!--<div class="col-sm-2">-->
-            <!--<div ng-app="directive.g+signin">-->
-                <!--<google-plus-signin clientid="620125449078"></google-plus-signin>-->
-                <!--<p>^ This is a Google Plus sign-in button</p>-->
+<!--<div class="login-frm dropdown-menu" role="menu" id="loginModal">-->
+    <!--<form class="form-signin" name="form" ng-submit="loginToPortal(form)">-->
+        <!--<div class="social-box">-->
+            <!--<div class="row mg-btm">-->
+                <!--<div class="col-md-12">-->
+                    <!--<a class="btn btn-block btn-social btn-sm btn-facebook">-->
+                        <!--<i class="fa fa-facebook"></i>LogIn with Facebook-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<a class="btn btn-block btn-social btn-sm btn-google-plus">-->
+                        <!--<i class="fa fa-google-plus"></i>LogIn with Google-->
+                    <!--</a>-->
+                <!--</div>-->
             <!--</div>-->
         <!--</div>-->
+        <!--<div class="text-center">or</div>-->
+        <!--<div class="main">-->
+
+            <!--<input type="text" class="form-control" ng-model="user.email" autofocus>-->
+            <!--<input type="password" class="form-control" ng-model="user.password">-->
+            <!--<span class="clearfix"></span>-->
+        <!--</div>-->
+        <!--<div class="checkbox">-->
+            <!--<label>-->
+                <!--<input type="checkbox"> Keep me logged in-->
+            <!--</label>-->
+        <!--</div>-->
+
+        <!--<button type="submit" class="btn btn-lg btn-block btn-success">Login</button>-->
+
+    <!--</form>-->
+    <!--<p class="forgot-password"><a ng-href="/forgotPassword">Forgot password</a></p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container-fluid">-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-8">-->
+        <!--<div class="col-sm-6">-->
+            <!--<form class="form" name="form" ng-submit="loginToPortal(form)" novalidate>-->
+
+                <!--<div class="form-group" ng-class="{ 'has-success': form.email.$valid && submitted,-->
+                                              <!--'has-error': form.email.$invalid && submitted }">-->
+                    <!--<label>Email</label>-->
+
+                    <!--<input type="email" name="email" class="" ng-model="user.email"-->
+                           <!--required/>-->
+                <!--</div>-->
+
+                <!--<div class="form-group" ng-class="{ 'has-success': form.password.$valid && submitted,-->
+                                              <!--'has-error': form.password.$invalid && submitted }">-->
+                    <!--<label>Password</label>-->
+
+                    <!--<input type="password" name="password" class="" ng-model="user.password"-->
+                           <!--ng-minlength="3"-->
+                           <!--required/>-->
+                <!--</div>-->
+
+                <!--<div class="form-group has-error">-->
+                    <!--<p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">-->
+                        <!--Please enter your email and password.-->
+                    <!--</p>-->
+                    <!--<p class="help-block">{{ errors.other }}</p>-->
+                <!--</div>-->
+
+                <!--<button class="btn-success btn-small btn-default" type="submit" ng-click="$hide()">Sign In</button>-->
+            <!--</form>-->
+         <!--</div>-->
+        <!--&lt;!&ndash;<div class="col-sm-2">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div ng-app="directive.g+signin">&ndash;&gt;-->
+                <!--&lt;!&ndash;<google-plus-signin clientid="620125449078"></google-plus-signin>&ndash;&gt;-->
+                <!--&lt;!&ndash;<p>^ This is a Google Plus sign-in button</p>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<form class="form-signin" name="form" ng-submit="loginToPortal(form)">
+    <div class="social-box">
+        <div class="row mg-btm">
+            <div class="col-md-12">
+                <a class="btn btn-block btn-social btn-sm btn-facebook">
+                    <i class="fa fa-facebook"></i>LogIn with Facebook
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-block btn-social btn-sm btn-google-plus">
+                    <i class="fa fa-google-plus"></i>LogIn with Google
+                </a>
+            </div>
+        </div>
     </div>
+    <div class="text-center">or</div>
+    <div class="main">
+
+        <input type="text" class="form-control" ng-model="user.email" autofocus>
+        <input type="password" class="form-control" ng-model="user.password">
+        <span class="clearfix"></span>
     </div>
-</div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Keep me logged in
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-block btn-success">Login</button>
+
+</form>
 

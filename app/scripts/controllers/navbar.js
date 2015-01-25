@@ -31,12 +31,6 @@ angular.module('pupilsboardApp')
       });
     };
 
-
-
-//    $scope.login = function() {
-//        var myAlert = $modal({scope: $scope,title: 'Login',html:true, contentTemplate: 'partials/loginmodal', placement: 'top', type: 'warning', show: true});
-//    };
-
     $scope.signup = function() {
         var myAlert = $modal({scope: $scope,title: 'Sign Up',html:true, contentTemplate: 'partials/signup', placement: 'top', type: 'warning', show: true});
     };

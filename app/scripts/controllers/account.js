@@ -36,7 +36,7 @@ angular.module('pupilsboardApp')
                 var myAlert = $modal({title: 'Question Paper', content: 'Paper published successfully', placement: 'top', type: 'info', show: true});
             })
             .error(function(err){
-                    $modal({title: 'Question Paper', content: 'Unable to publish Paper', placement: 'top', type: 'error', show: true});
+                    $modal({title: 'Question Paper', template: 'partials/ExecutionPolicy.html', placement: 'top', type: 'error', show: true});
             });
         };
 

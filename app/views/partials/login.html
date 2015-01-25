@@ -1,80 +1,8 @@
-<!--
-  ~ Copyright (c) 2015. All rights reserved.
-  ~
-  ~   This file is created and owned by careermyntra. software licensed to you under enterprise Software License Agreement (the "License")
-  ~   You may not use this file except in compliance with the License. For licensing contact: support@careermyntra.com
-  ~
-  ~   Unauthorized reverse engineering, disassembly or modifications prohibited.
-  ~   CareerMyntra Confidential
-  -->
+<div ng-include="'partials/loginmodal.html'"></div>
 
-<div ng-include="'partials/navbar.html'"></div>
-
-<div class="container-fluid" style="margin-top: 100px;">
-    <div class="page-header">
-        <div class="col-sm-12">
-            <h1 class="text-primary">Login</h1>
-        </div>
-     </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div>
-                <div>
-                    <form class="form" name="form" ng-submit="login(form)" novalidate>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label>Email</label>
-                                </div>
-                                <div class="col-lg-5">
-                                    <input type="text" name="email" class="form-control " ng-model="user.email" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <label>Password</label>
-                                 </div>
-                                <div class="col-lg-5">
-                                    <input type="password" name="password" class="form-control" ng-model="user.password" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group has-error">
-                            <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
-                                Please enter your email and password.
-                            </p>
-                            <p class="help-block">{{ errors.other }}</p>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary"> Sign in </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <span id="signinButton">
-                  <span
-                          class="g-signin"
-                          data-callback="http://localhost:8000/api/auth/google/return"
-                          data-clientid="315683619107-fnp6sent75d11i6je5beq3ivbg6cu3nl.apps.googleusercontent.com"
-                          data-cookiepolicy="single_host_origin"
-                          data-scope="profile https://www.googleapis.com/auth/userinfo.email"
-                          >
-                  </span>
-            </span>
-        </div>
-</div>
-    <div class="row">
-      <div class="col-sm-12">
-        <hr>
-        Not registered? <a href="/signup" class="text-center new-account">Create an account.</a>
-      </div>
-    </div>
-</div>
+<li ng-show="!currentUser" class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="#loginModal">Login</a>
+</li>
 
 <script type="text/javascript">
     (function() {

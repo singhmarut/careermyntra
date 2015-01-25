@@ -98,7 +98,9 @@
                     <button type="submit" class="btn btn-lg btn-dgray" ng-show="curQuestionIndex > 0" ng-click="movePrev()">Previous</button>
                     <button type="submit" class="btn btn-lg btn-dgray" ng-click="">Clear Response</button>
                     <button type="submit" class="btn btn-lg btn-dgray" ng-click="markForReview();moveNext()">Mark for review & next</button>
-                    <button type="submit" class="btn btn-lg btn-danger" ng-show="curQuestionIndex + 1 < section.questions.length" ng-click="moveNext()">Save & next</button>
+                    <button type="submit" class="btn btn-lg btn-dgray"
+                            ng-show="curQuestionIndex + 1 < countMap['answered'].length + countMap['unanswered'].length" ng-click="moveNext()">Save
+                        & next</button>
                     <button type="submit" class="btn btn-lg btn-danger pull-right" ng-click="finish()">Submit</button>
                 </footer>
             </div>

@@ -11,7 +11,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-    .controller('SubjectCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert) {
+    .controller('SubjectCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert,Auth) {
         $scope.questionPaper = null;
         $scope.curQuestionIndex = 0;
         $scope.subjects = [];
@@ -68,13 +68,16 @@ angular.module('pupilsboardApp')
             $location.path('/questionPaper/'+ paperId);
         };
 
-        $scope.getCategoryPapers = function (type){
+        $scope.getCategoryPapers = function (){
             var url = '/api/questionPaper/category/papers';
+            if (!Auth.isLoggedIn()){
+                url = '/api/questionPaper/category/papers/sample';
+            }
+
             if (angular.isString($routeParams.subject)){
                 url += "?tag=" + $routeParams.subject;
             }
             //Type of the Quizzes..either sample or full
-            //url += "&tag=" + type;
             var subjectPapers;
             $http.get(url).success(function(data){
                 console.log(data);

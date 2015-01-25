@@ -11,7 +11,7 @@
 'use strict';
 
 angular.module('pupilsboardApp')
-  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert,$rootScope) {
+  .controller('QuestionpaperCtrl', function ($scope,$http,$location,$routeParams,$modal,$alert,$rootScope,Auth) {
             $scope.questionPaper = null;
             $scope.curQuestionIndex = 0;
 
@@ -119,22 +119,26 @@ angular.module('pupilsboardApp')
         };
 
         $scope.finish = function(){
-            if ($routeParams.samplePaper){
-                $http.post('/api/answerSheet?samplePaper=1' ,JSON.stringify($scope.questionPaper)).error(function(err){
-                })
-                .success(function(data){
-                    var path = '/login?samplePaper=1&sheet=' + data._id;
-                    console.log('redirect path is ' + path);
-                    $location.path( '/signup' ).search('samplePaper', '1').search('sheet',data._id);
-                });
-                //$scope.$emit("submitSamplePaper", $scope.questionPaper);
+            if (Auth.isLoggedIn()){
+                if ($routeParams.samplePaper){
+                    $http.post('/api/answerSheet?samplePaper=1' ,JSON.stringify($scope.questionPaper)).error(function(err){
+                    })
+                        .success(function(data){
+                            var path = '/login?samplePaper=1&sheet=' + data._id;
+                            console.log('redirect path is ' + path);
+                            $location.path( '/signup' ).search('samplePaper', '1').search('sheet',data._id);
+                        });
+                    //$scope.$emit("submitSamplePaper", $scope.questionPaper);
+                }else{
+                    //var selectedSection = $scope.selectedSection;
+                    $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
+                    })
+                    .success(function(data){
+                        $location.path('/paperCompleted');
+                    });
+                }
             }else{
-                //var selectedSection = $scope.selectedSection;
-                $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
-                })
-                .success(function(data){
-                    $location.path('/paperCompleted');
-                });
+               Auth.showLogin();
             }
         };
 
