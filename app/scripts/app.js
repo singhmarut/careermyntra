@@ -31,7 +31,7 @@ var app = angular.module('pupilsboardApp', [
                 controller: 'NavbarCtrl'
             })
             .when('/login', {
-                templateUrl: 'partials/login',
+                templateUrl: 'partials/loginModal',
                 controller: 'LoginCtrl'
             })
             .when('/signup', {

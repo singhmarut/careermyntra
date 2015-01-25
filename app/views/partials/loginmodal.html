@@ -79,6 +79,9 @@
     <!--</div>-->
     <!--</div>-->
 <!--</div>-->
+<!--<div ng-include="'partials/navbar'"></div>-->
+
+<div class="login-frm">
 
 <form class="form-signin" name="form" ng-submit="loginToPortal(form)">
     <div class="social-box">
@@ -91,7 +94,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <a class="btn btn-block btn-social btn-sm btn-google-plus">
+                <a class="btn btn-block btn-social btn-sm btn-google-plus" id="loginWithGoogle" ng-href="https://apis.google.com/js/client:plusone.js">
                     <i class="fa fa-google-plus"></i>LogIn with Google
                 </a>
             </div>
@@ -113,4 +116,12 @@
     <button type="submit" class="btn btn-lg btn-block btn-success">Login</button>
 
 </form>
-
+</div>
+<!--<script type="text/javascript">-->
+    <!--(function() {-->
+        <!--console.log('google');-->
+        <!--var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;-->
+        <!--po.src = 'https://apis.google.com/js/client:plusone.js';-->
+        <!--var s = document.getElementById('loginWithGoogle'); s.parentNode.insertBefore(po, s);-->
+    <!--})();-->
+<!--</script>-->

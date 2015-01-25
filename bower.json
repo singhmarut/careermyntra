@@ -11,6 +11,8 @@
     "angular-cookies": "1.2.20",
     "angular-sanitize": "1.2.20",
     "angular-route": "1.2.20",
+    "angular-animate": "1.2.20",
+    "angular-busy": "4.1.0",
     "ng-ckeditor": "0.2.1",
     "angular-strap": "~2.0.3",
     "angular-motion": "~0.3.3",
@@ -26,7 +28,7 @@
   },
   "devDependencies": {
     "angular-mocks": "1.2.20",
-    "angular-scenario": "1.2.20*"
+    "angular-scenario": "1.2.20"
   },
   "testPath": "test/client/spec",
   "resolutions": {
