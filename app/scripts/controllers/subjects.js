@@ -81,27 +81,8 @@ angular.module('pupilsboardApp')
             var subjectPapers;
             $http.get(url).success(function(data){
                 $scope.papers = data;
-//                .then(function(result1) {
-//                console.log(result1.data);
-//                subjectPapers = result1.data;
-//                var scoreSummaryUrl = '/api/questionPaper/category/' + $routeParams.subject + '/score/summary';
-//                return $http.get(scoreSummaryUrl).error(function(err){
-//                    console.log('Error while getting topics ' + err);
-//                }).success(function(data){
-//
-//                    angular.forEach(data, function(scoreSummary){
-//                        angular.forEach(subjectPapers,function(paper){
-//                            if (scoreSummary.paperId == paper._id){
-//                                paper.score = scoreSummary.score;
-//                            }
-//                        });
-//                    });
-//                    $scope.papers = subjectPapers;
-//                });
-//            }).error(function(err){
-//                console.log('Error while getting topics ' + err);
-//            })
-
+            }).error(function(err){
+               console.log('unable to load papers');
             });
         };
 
