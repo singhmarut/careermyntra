@@ -131,7 +131,26 @@ angular.module('pupilsboardApp')
                     //$scope.$emit("submitSamplePaper", $scope.questionPaper);
                 }else{
                     //var selectedSection = $scope.selectedSection;
-                    $http.post('/api/answerSheet',JSON.stringify($scope.questionPaper)).error(function(err){
+                    //delete $scope.questionPaper.questions;
+                    var strippedPaper = {};
+                    strippedPaper.name = $scope.questionPaper.name;
+                    strippedPaper.sections = [];
+                    strippedPaper.questionPaperId = $scope.questionPaper._id;
+
+                    angular.forEach($scope.questionPaper.sections, function (section) {
+                        var questionWithAnswers = [];
+                        angular.forEach(section.questions,function(question){
+                            var strippedQuestion = {};
+                            strippedQuestion.choices = question.choices;
+                            strippedQuestion._id = question._id;
+                            questionWithAnswers.push(strippedQuestion);
+                        });
+                        var strippedSection = {};
+                        strippedSection.questions = questionWithAnswers;
+                        strippedPaper.sections.push(strippedSection);
+                    });
+
+                    $http.post('/api/answerSheet',JSON.stringify(strippedPaper)).error(function(err){
                     })
                     .success(function(data){
                         $location.path('/paperCompleted');

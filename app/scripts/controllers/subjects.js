@@ -80,7 +80,6 @@ angular.module('pupilsboardApp')
             //Type of the Quizzes..either sample or full
             var subjectPapers;
             $http.get(url).success(function(data){
-                console.log(data);
                 $scope.papers = data;
 //                .then(function(result1) {
 //                console.log(result1.data);
