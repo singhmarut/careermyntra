@@ -11,6 +11,7 @@
 'use strict';
 
 var app = angular.module('pupilsboardApp', [
+//        'angular-socialshare',
         'ngCookies',
         'ngResource',
         'ngSanitize',
@@ -21,8 +22,7 @@ var app = angular.module('pupilsboardApp', [
         'mgcrea.ngStrap.modal',
         'mgcrea.ngStrap.aside',
         'ngAnimate',
-        'angularFileUpload',
-        'angular-socialshare'
+        'angularFileUpload'
     ])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
         $routeProvider
