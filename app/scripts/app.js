@@ -22,6 +22,7 @@ var app = angular.module('pupilsboardApp', [
         'mgcrea.ngStrap.modal',
         'mgcrea.ngStrap.aside',
         'ngAnimate',
+        'htmlFilters',
         'angularFileUpload'
     ])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
