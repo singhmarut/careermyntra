@@ -583,3 +583,55 @@ div.dialog.childConsent .loading,
 #loadingPane .loading {margin-top:0;}
 div.dialog.childConsent .loading.childConsentSent,
 #loadingPane .loading {margin:0 auto; background-position: 0 50px; padding:4em 0;}
+
+.modal-content{
+	border-radius: 0;
+}
+.modal-title{text-align: center;}
+.modal-header,
+.modal-footer
+{
+	border: 0;
+}
+.modal-header .close{
+	margin-top: -16px;
+	margin-right: -16px;
+	border: 1px solid #ccc;
+	padding: 12px 17px;
+	opacity: 1;
+}
+.choose-topic .modal-body{
+	max-height: 400px;
+	overflow-y: auto;
+}
+.choose-topic ul, .choose-topic ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.choose-topic ul li a{
+	display: block;
+	padding: 10px;
+	background: #ccc;
+	font-size: 16px;
+	color: #333;
+	border-bottom: 1px solid #e1e1e1;
+	
+}
+.choose-topic ul li a:hover{
+	background: #ef383a;
+	color: #fff;
+}
+.instruction ul, .instruction ul li{
+	list-style: disc;
+	
+}
+
+.instruction  ul li a{
+	display: block;
+	padding: 10px;
+	font-size: 20px;
+	color: #666;
+	
+}
+

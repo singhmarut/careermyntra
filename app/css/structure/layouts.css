@@ -159,6 +159,10 @@ body {
 	z-index: 2;
 	border-right: 1px solid #ccc;
 }
+.side-left .side-body{
+	height: calc(100% - 58px);
+	overflow-y: auto;
+}
 .test-content,
 #test-review {
 	position: fixed;

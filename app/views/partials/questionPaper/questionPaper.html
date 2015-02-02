@@ -27,14 +27,14 @@
                     <!--</nav>-->
                 <!--</div>-->
             </div>
-            <div ng-repeat="section in questionPaper.sections">
-            <div class="side-body" ng-repeat="question in section.questions">
+            <div class="side-body" ng-repeat="section in questionPaper.sections">
+            <div ng-repeat="question in section.questions">
                 <nav class="side-nav">
                     <!-- open nav ul -->
                     <ul>
                         <li class="side-nav-item">
-                            <a href="" ng-click="setCurrentIdx($index)">Q. {{$index+1}} <p
-                                    my-html = "{{section.questions[$index].content}}"></p></a>
+                            <a href="" ng-click="setCurrentIdx($index)">Q. {{$index+1}} <span my-html
+                                                                                                   ="{{section.questions[$index].content}}"></span>...</a>
                         </li>
                     </ul><!-- /nav ul-->
                 </nav>
