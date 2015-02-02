@@ -34,7 +34,7 @@
                     <ul>
                         <li class="side-nav-item">
                             <a href="" ng-click="setCurrentIdx($index)">Q. {{$index+1}} <p
-                                    ng-bind-html="section.questions[$index].content | limitFilter:100"></p></a>
+                                    my-html = "{{section.questions[$index].content}}"></p></a>
                         </li>
                     </ul><!-- /nav ul-->
                 </nav>

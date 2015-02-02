@@ -288,7 +288,17 @@ angular.module('pupilsboardApp')
             }
         };
 
+        $scope.filterQuestions = function(){
+            var question = $scope.questionPaper.sections[0].questions[$scope.curQuestionIndex];
+            var index = countMap['marked'].indexOf(question._id);
+            if (index == -1){
+                countMap['marked'].push(question._id);
+            }
+        };
+
         $scope.log = function(index){
             console.log(index);
         };
   });
+
+
