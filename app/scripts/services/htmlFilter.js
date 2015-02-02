@@ -17,7 +17,6 @@ angular.module('htmlFilters', []).filter('limitFilter', function() {
 
             return function(scope, element, attr) {
                 var value = $sce.getTrustedHtml(attr.myHtml);
-                console.log(value);
                 value = value.replace(/(<([^>]+)>)/ig,"");
                 if (value){
                     value = value.slice(0,30);
