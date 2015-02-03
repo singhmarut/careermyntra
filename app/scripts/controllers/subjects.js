@@ -65,7 +65,7 @@ angular.module('pupilsboardApp')
         };
 
         $scope.loadPaper = function (paperId){
-            $location.path('/questionPaper/'+ paperId);
+            $location.path('/questionPaper/'+ paperId+ '/start');
         };
 
         $scope.getCategoryPapers = function (){
@@ -118,4 +118,10 @@ angular.module('pupilsboardApp')
             var splitNames = paper.name.split(" ");
             return parseInt(splitNames[splitNames.length - 1]);
         };
-});
+
+        $scope.showInstructions = function(id){
+            $scope.curPaperId = id;
+            var myAlert = $modal({scope: $scope, title: '', contentTemplate: 'partials/instructions.html', placement: 'top', type: 'info', show: true});
+        };
+
+    });

@@ -1,0 +1,79 @@
+<!--
+  ~ Copyright (c) 2015. All rights reserved.
+  ~
+  ~   This file is created and owned by careermyntra. software licensed to you under enterprise Software License Agreement (the "License")
+  ~   You may not use this file except in compliance with the License. For licensing contact: support@careermyntra.com
+  ~
+  ~   Unauthorized reverse engineering, disassembly or modifications prohibited.
+  ~   CareerMyntra Confidential
+  -->
+
+<!--<div ng-include="'partials/navbar'"></div>-->
+
+<!--<div class="container-fluid" id="content" ng-controller="QuestionpaperCtrl" ng-init="loadInstructions()">-->
+
+    <!--&lt;!&ndash;<div class="modal fade instruction">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="modal-dialog">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="modal-content">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<div class="modal-header">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<h2 class="modal-title">INSTRUCTIONS</h2>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="modal-body">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">20 questions in 45 mins. Closing Test Window before submitting will loose all progress.</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">Type:Adaptive Assessment/Verbal Assessment.</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">Do NOT guess the answere unless you want to in PT.</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">Unlimited Attempts.</a></li>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="modal-footer">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--<div class="jumbotron">-->
+        <!--<p ng-bind-html = "instruction">-->
+        <!--</p>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-11"></div>-->
+        <!--<div class="col-lg-1">-->
+            <!--<div class="float: right-10">-->
+                <!--<ul>-->
+                    <!--<li><a href="#">20 questions in 45 mins. Closing Test Window before submitting will loose all progress.</a></li>-->
+                    <!--<li><a href="#">Type:Adaptive Assessment/Verbal Assessment.</a></li>-->
+                    <!--<li><a href="#">Do NOT guess the answere unless you want to in PT.</a></li>-->
+                    <!--<li><a href="#">Unlimited Attempts.</a></li>-->
+                <!--</ul>-->
+                <!--<input type="submit" id="submit" class= "btn-large btn-success" value="Start Test" ng-click="startTest()"/>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--id="instruction" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true"-->
+<div ng-controller="SubjectCtrl" aria-hidden="true">
+    <div>
+        <div>
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title">INSTRUCTIONS</h2>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="#">20 questions in 45 mins. Closing Test Window before submitting will loose all progress.</a></li>
+                    <li><a href="#">Type:Adaptive Assessment/Verbal Assessment.</a></li>
+                    <li><a href="#">Do NOT guess the answere unless you want to in PT.</a></li>
+                    <li><a href="#">Unlimited Attempts.</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" id="submit" class= "btn-large btn-success" value="Start Test"
+                       ng-click="$hide();loadPaper(curPaperId)"/>
+            </div>
+        </div>
+    </div>
+</div>

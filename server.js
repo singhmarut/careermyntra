@@ -4,7 +4,6 @@ var express = require('express'),
     path = require('path'),
     fs = require('fs'),
     eventEmitter = require('events'),
-    busboy = require('connect-busboy'),
     mongoose = require('mongoose');
 
 /**
